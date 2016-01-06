@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hoiio Design Standards 2016">
+    <meta name="keywords" content="design, ux, standard, hoiio, framework, html, css, interface, component, bootstrap">
+    <meta name="author" content="Marcus">
+    <link rel="icon" href="source/favicon.ico">
+
+    <title>Hoiio Design Standards</title>
+    <!-- jQuery --->
+    <script src="../source/js/jquery-2.1.4.min.js"></script>
+    <script src="../source/js/modernizr-custom.js"></script>
+
+    <!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="../source/dist/css/bootstrap.min.css" />
+	<!-- Main styles -->
+	<link rel="stylesheet" type="text/css" href="../source/css/main.css" />
+	<!-- Highlight -->
+	<link rel="stylesheet" type="text/css" href="../source/css/tomorrow.css" />
+	
+</head>
+<body>
+    <!-- Main container -->
+	<div class="container" id="page">
+		<!-- Header -->
+		<header class="header"></header>
+		<!-- Main Content -->
+		<div class="body">
+            <!-- Sidebar -->
+            <div id="sidebar"></div>
+            <!-- Content -->
+            <div id="content">
+                <div class="content-item component-dropdown">
+                    <div class="item-info">
+                        <div class="item-title"><h1>Dropdown</h1></div>
+                        <div class="item-description">
+                            
+                        </div>
+                    </div>
+                    <!-- Sub item -->
+                    <div class="sub-item">
+                        <h2>Default</h2>
+                        <!-- Sub display -->
+                        <div class="sub-display">
+<!-- Default -->
+<div class="dropdown">
+    <button class="btn btn-default" type="button" data-toggle="dropdown">
+        Bulk action <i class="h-icon h-icon-down-dir"></i>
+    </button>
+    <ul class="dropdown-menu">
+        <li><a href="#">Download</a></li>
+        <li><a href="#">Share</a></li>
+        <li><a href="#">Remove</a></li>
+    </ul>
+</div>
+<!-- With divider -->
+
+                        </div>
+                        <!-- Sub info -->
+                        <div class="sub-info">
+                            <pre>
+<code class="html hljs xml">
+&lt;div class=&quot;dropdown&quot;&gt;
+    &lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot;&gt;
+        Default &lt;i class=&quot;h-icon h-icon-down-dir&quot;&gt;&lt;/i&gt;
+    &lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+
+</code>
+                            </pre>
+                        </div>
+                    </div>
+                    <!-- Sub item -->
+                    <div class="sub-item">
+                        <h2>With divider</h2>
+                        <!-- Sub display -->
+                        <div class="sub-display">
+<div class="dropdown">
+  <button class="btn btn-default" type="button" data-toggle="dropdown">
+    Bulk action <i class="h-icon h-icon-down-dir"></i>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
+    <li><a href="#">Download</a></li>
+    <li><a href="#">Share</a></li>
+    <li><a href="#">Remove</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Archive</a></li>  
+  </ul>
+</div>                          
+                        </div>
+                        <!-- Sub info -->
+                        <div class="sub-info">
+                            <pre>
+<code class="html hljs xml">
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot;&gt;
+    With divider &lt;i class=&quot;h-icon h-icon-down-dir&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot; aria-labelledby=&quot;dropdownMenuDivider&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;&lt;/li&gt;
+    &lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;&lt;/li&gt;  
+  &lt;/ul&gt;
+&lt;/div&gt;
+</code>
+                            </pre>
+                        </div>
+                    </div>
+                    <!-- Sub item -->
+                    <div class="sub-item">
+                        <h2>Group</h2>
+                        <!-- Sub display -->
+                        <div class="sub-display">
+<div class="btn-group">
+    <button type="button" class="btn btn-default">Edit</button>
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        <i class="h-icon h-icon-down-dir"></i>
+    </button>
+    <ul class="dropdown-menu">
+        <li><a href="#">Download</a></li>
+        <li><a href="#">Share</a></li>
+        <li><a href="#">Remove</a></li>
+    </ul>
+</div>    
+                        </div>
+                        <!-- Sub info -->
+                        <div class="sub-info">
+                            <pre>
+<code class="html hljs xml">
+&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Edit&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
+        &lt;i class=&quot;h-icon h-icon-down-dir&quot;&gt;&lt;/i&gt;
+    &lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt; 
+</code>
+                            </pre>
+                        </div>
+                    </div>
+                    <!-- Sub item -->
+                    <div class="sub-item">
+                        <h2>Group with Icon</h2>
+                        <!-- Sub display -->
+                        <div class="sub-display">
+<div class="btn-group">
+    <button type="button" class="btn btn-default"><i class="h-icon h-icon-pencil data-label"></i>Edit</button>
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        <i class="h-icon h-icon-down-dir"></i>
+    </button>
+    <ul class="dropdown-menu">
+        <li><a href="#"><i class="h-icon h-icon-download data-label"></i>Download</a></li>
+        <li><a href="#"><i class="h-icon h-icon-share data-label"></i>Share</a></li>
+        <li><a href="#"><i class="h-icon h-icon-trash data-label"></i>Remove</a></li>
+    </ul>
+</div>                           
+                        </div>
+                        <!-- Sub info -->
+                        <div class="sub-info">
+                            <pre>
+<code class="html hljs xml">
+&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;&lt;i class=&quot;h-icon h-icon-pencil data-label&quot;&gt;&lt;/i&gt;Edit&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
+        &lt;i class=&quot;h-icon h-icon-down-dir&quot;&gt;&lt;/i&gt;
+    &lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;h-icon h-icon-download data-label&quot;&gt;&lt;/i&gt;...&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;    
+</code>
+                            </pre>
+                        </div>
+                    </div>
+                    <!-- Sub item -->
+                    <div class="sub-item">
+                        <h2>Alternate Colors</h2>
+                        <!-- Sub display -->
+                        <div class="sub-display">
+<div class="dropdown">
+    <button class="btn btn-primary" type="button" data-toggle="dropdown">
+        Bulk action <i class="h-icon h-icon-down-dir"></i>
+    </button>
+    <ul class="dropdown-menu">
+        <li><a href="#">Download</a></li>
+        <li><a href="#">Share</a></li>
+        <li><a href="#">Remove</a></li>
+    </ul>
+</div>
+<div class="dropdown">
+    <button class="btn btn-info" type="button" data-toggle="dropdown">
+        Bulk action <i class="h-icon h-icon-down-dir"></i>
+    </button>
+    <ul class="dropdown-menu">
+        <li><a href="#">Download</a></li>
+        <li><a href="#">Share</a></li>
+        <li><a href="#">Remove</a></li>
+    </ul>
+</div>
+<div class="dropdown">
+    <button class="btn btn-danger" type="button" data-toggle="dropdown">
+        Bulk action <i class="h-icon h-icon-down-dir"></i>
+    </button>
+    <ul class="dropdown-menu">
+        <li><a href="#">Download</a></li>
+        <li><a href="#">Share</a></li>
+        <li><a href="#">Remove</a></li>
+    </ul>
+</div>
+<div class="dropdown">
+    <button class="btn btn-success" type="button" data-toggle="dropdown">
+        Bulk action <i class="h-icon h-icon-down-dir"></i>
+    </button>
+    <ul class="dropdown-menu">
+        <li><a href="#">Download</a></li>
+        <li><a href="#">Share</a></li>
+        <li><a href="#">Remove</a></li>
+    </ul>
+</div>
+<div class="dropdown">
+    <button class="btn btn-warning" type="button" data-toggle="dropdown">
+        Bulk action <i class="h-icon h-icon-down-dir"></i>
+    </button>
+    <ul class="dropdown-menu">
+        <li><a href="#">Download</a></li>
+        <li><a href="#">Share</a></li>
+        <li><a href="#">Remove</a></li>
+    </ul>
+</div>                            
+                        </div>
+                        <!-- Sub info -->
+                        <div class="sub-info">
+                            <pre>
+<code class="html hljs xml">
+&lt;!-- To use alternate options, change 'btn-default' from default to other styles such as 'btn-info', 'btn-success', 'btn-warning', 'btn-danger' --&gt;
+&lt;div class="dropdown"&gt;
+    &lt;button class="btn btn-primary" type="button" data-toggle="dropdown"&gt;
+        Bulk action &lt;i class="h-icon h-icon-down-dir">&lt;/i>
+    &lt;/button>
+    &lt;ul class="dropdown-menu">
+        &lt;li&gt;&lt;a href="#"&gt;...&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="footer"></footer>
+    </div>
+	
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../source/dist/js/bootstrap.min.js"></script>
+	<script src="../source/js/highlight.pack.js"></script>
+    <script src="../source/js/main.js"></script>
+    <script src="../source/js/component.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    
+</body>
+</html>

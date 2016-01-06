@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hoiio Design Standards 2016">
+    <meta name="keywords" content="design, ux, standard, hoiio, framework, html, css, interface, component, bootstrap">
+    <meta name="author" content="Marcus">
+    <link rel="icon" href="source/favicon.ico">
+
+    <title>Hoiio Design Standards</title>
+    <!-- jQuery --->
+    <script src="../source/js/jquery-2.1.4.min.js"></script>
+    <script src="../source/js/modernizr-custom.js"></script>
+
+    <!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="../source/dist/css/bootstrap.min.css" />
+	<!-- Main styles -->
+	<link rel="stylesheet" type="text/css" href="../source/css/main.css" />
+	<!-- Highlight -->
+	<link rel="stylesheet" type="text/css" href="../source/css/tomorrow.css" />
+	
+</head>
+<body>
+    <!-- Main container -->
+	<div class="container" id="page">
+		<!-- Header -->
+		<header class="header"></header>
+		<!-- Main Content -->
+		<div class="body">
+            <!-- Sidebar -->
+            <div id="sidebar"></div>
+            <!-- Content -->
+            <div id="content">
+                <div class="content-item component-select">
+                    <div class="item-info">
+                        <div class="item-title"><h1>Select</h1></div>
+                        <div class="item-description">
+                            
+                        </div>
+                    </div>
+                    <!-- Sub item -->
+                    <div class="sub-item">
+                        <h2>Default</h2>
+                        <!-- Sub display -->
+                        <div class="sub-display">
+<select class="selectpicker">
+    <option>Time Log</option>
+    <option>Contact Manager</option>
+    <option>Consent Hub</option>
+</select>
+              
+                        </div>
+                        <!-- Sub info -->
+                        <div class="sub-info">
+                            <pre>
+<code class="html hljs xml">
+&lt;select class="selectpicker"&gt;
+    &lt;option&gt;...&lt;/option&gt;
+&lt;/select&gt;
+</code>
+                            </pre>
+                        </div>
+                    </div>
+                    <!-- Sub item -->
+                    <div class="sub-item">
+                        <h2>DEFAULT WITH THE TICK ICON</h2>
+                        <!-- Sub display -->
+                        <div class="sub-display">
+<select class="selectpicker show-tick">
+    <option>Time Log</option>
+    <option>Contact Manager</option>
+    <option>Consent Hub</option>
+</select>                           
+                        </div>
+                        <!-- Sub info -->
+                        <div class="sub-info">
+                            <pre>
+<code class="html hljs xml">
+&lt;select class="selectpicker show-tick"&gt;
+    &lt;option&gt;...&lt;/option&gt;
+&lt;/select&gt;
+</code>
+                            </pre>
+                        </div>
+                    </div>
+                    <!-- Sub item -->
+                    <div class="sub-item">
+                        <h2>Option with title</h2>
+                        <!-- Sub display -->
+                        <div class="sub-display">
+<select class="selectpicker">
+    <option title="App 1">Time Log</option>
+    <option title="App 2">Contact Manager</option>
+    <option title="App 3">Consent Hub</option>
+</select>                            
+                        </div>
+                        <!-- Sub info -->
+                        <div class="sub-info">
+                            <pre>
+<code class="html hljs xml">
+&lt;select class="selectpicker"&gt;
+    &lt;option title="App 1"&gt;...&lt;/option&gt;
+&lt;/select&gt; 
+</code>
+                            </pre>
+                        </div>
+                    </div>
+                    <!-- Sub item -->
+                    <div class="sub-item">
+                        <h2>Start with text</h2>
+                        <!-- Sub display -->
+                        <div class="sub-display">
+<select class="selectpicker" title='Please choose an app'>
+    <option>Time Log</option>
+    <option>Contact Manager</option>
+    <option>Consent Hub</option>
+</select>
+                                     
+                        </div>
+                        <!-- Sub info -->
+                        <div class="sub-info">
+                            <pre>
+<code class="html hljs xml">
+&lt;select class="selectpicker" title='Please choose an app'&gt;
+    &lt;option&gt;...&lt;/option&gt;
+&lt;/select&gt;
+</code>
+                            </pre>
+                        </div>
+                    </div>
+                    <!-- Sub item -->
+                    <div class="sub-item">
+                        <h2>Disabled</h2>
+                        <!-- Sub display -->
+                        <div class="sub-display">
+<select class="selectpicker" disabled>
+    <option>Time Log</option>
+    <option>Contact Manager</option>
+    <option>Consent Hub</option>
+</select>                           
+                        </div>
+                        <!-- Sub info -->
+                        <div class="sub-info">
+                            <pre>
+<code class="html hljs xml">
+&lt;select class="selectpicker" disabled&gt;
+    &lt;option&gt;...&lt;/option&gt;
+&lt;/select&gt;
+</code>
+                            </pre>
+                        </div>
+                    </div>
+                    <!-- Sub item -->
+                    <div class="sub-item">
+                        <h2>Disabled Option</h2>
+                        <!-- Sub display -->
+                        <div class="sub-display">
+<select class="selectpicker">
+    <option>Time Log</option>
+    <option disabled="disabled">Contact Manager</option>
+    <option>Consent Hub</option>
+</select>                           
+                        </div>
+                        <!-- Sub info -->
+                        <div class="sub-info">
+                            <pre>
+<code class="html hljs xml">
+&lt;select class="selectpicker"&gt;
+    &lt;option&gt;...&lt;/option&gt;
+    &lt;option disabled="disabled"&gt;...&lt;/option&gt;
+&lt;/select&gt;
+</code>
+                            </pre>
+                        </div>
+                    </div>
+                    <!-- Sub item -->
+                    <div class="sub-item">
+                        <h2>WITH OPTION GROUPS</h2>
+                        <!-- Sub display -->
+                        <div class="sub-display">
+<select class="selectpicker">
+    <optgroup label="Communication">
+      <option>Sms Marketing</option>
+      <option>SIP</option>
+      <option>Direct Line</option>
+    </optgroup>
+    <optgroup label="Human Resource">
+      <option>Time Log</option>
+      <option>Payroll</option>
+      <option>Staff</option>
+    </optgroup>
+</select>                            
+                        </div>
+                        <!-- Sub info -->
+                        <div class="sub-info">
+                            <pre>
+<code class="html hljs xml">
+&lt;select class="selectpicker"&gt;
+    &lt;optgroup label="Communication"&gt;
+      &lt;option&gt;...&lt;/option&gt;
+      &lt;/optgroup&gt;
+    &lt;optgroup label="Human Resources"&gt;
+      &lt;option&gt;...&lt;/option&gt;
+      &lt;/optgroup&gt;
+&lt;/select&gt;
+</code>
+                            </pre>
+                        </div>
+                    </div>
+                    
+                    <!-- Sub item -->
+                    <div class="sub-item">
+                        <h2>multiple select</h2>
+                        <!-- Sub display -->
+                        <div class="sub-display">
+<select class="selectpicker" multiple>
+    <option>Time Log</option>
+    <option>Contact Manager</option>
+    <option>Consent Hub</option>
+</select>                            
+                        </div>
+                        <!-- Sub info -->
+                        <div class="sub-info">
+                            <pre>
+<code class="html hljs xml">
+&lt;select class="selectpicker" multiple&gt;
+    &lt;option&gt;...&lt;/option&gt;
+&lt;/select&gt;
+</code>
+                            </pre>
+                        </div>
+                    </div>
+                    <!-- Sub item -->
+                    <div class="sub-item">
+                        <h2>limit the number of elements</h2>
+                        <!-- Sub display -->
+                        <div class="sub-display">
+<select class="selectpicker" multiple data-max-options="2">
+    <option>Time Log</option>
+    <option>Contact Manager</option>
+    <option>Consent Hub</option>
+</select>                           
+                        </div>
+                        <!-- Sub info -->
+                        <div class="sub-info">
+                            <pre>
+<code class="html hljs xml">
+&lt;select class="selectpicker" multiple data-max-options="2"&gt;
+    &lt;option&gt;...&lt;/option&gt;
+&lt;/select&gt;
+</code>
+                            </pre>
+                        </div>
+                    </div>
+                    <!-- Sub item -->
+                    <div class="sub-item">
+                        <h2>Count</h2>
+                        <!-- Sub display -->
+                        <div class="sub-display">
+<select class="selectpicker" multiple data-selected-text-format="count">
+    <option>Time Log</option>
+    <option>Contact Manager</option>
+    <option>Consent Hub</option>
+</select>                            
+                        </div>
+                        <!-- Sub info -->
+                        <div class="sub-info">
+                            <pre>
+<code class="html hljs xml">
+&lt;select class="selectpicker" multiple data-selected-text-format="count"&gt;
+    &lt;option&gt;...&lt;/option&gt;
+&lt;/select&gt;
+</code>
+                            </pre>
+                        </div>
+                    </div>
+                    <!-- Sub item -->
+                    <div class="sub-item">
+                        <h2>COUNT SELECTED ITEMS > X</h2>
+                        <!-- Sub display -->
+                        <div class="sub-display">
+<select class="selectpicker" multiple data-selected-text-format="count>2">
+    <option>Time Log</option>
+    <option>Contact Manager</option>
+    <option>Consent Hub</option>
+</select>                          
+                        </div>
+                        <!-- Sub info -->
+                        <div class="sub-info">
+                            <pre>
+<code class="html hljs xml">
+&lt;select class="selectpicker" multiple data-selected-text-format="count>2"&gt;
+    &lt;option&gt;...&lt;/option&gt;
+&lt;/select&gt;
+</code>
+                            </pre>
+                        </div>
+                    </div>
+                    <!-- Sub item -->
+                    <div class="sub-item">
+                        <h2>LIVE SEARCH</h2>
+                        <!-- Sub display -->
+                        <div class="sub-display">
+<select class="selectpicker" data-live-search="true">
+    <option>Time Log</option>
+    <option>Contact Manager</option>
+    <option>Consent Hub</option>
+</select>                           
+                        </div>
+                        <!-- Sub info -->
+                        <div class="sub-info">
+                            <pre>
+<code class="html hljs xml">
+&lt;select class="selectpicker" data-live-search="true"&gt;
+    &lt;option&gt;...&lt;/option&gt;
+&lt;/select&gt;
+</code>
+                            </pre>
+                        </div>
+                    </div>
+                    <!-- Sub item -->
+                    <div class="sub-item">
+                        <h2>Alternate Colors</h2>
+                        <!-- Sub display -->
+                        <div class="sub-display">
+<select class="selectpicker" data-style="btn-primary">
+    <option>Time Log</option>
+    <option>Contact Manager</option>
+    <option>Consent Hub</option>
+</select>
+<select class="selectpicker" data-style="btn-info">
+    <option>Time Log</option>
+    <option>Contact Manager</option>
+    <option>Consent Hub</option>
+</select>
+<select class="selectpicker" data-style="btn-danger">
+    <option>Time Log</option>
+    <option>Contact Manager</option>
+    <option>Consent Hub</option>
+</select>
+<select class="selectpicker" data-style="btn-success">
+    <option>Time Log</option>
+    <option>Contact Manager</option>
+    <option>Consent Hub</option>
+</select>
+<select class="selectpicker" data-style="btn-warning">
+    <option>Time Log</option>
+    <option>Contact Manager</option>
+    <option>Consent Hub</option>
+</select>                            
+                            
+              
+                        </div>
+                        <!-- Sub info -->
+                        <div class="sub-info">
+                            <pre>
+<code class="html hljs xml">
+&lt;select class="selectpicker" data-style="btn-primary"&gt;
+    &lt;option&gt;...&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;select class="selectpicker" data-style="btn-info"&gt;
+    &lt;option&gt;...&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;select class="selectpicker" data-style="btn-danger"&gt;
+    &lt;option&gt;...&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;select class="selectpicker" data-style="btn-success"&gt;
+    &lt;option&gt;...&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;select class="selectpicker" data-style="btn-warning"&gt;
+    &lt;option&gt;...&lt;/option&gt;
+&lt;/select&gt;
+</code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="footer"></footer>
+    </div>
+	
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../source/dist/js/bootstrap.min.js"></script>
+	<script src="../source/js/highlight.pack.js"></script>
+    <script src="../source/js/main.js"></script>
+    <script src="../source/js/component.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    
+</body>
+</html>
