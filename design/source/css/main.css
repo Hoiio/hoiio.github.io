@@ -69,6 +69,8 @@ pre, code, .hljs{
     line-height: 1.7
 }
 
+
+
 /*======= Header =======*/
 
 .header{
@@ -223,13 +225,19 @@ ul.category{
 
 .sub-item{
     border-bottom: 1px solid #ddd;
-    margin-top: 30px; 
+    margin-top: 40px; 
     padding-left:20px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }  
+
+
 
 .sub-item:last-child{
     border-bottom: 0;   
+}
+
+.item-info + .sub-item{
+    margin-top: 20px !important;
 }
 
 .sub-info{
@@ -258,7 +266,8 @@ ul.category{
 }
 
 
-h2 + p{
+h2 + p,
+h2 + .row{
     margin-top: 20px;
     margin-bottom: 30px;
 }
@@ -291,6 +300,10 @@ img {
 }
 
 /*======= Component =======*/
+
+.row{
+    margin-bottom: 15px;   
+}
 
 /* Button */
 .component-button .btn{
@@ -376,17 +389,90 @@ img {
 .f-danger-hover { background-color:#e95849 }
 .f-danger-focus { background-color:#e32e1c }
 
-.transform{
-    border: 1px solid #ccc;
-    border-radius: 4px;   
+
+table {
+    margin-bottom: 0 !important;   
 }
 
-.transform .fill{
+th{
+    padding: 10px 20px  !important;
+    font-family: "Proxima";
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+td{
+    padding: 20px !important;   
+}
+
+td.type-info{
+    vertical-align: middle !important;
+}
+
+
+
+.system-color .fill{
+    margin: 0 !important ;   
+}
+
+.system-color .transform{
+    
+}
+
+.system-color .transform .fill{
     padding: 10px;   
     margin: 0;
 }
 
 
+.system-typography .transform h1{ 
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    color: #4d4d4d;
+}
+
+.system-typography .transform h2{ 
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    color: #4d4d4d;
+}
+
+.system-typography .transform h1, 
+.system-typography .transform h2,
+.system-typography .transform h3, 
+.system-typography .transform h4, 
+.system-typography .transform h5, 
+.system-typography .transform h6, 
+.system-typography .transform p, 
+.system-typography .transform .lead, 
+.system-typography .transform blockquote{
+    margin: 15px 0;
+}
+
+[class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 20px;
+}
+
+.the-icons {
+    font-size: 14px;
+    line-height: 35px;
+}
+.span3 {
+    width: 220px;
+}
+
+
+.i-name{
+    margin-left: 5px; 
+    
+}
 
 
 

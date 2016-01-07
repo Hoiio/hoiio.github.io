@@ -27,7 +27,7 @@ $(document).ready(function() {
     hoiio += "    <li class=\"item\"><a href=\"\/design\/system\/color\">Color<\/a><\/li>";
     hoiio += "    <li class=\"item\"><a href=\"\/design\/system\/typography\">Typography<\/a><\/li>";
     hoiio += "    <li class=\"item\"><a href=\"\/design\/system\/icon\">Icon<\/a><\/li>";
-    hoiio += "    <li class=\"item\"><a href=\"\/design\/system\/image\">Image<\/a><\/li>";
+   // hoiio += "    <li class=\"item\"><a href=\"\/design\/system\/image\">Image<\/a><\/li>";
     hoiio += "<\/ul>";
     hoiio += "<ul class=\"category\">";
     hoiio += "    <li class=\"title\">Components<\/li>";
