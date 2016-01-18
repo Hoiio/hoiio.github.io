@@ -547,7 +547,7 @@
 .ui.inverted.segment,
 .ui.primary.inverted.segment {
   background: #1B1C1D;
-  color: #555555;
+  color: #FFFFFF;
 }
 
 /* Nested */
@@ -555,7 +555,7 @@
   color: #414141;
 }
 .ui.inverted.segment .inverted.segment {
-  color: #555555;
+  color: #FFFFFF;
 }
 
 /* Attached */

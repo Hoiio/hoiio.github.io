@@ -352,7 +352,7 @@ ol.ui.list ol li,
 }
 .ui.inverted.list .list > .item .header,
 .ui.inverted.list > .item .header {
-  color: #555555;
+  color: #FFFFFF;
 }
 .ui.inverted.list .list > .item .description,
 .ui.inverted.list > .item .description {
@@ -363,7 +363,7 @@ ol.ui.list ol li,
 .ui.inverted.list .list > a.item,
 .ui.inverted.list > a.item {
   cursor: pointer;
-  color: #555555;
+  color: #FFFFFF;
 }
 .ui.inverted.list .list > a.item:hover,
 .ui.inverted.list > a.item:hover {
@@ -372,7 +372,7 @@ ol.ui.list ol li,
 
 /* Linking Content */
 .ui.inverted.list .item a:not(.ui) {
-  color: #555555 !important;
+  color: #FFFFFF !important;
 }
 .ui.inverted.list .item a:not(.ui):hover {
   color: #006aa6 !important;

@@ -24,7 +24,7 @@
   color: #626262;
   text-transform: none;
   font-weight: 500;
-  border: 0px solid transparent;
+  border: 1px solid transparent;
   border-radius: 0.28571429rem;
   -webkit-transition: background 0.05s ease;
   transition: background 0.05s ease;
@@ -712,7 +712,7 @@ a.ui.basic.warning.label:hover {
 .ui.basic.label {
   color: #6f6f6f;
   background: #ffffff;
-  border: #d9d9d9;
+  border-color: #d9d9d9;
 }
 
 /* Link */
@@ -720,7 +720,7 @@ a.ui.basic.label:hover {
   text-decoration: none;
   background: #ffffff;
   color: #555555;
-  border: #b3b3b3;
+  border-color: #b3b3b3;
 }
 
 /* Pointing */
@@ -744,7 +744,7 @@ a.ui.basic.label:hover {
 
 .ui.inverted.labels .label,
 .ui.inverted.label {
-  color: #555555 !important;
+  color: #FFFFFF !important;
 }
 
 /*-------------------

@@ -825,13 +825,13 @@
 /* Text Color */
 .ui.inverted.table {
   background: #333333;
-  color: #555555;
+  color: #FFFFFF;
   border: none;
 }
 .ui.inverted.table th {
   background-color: rgba(0, 0, 0, 0.15);
   border-color: rgba(255, 255, 255, 0.1) !important;
-  color: #555555;
+  color: #FFFFFF;
 }
 .ui.inverted.table tr td {
   border-color: rgba(255, 255, 255, 0.1) !important;

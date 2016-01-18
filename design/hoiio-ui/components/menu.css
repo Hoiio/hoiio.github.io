@@ -301,7 +301,7 @@
 /* Inverted */
 .ui.inverted.menu .search.dropdown.item > .search,
 .ui.inverted.menu .search.dropdown.item > .text {
-  color: #555555;
+  color: #FFFFFF;
 }
 
 /* Vertical */
@@ -1018,7 +1018,7 @@ Floated Menu / Item
   border-color: #cccccc;
 }
 .ui.secondary.inverted.pointing.menu .item {
-  color: #555555;
+  color: #FFFFFF;
 }
 .ui.secondary.inverted.pointing.menu .header.item {
   color: #FFFFFF !important;
@@ -1309,7 +1309,7 @@ Floated Menu / Item
 .ui.inverted.menu .item,
 .ui.inverted.menu .item > a:not(.ui) {
   background: transparent;
-  color: #555555;
+  color: #FFFFFF;
 }
 .ui.inverted.menu .item.menu {
   background: transparent;
