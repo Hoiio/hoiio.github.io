@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hoiio Design Standards 2016">
+    <meta name="keywords" content="design, ux, standard, hoiio, framework, html, css, interface, component, bootstrap">
+    <meta name="author" content="Marcus">
+    <link rel="icon" href="source/favicon.ico">
+
+    <title>Grid - Hoiio Design Standards</title>
+    <!-- jQuery --->
+    <script src="../source/js/jquery-2.1.4.min.js"></script>
+    <script src="../source/js/modernizr-custom.js"></script>
+
+    <!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="../../hoiio-ui/semantic.css" />
+	<!-- Main styles -->
+	<link rel="stylesheet" type="text/css" href="../source/css/hoiio-semantic.css" />
+	<!-- Highlight -->
+	<link rel="stylesheet" type="text/css" href="../source/css/tomorrow.css" />
+	
+</head>
+<body>
+    <div class="se-pre-con"></div>
+    
+    <!-- Main container -->
+	<div class="container" id="page">
+		<!-- Header -->
+		<header class="header"></header>
+		<!-- Main Content -->
+		<div class="body">
+            <!-- Sidebar -->
+            <div id="sidebar"></div>
+            <!-- Divider -->
+            <div class="vertical-divider"></div>
+            <!-- Content -->
+            <div id="content">
+                <div class="content-item system-grid">
+                    <div class="item-info">
+                        <div class="item-title"><h1>Grid</h1></div>
+                        <div class="item-description">
+                            
+                            
+                        </div>
+                    </div>
+                    <!-- Sub item -->
+                    <div class="sub-item">
+                        <h2>Standard</h2>
+                        <div class="sub-item-block cols">
+                            <h3>Columns</h3>
+                            <!-- Sub display -->
+                            <div class="view-code">
+                                <button class="ui button tiny" onclick="show_code('grid-col');">View Code</button>
+                            </div>
+                            <div class="sub-display">
+                                <p>The grid system consists 16 columns. Columns have no gutters. The border and padding is simply included in the width of the grid columns.</p>
+<div class="ui grid">
+  <div class="four wide column"></div>
+  <div class="four wide column"></div>
+  <div class="four wide column"></div>
+  <div class="four wide column"></div>
+  <div class="two wide column"></div>
+  <div class="eight wide column"></div>
+  <div class="six wide column"></div>
+</div>
+
+
+                            </div>
+                            <!-- Sub info -->
+                            <div id="grid-col" class="sub-info">
+                            <pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui grid&quot;&gt;
+  &lt;div class=&quot;four wide column&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;four wide column&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;four wide column&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;four wide column&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;two wide column&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;eight wide column&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;six wide column&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                        </div>
+                        <div class="sub-item-block rows">
+                            <h3>Rows</h3>
+                            <!-- Sub display -->
+                            <div class="view-code">
+                                <button class="ui button tiny" onclick="show_code('grid-row');">View Code</button>
+                            </div>
+                            <div class="sub-display">
+                                <p>Rows are groups of columns which are aligned horizontally. The columns are nested inside of a row.</p>
+<div class="ui four column grid">
+  <div class="row">
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+  </div>
+  <div class="column"></div>
+  <div class="column"></div>
+  <div class="column"></div>
+  <div class="column"></div>
+</div>
+
+
+                            </div>
+                            <!-- Sub info -->
+                            <div id="grid-row" class="sub-info">
+                            <pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui four column grid&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sub item -->
+                    <div class="sub-item">
+                        <h2>Forms</h2>
+                        <div class="sub-item-block">
+                            <h3>Expand Grid</h3>
+                            <!-- Sub display -->
+                            <div class="view-code">
+                                <button class="ui button tiny" onclick="show_code('grid-form1');">View Code</button>
+                            </div>
+                            <div class="sub-display">
+                                <p>The padding left and right of columns increased by 0.5rem.</p>
+<!-- Normal Grid -->                                
+<div class="ui grid">
+  <div class="three column row">
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+  </div>
+</div>  
+<!-- Expand Grid -->                                 
+<div class="ui expand grid">
+  <div class="three column row">
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+  </div>
+</div>
+                            </div>
+                            <!-- Sub info -->
+                            <div id="grid-form1" class="sub-info">
+                            <pre>
+<code class="html hljs xml">
+&lt;!-- Normal Grid --&gt;                                
+&lt;div class=&quot;ui grid&quot;&gt;
+  &lt;div class=&quot;three column row&quot;&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;  
+
+&lt;!-- Expand Grid --&gt;                                 
+&lt;div class=&quot;ui expand grid&quot;&gt;
+  &lt;div class=&quot;three column row&quot;&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                        </div>
+                        <div class="sub-item-block rows">
+                            <h3>Content Centering</h3>
+                            <!-- Sub display -->
+                            <div class="view-code">
+                                <button class="ui button tiny" onclick="show_code('grid-form2');">View Code</button>
+                            </div>
+                            <div class="sub-display">
+                                <p>Add a <code>centered</code> class to center the column contents inside the grid.</p>
+<div class="ui two column centered grid">
+  <div class="column"></div>
+  <div class="four column centered row">
+    <div class="column"></div>
+    <div class="column"></div>
+  </div>
+</div>
+
+
+                            </div>
+                            <!-- Sub info -->
+                            <div id="grid-form2" class="sub-info">
+                            <pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui two column centered grid&quot;&gt;
+  &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;four column centered row&quot;&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        <div class="sub-item-block cols">
+                            <h3>Column clearing</h3>
+                            <!-- Sub display -->
+                            <div class="view-code">
+                                <button class="ui button tiny" onclick="show_code('grid-form3');">View Code</button>
+                            </div>
+                            <div class="sub-display">
+                                <p><code>floated</code> to prevent awkward wrapping with uneven content.</p>
+                           
+<div class="ui grid">
+    <!-- Floated -->         
+    <div class="four column row">
+        <div class="left floated column"></div>
+        <div class="right floated column"></div>
+    </div>
+    
+    <!-- Non Floated -->     
+    <div class="row">
+        <div class="three wide column"></div>
+        <div class="eight wide column"></div>
+        <div class="five wide column"></div>
+    </div>
+</div>
+
+
+                            </div>
+                            <!-- Sub info -->
+                            <div id="grid-form3" class="sub-info">
+                            <pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui grid&quot;&gt;
+    &lt;!-- Floated --&gt;         
+    &lt;div class=&quot;four column row&quot;&gt;
+        &lt;div class=&quot;left floated column&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;right floated column&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;!-- Non Floated --&gt;     
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;three wide column&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;eight wide column&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;five wide column&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sub item -->
+                    <div class="sub-item">
+                        <h2>Variations</h2>
+                        
+                        <div class="sub-item-block">
+                            <h3>Three equal columns</h3>
+                            <div class="view-code">
+                                <button class="ui button tiny" onclick="show_code('grid-vary1');">View Code</button>
+                            </div>
+                            <!-- Sub display -->
+                            <div class="sub-display">
+<div class="ui grid">
+  <div class="three column row">
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+  </div>
+</div>
+                            </div>
+                            <!-- Sub info -->
+                            <div id="grid-vary1" class="sub-info">
+                            <pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui grid&quot;&gt;
+  &lt;div class=&quot;three column row&quot;&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                        </div>
+                        <div class="sub-item-block">
+                            <h3>Three unequal columns</h3>
+                            <!-- Sub display -->
+                            <div class="view-code">
+                                <button class="ui button tiny" onclick="show_code('grid-vary2');">View Code</button>
+                            </div>
+                            <div class="sub-display">
+<div class="ui grid">
+  <div class="row">
+    <div class="three wide column"></div>
+    <div class="eight wide column"></div>
+    <div class="five wide column"></div>
+  </div>
+</div>      
+                            </div>
+                            <!-- Sub info -->
+                            <div id="grid-vary2" class="sub-info">
+                            <pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui grid&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;three wide column&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;eight wide column&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;five wide column&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt; 
+</code>
+</pre>
+                        </div>
+                        </div>
+                        <div class="sub-item-block">
+                            <h3>Two columns</h3>
+                            <div class="view-code">
+                                <button class="ui button tiny" onclick="show_code('grid-vary3');">View Code</button>
+                            </div>
+                            <!-- Sub display -->
+                            <div class="sub-display">
+<div class="ui grid">
+  <div class="row">
+    <div class="six wide column"></div>
+    <div class="ten wide column"></div>
+  </div>
+</div>
+                            </div>
+                            <!-- Sub info -->
+                            <div id="grid-vary3" class="sub-info">
+                            <pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui grid&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;six wide column&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;ten wide column&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                        </div>
+                        
+                        
+                    </div>
+                   
+                    
+                </div>   
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="footer"></footer>
+    </div>
+	
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../../hoiio-ui/semantic.min.js"></script>
+	<script src="../source/js/highlight.pack.js"></script>
+    <script src="../source/js/main.js"></script>
+    <script src="../source/js/component.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    
+</body>
+</html>

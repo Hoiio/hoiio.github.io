@@ -1,19 +1,38 @@
 $(document).ready(function() {
+    $('.ui.dropdown').dropdown();
     
     //Add Header
     var header="";
+    header += "<div class=\"container\">";
+    header += " <nav>";
+    header += "     <a href=\"\/design\/\" class='logo'>";
+    header += "        <i class=\"icon compass\"><\/i>";
+    header += "     <\/a>";
+    header += "     <ul>";
+    header += "         <li>";
+    header += "             <div class=\"heading\">Design Standards<\/div>";
+    header += "         </li>";
+    header += "         <li>";
+    header += "    <span class=\"pull-right poweredby\">Powered by<a href=\"http:\/\/hoiio.com\"><img src=\"..\/source\/img\/hoiio-logo.png\"\/><\/a><\/span>";
+    header += "         </li>";
+    header += "     </ul>";
+	header += " </nav>";
+    header += "<\/div>";
+    /*
+    var header="";
     header += "<div class=\"logo\">";
     header += "    <a href=\"\/design\/\">";
-    header += "        <div class=\"h-icon h-icon-compass\"><\/div>";
-    header += "        <h2 class=\"heading\">Design component<\/h2>";
+    header += "        <i class=\"icon compass\"><\/i>";
+    header += "        <h2 class=\"heading\">Design Standards<\/h2>";
     header += "    <\/a>";
     header += "    <span class=\"pull-right poweredby\">Powered by<a href=\"http:\/\/hoiio.com\"><img src=\"..\/source\/img\/hoiio-logo.png\"\/><\/a><\/span>";
-    header += "<\/div>";
+    header += "<\/div>";*/
     
-    $("#page .header").append(header);
+    $("#detail .header").append(header);
     
     //Add Sidebar
     var hoiio="";
+    hoiio += "<div>";
     hoiio += "<ul class=\"category\">";
     hoiio += "    <li class=\"title\">Framework<\/li>";
     hoiio += "    <li class=\"item\"><a href=\"\/design\/framework\/principle\">Design Principles<\/a><\/li>";
@@ -37,13 +56,15 @@ $(document).ready(function() {
     hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/select\">Select<\/a><\/li>";
     hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/label\">Label<\/a><\/li>";
     hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/navigation\">Navigation<\/a><\/li>";
+    hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/tab\">Tab<\/a><\/li>";
+    hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/breadcrumb\">Breadcrumb<\/a><\/li>";
     hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/table\">Table<\/a><\/li>";
     hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/dialog\">Dialog<\/a><\/li>";
-    hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/checkboxes\">Checkboxes<\/a><\/li>";
-    hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/switches\">Switches<\/a><\/li>";
+    hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/checkbox\">Checkbox & Radio<\/a><\/li>";
+    hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/switch\">Switch<\/a><\/li>";
     hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/progress\">Progress<\/a><\/li>";
     hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/tooltip\">Tooltip<\/a><\/li>";
-    hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/tab\">Tab<\/a><\/li>";
+    
     hoiio += "<\/ul>";
     hoiio += "<ul class=\"category\">";
     hoiio += "    <li class=\"title\">Patterns<\/li>";
@@ -55,16 +76,24 @@ $(document).ready(function() {
     hoiio += "    <li class=\"item\"><a href=\"\/design\/pattern\/setting\">Settings<\/a><\/li>";
     hoiio += "    <li class=\"item\"><a href=\"\/design\/pattern\/date\">Date Picker<\/a><\/li>";
     hoiio += "<\/ul>";
+    hoiio += "<\/div>";
 
-    $("#page #sidebar").append(hoiio);
+    $("#page .sidebar").append(hoiio);
     
     //Add Footer
     $("footer").text("© Copyright 2016. Hoiio Pte Ltd.");
     
     //Change height between sidebar and content
-    var height = Math.max($("#sidebar").height(), $("#content").height());
-    $("#sidebar").height(height);
-    $("#content").height(height);
+    
+    /*var height_sidebar = Math.max($("#left-side").height(), $("#right-side").height());*/
+    var height_sidebar = $("#right-side").height();
+    var height_content = $("#left-side").height();
+    if (height_content < height_sidebar) { 
+        $("#left-side").height(height_sidebar);
+        $(".body-content").height(height_sidebar);
+                                          
+    }
+    
     
     function capitalise(string) {
         return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
@@ -77,9 +106,34 @@ $(document).ready(function() {
         $("title").text(capitalise(x) + " - Hoiio Design Standards"); 
     }
     
+    
+    
+    
+   
+    
 });
 
 $(window).load(function() {
     // Animate loader off screen
     $(".se-pre-con").fadeOut("slow");;
 });
+
+ $(".menu-collapsed").click(function() {
+    $(this).toggleClass("menu-expanded");
+});
+
+$(':checkbox').radiocheck();
+$(':radio').radiocheck();
+$('[data-toggle="switch"]').bootstrapSwitch();
+$('.onoffswitch .icons').remove();
+
+
+function show_code(id) {
+   var e = document.getElementById(id);
+   if(e.style.display == 'block')
+      e.style.display = 'none';
+   else
+      e.style.display = 'block';
+}
+
+

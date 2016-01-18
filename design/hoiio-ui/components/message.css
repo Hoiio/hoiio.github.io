@@ -1,0 +1,373 @@
+/*!
+ * # Semantic UI 2.1.8 - Message
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2015 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+            Message
+*******************************/
+
+.ui.message {
+  position: relative;
+  min-height: 1em;
+  margin: 1em 0em;
+  background: #F8F8F9;
+  padding: 1em 1.5em;
+  line-height: 1.78571428;
+  color: #414141;
+  -webkit-transition: opacity 0.05s ease, color 0.05s ease, background 0.05s ease, box-shadow 0.05s ease;
+  transition: opacity 0.05s ease, color 0.05s ease, background 0.05s ease, box-shadow 0.05s ease;
+  border-radius: 0.28571429rem;
+  box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.22) inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+.ui.message:first-child {
+  margin-top: 0em;
+}
+.ui.message:last-child {
+  margin-bottom: 0em;
+}
+
+/*--------------
+     Content
+---------------*/
+
+
+/* Header */
+.ui.message .header {
+  display: block;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  margin: -0.14285em 0em 0rem 0em;
+}
+
+/* Default font size */
+.ui.message .header:not(.ui) {
+  font-size: 1.14285714em;
+}
+
+/* Paragraph */
+.ui.message p {
+  opacity: 0.85;
+  margin: 0.75em 0em;
+}
+.ui.message p:first-child {
+  margin-top: 0em;
+}
+.ui.message p:last-child {
+  margin-bottom: 0em;
+}
+.ui.message .header + p {
+  margin-top: 0.25em;
+}
+
+/* List */
+.ui.message .list:not(.ui) {
+  text-align: left;
+  padding: 0em;
+  opacity: 0.85;
+  list-style-position: inside;
+  margin: 0.5em 0em 0em;
+}
+.ui.message .list:not(.ui):first-child {
+  margin-top: 0em;
+}
+.ui.message .list:not(.ui):last-child {
+  margin-bottom: 0em;
+}
+.ui.message .list:not(.ui) li {
+  position: relative;
+  list-style-type: none;
+  margin: 0em 0em 0.3em 1em;
+  padding: 0em;
+}
+.ui.message .list:not(.ui) li:before {
+  position: absolute;
+  content: '•';
+  left: -1em;
+  height: 100%;
+  vertical-align: baseline;
+}
+.ui.message .list:not(.ui) li:last-child {
+  margin-bottom: 0em;
+}
+
+/* Icon */
+.ui.message > .icon {
+  margin-right: 0.6em;
+}
+
+/* Close Icon */
+.ui.message > .close.icon {
+  cursor: pointer;
+  position: absolute;
+  margin: 0em;
+  top: 0.60714286em;
+  right: 0.5em;
+  opacity: 0.7;
+  -webkit-transition: opacity 0.05s ease;
+  transition: opacity 0.05s ease;
+}
+.ui.message > .close.icon:hover {
+  opacity: 1;
+}
+
+/* First / Last Element */
+.ui.message > :first-child {
+  margin-top: 0em;
+}
+.ui.message > :last-child {
+  margin-bottom: 0em;
+}
+
+
+/*******************************
+            Coupling
+*******************************/
+
+.ui.dropdown .menu > .message {
+  margin: 0px -1px;
+}
+
+
+/*******************************
+            States
+*******************************/
+
+
+/*--------------
+    Visible
+---------------*/
+
+.ui.visible.visible.visible.visible.message {
+  display: block;
+}
+.ui.icon.visible.visible.visible.visible.message {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*--------------
+     Hidden
+---------------*/
+
+.ui.hidden.hidden.hidden.hidden.message {
+  display: none;
+}
+
+
+/*******************************
+            Variations
+*******************************/
+
+
+/*--------------
+    Compact
+---------------*/
+
+.ui.compact.message {
+  display: inline-block;
+}
+
+/*--------------
+    Attached
+---------------*/
+
+.ui.attached.message {
+  margin-bottom: -1px;
+  border-radius: 0.28571429rem 0.28571429rem 0em 0em;
+  box-shadow: 0em 0em 0em 1px #cccccc inset;
+  margin-left: -1px;
+  margin-right: -1px;
+}
+.ui.attached + .ui.attached.message:not(.top):not(.bottom) {
+  margin-top: -1px;
+  border-radius: 0em;
+}
+.ui.bottom.attached.message {
+  margin-top: -1px;
+  border-radius: 0em 0em 0.28571429rem 0.28571429rem;
+  box-shadow: 0em 0em 0em 1px #cccccc inset, 0px 1px 2px 0 #cccccc;
+}
+.ui.bottom.attached.message:not(:last-child) {
+  margin-bottom: 1em;
+}
+.ui.attached.icon.message {
+  width: auto;
+}
+
+/*--------------
+      Icon
+---------------*/
+
+.ui.icon.message {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.ui.icon.message > .icon:not(.close) {
+  display: block;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: auto;
+  line-height: 1;
+  vertical-align: middle;
+  font-size: 3em;
+  opacity: 0.8;
+}
+.ui.icon.message > .content {
+  display: block;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  vertical-align: middle;
+}
+.ui.icon.message .icon:not(.close) + .content {
+  padding-left: 0rem;
+}
+.ui.icon.message .circular.icon {
+  width: 1em;
+}
+
+/*--------------
+    Floating
+---------------*/
+
+.ui.floating.message {
+  box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.22) inset, 0px 2px 4px 0px rgba(34, 36, 38, 0.12), 0px 2px 10px 0px rgba(34, 36, 38, 0.08);
+}
+
+/*--------------
+     Colors
+---------------*/
+
+.ui.black.message {
+  background-color: #1B1C1D;
+  color: #555555;
+}
+
+/*--------------
+     Types
+---------------*/
+
+
+/* Primary */
+.ui.primary.message {
+  background-color: #008bd9;
+  color: #FFFFFF;
+}
+.ui.primary.message,
+.ui.attached.primary.message {
+  box-shadow: 0px 0px 0px 1px #008bd9 inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+.ui.primary.message .header {
+  color: #007bc0;
+}
+
+/* Info */
+.ui.info.message {
+  background-color: #2BADD4;
+  color: #FFFFFF;
+}
+.ui.info.message,
+.ui.attached.info.message {
+  box-shadow: 0px 0px 0px 1px #2BADD4 inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+.ui.info.message .header {
+  color: #279cbf;
+}
+
+/* Warning */
+.ui.warning.message {
+  background-color: #e5791a;
+  color: #FFFFFF;
+}
+.ui.warning.message,
+.ui.attached.warning.message {
+  box-shadow: 0px 0px 0px 1px #e5791a inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+.ui.warning.message .header {
+  color: #ce6d17;
+}
+
+/* Error */
+.ui.error.message {
+  background-color: #e64333;
+  color: #FFFFFF;
+}
+.ui.error.message,
+.ui.attached.error.message {
+  box-shadow: 0px 0px 0px 1px #e64333 inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+.ui.error.message .header {
+  color: #e32e1c;
+}
+
+/* Success */
+.ui.success.message {
+  background-color: #19b37b;
+  color: #FFFFFF;
+}
+.ui.success.message,
+.ui.attached.success.message {
+  box-shadow: 0px 0px 0px 1px #19b37b inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+.ui.success.message .header {
+  color: #169d6c;
+}
+
+/* Colors */
+.ui.inverted.message,
+.ui.black.message {
+  background-color: #1B1C1D;
+  color: #555555;
+}
+
+/*--------------
+     Sizes
+---------------*/
+
+.ui.small.message {
+  font-size: 0.92857143em;
+}
+.ui.message {
+  font-size: 1em;
+}
+.ui.large.message {
+  font-size: 1.14285714em;
+}
+.ui.huge.message {
+  font-size: 1.42857143em;
+}
+.ui.massive.message {
+  font-size: 1.71428571em;
+}
+
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+
+
+/*******************************
+        Site Overrides
+*******************************/
+
