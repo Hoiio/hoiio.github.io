@@ -156,31 +156,31 @@
 ---------------------*/
 
 .ui.input.error input {
-  background-color: #e64333;
-  border-color: #e64333;
-  color: #FFFFFF;
+  background-color: #fff6f6;
+  border-color: #e0b4b4;
+  color: #9f3a38;
 }
 
 /* Error Placeholder */
 .ui.input.error input::-webkit-input-placeholder {
-  color: #ffffff;
+  color: #e7bdbc;
 }
 .ui.input.error input::-moz-placeholder {
-  color: #ffffff;
+  color: #e7bdbc;
 }
 .ui.input.error input::-ms-input-placeholder {
-  color: #ffffff;
+  color: #e7bdbc;
 }
 
 /* Focused Error Placeholder */
 .ui.input.error input:focus::-webkit-input-placeholder {
-  color: #ffffff;
+  color: #da9796;
 }
 .ui.input.error input:focus::-moz-placeholder {
-  color: #ffffff;
+  color: #da9796;
 }
 .ui.input.error input:focus::-ms-input-placeholder {
-  color: #ffffff;
+  color: #da9796;
 }
 
 
@@ -304,6 +304,7 @@
           flex: 0 0 auto;
   margin: 0;
   font-size: 1em;
+  border: 1px solid #ccc;
 }
 .ui.labeled.input > .label:not(.corner) {
   padding-top: 0.78571429em;
