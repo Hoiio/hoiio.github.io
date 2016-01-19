@@ -971,7 +971,7 @@
   background-color: transparent;
 }
 .ui.basic.button.primary {
-  color: #008bd9;
+  color: #008bd9 !important;
   border-color: #008bd9;
 }
 .ui.basic.button.primary:hover,
@@ -982,7 +982,7 @@
   border-color: #006aa6;
 }
 .ui.basic.button.info {
-  color: #2BADD4;
+  color: #2BADD4 !important;
   border-color: #2BADD4;
 }
 .ui.basic.button.info:hover,
@@ -993,7 +993,7 @@
   border-color: #228aaa;
 }
 .ui.basic.button.success {
-  color: #19b37b;
+  color: #19b37b !important;
   border-color: #19b37b;
 }
 .ui.basic.button.success:hover,
@@ -1004,7 +1004,7 @@
   border-color: #13865c;
 }
 .ui.basic.button.warning {
-  color: #e5791a;
+  color: #e5791a !important;
   border-color: #e5791a;
 }
 .ui.basic.button.warning:hover,
@@ -1015,7 +1015,7 @@
   border-color: #b76115;
 }
 .ui.basic.button.error {
-  color: #e64333;
+  color: #e64333 !important;
   border-color: #e64333;
 }
 .ui.basic.button.error:hover,

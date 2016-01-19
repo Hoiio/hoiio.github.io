@@ -1774,7 +1774,7 @@ input::selection {
 }
 
 .ui.basic.button.primary {
-  color: #008bd9;
+  color: #008bd9 !important;
   border-color: #008bd9;
 }
 
@@ -1787,7 +1787,7 @@ input::selection {
 }
 
 .ui.basic.button.info {
-  color: #2BADD4;
+  color: #2BADD4 !important;
   border-color: #2BADD4;
 }
 
@@ -1800,7 +1800,7 @@ input::selection {
 }
 
 .ui.basic.button.success {
-  color: #19b37b;
+  color: #19b37b !important;
   border-color: #19b37b;
 }
 
@@ -1813,7 +1813,7 @@ input::selection {
 }
 
 .ui.basic.button.warning {
-  color: #e5791a;
+  color: #e5791a !important;
   border-color: #e5791a;
 }
 
@@ -1826,7 +1826,7 @@ input::selection {
 }
 
 .ui.basic.button.error {
-  color: #e64333;
+  color: #e64333 !important;
   border-color: #e64333;
 }
 
