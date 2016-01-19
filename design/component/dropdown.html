@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hoiio Design Standards 2016">
+    <meta name="keywords" content="design, ux, standard, hoiio, framework, html, css, interface, component, semantic">
+    <meta name="author" content="Marcus">
+    <link rel="icon" href="source/favicon.ico">
+
+    <title>Dropdown - Hoiio Design Standards</title>
+    <!-- jQuery --->
+    <script src="../source/js/jquery-2.1.4.min.js"></script>
+    <script src="../source/js/modernizr-custom.js"></script>
+
+    <!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="../hoiio-ui/semantic.min.css" />
+	<!-- Main styles -->
+	<link rel="stylesheet" type="text/css" href="../source/css/hoiio-semantic.css" />
+	<!-- Highlight -->
+	<link rel="stylesheet" type="text/css" href="../source/css/tomorrow.css" />
+	
+</head>
+<body id="detail">
+    <div class="se-pre-con"></div>
+    <!-- Header -->
+    <header class="header"></header>
+    
+    
+    <!-- Main container -->
+	<div class="container component-dropdown" id="page">
+		
+        <div id="left-side">
+            <!-- Content -->
+            <div class="body-content">
+                <h1 class="head">Dropdown</h1>
+                <p class="description">A drop down menu is horizontal list of options that each contain a vertical menu. When you roll over or click one of the primary options in a drop down menu, a list of choices will "drop down" below the main menu.
+</p>
+
+<div class="ui dropdown">
+  Dropdown <i class="dropdown icon"></i>
+  <div class="menu">
+    <a href="#" class="item">Choice 1</a>
+    <a href="#" class="item">Choice 2</a>
+    <a href="#" class="item">Choice 3</a>
+  </div>
+</div>
+                <!-- Standard -->
+                <div class="display">
+
+                </div>
+                <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui dropdown&quot;&gt;
+  Dropdown &lt;i class=&quot;dropdown icon&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;menu&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;item&quot;&gt;&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                </div>
+                
+                <!-- States --> 
+                <div class="group-item">
+                    <h2>States</h2>
+                    <!-- Button -->
+                    <div class="item">
+                        <h3 class="title-item">Button</h3>
+                        <p></p>
+                        <div class="display">
+<div class="ui dropdown button">
+  Dropdown <i class="dropdown icon"></i>
+  <div class="menu">
+    <a href="#" class="item">Choice 1</a>
+    <a href="#" class="item">Choice 2</a>
+    <a href="#" class="item">Choice 3</a>
+  </div>
+</div>
+
+                        </div>
+
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui dropdown button&quot;&gt;
+  Dropdown &lt;i class=&quot;dropdown icon&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;menu&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;item&quot;&gt;&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                     </div>
+                    <!-- Disabled -->
+                    <div class="item">
+                        <h3 class="title-item">Disabled</h3>
+                        <p></p>
+                        <div class="display">
+<div class="ui dropdown button disabled">
+  Dropdown <i class="dropdown icon"></i>
+  <div class="menu">
+   
+  </div>
+</div>
+
+                        </div>
+
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui dropdown button disabled&quot;&gt;
+  Dropdown &lt;i class=&quot;dropdown icon&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;menu&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;item&quot;&gt;&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                     </div>
+                    
+                    <!-- Error -->
+                    <div class="item">
+                        <h3 class="title-item">Error</h3>
+                        <p></p>
+                        <div class="display">
+<div class="ui dropdown error">
+  Dropdown <i class="dropdown icon"></i>
+  <div class="menu">
+    <a href="#" class="item">Choice 1</a>
+    <a href="#" class="item">Choice 2</a>
+    <a href="#" class="item">Choice 3</a>
+  </div>
+</div>
+
+<div class="ui dropdown button error">
+  Dropdown <i class="dropdown icon"></i>
+  <div class="menu">
+    <a href="#" class="item">Choice 1</a>
+    <a href="#" class="item">Choice 2</a>
+    <a href="#" class="item">Choice 3</a>
+  </div>
+</div>                            
+                                     
+                        </div>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui dropdown error&quot;&gt;
+  Dropdown &lt;i class=&quot;dropdown icon&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;menu&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;item&quot;&gt;&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;ui dropdown button error&quot;&gt;
+  Dropdown &lt;i class=&quot;dropdown icon&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;menu&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;item&quot;&gt;&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;  
+</code>
+</pre>
+                        </div>
+                    </div>
+                  
+                </div>
+                
+                <!-- Variations -->
+                <div class="group-item">
+                    <h2>Variations</h2>
+                    <!-- Scrolling -->
+                    <div class="item">
+                        <h3 class="title-item">Scrolling</h3>
+                        <p>A dropdown can have its menu scroll.</p>
+                        <div class="display">
+<div class="ui dropdown button scrolling">
+  <input type="hidden" name="gender">
+  Select choice
+  <i class="dropdown icon"></i>
+  <div class="menu">
+    <a class="item">Choice 1</a>
+    <a class="item">Choice 2</a>
+    <a class="item">Choice 3</a>
+    <a class="item">Choice 4</a>
+    <a class="item">Choice 5</a>
+    <a class="item">Choice 6</a>
+    <a class="item">Choice 7</a>
+    <a class="item">Choice 8</a>
+    <a class="item">Choice 9</a>
+    <a class="item">Choice 10</a>
+    <a class="item">Choice 11</a>
+    <a class="item">Choice 12</a>
+    <a class="item">Choice 13</a>
+    <a class="item">Choice 14</a>
+    <a class="item">Choice 15</a>
+  </div>
+</div>
+                        </div>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui dropdown button scrolling&quot;&gt;
+  Dropdown &lt;i class=&quot;dropdown icon&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;menu&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;item&quot;&gt;&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <!-- Color -->
+                    <div class="item">
+                        <h3 class="title-item">Colors</h3>
+                        <p></p>
+                        <div class="display">
+<div class="ui dropdown primary">
+  Dropdown <i class="dropdown icon"></i>
+  <div class="menu">
+    <a href="#" class="item">Choice 1</a>
+    <a href="#" class="item">Choice 2</a>
+    <a href="#" class="item">Choice 3</a>
+  </div>
+</div>
+                            
+<div class="ui dropdown info">
+  Dropdown <i class="dropdown icon"></i>
+  <div class="menu">
+    <a href="#" class="item">Choice 1</a>
+    <a href="#" class="item">Choice 2</a>
+    <a href="#" class="item">Choice 3</a>
+  </div>
+</div>
+                            
+<div class="ui dropdown success">
+  Dropdown <i class="dropdown icon"></i>
+  <div class="menu">
+    <a href="#" class="item">Choice 1</a>
+    <a href="#" class="item">Choice 2</a>
+    <a href="#" class="item">Choice 3</a>
+  </div>
+</div>
+                 
+<div class="ui dropdown warning">
+  Dropdown <i class="dropdown icon"></i>
+  <div class="menu">
+    <a href="#" class="item">Choice 1</a>
+    <a href="#" class="item">Choice 2</a>
+    <a href="#" class="item">Choice 3</a>
+  </div>
+</div>
+
+<br><br>
+<div class="ui dropdown button primary">
+  Dropdown <i class="dropdown icon"></i>
+  <div class="menu">
+    <a href="#" class="item">Choice 1</a>
+    <a href="#" class="item">Choice 2</a>
+    <a href="#" class="item">Choice 3</a>
+  </div>
+</div>
+                            
+<div class="ui dropdown button info">
+  Dropdown <i class="dropdown icon"></i>
+  <div class="menu">
+    <a href="#" class="item">Choice 1</a>
+    <a href="#" class="item">Choice 2</a>
+    <a href="#" class="item">Choice 3</a>
+  </div>
+</div>
+                            
+<div class="ui dropdown button success">
+  Dropdown <i class="dropdown icon"></i>
+  <div class="menu">
+    <a href="#" class="item">Choice 1</a>
+    <a href="#" class="item">Choice 2</a>
+    <a href="#" class="item">Choice 3</a>
+  </div>
+</div>
+                 
+<div class="ui dropdown button warning">
+  Dropdown <i class="dropdown icon"></i>
+  <div class="menu">
+    <a href="#" class="item">Choice 1</a>
+    <a href="#" class="item">Choice 2</a>
+    <a href="#" class="item">Choice 3</a>
+  </div>
+</div>                            
+                            
+                        </div>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui dropdown primary&quot;&gt;
+  Dropdown &lt;i class=&quot;dropdown icon&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;menu&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;item&quot;&gt;&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;ui dropdown button primary&quot;&gt;
+  Dropdown &lt;i class=&quot;dropdown icon&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;menu&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;item&quot;&gt;&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                    </div>  
+                    
+                </div>
+                
+                <!-- Group -->
+                <div class="group-item">
+                    <h2>Group</h2>
+                    <!-- Disabled -->
+                    <div class="item">
+                        <h3 class="title-item"></h3>
+                        <p></p>
+                        <div class="display">
+<div class="ui buttons" style="margin-right:15px;">
+  <div class="ui button">Save</div>
+  <div class="ui button dropdown icon">
+    <i class="dropdown icon"></i>
+    <div class="menu">
+      <div class="item"><i class="pencil icon"></i> Edit Post</div>
+      <div class="item"><i class="remove icon"></i> Remove Post</div>
+      <div class="item"><i class="drive icon"></i> Archive Post</div>
+    </div>
+  </div>
+</div>
+
+<!-- Dropdown Icon Left -->                            
+<div class="ui buttons">
+  <div class="ui button dropdown icon left">
+    <i class="dropdown icon"></i>
+    <div class="menu">
+      <div class="item"><i class="pencil icon"></i> Edit Post</div>
+      <div class="item"><i class="remove icon"></i> Remove Post</div>
+      <div class="item"><i class="drive icon"></i> Archive Post</div>
+    </div>
+  </div>
+    <div class="ui button">Save</div>
+</div>
+                        </div>
+
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui buttons&quot;&gt;
+  &lt;div class=&quot;ui button&quot;&gt;Save&lt;/div&gt;
+  &lt;div class=&quot;ui button dropdown icon&quot;&gt;
+    &lt;i class=&quot;dropdown icon&quot;&gt;&lt;/i&gt;
+    &lt;div class=&quot;menu&quot;&gt;
+      &lt;div class=&quot;item&quot;&gt;&lt;i class=&quot;pencil icon&quot;&gt;&lt;/i&gt; Edit Post&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Dropdown Icon Left --&gt;                            
+&lt;div class=&quot;ui buttons&quot;&gt;
+  &lt;div class=&quot;ui button dropdown icon left&quot;&gt;
+    &lt;i class=&quot;dropdown icon&quot;&gt;&lt;/i&gt;
+    &lt;div class=&quot;menu&quot;&gt;
+      &lt;div class=&quot;item&quot;&gt;&lt;i class=&quot;pencil icon&quot;&gt;&lt;/i&gt; Edit Post&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+    &lt;div class=&quot;ui button&quot;&gt;Save&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                     </div>
+                    
+                </div>
+                
+                <!-- Types -->
+                <div class="group-item">
+                    <h2>Types</h2>
+                    <!-- Inline -->
+                    <div class="item">
+                        <h3 class="title-item">Inline</h3>
+                        <p>A dropdown can be formatted to appear inline in other content</p>
+                        <div class="display">
+
+
+  Show posts by 
+  <div class="ui inline dropdown">
+    <div class="text">
+      <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/jenny.jpg">
+      Jenny Hess
+    </div>
+    <i class="dropdown icon"></i>
+    <div class="menu">
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/jenny.jpg">
+        Jenny Hess
+      </div>
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/elliot.jpg">
+        Elliot Fu
+      </div>
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/stevie.jpg">
+        Stevie Feliciano
+      </div>
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/christian.jpg">
+        Christian
+      </div>
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/matt.jpg">
+        Matt
+      </div>
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/justen.jpg">
+        Justen Kitsune
+      </div>
+    </div>
+  </div>
+
+                        </div>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+Show posts by 
+&lt;div class=&quot;ui inline dropdown&quot;&gt;
+&lt;div class=&quot;text&quot;&gt;
+  &lt;img class=&quot;ui avatar image&quot; src=&quot;jenny.jpg&quot;&gt;
+  Jenny Hess
+&lt;/div&gt;
+&lt;i class=&quot;dropdown icon&quot;&gt;&lt;/i&gt;
+&lt;div class=&quot;menu&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;
+    &lt;img class=&quot;ui avatar image&quot; src=&quot;jenny.jpg&quot;&gt;
+    Jenny Hess
+  &lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;
+    &lt;img class=&quot;ui avatar image&quot; src=&quot;elliot.jpg&quot;&gt;
+    Elliot Fu
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                    </div>
+                    
+                    <!-- Search -->
+                    <div class="item">
+                        <h3 class="title-item">Search</h3>
+                        <p>A dropdown can be searchable.</p>
+                        <div class="display">
+<div class="ui dropdown labeled search icon button">
+  <i class="globe icon"></i>
+  <span class="text">Select Language</span>
+  <div class="menu">
+    <div class="item">Arabic</div>
+    <div class="item">Chinese</div>
+    <div class="item">Danish</div>
+    <div class="item">Dutch</div>
+    <div class="item">English</div>
+    <div class="item">French</div>
+    <div class="item">German</div>
+    <div class="item">Greek</div>
+    <div class="item">Hungarian</div>
+    <div class="item">Italian</div>
+    <div class="item">Japanese</div>
+    <div class="item">Korean</div>
+    <div class="item">Lithuanian</div>
+    <div class="item">Persian</div>
+    <div class="item">Polish</div>
+    <div class="item">Portuguese</div>
+    <div class="item">Russian</div>
+    <div class="item">Spanish</div>
+    <div class="item">Swedish</div>
+    <div class="item">Turkish</div>
+    <div class="item">Vietnamese</div>
+  </div>
+</div>
+                        </div>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui dropdown labeled search icon button&quot;&gt;
+  &lt;i class=&quot;globe icon&quot;&gt;&lt;/i&gt;
+  &lt;span class=&quot;text&quot;&gt;Select Language&lt;/span&gt;
+  &lt;div class=&quot;menu&quot;&gt;
+    &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                    </div>
+                    
+                    
+
+                </div>
+                
+
+                 
+                
+            </div>
+            
+            <!-- Footer -->
+            <footer class="footer"></footer>
+        </div>
+        
+        <!-- Sidebar -->
+        <div id="right-side">
+            <nav class="sidebar"></nav>
+        </div>
+    </div>
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../hoiio-ui/semantic.min.js"></script>
+	<script src="../source/js/highlight.pack.js"></script>
+    <script src="../source/js/main.js"></script>
+    <script src="../source/js/component.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>

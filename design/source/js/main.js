@@ -53,7 +53,7 @@ $(document).ready(function() {
     hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/button\">Button<\/a><\/li>";
     hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/input\">Input<\/a><\/li>";
     hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/dropdown\">Dropdown<\/a><\/li>";
-    hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/select\">Select<\/a><\/li>";
+    hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/selection\">Selection<\/a><\/li>";
     hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/label\">Label<\/a><\/li>";
     hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/navigation\">Navigation<\/a><\/li>";
     hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/tab\">Tab<\/a><\/li>";
