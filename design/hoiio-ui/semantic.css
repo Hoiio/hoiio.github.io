@@ -4379,15 +4379,15 @@ h5.ui.header .sub.header {
 }
 
 .ui.inverted.attached.header {
-  background: #545454 -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.03));
-  background: #545454 linear-gradient(transparent, rgba(0, 0, 0, 0.03));
+  background: #555555 -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.03));
+  background: #555555 linear-gradient(transparent, rgba(0, 0, 0, 0.03));
   box-shadow: none;
   border-color: transparent;
 }
 
 .ui.inverted.block.header {
-  background: #545454 -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.03));
-  background: #545454 linear-gradient(transparent, rgba(0, 0, 0, 0.03));
+  background: #555555 -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.03));
+  background: #555555 linear-gradient(transparent, rgba(0, 0, 0, 0.03));
   box-shadow: none;
 }
 
@@ -19596,7 +19596,7 @@ Floated Menu / Item
 
 .ui.test.ad {
   position: relative;
-  background: #545454;
+  background: #555555;
 }
 
 .ui.test.ad:after {
@@ -22916,7 +22916,7 @@ a.ui.card:hover,
 
 .ui.slider.checkbox input:checked ~ .box:before,
 .ui.slider.checkbox input:checked ~ label:before {
-  background-color: #545454 !important;
+  background-color: #555555 !important;
 }
 
 .ui.slider.checkbox input:checked ~ .box:after,
@@ -26617,7 +26617,7 @@ a.ui.nag {
 }
 
 .ui.black.inverted.progress .bar {
-  background-color: #545454;
+  background-color: #555555;
 }
 
 /*--------------
@@ -27641,7 +27641,7 @@ a.ui.nag {
 /* Whole Page */
 
 body.pushable {
-  background: #545454 !important;
+  background: #555555 !important;
 }
 
 /* Page Context */
