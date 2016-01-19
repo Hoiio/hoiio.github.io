@@ -295,7 +295,7 @@ p.small {
     color: #008bd9;
     text-decoration: none;
 }
-.sidebar ul.category>li>a:active {
+.sidebar ul.category>li>a.active {
     font-weight: 600;
 }
 
@@ -392,6 +392,11 @@ h2 + .paragraph{
 
 .ui + .ui{
     margin-left: 8px;   
+}
+
+.ui + .divider,
+.divider + .inverted{
+    margin-left: 0px !important;   
 }
 
 

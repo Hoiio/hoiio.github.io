@@ -1134,7 +1134,7 @@
 .ui.primary.buttons .button,
 .ui.primary.button {
   background-color: #008bd9;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   border-color: #008bd9;
 }
 .ui.primary.buttons .button:hover,
@@ -1161,6 +1161,9 @@
   color: #FFFFFF;
   border-color: #008bd9;
 }
+.ui.primary.buttons .dropdown.button:last-child {
+  border-left-color: #007bc0;
+}
 
 /*-------------------
       Secondary
@@ -1168,7 +1171,7 @@
 
 .ui.secondary.buttons .button,
 .ui.secondary.button {
-  color: #626262;
+  color: #626262 !important;
   background-color: #e8e8e8;
   border-color: #cccccc;
 }
@@ -1196,6 +1199,9 @@
   background-color: #cccccc;
   border-color: #cccccc;
 }
+.ui.secondary.buttons .dropdown.button:last-child {
+  border-left-color: #cccccc;
+}
 
 /*---------------
     Info
@@ -1204,7 +1210,7 @@
 .ui.info.buttons .button,
 .ui.info.button {
   background-color: #2BADD4;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   border-color: #2BADD4;
 }
 .ui.info.buttons .button:hover,
@@ -1232,6 +1238,9 @@
   color: #FFFFFF;
   border-color: #2BADD4;
 }
+.ui.info.buttons .dropdown.button:last-child {
+  border-left-color: #279cbf;
+}
 
 /*---------------
     Success
@@ -1240,7 +1249,7 @@
 .ui.success.buttons .button,
 .ui.success.button {
   background-color: #19b37b;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   border-color: #19b37b;
 }
 .ui.success.buttons .button:hover,
@@ -1268,6 +1277,9 @@
   color: #FFFFFF;
   border-color: #19b37b;
 }
+.ui.success.buttons .dropdown.button:last-child {
+  border-left-color: #169d6c;
+}
 
 /*---------------
      Error
@@ -1276,7 +1288,7 @@
 .ui.error.buttons .button,
 .ui.error.button {
   background-color: #e64333;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   border-color: #e64333;
 }
 .ui.error.buttons .button:hover,
@@ -1304,6 +1316,9 @@
   color: #FFFFFF;
   border-color: #e64333;
 }
+.ui.error.buttons .dropdown.button:last-child {
+  border-left-color: #e32e1c;
+}
 
 /*---------------
      Warning
@@ -1312,7 +1327,7 @@
 .ui.warning.buttons .button,
 .ui.warning.button {
   background-color: #e5791a;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   border-color: #e5791a;
 }
 .ui.warning.buttons .button:hover,
@@ -1339,6 +1354,9 @@
   background-color: #ce6d17;
   color: #FFFFFF;
   border-color: #e5791a;
+}
+.ui.warning.buttons .dropdown.button:last-child {
+  border-left-color: #ce6d17;
 }
 
 /*-------------------

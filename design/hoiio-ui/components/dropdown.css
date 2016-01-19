@@ -27,6 +27,57 @@
 
 
 /*******************************
+           Colors
+*******************************/
+
+.ui.dropdown.primary {
+  color: #008bd9;
+}
+.ui.dropdown.primary:hover {
+  color: #009bf3;
+}
+.ui.dropdown.primary:focus {
+  color: #007bc0;
+}
+.ui.dropdown.info {
+  color: #2BADD4;
+}
+.ui.dropdown.info:hover {
+  color: #40b5d8;
+}
+.ui.dropdown.info:focus {
+  color: #279cbf;
+}
+.ui.dropdown.success {
+  color: #19b37b;
+}
+.ui.dropdown.success:hover {
+  color: #1cc98a;
+}
+.ui.dropdown.success:focus {
+  color: #169d6c;
+}
+.ui.dropdown.error {
+  color: #e64333;
+}
+.ui.dropdown.error:hover {
+  color: #e9584a;
+}
+.ui.dropdown.error:focus {
+  color: #e32e1c;
+}
+.ui.dropdown.warning {
+  color: #e5791a;
+}
+.ui.dropdown.warning:hover {
+  color: #e88631;
+}
+.ui.dropdown.warning:focus {
+  color: #ce6d17;
+}
+
+
+/*******************************
             Content
 *******************************/
 
@@ -464,21 +515,21 @@ select.ui.dropdown {
 
 /* Active */
 .ui.selection.active.dropdown {
-  border-color: #96C8DA;
+  border-color: #008bd9;
   box-shadow: 0px 2px 3px 0px #cccccc;
 }
 .ui.selection.active.dropdown .menu {
-  border-color: #96C8DA;
+  border-color: #008bd9;
   box-shadow: 0px 2px 3px 0px #cccccc;
 }
 
 /* Focus */
 .ui.selection.dropdown:focus {
-  border-color: #96C8DA;
+  border-color: #008bd9;
   box-shadow: none;
 }
 .ui.selection.dropdown:focus .menu {
-  border-color: #96C8DA;
+  border-color: #008bd9;
   box-shadow: 0px 2px 3px 0px #cccccc;
 }
 
@@ -490,11 +541,11 @@ select.ui.dropdown {
 
 /* Visible Hover */
 .ui.selection.active.dropdown:hover {
-  border-color: #96C8DA;
+  border-color: #008bd9;
   box-shadow: 0px 2px 3px 0px #cccccc;
 }
 .ui.selection.active.dropdown:hover .menu {
-  border-color: #96C8DA;
+  border-color: #008bd9;
   box-shadow: 0px 2px 3px 0px #cccccc;
 }
 
@@ -631,7 +682,6 @@ select.ui.dropdown {
   font-size: 1em;
   padding: 0.35714286em 0.71428571em;
   margin: 0.21428571em 0.28571429rem 0.21428571em 0em;
-  box-shadow: 0px 0px 0px 1px #cccccc inset;
 }
 .ui.multiple.dropdown > .label:hover {
   color: #414141;
@@ -870,10 +920,10 @@ select.ui.dropdown {
         Error
 ----------------------*/
 
-.ui.dropdown.error,
-.ui.dropdown.error > .text,
-.ui.dropdown.error > .default.text {
-  color: #FFFFFF;
+.ui.dropdown.button.error,
+.ui.dropdown.button.error > .text,
+.ui.dropdown.button.error > .default.text {
+  color: #FFFFFF !important;
 }
 .ui.selection.dropdown.error {
   background: #e64333;
@@ -887,7 +937,7 @@ select.ui.dropdown {
   border-color: #e64333;
 }
 .ui.dropdown.error > .menu > .item {
-  color: #FFFFFF;
+  color: #555555;
 }
 .ui.multiple.selection.error.dropdown > .label {
   border-color: #e64333;
@@ -1347,7 +1397,6 @@ select.ui.dropdown {
 *******************************/
 
 .ui.dropdown > .dropdown.icon {
-  font-family: 'hoiioicons';
   line-height: 1;
   height: 1em;
   width: 1.23em;

@@ -28,7 +28,7 @@ $(document).ready(function() {
     header += "    <span class=\"pull-right poweredby\">Powered by<a href=\"http:\/\/hoiio.com\"><img src=\"..\/source\/img\/hoiio-logo.png\"\/><\/a><\/span>";
     header += "<\/div>";*/
     
-    $("#detail .header").append(header);
+    $("#detail header.header").append(header);
     
     //Add Sidebar
     var hoiio="";
