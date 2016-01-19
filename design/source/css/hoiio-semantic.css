@@ -329,7 +329,7 @@ p.small {
     width: 100%
 }
 
-.body-content p {
+.body-content p:not(.paragraph) {
     font-size: 16px;
     font-weight: 300;
     line-height: 1.8em;
@@ -345,6 +345,14 @@ p.small {
     padding-bottom: 0px;   
 }
 
+.system-layout .body-content .item{
+    padding-bottom: 30px;   
+}
+
+
+.system-color .body-content .item{
+    padding-bottom: 50px;   
+}
 
 .body-content .title-item{
     color:#66b313;
@@ -447,7 +455,7 @@ h2 + .paragraph{
 }
 
 .table-holder .grid th, .table-holder .grid td {
-    padding: 8px 16px 8px 0;
+    padding: 10px 16px 10px 10px;
 }
 
 
@@ -510,6 +518,47 @@ td.type-info{
     --
 */
 
+.system-color .neutral,
+.system-color .primarys,
+.system-color .secondarys{
+    display: block;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.system-color .color-item{
+    float:left;
+    width: 90px;
+    height: 150px;
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.color-item + .color-item{
+    margin-left: 30px;
+}
+
+.system-color .color-item .color-box{
+    width: 100%;
+    height: 90px;
+   
+}
+
+.system-color .color-item .color-code{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    
+}
+
 .system-color .fill{
     margin: 0 !important ;   
 }
@@ -561,6 +610,25 @@ td.type-info{
 .f-danger{ background: #e64333; }
 .f-danger-hover { background-color:#e95849 }
 .f-danger-focus { background-color:#e32e1c }
+
+/* Neutral */
+.color-borderline{ background-color: #cccccc; }
+.color-midwhite{ background-color: #e8e8e8; }
+.color-lightgray{ background-color: #eeeeee; }
+.color-gray{ background-color: #767676; }
+.color-lightblack{ background-color: #555555; }
+.color-black{ background-color: #1B1C1D; }
+.color-primary{ background-color: #008bd9; }
+.color-primaryhover{ background-color: #009bf2; }
+.color-primaryfocus{ background-color: #007bbf; }
+.color-secondary{ background-color: #e8e8e8; }
+.color-secondaryhover{ background-color: #eeeeee; }
+.color-secondaryfocus{ background-color: #cccccc; }
+.color-info{ background-color: #2BADD4; }
+.color-success{ background-color: #19b37b; }
+.color-error{ background-color: #e64333; }
+.color-warning{ background-color: #e5791a; }
+
 
 
 /*
@@ -623,6 +691,20 @@ td.type-info{
 
 /*
     --  
+    System Icon
+    --
+*/
+
+.group-icon{
+    float: left
+}
+
+.group-icon:last-child{
+    margin-bottom: 100px;   
+}
+
+/*
+    --  
     Footer 
     --
 */
@@ -634,7 +716,7 @@ td.type-info{
     font-weight: bold;
     width: 100%;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     position: relative;
     bottom: 0;
 }
