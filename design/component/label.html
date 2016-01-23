@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hoiio Design Standards 2016">
+    <meta name="keywords" content="design, ux, standard, hoiio, framework, html, css, interface, component, semantic">
+    <meta name="author" content="Marcus">
+    <link rel="icon" href="source/favicon.ico">
+
+    <title>Label - Hoiio Design Standards</title>
+    <!-- jQuery --->
+    <script src="../source/js/jquery-2.1.4.min.js"></script>
+    <script src="../source/js/modernizr-custom.js"></script>
+
+    <!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="../hoiio-ui/semantic.min.css" />
+	<!-- Main styles -->
+	<link rel="stylesheet" type="text/css" href="../source/css/hoiio-semantic.css" />
+	<!-- Highlight -->
+	<link rel="stylesheet" type="text/css" href="../source/css/tomorrow.css" />
+	
+</head>
+<body id="detail">
+    <div class="se-pre-con"></div>
+    <!-- Header -->
+    <header class="header"></header>
+    
+    
+    <!-- Main container -->
+	<div class="container component-label" id="page">
+		
+        <div id="left-side">
+            
+            <!-- Content -->
+            <div class="body-content">
+                <h1 class="head">Label</h1>
+                
+                <p class="description">A label provides additional information about something that is often used associate to a form.</p>
+                
+                
+                <!-- Standard -->
+                <div class="display">
+<div class="ui label">
+  This is a label
+</div>
+                    
+<div class="ui label">
+  <i class="mail icon"></i> 23
+</div>
+
+<a class="ui label">
+  Tag
+  <i class="remove icon"></i>
+</a>                    
+ 
+                </div>
+                <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui label&quot;&gt;
+  This is a label
+&lt;/div&gt; 
+</code>
+</pre>
+                </div>
+                
+                <!-- States --> 
+                <div class="group-item">
+                    <h2>States</h2>
+                    <!-- Disabled -->
+                    <div class="item">
+                        <h3 id="disabled" class="title-item">
+                            Disabled 
+                            <a href="#disabled"><i class="link icon"></i></a>
+                        </h3>
+                        <div class="display">
+<div class="ui disabled label">
+  Disabled label
+</div>
+                        </div>
+                        <p class="usage"><span>Usage</span> : prefix <code>disabled</code> to <code>label</code>.</p>
+                        
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui disabled label&quot;&gt;
+  Disabled label
+&lt;/div&gt; 
+</code>
+</pre>
+                        </div>
+                     </div>
+                </div>
+                
+                <!-- Variation -->
+                <div class="group-item">
+                    <h2>Variation</h2>
+                    <!-- Colors -->
+                    <div class="item">
+                        <h3 id="color" class="title-item">
+                            Colors
+                            <a href="#color"><i class="link icon"></i></a>
+                        </h3>
+                        <div class="display">
+<a class="ui label basic">Primary</a>                            
+<a class="ui label primary">Primary</a>
+<a class="ui label info">Info</a>
+<a class="ui label success">Success</a>
+<a class="ui label error">Error</a>
+<a class="ui label warning">Warning</a>                            
+                        </div>
+                        <p class="usage"><span>Usage</span> : prefix classes of colors to <code>label</code>.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;a class=&quot;ui primary label&quot;&gt;Primary&lt;/a&gt;
+&lt;a class=&quot;ui info label&quot;&gt;Info&lt;/a&gt;
+&lt;a class=&quot;ui success label&quot;&gt;Success&lt;/a&gt;
+&lt;a class=&quot;ui error label&quot;&gt;Error&lt;/a&gt;
+&lt;a class=&quot;ui warning label&quot;&gt;Warning&lt;/a&gt;  
+</code>
+</pre>
+                        </div>
+                     </div>
+                    
+                    <!-- Rounded -->
+                    <div class="item">
+                        <h3 id="round" class="title-item">
+                            Round
+                            <a href="#round"><i class="link icon"></i></a>
+                        </h3>
+                        <div class="display">
+<a class="ui round label">1</a>
+<a class="ui primary round label">2</a>                            
+<a class="ui info round label">3</a>
+<a class="ui success round label">4</a>
+<a class="ui error round label">5</a>
+<a class="ui warning round label">6</a>                            
+                        </div>
+                        <p class="usage"><span>Usage</span> : prefix <code>round</code> to <code>label</code>. For showing background colors, prefix classes of colors to <code>round</code>.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;a class=&quot;ui round label&quot;&gt;1&lt;/a&gt;
+&lt;a class=&quot;ui primary round label&quot;&gt;2&lt;/a&gt;
+&lt;a class=&quot;ui info round label&quot;&gt;3&lt;/a&gt;
+&lt;a class=&quot;ui success round label&quot;&gt;4&lt;/a&gt;
+&lt;a class=&quot;ui error round label&quot;&gt;5&lt;/a&gt;
+&lt;a class=&quot;ui warning round label&quot;&gt;6&lt;/a&gt;     
+</code>
+</pre>
+                        </div>
+                    </div>
+                    
+                    <!-- Rounded Empty-->
+                    <div class="item">
+                        <h3 id="dots" class="title-item">
+                            dot (Empty Round)
+                            <a href="#dots"><i class="link icon"></i></a>
+                        </h3>
+                        <div class="display">
+<a class="ui empty round label"></a>
+<a class="ui primary empty round label"></a>                      
+<a class="ui info empty round label"></a>
+<a class="ui success empty round label"></a>
+<a class="ui error empty round label"></a>
+<a class="ui warning empty round label"></a>                            
+                        </div>
+                        <p class="usage"><span>Usage</span> : prefix <code>empty</code> to round label. For showing background colors, prefix classes of colors to <code>empty round</code>.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;a class=&quot;ui empty round label&quot;&gt;&lt;/a&gt;
+&lt;a class=&quot;ui primary empty round label&quot;&gt;&lt;/a&gt;                      
+&lt;a class=&quot;ui info empty round label&quot;&gt;&lt;/a&gt;
+&lt;a class=&quot;ui success empty round label&quot;&gt;&lt;/a&gt;
+&lt;a class=&quot;ui error empty round label&quot;&gt;&lt;/a&gt;
+&lt;a class=&quot;ui warning empty round label&quot;&gt;&lt;/a&gt;   
+</code>
+</pre>
+                        </div>
+                     </div>
+                    
+                    <!-- Sizes -->
+                    <div id="sizes" class="item">
+                        <h3 class="title-item">
+                            Sizes
+                            <a href="#sizes"><i class="link icon"></i></a>
+                        </h3>
+                        <div class="display">
+<div class="ui mini label">
+  Mini
+</div>
+<div class="ui tiny label">
+  Tiny
+</div>
+<div class="ui small label">
+  Small
+</div>
+<div class="ui label">
+  Medium
+</div>
+<div class="ui large label">
+  Large
+</div>
+<div class="ui big label">
+  Big
+</div>
+<div class="ui huge label">
+  Huge
+</div>
+<div class="ui massive label">
+  Massive
+</div>
+                        </div>
+                        <p class="usage"><span>Usage</span> : prefix classes of sizes to <code>label</code>.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui mini label&quot;&gt; Mini &lt;/div&gt;
+&lt;div class=&quot;ui tiny label&quot;&gt; Tiny &lt;/div&gt;
+&lt;div class=&quot;ui small label&quot;&gt; Small &lt;/div&gt;
+&lt;div class=&quot;ui label label&quot;&gt; Medium &lt;/div&gt;
+&lt;div class=&quot;ui large label&quot;&gt; Large &lt;/div&gt;
+&lt;div class=&quot;ui big label&quot;&gt; Big &lt;/div&gt;
+&lt;div class=&quot;ui huge label&quot;&gt; Huge &lt;/div&gt;
+&lt;div class=&quot;ui massive label&quot;&gt; Massive &lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                     </div>
+                </div>
+                
+                <!-- Types -->
+                <div class="group-item">
+                    <h2>Types</h2>
+                    <!-- Tag -->
+                    <div class="item">
+                        <h3 id="tag" class="title-item">
+                            Tag
+                            <a href="#tag"><i class="link icon"></i></a>
+                        </h3>
+                        <p>A label can display as a tag which attached to someone or something for the purpose of identification or to give other information.</p>
+                        
+                        <div class="display">
+<a class="ui tag label">New</a>
+<a class="ui error tag label">Upcoming</a>
+<a class="ui info tag label">Featured</a>
+                        </div>
+                        <p class="usage"><span>Usage</span> : prefix <code>tag</code> to <code>label</code>.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;a class=&quot;ui tag label&quot;&gt;New&lt;/a&gt;
+&lt;a class=&quot;ui error tag label&quot;&gt;Upcoming&lt;/a&gt;
+&lt;a class=&quot;ui info tag label&quot;&gt;Featured&lt;/a&gt;
+</code>
+</pre>
+                        </div>
+                    </div>
+                    
+                    <!-- Image -->
+                    <div class="item">
+                        <h3 id="image" class="title-item">
+                            Image
+                            <a href="#image"><i class="link icon"></i></a>
+                        </h3>
+                        <p>A label can be formatted to emphasize an image.</p>
+                        <div class="display">
+<a class="ui image label">
+  <img src="http://semantic-ui.com/images/avatar/small/joe.jpg">
+  Joe
+</a>
+<a class="ui primary image label">
+  <img src="http://semantic-ui.com/images/avatar/small/elliot.jpg">
+  Elliot
+</a>
+<a class="ui info image label">
+  <img src="http://semantic-ui.com/images/avatar/small/stevie.jpg">
+  Stevie
+</a>
+                        </div>
+                        <p class="usage"><span>Usage</span> : prefix <code>image</code> to <code>label</code>.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;a class=&quot;ui image label&quot;&gt;
+  &lt;img src=&quot;joe.jpg&quot;&gt; Joe
+&lt;/a&gt;
+&lt;a class=&quot;ui primary image label&quot;&gt;
+  &lt;img src=&quot;elliot.jpg&quot;&gt; Elliot
+&lt;/a&gt;
+&lt;a class=&quot;ui info image label&quot;&gt;
+  &lt;img src=&quot;stevie.jpg&quot;&gt; Stevie
+&lt;/a&gt;
+</code>
+</pre>
+                        </div>
+                    </div>
+                    
+                    <!-- Image with detail info -->
+                    <div class="item">
+                        <h3 id="image-detail-info" class="title-item">
+                            Image with detail info
+                            <a href="#image-detail-info"><i class="link icon"></i></a>
+                        </h3>
+                        <div class="display">
+<a class="ui success image label">
+  <img src="http://semantic-ui.com/images/avatar/small/joe.jpg">
+  Joe
+    <div class="detail">Friend</div>
+</a>
+<a class="ui error image label">
+  <img src="http://semantic-ui.com/images/avatar/small/elliot.jpg">
+  Elliot
+    <div class="detail">Student</div>
+</a>
+<a class="ui warning image label">
+  <img src="http://semantic-ui.com/images/avatar/small/stevie.jpg">
+  Stevie
+    <div class="detail">Co-worker</div>
+</a>
+                        </div>
+                        <p class="usage"><span>Usage</span> : add a div group detail into image label.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;a class=&quot;ui success image label&quot;&gt;
+  &lt;img src=&quot;joe.jpg&quot;&gt;
+  Joe
+    &lt;div class=&quot;detail&quot;&gt;Friend&lt;/div&gt;
+&lt;/a&gt;
+&lt;a class=&quot;ui error image label&quot;&gt;
+  &lt;img src=&quot;elliot.jpg&quot;&gt;
+  Elliot
+    &lt;div class=&quot;detail&quot;&gt;Student&lt;/div&gt;
+&lt;/a&gt;
+&lt;a class=&quot;ui warning image label&quot;&gt;
+  &lt;img src=&quot;stevie.jpg&quot;&gt;
+  Stevie
+    &lt;div class=&quot;detail&quot;&gt;Co-worker&lt;/div&gt;
+&lt;/a&gt;
+</code>
+</pre>
+                        </div>
+                    </div>
+                    
+                    <!-- Image with remove icon -->
+                    <div class="item">
+                        <h3 class="title-item">
+                            Image with remove icon
+                            <a href="#image-remove-icon"><i class="link icon"></i></a>
+                        </h3>
+                        <div class="display">
+<div class="ui label image">
+  <img src="http://semantic-ui.com/images/avatar/small/ade.jpg">
+  Adrienne
+  <i class="remove icon"></i>
+</div>
+<div class="ui label image">
+  <img src="http://semantic-ui.com/images/avatar/small/zoe.jpg" data-pin-nopin="true">
+  Zoe
+  <i class="remove icon"></i>
+</div>
+<div class="ui label image">
+  <img src="http://semantic-ui.com/images/avatar/small/nan.jpg" data-pin-nopin="true">
+  Nan
+  <i class="remove icon"></i>
+</div>
+                        </div>
+                        <p class="usage"><span>Usage</span> : add a remove icon into label, right after text.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui image label&quot;&gt;
+  &lt;img src=&quot;ade.jpg&quot;&gt; Adrienne
+  &lt;i class=&quot;remove icon&quot;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui image label&quot;&gt;
+  &lt;img src=&quot;zoe.jpg&quot;&gt;
+  Zoe
+  &lt;i class=&quot;remove icon&quot;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui image label&quot;&gt;
+  &lt;img src=&quot;nan.jpg&quot;&gt;
+  Nan
+  &lt;i class=&quot;remove icon&quot;&gt;&lt;/i&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                    </div>
+                    
+                    <!-- Corner -->
+                    <div class="item">
+                        <h3 id="corner" class="title-item">
+                            Corner
+                            <a href="#corner"><i class="link icon"></i></a>
+                        </h3>
+                        <p>A label can position itself in the corner of an element.</p>
+                        <div class="display">
+<div class="ui two column grid">
+  <div class="column">
+    <div class="ui fluid image">
+      <a href="#" class="ui left corner label">
+        <i class="heart icon"></i>
+      </a>
+      <img src="../source/img/1.jpeg">
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui fluid image">
+      <a href="#" class="ui error right corner label">
+        <i class="floppy icon"></i>
+      </a>
+      <img src="../source/img/2.jpeg">
+    </div>
+  </div>
+</div>
+                        </div>
+                        <p class="usage"><span>Usage</span> : prefix <code>left corner</code> or <code>right corner</code> to label.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui fluid image&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;ui left corner label&quot;&gt;&lt;i class=&quot;heart icon&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+      &lt;img src=&quot;image.jpeg&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;ui fluid image&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;ui error right corner label&quot;&gt;&lt;i class=&quot;floopy icon&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+      &lt;img src=&quot;image.jpeg&quot;&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                    </div>
+                    
+                    <!-- Tooltip -->
+                    <div class="item">
+                        <h3 id="tooltip" class="title-item">
+                            Tooltip
+                            <a href="#tooltip"><i class="link icon"></i></a>
+                        </h3>
+                        <p>A label can be display as a tooltip</p>
+                        <div class="display">
+<form class="ui fluid form">
+  <div class="field">
+    <input type="text" placeholder="First name">
+    <div class="ui label tooltip">
+      Please enter a value
+    </div>
+  </div>
+  <div class="ui divider"></div>
+  <div class="field">
+    <div class="ui label tooltip below primary">
+      Please enter a value
+    </div>
+    <input type="text" placeholder="Last Name">
+  </div>
+  <div class="ui divider"></div>
+  <div class="field inline">
+    <input type="text" placeholder="Username">
+    <div class="ui label left tooltip info">
+      That name is taken!
+    </div>
+  </div>
+  <div class="ui divider"></div>
+  <div class="field inline">
+    <div class="ui label right tooltip error">
+      Your password must be 6 characters or more
+    </div>
+    <input type="password" placeholder="Password">
+  </div>
+</form>
+                        </div>
+                        <p class="usage"><span>Usage</span> : append <code>tooltip</code>, <code>tooltip below</code>, <code>left tooltip</code>, <code>right tooltip</code> to <code>label</code> for up, down, left and right point alternately. Note that to display left or right tooltip, append <code>inline</code> to the field. For showing background colors, using types of colors.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;field&quot;&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;First name&quot;&gt;
+    &lt;div class=&quot;ui label tooltip&quot;&gt;Please enter a value&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;field&quot;&gt;
+    &lt;div class=&quot;ui label tooltip below&quot;&gt;Please enter a value&lt;/div&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;Last Name&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;field inline&quot;&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;Username&quot;&gt;
+    &lt;div class=&quot;ui label left tooltip&quot;&gt;That name is taken!&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;field inline&quot;&gt;
+    &lt;div class=&quot;ui label right tooltip&quot;&gt;Your password must be 6 characters or more&lt;/div&gt;
+    &lt;input type=&quot;password&quot; placeholder=&quot;Password&quot;&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+                <!-- Group -->
+                <div class="group-item">
+                    <h2>Types</h2>
+                    <!-- Corlored Group -->
+                    <div class="item">
+                        <h3 id="colored-group" class="title-item">
+                            Colored Group
+                            <a href="#colored-group"><i class="link icon"></i></a>
+                        </h3>
+                        <p>Labels can share colors together.</p>
+                        
+                        <div class="display">
+ <div class="ui primary labels">
+  <a class="ui label">
+    Fun <i class="remove icon"></i>
+  </a>
+  <a class="ui label">
+    Happy
+    <div class="detail">22</div>
+  </a>
+  <a class="ui label">
+    Smart
+  </a>
+  <a class="ui label">
+    Insane
+  </a>
+  <a class="ui label">
+    Exciting
+  </a>
+</div>                           
+                            
+                            
+                        </div>
+                        <p class="usage"><span>Usage</span> : a <code>labels</code> div contains all label divs. Changing background colors of <code>labels</code> applies to all labels within itself.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui primary labels&quot;&gt;
+    &lt;a class=&quot;ui label&quot;&gt;
+        Fun &lt;i class=&quot;remove icon&quot;&gt;&lt;/i&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;ui label&quot;&gt;
+        Happy &lt;div class=&quot;detail&quot;&gt;22&lt;/div&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;ui label&quot;&gt;
+        Smart
+    &lt;/a&gt;
+    &lt;a class=&quot;ui label&quot;&gt;
+        Insane
+    &lt;/a&gt;
+    &lt;a class=&quot;ui label&quot;&gt;
+        Exciting
+    &lt;/a&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                    </div>
+                    
+                    <!-- Tag Group -->
+                    <div class="item">
+                        <h3 id="tag-group" class="title-item">
+                            Tag Group
+                            <a href="#tag-group"><i class="link icon"></i></a>
+                        </h3>
+                        <p>Tags display information together.</p>
+                        
+                        <div class="display">
+<div class="ui tag labels">
+  <a class="ui label">
+    $10.00
+  </a>
+  <a class="ui label">
+    $19.99
+  </a>
+  <a class="ui label">
+    $24.99
+  </a>
+  <a class="ui label">
+    $30.99
+  </a>
+  <a class="ui label">
+    $10.25
+  </a>
+</div>
+                        </div>
+                        <p class="usage"><span>Usage</span> : prefix <code>tag</code> to <code>labels</code>.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui tag labels&quot;&gt;
+    &lt;a class=&quot;ui label&quot;&gt;
+        $10.00
+    &lt;/a&gt;
+    &lt;a class=&quot;ui label&quot;&gt;
+        $19.99
+    &lt;/a&gt;
+    &lt;a class=&quot;ui label&quot;&gt;
+        $24.99
+    &lt;/a&gt;
+    &lt;a class=&quot;ui label&quot;&gt;
+        $30.99
+    &lt;/a&gt;
+    &lt;a class=&quot;ui label&quot;&gt;
+        $10.25
+    &lt;/a&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                    </div>
+                    
+                    <!-- Round Group -->
+                    <div class="item">
+                        <h3 id="round-group" class="title-item">
+                            Round Group
+                            <a href="#round-group"><i class="link icon"></i></a>
+                        </h3>
+                        <p>Round labels can be placed together.</p>
+                        
+                        <div class="display">
+<div class="ui round labels">
+  <a class="ui label">
+    11
+  </a>
+  <a class="ui label">
+    22
+  </a>
+  <a class="ui label">
+    33
+  </a>
+  <a class="ui label">
+    44
+  </a>
+  <a class="ui label">
+    141
+  </a>
+</div>
+                        </div>
+                        <p class="usage"><span>Usage</span> : prefix <code>round</code> to <code>labels</code>.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui round labels&quot;&gt;
+    &lt;a class=&quot;ui label&quot;&gt;
+        11
+    &lt;/a&gt;
+    &lt;a class=&quot;ui label&quot;&gt;
+        22
+    &lt;/a&gt;
+    &lt;a class=&quot;ui label&quot;&gt;
+        33
+    &lt;/a&gt;
+    &lt;a class=&quot;ui label&quot;&gt;
+        44
+    &lt;/a&gt;
+    &lt;a class=&quot;ui label&quot;&gt;
+        141
+    &lt;/a&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                    </div>
+                </div>
+                
+                    
+            </div>
+            
+            <!-- Footer -->
+            <footer class="footer"></footer>
+        </div>
+        
+        <!-- Sidebar -->
+        <div id="right-side">
+            <nav class="sidebar"></nav>
+        </div>
+    </div>
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../hoiio-ui/semantic.min.js"></script>
+	<script src="../source/js/highlight.pack.js"></script>
+    <script src="../source/js/main.js"></script>
+    <script src="../source/js/component.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+   
+    
+    </script>
+
+</body>
+</html>
