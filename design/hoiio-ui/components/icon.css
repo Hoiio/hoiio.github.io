@@ -202,11 +202,11 @@ i.bordered.inverted.icon {
 /* Inverted Shapes */
 i.inverted.bordered.icon,
 i.inverted.round.icon {
-  background-color: #1B1C1D !important;
-  color: #FFFFFF !important;
+  background-color: #1b1c1d !important;
+  color: #ffffff !important;
 }
 i.inverted.icon {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /*-------------------
@@ -224,7 +224,7 @@ i.inverted.primary.icon {
 i.inverted.bordered.primary.icon,
 i.inverted.round.primary.icon {
   background-color: #008bd9 !important;
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 
 /*-------------------
@@ -313,10 +313,10 @@ i.icons .corner.icon {
   -webkit-transform: none;
           transform: none;
   font-size: 0.45em;
-  text-shadow: -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF;
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
 }
 i.icons .inverted.corner.icon {
-  text-shadow: -1px -1px 0 #1B1C1D, 1px -1px 0 #1B1C1D, -1px 1px 0 #1B1C1D, 1px 1px 0 #1B1C1D;
+  text-shadow: -1px -1px 0 #1b1c1d, 1px -1px 0 #1b1c1d, -1px 1px 0 #1b1c1d, 1px 1px 0 #1b1c1d;
 }
 /*
  * Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -694,12 +694,12 @@ i.icon.chart.area:before {
 
 /* '' */
 i.icon.uncheck:before {
-  content: '\e83c';
+  content: '\e83d';
 }
 
 /* '' */
 i.icon.check:before {
-  content: '\e83d';
+  content: '\e83c';
 }
 
 /* '' */
@@ -934,7 +934,7 @@ i.icon.list.small:before {
 
 /* '' */
 i.icon.remove:before {
-  content: '\e862';
+  content: '\e865';
 }
 
 /* '' */
@@ -943,8 +943,8 @@ i.icon.remove.square:before {
 }
 
 /* '' */
-i.icon.remove.thin:before {
-  content: '\e865';
+i.icon.remove.bold:before {
+  content: '\e862';
 }
 
 /* '' */
@@ -1004,7 +1004,12 @@ i.icon.link.square:before {
 
 /* '' */
 i.icon.link:before {
-  content: '\e974';
+  content: '\e8be';
+}
+
+/* '' */
+i.icon.link.left:before {
+  content: '\e94a';
 }
 
 /* '' */
@@ -2198,9 +2203,3 @@ i.icon.print:before {
 }
 
 /* '' */
-
-
-/*******************************
-         Site Overrides
-*******************************/
-

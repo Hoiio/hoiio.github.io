@@ -1,6 +1,34 @@
 $(document).ready(function() {
     $('.ui.dropdown').dropdown();
     
+    $('.message .remove')
+      .on('click', function() {
+        $(this)
+          .closest('.message')
+          .transition('fade')
+        ;
+      })
+    ;
+    
+    $('.paths .menu .item')
+      .tab({
+        context: '.paths'
+      })
+    ;
+    
+    if(window.location.hash) {
+          var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
+          var par = $( "#" + hash).parent().parent().parent();
+          $(".segment").removeClass("active");
+          par.addClass("active");
+          var tab = par.data("tab");
+          $('.menu > a').removeClass("active");
+          $('a[data-tab='+tab+']').addClass("active");
+    } else{
+      $('a[data-tab="first"]').addClass("active");
+      $('div[data-tab="first"]').addClass("active"); 
+    } 
+   
     //Add Header
     var header="";
     header += "<div class=\"container\">";
@@ -46,7 +74,7 @@ $(document).ready(function() {
     hoiio += "    <li class=\"item\"><a href=\"\/design\/system\/color\">Color<\/a><\/li>";
     hoiio += "    <li class=\"item\"><a href=\"\/design\/system\/typography\">Typography<\/a><\/li>";
     hoiio += "    <li class=\"item\"><a href=\"\/design\/system\/icon\">Icon<\/a><\/li>";
-   // hoiio += "    <li class=\"item\"><a href=\"\/design\/system\/image\">Image<\/a><\/li>";
+    hoiio += "    <li class=\"item\"><a href=\"\/design\/system\/image\">Image<\/a><\/li>";
     hoiio += "<\/ul>";
     hoiio += "<ul class=\"category\">";
     hoiio += "    <li class=\"title\">Components<\/li>";
@@ -135,5 +163,17 @@ function show_code(id) {
    else
       e.style.display = 'block';
 }
+
+function sticky_relocate() {
+    var window_top = $(window).scrollTop();
+    var div_top = $('#sticky-anchor').offset().top;
+    if (window_top > div_top) {
+        $('#sticky').addClass('stick');
+    } else {
+        $('#sticky').removeClass('stick');
+    }
+}
+
+
 
 

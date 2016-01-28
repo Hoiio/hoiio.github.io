@@ -89,7 +89,7 @@
 
 /* Whole Page */
 body.pushable {
-  background: #555555 !important;
+  background: #545454 !important;
 }
 
 /* Page Context */
@@ -629,11 +629,5 @@ html.ios body {
 
 /*******************************
          Theme Overrides
-*******************************/
-
-
-
-/*******************************
-         Site Overrides
 *******************************/
 

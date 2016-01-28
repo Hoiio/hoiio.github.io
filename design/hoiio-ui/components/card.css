@@ -34,7 +34,7 @@
           flex-direction: column;
   width: 290px;
   min-height: 0px;
-  background: #FFFFFF;
+  background: #ffffff;
   padding: 0em;
   border: none;
   border-radius: 0.28571429rem;
@@ -184,7 +184,7 @@
 .ui.card > .content > .header:not(.ui) {
   font-weight: bold;
   font-size: 1.28571429em;
-  margin-top: -0.39285714em;
+  margin-top: -0.393em;
   line-height: 1.2857em;
 }
 .ui.cards > .card > .content > .meta + .description,
@@ -313,7 +313,7 @@
 }
 .ui.cards > .card > .content > a.header:hover,
 .ui.card > .content > a.header:hover {
-  color: #006aa6;
+  color: #007bc0;
 }
 
 /* Meta */
@@ -426,7 +426,7 @@
 }
 .ui.cards > .card > .extra a:not(.ui):hover,
 .ui.card > .extra a:not(.ui):hover {
-  color: #006aa6;
+  color: #007bc0;
 }
 
 
@@ -476,7 +476,7 @@ a.ui.card:hover,
 .ui.link.card:hover {
   cursor: pointer;
   z-index: 5;
-  background: #FFFFFF;
+  background: #ffffff;
   border: none;
   box-shadow: 0px 1px 3px 0px #BCBDBD, 0px 0px 0px 1px #D4D4D5;
   -webkit-transform: translateY(-3px);
@@ -516,7 +516,7 @@ a.ui.card:hover,
 .ui.black.cards > .card,
 .ui.cards > .black.card,
 .ui.black.card {
-  box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #1B1C1D, 0px 1px 3px 0px #D4D4D5;
+  box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #1b1c1d, 0px 1px 3px 0px #D4D4D5;
 }
 .ui.black.cards > .card:hover,
 .ui.cards > .black.card:hover,
@@ -825,11 +825,5 @@ a.ui.card:hover,
 
 /*******************************
          Theme Overrides
-*******************************/
-
-
-
-/*******************************
-    User Variable Overrides
 *******************************/
 

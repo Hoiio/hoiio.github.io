@@ -27,7 +27,8 @@
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  color: #414141;
+  color: #545454;
+  font-size: 14px !important;
 }
 .ui.input input {
   margin: 0em;
@@ -39,10 +40,10 @@
   outline: none;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   text-align: left;
-  line-height: 1.2142em;
+  line-height: inherit;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  padding: 0.67861429em 1em;
-  background: #FFFFFF;
+  padding: 0.57142857em 1.14285714em !important;
+  background: #ffffff;
   border: 1px solid #cccccc;
   color: #414141;
   border-radius: 0.28571429rem;
@@ -135,8 +136,8 @@
 .ui.input.focus input,
 .ui.input input:focus {
   border-color: #008bd9;
-  background: #FFFFFF;
-  color: #555555;
+  background: #ffffff;
+  color: #545454;
 }
 .ui.input.focus input::-webkit-input-placeholder,
 .ui.input input:focus::-webkit-input-placeholder {
@@ -214,7 +215,7 @@
 
 /* Transparent Inverted */
 .ui.transparent.inverted.input {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .ui.transparent.inverted.input input {
   color: inherit;
@@ -242,7 +243,7 @@
   right: 0px;
   margin: 0em;
   height: 100%;
-  width: 2.67142857em;
+  width: 2.24285714em;
   opacity: 0.5;
   border-radius: 0em 0.28571429rem 0.28571429rem 0em;
   -webkit-transition: opacity 0.3s ease;
@@ -252,7 +253,7 @@
   pointer-events: none;
 }
 .ui.icon.input input {
-  padding-right: 2.67142857em !important;
+  padding-right: 2.24285714em !important;
 }
 .ui.icon.input > i.icon:before,
 .ui.icon.input > i.icon:after {
@@ -282,8 +283,8 @@
   left: 0.5em;
 }
 .ui[class*="left icon"].input > input {
-  padding-left: 2.67142857em !important;
-  padding-right: 1em !important;
+  padding-left: 2.24285714em !important;
+  padding-right: 1.14285714em !important;
 }
 
 /* Focus */
@@ -307,8 +308,8 @@
   border: 1px solid #ccc;
 }
 .ui.labeled.input > .label:not(.corner) {
-  padding-top: 0.78571429em;
-  padding-bottom: 0.78571429em;
+  padding-top: 0.57142857em;
+  padding-bottom: 0.57142857em;
 }
 
 /* Regular Label on Left */
@@ -400,8 +401,8 @@
 }
 .ui.action.input > .button,
 .ui.action.input > .buttons > .button {
-  padding-top: 0.78571429em;
-  padding-bottom: 0.78571429em;
+  padding-top: 0.57142857em;
+  padding-bottom: 0.57142857em;
   margin: 0;
 }
 
@@ -502,11 +503,5 @@
 
 /*******************************
          Theme Overrides
-*******************************/
-
-
-
-/*******************************
-         Site Overrides
 *******************************/
 

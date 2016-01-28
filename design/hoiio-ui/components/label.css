@@ -20,8 +20,8 @@
   vertical-align: baseline;
   margin: 0em 0.14285714em;
   background-color: #e8e8e8;
-  padding: 0.5833em 0.833em;
-  color: #626262;
+  padding: 0.6833em 0.833em;
+  color: #616161;
   text-transform: none;
   font-weight: 500;
   border: 1px solid transparent;
@@ -61,7 +61,7 @@ a.ui.label:hover {
 .ui.label > img {
   width: auto !important;
   vertical-align: middle;
-  height: 2.1666em !important;
+  height: 2.3666em !important;
 }
 
 /* Icon */
@@ -110,7 +110,7 @@ a.ui.label:hover {
 --------------------*/
 
 .ui.header > .ui.label {
-  margin-top: -0.29165em;
+  margin-top: -0.34165em;
 }
 
 /* Remove border radius on attached segment */
@@ -151,21 +151,21 @@ a.ui.label:hover {
   vertical-align: baseline;
   text-transform: none;
   background: #e8e8e8;
-  padding: 0.5833em 0.833em 0.5833em 0.5em;
+  padding: 0.6833em 0.833em 0.6833em 0.5em;
   border-radius: 0.28571429rem;
-  box-shadow: none;
+  border-width: 0px !important;
 }
 .ui.image.label img {
   display: inline-block;
   vertical-align: top;
-  height: 2.1666em;
-  margin: -0.5833em 0.5em -0.5833em -0.5em;
+  height: 2.3666em;
+  margin: -0.6833em 0.5em -0.6833em -0.5em;
   border-radius: 0.28571429rem 0em 0em 0.28571429rem;
 }
 .ui.image.label .detail {
   background: rgba(0, 0, 0, 0.1);
-  margin: -0.5833em -0.833em -0.5833em 0.5em;
-  padding: 0.5833em 0.833em;
+  margin: -0.6833em -0.833em -0.6833em 0.5em;
+  padding: 0.6833em 0.833em;
   border-radius: 0em 0.28571429rem 0.28571429rem 0em;
 }
 
@@ -179,6 +179,7 @@ a.ui.label:hover {
   position: relative;
   padding-left: 1.5em;
   padding-right: 1.5em;
+  border-width: 0px;
   border-radius: 0em 0.28571429rem 0.28571429rem 0em;
   -webkit-transition: none;
   transition: none;
@@ -204,7 +205,7 @@ a.ui.label:hover {
   top: 50%;
   left: -0.25em;
   margin-top: -0.25em;
-  background-color: #FFFFFF !important;
+  background-color: #ffffff !important;
   width: 0.5em;
   height: 0.5em;
   border-radius: 500rem;
@@ -222,6 +223,7 @@ a.ui.label:hover {
   padding: 0em;
   text-align: center;
   border-color: #e8e8e8;
+  border-width: 0;
   width: 4em;
   height: 4em;
   z-index: 1;
@@ -434,11 +436,11 @@ a.ui.labels .label:hover,
 a.ui.label:hover {
   background-color: #eeeeee;
   border-color: #eeeeee;
-  color: #555555;
+  color: #545454;
 }
 .ui.labels a.label:hover:before,
 a.ui.label:hover:before {
-  color: #555555;
+  color: #545454;
 }
 
 /*-------------------
@@ -448,11 +450,11 @@ a.ui.label:hover:before {
 .ui.active.label {
   background-color: #cccccc;
   border-color: #cccccc;
-  color: #484848;
+  color: #474747;
 }
 .ui.active.label:before {
   background-color: #cccccc;
-  color: #484848;
+  color: #474747;
 }
 
 /*-------------------
@@ -463,12 +465,12 @@ a.ui.labels .active.label:hover,
 a.ui.active.label:hover {
   background-color: #eeeeee;
   border-color: #eeeeee;
-  color: #555555;
+  color: #545454;
 }
 .ui.labels a.active.label:ActiveHover:before,
 a.ui.active.label:ActiveHover:before {
   background-color: #eeeeee;
-  color: #555555;
+  color: #545454;
 }
 
 /*-------------------
@@ -506,7 +508,7 @@ a.ui.active.label:ActiveHover:before {
 .ui.primary.label {
   background-color: #008bd9 !important;
   border-color: #008bd9 !important;
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 
 /* Link */
@@ -514,7 +516,7 @@ a.ui.active.label:ActiveHover:before {
 a.ui.primary.label:hover {
   background-color: #009bf3 !important;
   border-color: #008bd9 !important;
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 
 /* Corner */
@@ -530,13 +532,13 @@ a.ui.primary.label:hover {
 
 /* Basic */
 .ui.basic.primary.label {
-  background-color: #FFFFFF !important;
+  background-color: #ffffff !important;
   color: #008bd9 !important;
   border-color: #008bd9 !important;
 }
 .ui.basic.primary.labels a.label:hover,
 a.ui.basic.primary.label:hover {
-  background-color: #FFFFFF !important;
+  background-color: #ffffff !important;
   color: #006aa6 !important;
   border-color: #006aa6 !important;
 }
@@ -547,7 +549,7 @@ a.ui.basic.primary.label:hover {
 .ui.info.label {
   background-color: #2BADD4 !important;
   border-color: #2BADD4 !important;
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 
 /* Link */
@@ -555,7 +557,7 @@ a.ui.basic.primary.label:hover {
 a.ui.info.label:hover {
   background-color: #40b5d8 !important;
   border-color: #2BADD4 !important;
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 
 /* Corner */
@@ -571,13 +573,13 @@ a.ui.info.label:hover {
 
 /* Basic */
 .ui.basic.info.label {
-  background-color: #FFFFFF !important;
+  background-color: #ffffff !important;
   color: #2BADD4 !important;
   border-color: #2BADD4 !important;
 }
 .ui.basic.info.labels a.label:hover,
 a.ui.basic.info.label:hover {
-  background-color: #FFFFFF !important;
+  background-color: #ffffff !important;
   color: #228aaa !important;
   border-color: #228aaa !important;
 }
@@ -588,7 +590,7 @@ a.ui.basic.info.label:hover {
 .ui.success.label {
   background-color: #19b37b !important;
   border-color: #19b37b !important;
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 
 /* Link */
@@ -596,7 +598,7 @@ a.ui.basic.info.label:hover {
 a.ui.success.label:hover {
   background-color: #1cc98a !important;
   border-color: #19b37b !important;
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 
 /* Corner */
@@ -612,13 +614,13 @@ a.ui.success.label:hover {
 
 /* Basic */
 .ui.basic.success.label {
-  background-color: #FFFFFF !important;
+  background-color: #ffffff !important;
   color: #19b37b !important;
   border-color: #19b37b !important;
 }
 .ui.basic.success.labels a.label:hover,
 a.ui.basic.success.label:hover {
-  background-color: #FFFFFF !important;
+  background-color: #ffffff !important;
   color: #13865c !important;
   border-color: #13865c !important;
 }
@@ -629,7 +631,7 @@ a.ui.basic.success.label:hover {
 .ui.error.label {
   background-color: #e64333 !important;
   border-color: #e64333 !important;
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 
 /* Link */
@@ -637,7 +639,7 @@ a.ui.basic.success.label:hover {
 a.ui.error.label:hover {
   background-color: #e9584a !important;
   border-color: #e64333 !important;
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 
 /* Corner */
@@ -653,13 +655,13 @@ a.ui.error.label:hover {
 
 /* Basic */
 .ui.basic.error.label {
-  background-color: #FFFFFF !important;
+  background-color: #ffffff !important;
   color: #e64333 !important;
   border-color: #e64333 !important;
 }
 .ui.basic.error.labels a.label:hover,
 a.ui.basic.error.label:hover {
-  background-color: #FFFFFF !important;
+  background-color: #ffffff !important;
   color: #cd2919 !important;
   border-color: #cd2919 !important;
 }
@@ -670,7 +672,7 @@ a.ui.basic.error.label:hover {
 .ui.warning.label {
   background-color: #e5791a !important;
   border-color: #e5791a !important;
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 
 /* Link */
@@ -678,7 +680,7 @@ a.ui.basic.error.label:hover {
 a.ui.warning.label:hover {
   background-color: #e88631 !important;
   border-color: #e5791a !important;
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 
 /* Corner */
@@ -694,13 +696,13 @@ a.ui.warning.label:hover {
 
 /* Basic */
 .ui.basic.warning.label {
-  background-color: #FFFFFF !important;
+  background-color: #ffffff !important;
   color: #e5791a !important;
   border-color: #e5791a !important;
 }
 .ui.basic.warning.labels a.label:hover,
 a.ui.basic.warning.label:hover {
-  background-color: #FFFFFF !important;
+  background-color: #ffffff !important;
   color: #b76115 !important;
   border-color: #b76115 !important;
 }
@@ -710,7 +712,7 @@ a.ui.basic.warning.label:hover {
 --------------------*/
 
 .ui.basic.label {
-  color: #6f6f6f;
+  color: #6e6e6e;
   background: #ffffff;
   border-color: #d9d9d9;
 }
@@ -719,12 +721,12 @@ a.ui.basic.warning.label:hover {
 a.ui.basic.label:hover {
   text-decoration: none;
   background: #ffffff;
-  color: #555555;
+  color: #545454;
   border-color: #b3b3b3;
 }
 
-/* Pointing */
-.ui.basic.pointing.label:before {
+/* tooltip */
+.ui.basic.tooltip.label:before {
   border-color: inherit;
 }
 
@@ -744,7 +746,7 @@ a.ui.basic.label:hover {
 
 .ui.inverted.labels .label,
 .ui.inverted.label {
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 
 /*-------------------
@@ -771,6 +773,7 @@ a.ui.basic.label:hover {
   line-height: 1em;
   text-align: center;
   border-radius: 500rem;
+  border-width: 0px !important;
 }
 .ui.empty.round.labels .label,
 .ui.empty.round.label {
@@ -783,16 +786,16 @@ a.ui.basic.label:hover {
 }
 
 /*-------------------
-       Pointing
+       tooltip
 --------------------*/
 
-.ui.pointing.label {
+.ui.tooltip.label {
   position: relative;
 }
-.ui.attached.pointing.label {
+.ui.attached.tooltip.label {
   position: absolute;
 }
-.ui.pointing.label:before {
+.ui.tooltip.label:before {
   background-color: inherit;
   background-image: inherit;
   border-width: none;
@@ -801,7 +804,7 @@ a.ui.basic.label:hover {
 }
 
 /* Arrow */
-.ui.pointing.label:before {
+.ui.tooltip.label:before {
   position: absolute;
   content: '';
   -webkit-transform: rotate(45deg);
@@ -816,12 +819,12 @@ a.ui.basic.label:hover {
 
 /*--- Above ---*/
 
-.ui.pointing.label,
-.ui[class*="pointing above"].label {
+.ui.tooltip.label,
+.ui[class*="tooltip above"].label {
   margin-top: 1em;
 }
-.ui.pointing.label:before,
-.ui[class*="pointing above"].label:before {
+.ui.tooltip.label:before,
+.ui[class*="tooltip above"].label:before {
   border-width: 1px 0px 0px 1px;
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
           transform: translateX(-50%) translateY(-50%) rotate(45deg);
@@ -831,13 +834,13 @@ a.ui.basic.label:hover {
 
 /*--- Below ---*/
 
-.ui[class*="bottom pointing"].label,
-.ui[class*="pointing below"].label {
+.ui[class*="bottom tooltip"].label,
+.ui[class*="tooltip below"].label {
   margin-top: 0em;
   margin-bottom: 1em;
 }
-.ui[class*="bottom pointing"].label:before,
-.ui[class*="pointing below"].label:before {
+.ui[class*="bottom tooltip"].label:before,
+.ui[class*="tooltip below"].label:before {
   border-width: 0px 1px 1px 0px;
   top: auto;
   right: auto;
@@ -849,11 +852,11 @@ a.ui.basic.label:hover {
 
 /*--- Left ---*/
 
-.ui[class*="left pointing"].label {
+.ui[class*="left tooltip"].label {
   margin-top: 0em;
   margin-left: 0.6666em;
 }
-.ui[class*="left pointing"].label:before {
+.ui[class*="left tooltip"].label:before {
   border-width: 0px 0px 1px 1px;
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
           transform: translateX(-50%) translateY(-50%) rotate(45deg);
@@ -865,11 +868,11 @@ a.ui.basic.label:hover {
 
 /*--- Right ---*/
 
-.ui[class*="right pointing"].label {
+.ui[class*="right tooltip"].label {
   margin-top: 0em;
   margin-right: 0.6666em;
 }
-.ui[class*="right pointing"].label:before {
+.ui[class*="right tooltip"].label:before {
   border-width: 1px 1px 0px 0px;
   -webkit-transform: translateX(50%) translateY(-50%) rotate(45deg);
           transform: translateX(50%) translateY(-50%) rotate(45deg);
@@ -879,19 +882,19 @@ a.ui.basic.label:hover {
   left: auto;
 }
 
-/* Basic Pointing */
+/* Basic tooltip */
 
 /*--- Above ---*/
 
-.ui.basic.pointing.label:before,
-.ui.basic[class*="pointing above"].label:before {
+.ui.basic.tooltip.label:before,
+.ui.basic[class*="tooltip above"].label:before {
   margin-top: -1px;
 }
 
 /*--- Below ---*/
 
-.ui.basic[class*="bottom pointing"].label:before,
-.ui.basic[class*="pointing below"].label:before {
+.ui.basic[class*="bottom tooltip"].label:before,
+.ui.basic[class*="tooltip below"].label:before {
   bottom: auto;
   top: 100%;
   margin-top: 1px;
@@ -899,14 +902,14 @@ a.ui.basic.label:hover {
 
 /*--- Left ---*/
 
-.ui.basic[class*="left pointing"].label:before {
+.ui.basic[class*="left tooltip"].label:before {
   top: 50%;
   left: -1px;
 }
 
 /*--- Right ---*/
 
-.ui.basic[class*="right pointing"].label:before {
+.ui.basic[class*="right tooltip"].label:before {
   top: 50%;
   right: -1px;
 }
@@ -963,11 +966,5 @@ a.ui.basic.label:hover {
 
 /*******************************
          Theme Overrides
-*******************************/
-
-
-
-/*******************************
-         Site Overrides
 *******************************/
 

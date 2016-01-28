@@ -49,7 +49,7 @@ ol.ui.list li,
   table-layout: fixed;
   list-style-type: none;
   list-style-position: outside;
-  padding: 0.21428571em 0em;
+  padding: 0.5em 0em;
   line-height: 1.14285714em;
 }
 ul.ui.list > li:first-child:after,
@@ -88,7 +88,7 @@ ol.ui.list ol,
 ul.ui.list ul li,
 ol.ui.list ol li,
 .ui.list .list > .item {
-  padding: 0.14285714em 0em;
+  padding: 0.28571429em 0em;
   line-height: inherit;
 }
 
@@ -159,7 +159,7 @@ ol.ui.list ol li,
 .ui.list .list > .item .header,
 .ui.list > .item .header {
   display: block;
-  margin: 0em;
+  margin: 0 0 3px 0;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: bold;
   color: #414141;
@@ -186,7 +186,7 @@ ol.ui.list ol li,
 }
 .ui.list .list > a.item:hover,
 .ui.list > a.item:hover {
-  color: #006aa6;
+  color: #007bc0;
 }
 
 /* Linked Item Icons */
@@ -203,7 +203,7 @@ ol.ui.list ol li,
 }
 .ui.list .list > .item a.header:hover,
 .ui.list > .item a.header:hover {
-  color: #006aa6 !important;
+  color: #007bc0 !important;
 }
 
 /* Floated Content */
@@ -236,7 +236,7 @@ ol.ui.list ol li,
   background-color: transparent;
   list-style-type: none;
   list-style-position: outside;
-  padding: 0.21428571em 0em;
+  padding: 0.5em 0em;
   line-height: 1.14285714em;
 }
 .ui.menu .ui.list .list > .item:before,
@@ -292,8 +292,8 @@ ol.ui.list ol li,
 /* Padding on all elements */
 .ui.horizontal.list > .item:first-child,
 .ui.horizontal.list > .item:last-child {
-  padding-top: 0.21428571em;
-  padding-bottom: 0.21428571em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 /* Horizontal List */
@@ -320,11 +320,11 @@ ol.ui.list ol li,
 .ui.list .list > .disabled.item,
 .ui.list > .disabled.item {
   pointer-events: none;
-  color: rgba(40, 40, 40, 0.3) !important;
+  color: rgba(0, 0, 0, 0.2) !important;
 }
 .ui.inverted.list .list > .disabled.item,
 .ui.inverted.list > .disabled.item {
-  color: rgba(225, 225, 225, 0.3) !important;
+  color: rgba(255, 255, 255, 0.2) !important;
 }
 
 /*-------------------
@@ -352,7 +352,7 @@ ol.ui.list ol li,
 }
 .ui.inverted.list .list > .item .header,
 .ui.inverted.list > .item .header {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .ui.inverted.list .list > .item .description,
 .ui.inverted.list > .item .description {
@@ -363,19 +363,19 @@ ol.ui.list ol li,
 .ui.inverted.list .list > a.item,
 .ui.inverted.list > a.item {
   cursor: pointer;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .ui.inverted.list .list > a.item:hover,
 .ui.inverted.list > a.item:hover {
-  color: #006aa6;
+  color: #007bc0;
 }
 
 /* Linking Content */
 .ui.inverted.list .item a:not(.ui) {
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 .ui.inverted.list .item a:not(.ui):hover {
-  color: #006aa6 !important;
+  color: #007bc0 !important;
 }
 
 /*-------------------
@@ -411,15 +411,15 @@ ol.ui.list ol li,
 }
 .ui.link.list a.item:hover,
 .ui.link.list .item a:not(.ui):hover {
-  color: #555555;
+  color: #545454;
 }
 .ui.link.list a.item:active,
 .ui.link.list .item a:not(.ui):active {
-  color: #555555;
+  color: #545454;
 }
 .ui.link.list .active.item,
 .ui.link.list .active.item a:not(.ui) {
-  color: #555555;
+  color: #545454;
 }
 
 /* Inverted */
@@ -462,18 +462,18 @@ ol.ui.list ol li,
 }
 .ui.selection.list.list > .item:hover,
 .ui.selection.list > .item:hover {
-  background: #eeeeee /*rgba(0, 0, 0, 0.03)*/;
-  color: #555555;
+  background: rgba(0, 0, 0, 0.03);
+  color: #545454;
 }
 .ui.selection.list .list > .item:active,
 .ui.selection.list > .item:active {
   background: rgba(0, 0, 0, 0.03);
-  color: #555555;
+  color: #545454;
 }
 .ui.selection.list .list > .item.active,
 .ui.selection.list > .item.active {
   background: rgba(0, 0, 0, 0.03);
-  color: #555555;
+  color: #545454;
 }
 
 /* Inverted */
@@ -708,7 +708,7 @@ ol.ui.horizontal.list li:before,
 .ui.divided.ordered.list .item .list {
   margin-left: 0em;
   margin-right: 0em;
-  padding-bottom: 0.21428571em;
+  padding-bottom: 0.5em;
 }
 .ui.divided.ordered.list .item .list > .item {
   padding-left: 1em;
@@ -761,8 +761,8 @@ ol.ui.horizontal.list li:before,
 /* Padding on all elements */
 .ui.celled.list > .item:first-child,
 .ui.celled.list > .item:last-child {
-  padding-top: 0.21428571em;
-  padding-bottom: 0.21428571em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 /* Sub Menu */
@@ -784,7 +784,7 @@ ol.ui.horizontal.list li:before,
 .ui.celled.bulleted.list .item .list {
   margin-left: -1.25rem;
   margin-right: -1.25rem;
-  padding-bottom: 0.21428571em;
+  padding-bottom: 0.5em;
 }
 
 /* Celled Ordered */
@@ -798,7 +798,7 @@ ol.ui.horizontal.list li:before,
 .ui.celled.ordered.list .item .list {
   margin-left: 0em;
   margin-right: 0em;
-  padding-bottom: 0.21428571em;
+  padding-bottom: 0.5em;
 }
 .ui.celled.ordered.list .list > .item {
   padding-left: 1em;
@@ -838,12 +838,12 @@ ol.ui.horizontal.list li:before,
 --------------------*/
 
 .ui.relaxed.list:not(.horizontal) > .item {
-  padding-top: 0.42857143em;
-  padding-bottom: 0.42857143em;
+  padding-top: 0.64285714em;
+  padding-bottom: 0.64285714em;
 }
 .ui.relaxed.list:not(.horizontal) .list > .item {
-  padding-top: 0.21428571em;
-  padding-bottom: 0.21428571em;
+  padding-top: 0.35714286em;
+  padding-bottom: 0.35714286em;
 }
 .ui.horizontal.relaxed.list > .item {
   padding-left: 1rem;
@@ -856,8 +856,8 @@ ol.ui.horizontal.list li:before,
   padding-bottom: 0.85714286em;
 }
 .ui[class*="very relaxed"].list:not(.horizontal) .list > .item {
-  padding-top: 0.28571429em;
-  padding-bottom: 0.28571429em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 .ui.horizontal[class*="very relaxed"].list .list > .item,
 .ui.horizontal[class*="very relaxed"].list > .item {
@@ -929,11 +929,5 @@ ol.ui.horizontal.list li:before,
 
 /*******************************
          Theme Overrides
-*******************************/
-
-
-
-/*******************************
-    User Variable Overrides
 *******************************/
 

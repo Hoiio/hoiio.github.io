@@ -21,7 +21,7 @@
   top: 50%;
   left: 50%;
   text-align: left;
-  background: #FFFFFF;
+  background: #ffffff;
   border: none;
   box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.2), 1px 3px 15px 2px rgba(0, 0, 0, 0.2);
   -webkit-transform-origin: 50% 25%;
@@ -61,7 +61,7 @@
   z-index: 1;
   opacity: 0.8;
   font-size: 1.25em;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 2.25rem;
   height: 2.25rem;
   padding: 0.625rem 0rem 0rem 0rem;
@@ -77,7 +77,7 @@
 .ui.modal > .header {
   display: block;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background: #FFFFFF;
+  background: #ffffff;
   margin: 0em;
   padding: 1.25rem 1.5rem;
   box-shadow: none;
@@ -230,7 +230,7 @@
     padding-right: 2.25rem;
   }
   .ui.modal > .close {
-    top: 1.41071428rem;
+    top: 1.411rem;
     right: 1rem;
     color: #414141;
   }
@@ -306,7 +306,7 @@
   border: none;
   border-radius: 0em;
   box-shadow: none !important;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .ui.basic.modal > .header,
 .ui.basic.modal > .content,
@@ -314,7 +314,7 @@
   background-color: transparent;
 }
 .ui.basic.modal > .header {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .ui.basic.modal > .close {
   top: 1rem;
@@ -330,7 +330,7 @@
 /* Tablet and Mobile */
 @media only screen and (max-width: 991px) {
   .ui.basic.modal > .close {
-    color: #FFFFFF;
+    color: #ffffff;
   }
 }
 
@@ -411,7 +411,7 @@
   padding-right: 2.25rem;
 }
 .ui.fullscreen.modal > .close {
-  top: 1.41071428rem;
+  top: 1.411rem;
   right: 1rem;
   color: #414141;
 }
@@ -499,11 +499,5 @@
 
 /*******************************
          Theme Overrides
-*******************************/
-
-
-
-/*******************************
-         Site Overrides
 *******************************/
 

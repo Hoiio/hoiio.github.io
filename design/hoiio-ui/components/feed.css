@@ -207,7 +207,7 @@
   border-left: none;
   font-size: 1em;
   max-width: 500px;
-  line-height: 1.78571428;
+  line-height: 1.786;
 }
 
 /*--------------
@@ -270,7 +270,7 @@
 .ui.feed > .event > .content .meta a:hover,
 .ui.feed > .event > .content .meta a:hover .icon,
 .ui.feed > .event > .content .meta > .icon:hover {
-  color: #555555;
+  color: #545454;
 }
 
 
@@ -291,11 +291,5 @@
 
 /*******************************
          Theme Overrides
-*******************************/
-
-
-
-/*******************************
-    User Variable Overrides
 *******************************/
 

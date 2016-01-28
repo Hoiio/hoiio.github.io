@@ -29,7 +29,7 @@ body {
   background: #FFFFFF;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.78571428;
+  line-height: 1.786;
   color: #414141;
   font-smoothing: antialiased;
 }
@@ -53,20 +53,28 @@ h5 {
 h1 {
   min-height: 1rem;
   font-size: 2.5rem;
+  
+/* 35px */
 }
 h2 {
   font-size: 1.8rem;
+  
+/* 25px */
 }
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.429rem;
+  
+/* 20px */
 }
 h4 {
   font-size: 1.2rem;
+  
+/* 16px */
 }
 h5 {
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  font-size: 0.929rem;
+  
+/* 13px */
 }
 h1:first-child,
 h2:first-child,
@@ -90,7 +98,7 @@ h5:last-child {
 
 p {
   margin: 0em 0em 1em;
-  line-height: 1.78571428;
+  line-height: 1.786;
 }
 p:first-child {
   margin-top: 0em;
@@ -108,9 +116,10 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #006aa6;
+  color: #007bc0;
   text-decoration: none;
 }
+.underlined,
 a.underlined:hover {
   text-decoration: underline;
 }
@@ -151,15 +160,3 @@ input::selection {
   background-color: rgba(100, 100, 100, 0.4);
   color: #414141;
 }
-
-
-/*******************************
-        Global Overrides
-*******************************/
-
-
-
-/*******************************
-         Site Overrides
-*******************************/
-

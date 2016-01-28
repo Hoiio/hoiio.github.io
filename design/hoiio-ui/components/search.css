@@ -25,10 +25,10 @@
   text-shadow: none;
   font-style: normal;
   font-weight: normal;
-  line-height: 1.2142em;
-  padding: 0.67861429em 1em;
+  line-height: 1.786;
+  padding: 0.17842857em 1.14285714em;
   font-size: 1em;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid #cccccc;
   color: #414141;
   box-shadow: 0em 0em 0em 0em transparent inset;
@@ -172,8 +172,8 @@
 
 .ui.search > .prompt:focus {
   border-color: rgba(34, 36, 38, 0.35);
-  background: #FFFFFF;
-  color: #555555;
+  background: #ffffff;
+  color: #545454;
 }
 
 /*--------------------
@@ -317,7 +317,7 @@
 
 /* Category Result */
 .ui.category.search > .results .category .result {
-  background: #FFFFFF;
+  background: #ffffff;
   margin-left: 100px;
   border-left: 1px solid #cccccc;
   border-bottom: 1px solid rgba(34, 36, 38, 0.1);
@@ -398,11 +398,5 @@
 
 /*******************************
          Theme Overrides
-*******************************/
-
-
-
-/*******************************
-         Site Overrides
 *******************************/
 

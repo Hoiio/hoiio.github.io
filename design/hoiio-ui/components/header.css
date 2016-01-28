@@ -23,7 +23,6 @@
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: bold;
   line-height: 1.2857em;
-  text-transform: none;
   color: #414141;
 }
 .ui.header:first-child {
@@ -41,10 +40,11 @@
   display: block;
   font-weight: normal;
   padding: 0em;
-  margin: 0em;
+  margin: 5px 0 0 0;
   font-size: 1rem;
   line-height: 1.2em;
   color: rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.03rem;
 }
 
 /*--------------
@@ -138,13 +138,15 @@ h2.ui.header {
   font-size: 1.8rem;
 }
 h3.ui.header {
-  font-size: 1.4rem;
+  font-size: 1.429rem;
 }
 h4.ui.header {
   font-size: 1.2rem;
 }
 h5.ui.header {
-  font-size: 0.9rem;
+  font-size: 0.929rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 /* Sub Header */
@@ -162,6 +164,7 @@ h4.ui.header .sub.header {
 }
 h5.ui.header .sub.header {
   font-size: 0.92857143rem;
+  text-transform: none !important;
 }
 
 /*--------------
@@ -176,13 +179,13 @@ h5.ui.header .sub.header {
   font-size: 1.8em;
 }
 .ui.medium.header {
-  font-size: 1.4em;
+  font-size: 1.429em;
 }
 .ui.small.header {
   font-size: 1.2em;
 }
 .ui.tiny.header {
-  font-size: 0.9em;
+  font-size: 0.929em;
 }
 
 /* Sub Header */
@@ -213,6 +216,7 @@ h5.ui.header .sub.header {
   font-size: 0.85714286em;
   text-transform: uppercase;
   color: '';
+  letter-spacing: 1px;
 }
 .ui.small.sub.header {
   font-size: 0.71428571em;
@@ -291,31 +295,6 @@ h5.ui.header .sub.header {
 
 
 /*-------------------
-      Inverted
---------------------*/
-
-.ui.inverted.header {
-  color: #FFFFFF;
-}
-.ui.inverted.header .sub.header {
-  color: rgba(255, 255, 255, 0.8);
-}
-.ui.inverted.attached.header {
-  background: #555555 -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.03));
-  background: #555555 linear-gradient(transparent, rgba(0, 0, 0, 0.03));
-  box-shadow: none;
-  border-color: transparent;
-}
-.ui.inverted.block.header {
-  background: #555555 -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.03));
-  background: #555555 linear-gradient(transparent, rgba(0, 0, 0, 0.03));
-  box-shadow: none;
-}
-.ui.inverted.block.header {
-  border-bottom: none;
-}
-
-/*-------------------
        Colors
 --------------------*/
 
@@ -332,12 +311,52 @@ a.ui.primary.header:hover {
   border-bottom: 2px solid #008bd9;
 }
 
-/* Inverted */
-.ui.inverted.primary.header {
-  color: #54C8FF !important;
+/*--- Info ---*/
+
+.ui.info.header {
+  color: #2BADD4 !important;
 }
-a.ui.inverted.primary.header:hover {
-  color: #3ac0ff !important;
+a.ui.info.header:hover {
+  color: #228aaa !important;
+}
+.ui.info.dividing.header {
+  border-bottom: 2px solid #2BADD4;
+}
+
+/*--- Success ---*/
+
+.ui.success.header {
+  color: #19b37b !important;
+}
+a.ui.success.header:hover {
+  color: #13865c !important;
+}
+.ui.success.dividing.header {
+  border-bottom: 2px solid #19b37b;
+}
+
+/*--- Error ---*/
+
+.ui.error.header {
+  color: #e64333 !important;
+}
+a.ui.error.header:hover {
+  color: #cd2919 !important;
+}
+.ui.error.dividing.header {
+  border-bottom: 2px solid #e64333;
+}
+
+/*--- Warning ---*/
+
+.ui.warning.header {
+  color: #e5791a !important;
+}
+a.ui.warning.header:hover {
+  color: #b76115 !important;
+}
+.ui.warning.dividing.header {
+  border-bottom: 2px solid #e5791a;
 }
 
 /*-------------------
@@ -401,9 +420,6 @@ a.ui.inverted.primary.header:hover {
 .ui.dividing.header .icon {
   margin-bottom: 0em;
 }
-.ui.inverted.dividing.header {
-  border-bottom-color: rgba(255, 255, 255, 0.1);
-}
 
 /*-------------------
         Block
@@ -411,7 +427,7 @@ a.ui.inverted.primary.header:hover {
 
 .ui.block.header {
   background: #F3F4F5;
-  padding: 0.71428571rem 1rem;
+  padding: 0.71428571rem 1.07142857rem;
   box-shadow: none;
   border: 1px solid #D4D4D5;
   border-radius: 0.28571429rem;
@@ -437,8 +453,8 @@ a.ui.inverted.primary.header:hover {
 --------------------*/
 
 .ui.attached.header {
-  background: #FFFFFF;
-  padding: 0.71428571rem 1rem;
+  background: #ffffff;
+  padding: 0.71428571rem 1.07142857rem;
   margin-left: -1px;
   margin-right: -1px;
   box-shadow: none;
@@ -485,17 +501,11 @@ a.ui.inverted.primary.header:hover {
 --------------------*/
 
 .ui.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-  font-size: 1.4em;
+  font-size: 1.429em;
 }
 
 
 /*******************************
          Theme Overrides
-*******************************/
-
-
-
-/*******************************
-         Site Overrides
 *******************************/
 

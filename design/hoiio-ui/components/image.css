@@ -89,14 +89,14 @@ img.ui.image {
 }
 
 /*--------------
-     Rounded
+     radius
 ---------------*/
 
-.ui.rounded.images .image,
-.ui.rounded.image,
-.ui.rounded.images .image > *,
-.ui.rounded.image > * {
-  border-radius: 0.3125em;
+.ui.radius.images .image,
+.ui.radius.image,
+.ui.radius.images .image > *,
+.ui.radius.image > * {
+  border-radius: 0.5em;
 }
 
 /*--------------
@@ -154,8 +154,8 @@ img.ui.bordered.image {
 .ui.avatar.image {
   margin-right: 0.25em;
   display: inline-block;
-  width: 2em;
-  height: 2em;
+  width: 2.286em;
+  height: 2.286em;
   border-radius: 500rem;
 }
 
@@ -292,11 +292,5 @@ img.ui.bordered.image {
 
 /*******************************
          Theme Overrides
-*******************************/
-
-
-
-/*******************************
-         Site Overrides
 *******************************/
 

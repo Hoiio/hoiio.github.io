@@ -166,7 +166,7 @@
 
 /* Indicating Success */
 .ui.indicating.progress.success .label {
-  color: #169d6c;
+  color: #19b37b;
 }
 
 
@@ -188,7 +188,7 @@
           animation: none !important;
 }
 .ui.progress.success > .label {
-  color: #169d6c;
+  color: #19b37b;
 }
 
 /*--------------
@@ -204,7 +204,7 @@
           animation: none !important;
 }
 .ui.progress.warning > .label {
-  color: #ce6d17;
+  color: #e5791a;
 }
 
 /*--------------
@@ -220,7 +220,7 @@
           animation: none !important;
 }
 .ui.progress.error > .label {
-  color: #e32e1c;
+  color: #e64333;
 }
 
 /*--------------
@@ -239,7 +239,7 @@
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 0.28571429rem;
   -webkit-animation: progress-active 2s ease infinite;
           animation: progress-active 2s ease infinite;
@@ -299,7 +299,7 @@
   color: #F9FAFB;
 }
 .ui.inverted.progress > .label {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .ui.inverted.progress.success > .label {
   color: #19b37b;
@@ -383,10 +383,10 @@
 
 /* Black */
 .ui.black.progress .bar {
-  background-color: #1B1C1D;
+  background-color: #1b1c1d;
 }
 .ui.black.inverted.progress .bar {
-  background-color: #555555;
+  background-color: #545454;
 }
 
 /*--------------
@@ -427,11 +427,5 @@
 
 /*******************************
             Progress
-*******************************/
-
-
-
-/*******************************
-         Site Overrides
 *******************************/
 

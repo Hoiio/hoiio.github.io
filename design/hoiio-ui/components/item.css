@@ -141,7 +141,7 @@
 }
 .ui.items > .item > .content > .header {
   display: inline-block;
-  margin: -0.39285714em 0em 0em;
+  margin: -0.393em 0em 0em;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.85);
@@ -188,7 +188,7 @@
   margin-top: 0.6em;
   max-width: auto;
   font-size: 1em;
-  line-height: 1.78571428;
+  line-height: 1.786;
   color: #414141;
 }
 
@@ -244,7 +244,7 @@
   color: rgba(0, 0, 0, 0.85);
 }
 .ui.items > .item > .content > a.header:hover {
-  color: #006aa6;
+  color: #007bc0;
 }
 
 /* Meta */
@@ -458,7 +458,7 @@
 }
 .ui.items a.item:hover .content .header,
 .ui.link.items > .item:hover .content .header {
-  color: #006aa6;
+  color: #007bc0;
 }
 
 /*--------------
@@ -472,11 +472,5 @@
 
 /*******************************
          Theme Overrides
-*******************************/
-
-
-
-/*******************************
-    User Variable Overrides
 *******************************/
 

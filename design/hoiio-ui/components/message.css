@@ -20,12 +20,12 @@
   margin: 1em 0em;
   background: #F8F8F9;
   padding: 1em 1.5em;
-  line-height: 1.78571428;
+  line-height: 1.786;
   color: #414141;
   -webkit-transition: opacity 0.05s ease, color 0.05s ease, background 0.05s ease, box-shadow 0.05s ease;
   transition: opacity 0.05s ease, color 0.05s ease, background 0.05s ease, box-shadow 0.05s ease;
   border-radius: 0.28571429rem;
-  box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.22) inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  border: 1px solid rgba(34, 36, 38, 0.22);
 }
 .ui.message:first-child {
   margin-top: 0em;
@@ -54,7 +54,7 @@
 
 /* Paragraph */
 .ui.message p {
-  opacity: 0.85;
+  opacity: 1;
   margin: 0.75em 0em;
 }
 .ui.message p:first-child {
@@ -65,6 +65,10 @@
 }
 .ui.message .header + p {
   margin-top: 0.25em;
+}
+.ui.message .remove + p {
+  margin-top: 0em;
+  margin-right: 1em;
 }
 
 /* List */
@@ -103,18 +107,18 @@
   margin-right: 0.6em;
 }
 
-/* Close Icon */
-.ui.message > .close.icon {
+/* Remove Icon */
+.ui.message > .remove.icon {
   cursor: pointer;
   position: absolute;
   margin: 0em;
-  top: 0.60714286em;
-  right: 0.5em;
+  top: 1em;
+  right: 1em;
   opacity: 0.7;
   -webkit-transition: opacity 0.05s ease;
   transition: opacity 0.05s ease;
 }
-.ui.message > .close.icon:hover {
+.ui.message > .remove.icon:hover {
   opacity: 1;
 }
 
@@ -184,7 +188,7 @@
 .ui.attached.message {
   margin-bottom: -1px;
   border-radius: 0.28571429rem 0.28571429rem 0em 0em;
-  box-shadow: 0em 0em 0em 1px #cccccc inset;
+  border: 1px solid #cccccc;
   margin-left: -1px;
   margin-right: -1px;
 }
@@ -195,7 +199,7 @@
 .ui.bottom.attached.message {
   margin-top: -1px;
   border-radius: 0em 0em 0.28571429rem 0.28571429rem;
-  box-shadow: 0em 0em 0em 1px #cccccc inset, 0px 1px 2px 0 #cccccc;
+  border: 1px solid #cccccc;
 }
 .ui.bottom.attached.message:not(:last-child) {
   margin-bottom: 1em;
@@ -251,7 +255,8 @@
 ---------------*/
 
 .ui.floating.message {
-  box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.22) inset, 0px 2px 4px 0px rgba(34, 36, 38, 0.12), 0px 2px 10px 0px rgba(34, 36, 38, 0.08);
+  border: 1px solid rgba(34, 36, 38, 0.22);
+  box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12), 0px 2px 10px 0px rgba(34, 36, 38, 0.08);
 }
 
 /*--------------
@@ -259,8 +264,8 @@
 ---------------*/
 
 .ui.black.message {
-  background-color: #1B1C1D;
-  color: #FFFFFF;
+  background-color: #1b1c1d;
+  color: #ffffff;
 }
 
 /*--------------
@@ -268,76 +273,63 @@
 ---------------*/
 
 
-/* Primary */
-.ui.primary.message {
-  background-color: #008bd9;
-  color: #FFFFFF;
-}
-.ui.primary.message,
-.ui.attached.primary.message {
-  box-shadow: 0px 0px 0px 1px #008bd9 inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
-}
-.ui.primary.message .header {
-  color: #007bc0;
-}
-
 /* Info */
 .ui.info.message {
-  background-color: #2BADD4;
-  color: #FFFFFF;
+  background-color: #d9edf7;
+  color: #31708f;
 }
 .ui.info.message,
 .ui.attached.info.message {
-  box-shadow: 0px 0px 0px 1px #2BADD4 inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  border: 1px solid #a9d5de;
 }
 .ui.info.message .header {
-  color: #279cbf;
+  color: #2a617c;
 }
 
 /* Warning */
 .ui.warning.message {
-  background-color: #e5791a;
-  color: #FFFFFF;
+  background-color: #fcf8e3;
+  color: #8a6d3b;
 }
 .ui.warning.message,
 .ui.attached.warning.message {
-  box-shadow: 0px 0px 0px 1px #e5791a inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  border: 1px solid #c9ba9b;
 }
 .ui.warning.message .header {
-  color: #ce6d17;
+  color: #785f33;
 }
 
 /* Error */
 .ui.error.message {
-  background-color: #e64333;
-  color: #FFFFFF;
+  background-color: #f2dede;
+  color: #a94442;
 }
 .ui.error.message,
 .ui.attached.error.message {
-  box-shadow: 0px 0px 0px 1px #e64333 inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  border: 1px solid #e0b4b4;
 }
 .ui.error.message .header {
-  color: #e32e1c;
+  color: #973d3b;
 }
 
 /* Success */
 .ui.success.message {
-  background-color: #19b37b;
-  color: #FFFFFF;
+  background-color: #dff0d8;
+  color: #3c763d;
 }
 .ui.success.message,
 .ui.attached.success.message {
-  box-shadow: 0px 0px 0px 1px #19b37b inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  border: 1px solid #a3c293;
 }
 .ui.success.message .header {
-  color: #169d6c;
+  color: #336534;
 }
 
 /* Colors */
 .ui.inverted.message,
 .ui.black.message {
-  background-color: #1B1C1D;
-  color: #FFFFFF;
+  background-color: #1b1c1d;
+  color: #ffffff;
 }
 
 /*--------------
@@ -363,11 +355,5 @@
 
 /*******************************
          Theme Overrides
-*******************************/
-
-
-
-/*******************************
-        Site Overrides
 *******************************/
 

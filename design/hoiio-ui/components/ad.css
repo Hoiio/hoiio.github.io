@@ -240,7 +240,7 @@
 }
 .ui.test.ad {
   position: relative;
-  background: #555555;
+  background: #545454;
 }
 .ui.test.ad:after {
   position: absolute;
@@ -251,7 +251,7 @@
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
   content: 'Ad';
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 1em;
   font-weight: bold;
 }
@@ -265,11 +265,5 @@
 
 /*******************************
          Theme Overrides
-*******************************/
-
-
-
-/*******************************
-    User Variable Overrides
 *******************************/
 

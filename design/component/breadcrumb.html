@@ -35,21 +35,31 @@
             <!-- Content -->
             <div class="body-content">
                 <h1 class="head">Breadcrumb</h1>
-                <p class="description">A breadcrumb (or "breadcrumb trail") is a type of secondary navigation scheme that reveals the user’s location in Hoiio web applications. You can add a breadcrumb via sections that can either be formatted as a link or text.</p>
                 
-                
-                <!-- Standard -->
-                <div class="display">
-<div class="ui breadcrumb">
-  <a class="section">Company</a>
-  <div class="divider"> / </div>
-  <a class="section">Department</a>
-  <div class="divider"> / </div>
-  <div class="section">Staff</div>
-</div>
- 
-                </div>
-                <div class="source">
+                <div class="paths">
+                    <div class="ui secondary pointing menu">
+                      <a class="item definition" data-tab="first">Definition</a>
+                      <a class="item state" data-tab="second"> States </a>
+                      <a class="item variation" data-tab="fourth">Variations</a>
+                      <a class="item size" data-tab="sixth">Sizes</a>
+                    </div>
+                    <!-- Standard -->
+                    <div class="ui tab segment first" data-tab="first">
+                        
+                        <div class="group-item">
+                            <div class="single-item">
+                                <p class="text">A breadcrumb (or "breadcrumb trail") is a type of secondary navigation scheme that reveals the user’s location in Hoiio web applications. You can add a breadcrumb via sections that can either be formatted as a link or text.</p>
+                                <div class="display">
+                                    <div class="ui breadcrumb">
+                                      <a class="section">Company</a>
+                                      <div class="divider"> / </div>
+                                      <a class="section">Department</a>
+                                      <div class="divider"> / </div>
+                                      <div class="section">Staff</div>
+                                    </div>
+
+                                </div>
+                                <div class="source">
 <pre>
 <code class="html hljs xml">
 &lt;div class=&quot;ui breadcrumb&quot;&gt;
@@ -61,16 +71,20 @@
 &lt;/div&gt;
 </code>
 </pre>
-                </div>
-                
-                <!-- States --> 
-                <div class="group-item">
-                    <h2>States</h2>
-                    <!-- Active -->
-                    <div class="item">
-                        <h3 class="title-item">Active</h3>
-                        <p>A section can be highlighted by adding <code>active</code> class right after section</p>
-                        <div class="display">
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- States --> 
+                    <div class="ui tab segment" data-tab="second">
+                        <div class="group-item">
+                            <!-- Active -->
+                            <div class="single-item">
+                                <h3 id="active" class="title-item">Active <a href="#active"><i class="link icon"></i></a></h3>
+                                <p class="text">A section of breadcrumb is highlighted.</p>
+                                <div class="display">
 <div class="ui breadcrumb ">
   <a class="section error">Company</a>
   <div class="divider"> / </div>
@@ -79,9 +93,9 @@
   <div class="section active">Staff</div>
 </div>
 
-                        </div>
-
-                        <div class="source">
+                                </div>
+                                <p class="usage"><span>Usage</span> : prefix <code>active</code> to <code>section</code>.</p>
+                                <div class="source">
 <pre>
 <code class="html hljs xml">
 &lt;div class=&quot;ui breadcrumb&quot;&gt;
@@ -89,165 +103,169 @@
   &lt;div class=&quot;divider&quot;&gt; / &lt;/div&gt;
   &lt;a class=&quot;section&quot;&gt;Department&lt;/a&gt;
   &lt;div class=&quot;divider&quot;&gt; / &lt;/div&gt;
-  &lt;div class=&quot;section active&quot;&gt;Staff&lt;/div&gt;
+  &lt;div class=&quot;active section&quot;&gt;Staff&lt;/div&gt;
 &lt;/div&gt;
 </code>
 </pre>
-                        </div>
-                     </div>
-                    
-                </div>
-                
-                
-                <!-- Variations -->
-                <div class="group-item">
-                    <h2>Sizes</h2>
-                    <!-- Small -->
-                    <div class="item">
-                        <h3 class="title-item">Small Breadcrumb</h3>
-                        <p>Apply <code>small</code> class</p>
-                        <div class="display">
-<div class="ui breadcrumb small">
-  <a class="section">Company</a>
-  <div class="divider"> / </div>
-  <a class="section">Department</a>
-  <div class="divider"> / </div>
-  <div class="section">Staff</div>
-</div>
-                        </div>
-                        <div class="source">
-<pre>
-<code class="html hljs xml">
-&lt;div class=&quot;ui breadcrumb small&quot;&gt;
-  &lt;a class=&quot;section&quot;&gt;Company&lt;/a&gt;
-  &lt;div class=&quot;divider&quot;&gt; / &lt;/div&gt;
-  &lt;a class=&quot;section&quot;&gt;Department&lt;/a&gt;
-  &lt;div class=&quot;divider&quot;&gt; / &lt;/div&gt;
-  &lt;div class=&quot;section&quot;&gt;Staff&lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
-                    <!-- Large -->
-                    <div class="item">
-                        <h3 class="title-item">Large Breadcrumb</h3>
-                        <p>Apply <code>large</code> class</p>
-                        <div class="display">
-<div class="ui breadcrumb large">
-  <a class="section">Company</a>
-  <div class="divider"> / </div>
-  <a class="section">Department</a>
-  <div class="divider"> / </div>
-  <div class="section">Staff</div>
-</div>
-                        </div>
-                        <div class="source">
-<pre>
-<code class="html hljs xml">
-&lt;div class=&quot;ui breadcrumb large&quot;&gt;
-  &lt;a class=&quot;section&quot;&gt;Company&lt;/a&gt;
-  &lt;div class=&quot;divider&quot;&gt; / &lt;/div&gt;
-  &lt;a class=&quot;section&quot;&gt;Department&lt;/a&gt;
-  &lt;div class=&quot;divider&quot;&gt; / &lt;/div&gt;
-  &lt;div class=&quot;section&quot;&gt;Staff&lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
-                        </div>
-                    </div>
-                    
-                    <!-- Huge -->
-                    <div class="item">
-                        <h3 class="title-item">Huge Breadcrumb</h3>
-                        <p>Apply <code>huge</code> class</p>
-                        <div class="display">
-<div class="ui breadcrumb huge">
-  <a class="section">Company</a>
-  <div class="divider"> / </div>
-  <a class="section">Department</a>
-  <div class="divider"> / </div>
-  <div class="section">Staff</div>
-</div>
-                        </div>
-                        <div class="source">
-<pre>
-<code class="html hljs xml">
-&lt;div class=&quot;ui breadcrumb huge&quot;&gt;
-  &lt;a class=&quot;section&quot;&gt;Company&lt;/a&gt;
-  &lt;div class=&quot;divider&quot;&gt; / &lt;/div&gt;
-  &lt;a class=&quot;section&quot;&gt;Department&lt;/a&gt;
-  &lt;div class=&quot;divider&quot;&gt; / &lt;/div&gt;
-  &lt;div class=&quot;section&quot;&gt;Staff&lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Sizes -->
-                <div class="group-item">
-                    <h2>Variation</h2>
-                    <!-- Icon -->
-                    <div class="item">
-                        <h3 class="title-item">Icon</h3>
-                        <p>Divider can be formatted as icons</p>
-                        <div class="display">
-<div class="ui breadcrumb">
-  <a class="section">Company</a>
-  <i class="divider icon angle right"></i>
-  <a class="section">Department</a>
-  <i class="divider icon angle right"></i>
-  <div class="section">Staff</div>
-</div>
-                        </div>
-
-                        <div class="source">
+                    <!-- Variation -->
+                    <div class="ui tab segment" data-tab="fourth">
+                        <div class="group-item">
+                            <!-- Icon -->
+                            <div class="single-item">
+                                <h3 id="icon" class="title-item">Icon <a href="#icon"><i class="link icon"></i></a></h3>
+                                <p class="text">Divider is formatted as icons.</p>
+                                <div class="display">
+        <div class="ui breadcrumb">
+          <a class="section">Company</a>
+          <i class="divider icon angle right"></i>
+          <a class="section">Department</a>
+          <i class="divider icon angle right"></i>
+          <div class="section">Staff</div>
+        </div>
+                                </div>
+                                <p class="usage"><span>Usage</span> : use <code>divider</code> with <code>icon</code>.</p>
+                                <div class="source">
 <pre>
 <code class="html hljs xml">
 &lt;div class=&quot;ui breadcrumb&quot;&gt;
-  &lt;a class=&quot;section&quot;&gt;Company&lt;/a&gt;
-  &lt;i class=&quot;divider icon angle right&quot;&gt;&lt;/i&gt;
-  &lt;a class=&quot;section&quot;&gt;Department&lt;/a&gt;
-  &lt;i class=&quot;divider icon angle right&quot;&gt;&lt;/i&gt;
-  &lt;div class=&quot;section&quot;&gt;Staff&lt;/div&gt;
+    &lt;a class=&quot;section&quot;&gt;Company&lt;/a&gt;
+    &lt;i class=&quot;divider icon angle right&quot;&gt;&lt;/i&gt;
+    &lt;a class=&quot;section&quot;&gt;Department&lt;/a&gt;
+    &lt;i class=&quot;divider icon angle right&quot;&gt;&lt;/i&gt;
+    &lt;div class=&quot;section&quot;&gt;Staff&lt;/div&gt;
 &lt;/div&gt;
 </code>
 </pre>
-                        </div>
-                     </div>
-                    <div class="item">
-                        <div class="display">
-<div class="ui breadcrumb">
-  <a class="section">Company</a>
-  <i class="divider icon angle circle right"></i>
-  <a class="section">Department</a>
-  <i class="divider icon angle circle right"></i>
-  <div class="section">Staff</div>
-</div>
-                        </div>
+                                </div>
+                             </div>
+                            <div class="single-item">
+                                <div class="display">
+        <div class="ui breadcrumb">
+          <a class="section">Company</a>
+          <i class="divider icon angle circle right"></i>
+          <a class="section">Department</a>
+          <i class="divider icon angle circle right"></i>
+          <div class="section">Staff</div>
+        </div>
+                                </div>
 
-                        <div class="source">
+                                <div class="source">
 <pre>
 <code class="html hljs xml">
 &lt;div class=&quot;ui breadcrumb&quot;&gt;
+&lt;a class=&quot;section&quot;&gt;Company&lt;/a&gt;
+&lt;i class=&quot;divider icon angle circle right&quot;&gt;&lt;/i&gt;
+&lt;a class=&quot;section&quot;&gt;Department&lt;/a&gt;
+&lt;i class=&quot;divider icon angle circle right&quot;&gt;&lt;/i&gt;
+&lt;div class=&quot;section&quot;&gt;Staff&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sizes -->
+                    <div class="ui tab segment" data-tab="sixth">
+                        <div class="group-item">
+                            <!-- Small -->
+                            <div class="single-item">
+                                <h3 id="small" class="title-item">Small Breadcrumb <a href="#small"><i class="link icon"></i></a></h3>
+                                <p class="text">A breadcrumb is used with varying sizes.</p>
+                                <div class="display">
+        <div class="ui small breadcrumb">
+          <a class="section">Company</a>
+          <div class="divider"> / </div>
+          <a class="section">Department</a>
+          <div class="divider"> / </div>
+          <div class="section">Staff</div>
+        </div>
+                                </div>
+                                <p class="usage"><span>Usage</span> : prefix <code>small</code> to <code>breadcrumb</code>.</p>
+                                <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui small breadcrumb&quot;&gt;
   &lt;a class=&quot;section&quot;&gt;Company&lt;/a&gt;
-  &lt;i class=&quot;divider icon angle circle right&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;divider&quot;&gt; / &lt;/div&gt;
   &lt;a class=&quot;section&quot;&gt;Department&lt;/a&gt;
-  &lt;i class=&quot;divider icon angle circle right&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;divider&quot;&gt; / &lt;/div&gt;
   &lt;div class=&quot;section&quot;&gt;Staff&lt;/div&gt;
 &lt;/div&gt;
 </code>
 </pre>
+                                </div>
+                            </div>
+                    
+                            <!-- Large -->
+                            <div class="single-item">
+                                <h3 id="large" class="title-item">Large Breadcrumb <a href="#large"><i class="link icon"></i></a></h3>
+                                <div class="display">
+        <div class="ui breadcrumb large">
+          <a class="section">Company</a>
+          <div class="divider"> / </div>
+          <a class="section">Department</a>
+          <div class="divider"> / </div>
+          <div class="section">Staff</div>
+        </div>
+                                </div>
+                                <p class="usage"><span>Usage</span> : prefix <code>large</code> to <code>breadcrumb</code>
+                                <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui large breadcrumb&quot;&gt;
+  &lt;a class=&quot;section&quot;&gt;Company&lt;/a&gt;
+  &lt;div class=&quot;divider&quot;&gt; / &lt;/div&gt;
+  &lt;a class=&quot;section&quot;&gt;Department&lt;/a&gt;
+  &lt;div class=&quot;divider&quot;&gt; / &lt;/div&gt;
+  &lt;div class=&quot;section&quot;&gt;Staff&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                                </div>
+                            </div>
+                    
+                            <!-- Huge -->
+                            <div class="single-item">
+                                <h3 id="huge" class="title-item">Huge Breadcrumb <a href="#huge"><i class="link icon"></i></a></h3>
+                                <div class="display">
+        <div class="ui breadcrumb huge">
+          <a class="section">Company</a>
+          <div class="divider"> / </div>
+          <a class="section">Department</a>
+          <div class="divider"> / </div>
+          <div class="section">Staff</div>
+        </div>
+                                </div>
+                                <p class="usage"><span>Usage</span> : prefix <code>huge</code> to <code>breadcrumb</code>
+                                <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui huge breadcrumb&quot;&gt;
+  &lt;a class=&quot;section&quot;&gt;Company&lt;/a&gt;
+  &lt;div class=&quot;divider&quot;&gt; / &lt;/div&gt;
+  &lt;a class=&quot;section&quot;&gt;Department&lt;/a&gt;
+  &lt;div class=&quot;divider&quot;&gt; / &lt;/div&gt;
+  &lt;div class=&quot;section&quot;&gt;Staff&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                                </div>
+                            </div>
                         </div>
-                     </div>
+                    </div>     
+                    
+                    
                 </div>
             </div>
             
-            <!-- Footer -->
-            <footer class="footer"></footer>
+                
         </div>
         
         <!-- Sidebar -->

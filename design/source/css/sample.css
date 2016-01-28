@@ -1,0 +1,48 @@
+
+/*======= Reset =======*/
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+/*======= Loading =======*/
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../img/loading.svg) center no-repeat #fff;
+}
+
+/*======= Main Styles =======*/
+
+title:first-letter {
+    text-transform:capitalize;
+}
+
+body > .grid {
+    height: 100%;
+}
+
+#wrapper > .column {
+    max-width: 30em;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 992px){
+    #wrapper > .column {
+        margin: 0 18em;
+    }
+}

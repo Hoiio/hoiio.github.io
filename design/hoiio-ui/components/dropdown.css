@@ -37,7 +37,7 @@
   color: #009bf3;
 }
 .ui.dropdown.primary:focus {
-  color: #007bc0;
+  color: #006aa6;
 }
 .ui.dropdown.info {
   color: #2BADD4;
@@ -233,7 +233,7 @@
   margin-top: 0em;
 }
 .ui.dropdown .menu > .input:not(.transparent) input {
-  padding: 0.5em 1em;
+  padding: 0.5em 1.14285714em;
 }
 .ui.dropdown .menu > .input:not(.transparent) .button,
 .ui.dropdown .menu > .input:not(.transparent) .icon,
@@ -406,10 +406,10 @@
   -webkit-transform: rotateZ(0deg);
           transform: rotateZ(0deg);
   min-width: 14em;
-  min-height: 2.7142em;
-  background: #FFFFFF;
+  min-height: 2.85742857em;
+  background: #ffffff;
   display: inline-block;
-  padding: 0.78571429em 2.6em 0.78571429em 1em;
+  padding: 0.57142857em 2.74285714em 0.57142857em 1.14285714em;
   color: #414141;
   box-shadow: none;
   border: 1px solid #cccccc;
@@ -435,9 +435,9 @@ select.ui.dropdown {
   top: auto;
   width: auto;
   z-index: 3;
-  margin: -0.78571429em;
-  padding: 0.78571429em;
-  right: 1em;
+  margin: -0.57142857em;
+  padding: 0.57142857em;
+  right: 1.14285714em;
   opacity: 0.8;
   -webkit-transition: opacity 0.05s ease;
   transition: opacity 0.05s ease;
@@ -536,7 +536,7 @@ select.ui.dropdown {
 /* Visible */
 .ui.selection.visible.dropdown > .text:not(.default) {
   font-weight: normal;
-  color: #555555;
+  color: #545454;
 }
 
 /* Visible Hover */
@@ -599,8 +599,8 @@ select.ui.dropdown {
 
 /* Search Selection */
 .ui.search.selection.dropdown > input.search {
-  line-height: 1.2142em;
-  padding: 0.67861429em 2.6em 0.67861429em 1em;
+  line-height: 1.786;
+  padding: 0.17842857em 2.74285714em 0.17842857em 1.14285714em;
 }
 
 /* Active/Visible Search */
@@ -658,7 +658,7 @@ select.ui.dropdown {
 
 /* Multiple Selection */
 .ui.multiple.dropdown {
-  padding: 0.22620476em 2.6em 0.22620476em 0.28571429em;
+  padding: 0.05947619em 2.74285714em 0.05947619em 0.42857143em;
 }
 .ui.multiple.dropdown .menu {
   cursor: auto;
@@ -698,8 +698,8 @@ select.ui.dropdown {
   position: static;
   padding: 0;
   max-width: 100%;
-  margin: 0.45240952em 0em 0.45240952em 0.71428571em;
-  line-height: 1.2142em;
+  margin: 0.11895238em 0em 0.11895238em 0.71428571em;
+  line-height: 1.786;
 }
 .ui.multiple.dropdown > .label ~ .text {
   display: none;
@@ -717,8 +717,8 @@ select.ui.dropdown {
   top: 0;
   left: 0;
   padding: inherit;
-  margin: 0.45240952em 0em 0.45240952em 0.71428571em;
-  line-height: 1.2142em;
+  margin: 0.11895238em 0em 0.11895238em 0.71428571em;
+  line-height: 1.786;
 }
 .ui.multiple.search.dropdown > .label ~ .text {
   display: none;
@@ -729,9 +729,9 @@ select.ui.dropdown {
   position: static;
   padding: 0;
   max-width: 100%;
-  margin: 0.45240952em 0em 0.45240952em 0.71428571em;
+  margin: 0.11895238em 0em 0.11895238em 0.71428571em;
   width: 2.2em;
-  line-height: 1.2142em;
+  line-height: 1.786;
 }
 
 /*--------------
@@ -771,7 +771,7 @@ select.ui.dropdown {
 .ui.dropdown .menu .active.item {
   background: transparent;
   font-weight: bold;
-  color: #555555;
+  color: #545454;
   box-shadow: none;
   z-index: 12;
 }
@@ -784,7 +784,7 @@ select.ui.dropdown {
 /* Menu Item Hover */
 .ui.dropdown .menu > .item:hover {
   background: rgba(0, 0, 0, 0.03);
-  color: #555555;
+  color: #545454;
   z-index: 13;
 }
 
@@ -868,11 +868,11 @@ select.ui.dropdown {
 
 .ui.dropdown > .default.text,
 .ui.default.dropdown > .text {
-  color: #555555;
+  color: #545454;
 }
 .ui.dropdown:hover > .default.text,
 .ui.default.dropdown:hover > .text {
-  color: #555555;
+  color: #545454;
 }
 
 /*--------------------
@@ -899,7 +899,7 @@ select.ui.dropdown {
 /* Selected Item */
 .ui.dropdown.selected,
 .ui.dropdown .menu .selected.item {
-  background: #eeeeee /*rgba(0, 0, 0, 0.03)*/;
+  background: rgba(0, 0, 0, 0.03);
   color: #414141;
 }
 
@@ -923,7 +923,7 @@ select.ui.dropdown {
 .ui.dropdown.button.error,
 .ui.dropdown.button.error > .text,
 .ui.dropdown.button.error > .default.text {
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 .ui.selection.dropdown.error {
   background: #e64333;
@@ -937,7 +937,7 @@ select.ui.dropdown {
   border-color: #e64333;
 }
 .ui.dropdown.error > .menu > .item {
-  color: #555555;
+  color: #545454;
 }
 .ui.multiple.selection.error.dropdown > .label {
   border-color: #e64333;
@@ -1251,7 +1251,7 @@ select.ui.dropdown {
   width: 0.5em;
   height: 0.5em;
   box-shadow: -1px -1px 0px 1px #cccccc;
-  background: #FFFFFF;
+  background: #ffffff;
   z-index: 2;
 }
 .ui.pointing.dropdown > .menu:after {
@@ -1440,9 +1440,3 @@ select.ui.dropdown {
   content: "\e803";
 }
 */
-
-
-/*******************************
-        User Overrides
-*******************************/
-
