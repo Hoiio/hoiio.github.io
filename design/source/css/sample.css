@@ -87,13 +87,53 @@ h1.ui.header{
         font-size:2rem;
     }
 
+.form{
+    padding-bottom: 60px;
+    
+}
+
 .instruction{
-    font-size: 16px;
-    font-weight: 300;
-    margin-top: 0;
+    font-weight: 500;
+    margin-top: 0px;
     margin-bottom: 30px;
+    text-align: left;
+}
+
+.instruction a{
+    color: #414141;
+    text-decoration: underline;
+    opacity: 0.6;
+    font-weight: 300;
+    
+}
+
+.instruction a:hover{
+    opacity: 1;
+    
+}
+
+
+
+.forgot{
+    float: right;
+    text-transform: none!important;
+    font-size: 13px;
+    color: #999 !important;
+    margin-top: -2px;
+}
+
+.forgot a{
+    color: #555 !important;
+    font-weight: 400;
+    opacity: 0.5;
+    letter-spacing: 0  !important;
+  
+}
+
+.forgot a:hover{
+    opacity: 1;
 }
 
 .form > .field:last-child{
- padding-top: 0.5em !important;
+ padding-top: 0.6em !important;
 }
