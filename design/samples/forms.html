@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hoiio Design Standards 2016">
+    <meta name="keywords" content="design, ux, standard, hoiio, framework, html, css, interface, component, semantic">
+    <meta name="author" content="Marcus">
+    <link rel="icon" href="source/favicon.ico">
+
+    <title>Form Sample - Hoiio Design Standards</title>
+    <!-- jQuery --->
+    <script src="../source/js/jquery-2.1.4.min.js"></script>
+    <script src="../source/js/modernizr-custom.js"></script>
+
+    <!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="../../hoiio-ui/semantic.min.css" />
+	<!-- Main styles -->
+	<link rel="stylesheet" type="text/css" href="../source/css/sample.css" />
+
+	
+</head>
+<body>
+   <div class="se-pre-con"></div> 
+ <div class="ui middle aligned grid container" id="wrapper">
+    <div class="column">
+    <h2 class="ui primary header">
+      <div class="content">
+        Log in to your account
+      </div>
+    </h2>
+    <form class="ui form" _lpchecked="1">
+        <div class="field">
+            <label>Phone Number</label>
+            <div class="fields">
+              <div class="six wide field">
+                <div class="ui dropdown selection search compact">
+                        <input type="hidden" name="country">
+                          <i class="dropdown icon"></i>
+                          <div class="text">+84</div>
+                          <div class="menu">
+                              <div class="item">+65</div>
+                              <div class="item">+1</div>
+                              <div class="item">+43</div>
+                              <div class="item">+372</div>
+                              <div class="item">+84</div>
+                            </div>
+                        </div>
+              </div>
+              <div class="ten wide field">
+                <input type="text" name="shipping[last-name]" placeholder="Number">
+              </div>
+            </div>
+        </div>
+        <div class="field">
+            <label>Password</label>
+            <input type="text" placeholder="Password">
+        </div>
+        <div class="field">
+            <div class="two inline fields">
+                <div class="field">
+                    <div class="ui checkbox">
+      <input type="checkbox">
+      <label>Remember me</label>
+    </div>
+                </div>
+                <div class="field"><button class="ui right floated primary button" type="submit">Submit</button></div>
+            </div>
+        </div>
+       
+        
+    </form>
+
+    
+  </div>
+</div>
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../../hoiio-ui/semantic.min.js"></script>
+    <script src="../source/js/main.js"></script>
+</body>
+</html>

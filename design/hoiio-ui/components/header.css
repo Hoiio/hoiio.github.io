@@ -135,7 +135,7 @@ h1.ui.header {
   font-size: 2.5rem;
 }
 h2.ui.header {
-  font-size: 1.8rem;
+  font-size: 2.143rem;
 }
 h3.ui.header {
   font-size: 1.429rem;
@@ -176,7 +176,7 @@ h5.ui.header .sub.header {
   font-size: 2.5em;
 }
 .ui.large.header {
-  font-size: 1.8em;
+  font-size: 2.143em;
 }
 .ui.medium.header {
   font-size: 1.429em;

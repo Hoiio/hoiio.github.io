@@ -400,16 +400,16 @@
 .ui.selection.dropdown {
   cursor: pointer;
   word-wrap: break-word;
-  line-height: 1em;
+  line-height: 1.2rem;
   white-space: normal;
   outline: 0;
   -webkit-transform: rotateZ(0deg);
           transform: rotateZ(0deg);
   min-width: 14em;
-  min-height: 2.85742857em;
+  min-height: 2.7rem;
   background: #ffffff;
   display: inline-block;
-  padding: 0.57142857em 2.74285714em 0.57142857em 1.14285714em;
+  padding: 0.78571429em 2.74285714em 0.78571429em 1.14285714em;
   color: #414141;
   box-shadow: none;
   border: 1px solid #cccccc;
@@ -435,8 +435,8 @@ select.ui.dropdown {
   top: auto;
   width: auto;
   z-index: 3;
-  margin: -0.57142857em;
-  padding: 0.57142857em;
+  margin: -0.78571429em;
+  padding: 0.78571429em;
   right: 1.14285714em;
   opacity: 0.8;
   -webkit-transition: opacity 0.05s ease;
@@ -599,8 +599,8 @@ select.ui.dropdown {
 
 /* Search Selection */
 .ui.search.selection.dropdown > input.search {
-  line-height: 1.786;
-  padding: 0.17842857em 2.74285714em 0.17842857em 1.14285714em;
+  line-height: 1.2rem;
+  padding: 0.68571429em 2.74285714em 0.68571429em 1.14285714em;
 }
 
 /* Active/Visible Search */
@@ -658,7 +658,7 @@ select.ui.dropdown {
 
 /* Multiple Selection */
 .ui.multiple.dropdown {
-  padding: 0.05947619em 2.74285714em 0.05947619em 0.42857143em;
+  padding: 0.22857143em 2.74285714em 0.22857143em 0.42857143em;
 }
 .ui.multiple.dropdown .menu {
   cursor: auto;
@@ -698,8 +698,8 @@ select.ui.dropdown {
   position: static;
   padding: 0;
   max-width: 100%;
-  margin: 0.11895238em 0em 0.11895238em 0.71428571em;
-  line-height: 1.786;
+  margin: 0.45714286em 0em 0.45714286em 0.71428571em;
+  line-height: 1.2rem;
 }
 .ui.multiple.dropdown > .label ~ .text {
   display: none;
@@ -717,8 +717,8 @@ select.ui.dropdown {
   top: 0;
   left: 0;
   padding: inherit;
-  margin: 0.11895238em 0em 0.11895238em 0.71428571em;
-  line-height: 1.786;
+  margin: 0.45714286em 0em 0.45714286em 0.71428571em;
+  line-height: 1.2rem;
 }
 .ui.multiple.search.dropdown > .label ~ .text {
   display: none;
@@ -729,9 +729,9 @@ select.ui.dropdown {
   position: static;
   padding: 0;
   max-width: 100%;
-  margin: 0.11895238em 0em 0.11895238em 0.71428571em;
+  margin: 0.45714286em 0em 0.45714286em 0.71428571em;
   width: 2.2em;
-  line-height: 1.786;
+  line-height: 1.2rem;
 }
 
 /*--------------

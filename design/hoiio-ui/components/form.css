@@ -29,7 +29,7 @@
 ---------------------*/
 
 .ui.form > p {
-  margin: 1.5em 0em;
+  margin: 1.429em 0em;
 }
 
 /*--------------------
@@ -38,7 +38,7 @@
 
 .ui.form .field {
   clear: both;
-  margin: 0em 0em 1.5em;
+  margin: 0em 0em 1.429em;
 }
 .ui.form .field:last-child,
 .ui.form .fields:last-child .field {
@@ -46,7 +46,7 @@
 }
 .ui.form .fields .field {
   clear: both;
-  margin: 0em 0em 1.5em;
+  margin: 0em 0em 1.429em;
 }
 
 /*--------------------
@@ -55,12 +55,12 @@
 
 .ui.form .field > label {
   display: block;
-  margin: 0em 0em 0.28571429rem 0em;
-  color: #545454;
-  font-size: 0.9em;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.05rem;
+  margin: 0em 0em 0.42857143rem 0em;
+  color: #414141;
+  font-size: 1.14285714em;
+  font-weight: normal;
+  text-transform: none;
+  letter-spacing: 0.3px;
 }
 
 /*--------------------
@@ -86,7 +86,7 @@
 /* Set max height on unusual input */
 .ui.form ::-webkit-datetime-edit,
 .ui.form ::-webkit-inner-spin-button {
-  height: 1.786;
+  height: 1.2rem;
 }
 .ui.form input:not([type]),
 .ui.form input[type="date"],
@@ -104,12 +104,12 @@
   outline: none;
   -webkit-appearance: none;
   tap-highlight-color: rgba(255, 255, 255, 0);
-  line-height: 1em;
-  padding: 0.57142857em 1.14285714em;
+  line-height: 1.2rem;
+  padding: 0.78571429em 1.14285714em;
   font-size: 1em;
   background: #ffffff;
   border: 1px solid #cccccc;
-  color: #414141;
+  color: #ffffff;
   border-radius: 0.28571429rem;
   box-shadow: 0em 0em 0em 0em transparent inset;
   -webkit-transition: color 0.05s ease, border-color 0.05s ease;
@@ -121,7 +121,7 @@
   margin: 0em;
   -webkit-appearance: none;
   tap-highlight-color: rgba(255, 255, 255, 0);
-  padding: 0.57142857em 1.14285714em;
+  padding: 0.78571429em 1.14285714em;
   background: #ffffff;
   border: 1px solid #cccccc;
   outline: none;
@@ -309,22 +309,22 @@
 
 /* browsers require these rules separate */
 .ui.form ::-webkit-input-placeholder {
-  color: #ffffff;
+  color: #cdcdcd;
 }
 .ui.form ::-ms-input-placeholder {
-  color: #ffffff;
+  color: #cdcdcd;
 }
 .ui.form ::-moz-placeholder {
-  color: #ffffff;
+  color: #cdcdcd;
 }
 .ui.form :focus::-webkit-input-placeholder {
-  color: #ffffff;
+  color: #9a9a9a;
 }
 .ui.form :focus::-ms-input-placeholder {
-  color: #ffffff;
+  color: #9a9a9a;
 }
 .ui.form :focus::-moz-placeholder {
-  color: #ffffff;
+  color: #9a9a9a;
 }
 
 /* Error Placeholder */
@@ -720,17 +720,17 @@
 /* Grouped Vertically */
 .ui.form .grouped.fields {
   display: block;
-  margin: 0em 0em 1.5em;
+  margin: 0em 0em 1.429em;
 }
 .ui.form .grouped.fields:last-child {
   margin-bottom: 0em;
 }
 .ui.form .grouped.fields > label {
-  margin: 0em 0em 0.28571429rem 0em;
-  color: #545454;
-  font-size: 0.9em;
-  font-weight: bold;
-  text-transform: uppercase;
+  margin: 0em 0em 0.42857143rem 0em;
+  color: #414141;
+  font-size: 1.14285714em;
+  font-weight: normal;
+  text-transform: none;
 }
 .ui.form .grouped.fields .field,
 .ui.form .grouped.inline.fields .field {
@@ -833,16 +833,16 @@
   .ui.form .ten.fields > .fields,
   .ui.form .ten.fields > .field {
     width: 100% !important;
-    margin: 0em 0em 1.5em;
+    margin: 0em 0em 1.429em;
     padding-left: 0%;
     padding-right: 0%;
   }
 }
 .ui.form .fields .field:first-child {
-  padding-left: 0%;
+  padding-left: 0% !important;
 }
 .ui.form .fields .field:last-child {
-  padding-right: 0%;
+  padding-right: 0% !important;
 }
 
 /* Sizing Combinations */
@@ -932,7 +932,7 @@
   .ui.form .fields > .fifteen.wide.field,
   .ui.form .fields > .sixteen.wide.field {
     width: 100% !important;
-    margin: 0em 0em 1.5em;
+    margin: 0em 0em 1.429em;
     padding-left: 0%;
     padding-right: 0%;
   }
@@ -956,7 +956,7 @@
 ---------------------*/
 
 .ui.form .inline.fields {
-  margin: 0em 0em 1.5em;
+  margin: 0em 0em 1.429em;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -978,10 +978,10 @@
   margin-top: 0em;
   margin-bottom: 0em;
   vertical-align: baseline;
-  font-size: 0.9em;
-  font-weight: bold;
-  color: #545454;
-  text-transform: uppercase;
+  font-size: 1.14285714em;
+  font-weight: normal;
+  color: #414141;
+  text-transform: none;
 }
 
 /* Grouped Inline Label */

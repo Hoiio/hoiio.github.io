@@ -17,12 +17,12 @@
 .ui.button {
   cursor: pointer;
   display: inline-block;
-  line-height: inherit;
+  line-height: 1rem;
   outline: none;
   color: #545454;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0em 0em;
-  padding: 0.57142857em 1.14285714em;
+  padding: 0.85714286em 1.14285714em;
   font-weight: 500;
   font-style: normal;
   letter-spacing: 0.3px;
@@ -216,15 +216,15 @@
 
 .ui.compact.buttons .button,
 .ui.compact.button {
-  padding: 0.42857143em 0.85714286em 0.42857143em;
+  padding: 0.64285714em 0.85714286em 0.64285714em;
 }
 .ui.compact.icon.buttons .button,
 .ui.compact.icon.button {
-  padding: 0.42857143em 0.42857143em 0.42857143em;
+  padding: 0.64285714em 0.64285714em 0.64285714em;
 }
 .ui.compact.labeled.icon.buttons .button,
 .ui.compact.labeled.icon.button {
-  padding: 0.42857143em 3em 0.42857143em;
+  padding: 0.64285714em 3.57142857em 0.64285714em;
 }
 
 /*-------------------
@@ -279,7 +279,7 @@
 .ui.labeled.icon.buttons .button,
 .ui.labeled.icon.button {
   position: relative;
-  padding-left: 3.28571429em !important;
+  padding-left: 3.85714286em !important;
   padding-right: 1.14285714em !important;
 }
 
@@ -294,7 +294,7 @@
   border-bottom-left-radius: inherit;
   text-align: center;
   margin: 0em;
-  width: 2.14285714em;
+  width: 2.71428571em;
   background-color: rgba(0, 0, 0, 0.1);
   color: '';
 }
@@ -308,7 +308,7 @@
 
 /* Right Labeled */
 .ui[class*="right labeled"].icon.button {
-  padding-right: 3.28571429em !important;
+  padding-right: 3.85714286em !important;
   padding-left: 1.14285714em !important;
 }
 .ui[class*="right labeled"].icon.button > .icon {
@@ -863,7 +863,7 @@
 
 .ui.icon.buttons .button,
 .ui.icon.button {
-  padding: 0.57142857em 0.57142857em 0.57142857em;
+  padding: 0.85714286em 0.85714286em 0.85714286em;
 }
 .ui.icon.buttons .button > .icon,
 .ui.icon.button > .icon {

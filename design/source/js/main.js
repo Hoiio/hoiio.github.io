@@ -62,6 +62,13 @@ $(document).ready(function() {
     var hoiio="";
     hoiio += "<div>";
     hoiio += "<ul class=\"category\">";
+    hoiio += "    <li class=\"title\">How to use<\/li>";
+    hoiio += "    <li class=\"item\"><a href=\"\/design\/usage\/principle\">Setup<\/a><\/li>";
+    hoiio += "    <li class=\"item\"><a href=\"\/design\/usage\/core\">Layout<\/a><\/li>";
+    hoiio += "    <li class=\"item\"><a href=\"\/design\/usage\/motion\">Custom<\/a><\/li>";
+    hoiio += "<\/ul>";
+    hoiio += "<div>";
+    hoiio += "<ul class=\"category\">";
     hoiio += "    <li class=\"title\">Framework<\/li>";
     hoiio += "    <li class=\"item\"><a href=\"\/design\/framework\/principle\">Design Principles<\/a><\/li>";
     hoiio += "    <li class=\"item\"><a href=\"\/design\/framework\/core\">Core Framework<\/a><\/li>";
@@ -69,8 +76,8 @@ $(document).ready(function() {
     hoiio += "<\/ul>";
     hoiio += "<ul class=\"category\">";
     hoiio += "    <li class=\"title\">System<\/li>";
-    hoiio += "    <li class=\"item\"><a href=\"\/design\/system\/grid\">Grid<\/a><\/li>";
-    hoiio += "    <li class=\"item\"><a href=\"\/design\/system\/layout\">Layout<\/a><\/li>";
+    hoiio += "    <li class=\"item\"><a href=\"\/design\/system\/container\">Container<\/a><\/li>";
+    hoiio += "    <li class=\"item\"><a href=\"\/design\/system\/grid\">Grid<\/a><\/li>"; 
     hoiio += "    <li class=\"item\"><a href=\"\/design\/system\/color\">Color<\/a><\/li>";
     hoiio += "    <li class=\"item\"><a href=\"\/design\/system\/typography\">Typography<\/a><\/li>";
     hoiio += "    <li class=\"item\"><a href=\"\/design\/system\/icon\">Icon<\/a><\/li>";
