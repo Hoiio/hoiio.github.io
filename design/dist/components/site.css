@@ -116,7 +116,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #007bc0;
+  color: #006aa6;
   text-decoration: none;
 }
 .underlined,
@@ -159,4 +159,19 @@ textarea::selection,
 input::selection {
   background-color: rgba(100, 100, 100, 0.4);
   color: #414141;
+}
+
+
+/*******************************
+          Add more
+*******************************/
+
+.right.aligned {
+  float: right;
+}
+.left.aligned {
+  float: left;
+}
+.middle.aligned {
+  vertical-align: middle;
 }

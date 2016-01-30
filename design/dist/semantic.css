@@ -616,7 +616,7 @@ a {
 }
 
 a:hover {
-  color: #007bc0;
+  color: #006aa6;
   text-decoration: none;
 }
 
@@ -664,6 +664,22 @@ textarea::selection,
 input::selection {
   background-color: rgba(100, 100, 100, 0.4);
   color: #414141;
+}
+
+/*******************************
+          Add more
+*******************************/
+
+.right.aligned {
+  float: right;
+}
+
+.left.aligned {
+  float: left;
+}
+
+.middle.aligned {
+  vertical-align: middle;
 }
 /*!
  * # Semantic UI 2.1.8 - Button
@@ -9261,7 +9277,7 @@ ol.ui.list ol li,
 
 .ui.list .list > a.item:hover,
 .ui.list > a.item:hover {
-  color: #007bc0;
+  color: #006aa6;
 }
 
 /* Linked Item Icons */
@@ -9281,7 +9297,7 @@ ol.ui.list ol li,
 
 .ui.list .list > .item a.header:hover,
 .ui.list > .item a.header:hover {
-  color: #007bc0 !important;
+  color: #006aa6 !important;
 }
 
 /* Floated Content */
@@ -9457,7 +9473,7 @@ ol.ui.list ol li,
 
 .ui.inverted.list .list > a.item:hover,
 .ui.inverted.list > a.item:hover {
-  color: #007bc0;
+  color: #006aa6;
 }
 
 /* Linking Content */
@@ -9467,7 +9483,7 @@ ol.ui.list ol li,
 }
 
 .ui.inverted.list .item a:not(.ui):hover {
-  color: #007bc0 !important;
+  color: #006aa6 !important;
 }
 
 /*-------------------
@@ -12255,7 +12271,7 @@ ol.ui.horizontal.list li:before,
 }
 
 .ui.breadcrumb a:hover {
-  color: #007bc0;
+  color: #006aa6;
 }
 
 /* Icon Divider */
@@ -13381,6 +13397,7 @@ ol.ui.horizontal.list li:before,
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
+  -ms-grid-row-align: center;
   align-items: center;
 }
 
@@ -19823,7 +19840,7 @@ Floated Menu / Item
 
 .ui.cards > .card > .content > a.header:hover,
 .ui.card > .content > a.header:hover {
-  color: #007bc0;
+  color: #006aa6;
 }
 
 /* Meta */
@@ -19943,7 +19960,7 @@ Floated Menu / Item
 
 .ui.cards > .card > .extra a:not(.ui):hover,
 .ui.card > .extra a:not(.ui):hover {
-  color: #007bc0;
+  color: #006aa6;
 }
 
 /*******************************
@@ -20525,7 +20542,7 @@ a.ui.card:hover,
 }
 
 .ui.comments .comment a.author:hover {
-  color: #007bc0;
+  color: #006aa6;
 }
 
 /*--------------
@@ -21248,7 +21265,7 @@ a.ui.card:hover,
 }
 
 .ui.items > .item > .content > a.header:hover {
-  color: #007bc0;
+  color: #006aa6;
 }
 
 /* Meta */
@@ -21482,7 +21499,7 @@ a.ui.card:hover,
 
 .ui.items a.item:hover .content .header,
 .ui.link.items > .item:hover .content .header {
-  color: #007bc0;
+  color: #006aa6;
 }
 
 /*--------------
@@ -21804,6 +21821,7 @@ a.ui.card:hover,
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
+  -ms-grid-row-align: center;
   align-items: center;
 }
 
@@ -21826,6 +21844,7 @@ a.ui.card:hover,
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
+  -ms-grid-row-align: center;
   align-items: center;
   max-width: none;
   margin: 1em 0em;
@@ -23633,6 +23652,7 @@ select.ui.dropdown {
 
 .ui.selection.dropdown .menu > .message {
   padding: 0.71428571rem 1.14285714rem;
+  font-size: 0.91em;
 }
 
 @media only screen and (max-width: 767px) {

@@ -477,6 +477,7 @@ select.ui.dropdown {
 
 .ui.selection.dropdown .menu > .message {
   padding: 0.71428571rem 1.14285714rem;
+  font-size: 0.91em;
 }
 @media only screen and (max-width: 767px) {
   .ui.selection.dropdown .menu {

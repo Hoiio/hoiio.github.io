@@ -1,6 +1,12 @@
 $(document).ready(function() {
+    
+    /*--------------------
+        Component
+    ----------------------*/    
+    // Dropdown
     $('.ui.dropdown').dropdown();
     
+    // Message
     $('.message .remove')
       .on('click', function() {
         $(this)
@@ -10,18 +16,24 @@ $(document).ready(function() {
       })
     ;
     
-    $('.paths .menu .item')
+    
+    /*--------------------
+        Navigation
+    ----------------------*/
+    // Active
+    $('.present .menu .item')
       .tab({
-        context: '.paths'
+        context: '.present'
       })
     ;
     
     if(window.location.hash) {
           var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
-          var par = $( "#" + hash).parent().parent().parent();
+         var par = $( "#" + hash).parent().parent();
           $(".segment").removeClass("active");
           par.addClass("active");
           var tab = par.data("tab");
+       
           $('.menu > a').removeClass("active");
           $('a[data-tab='+tab+']').addClass("active");
     } else{
@@ -29,43 +41,19 @@ $(document).ready(function() {
       $('div[data-tab="first"]').addClass("active"); 
     } 
    
-    //Add Header
-    var header="";
-    header += "<div class=\"container\">";
-    header += " <nav>";
-    header += "     <a href=\"\/design\/\" class='logo'>";
-    header += "        <i class=\"icon compass\"><\/i>";
-    header += "     <\/a>";
-    header += "     <ul>";
-    header += "         <li>";
-    header += "             <div class=\"heading\">Design Standards<\/div>";
-    header += "         </li>";
-    header += "         <li>";
-    header += "    <span class=\"pull-right poweredby\">Powered by<a href=\"http:\/\/hoiio.com\"><img src=\"..\/source\/img\/hoiio-logo.png\"\/><\/a><\/span>";
-    header += "         </li>";
-    header += "     </ul>";
-	header += " </nav>";
-    header += "<\/div>";
-    /*
-    var header="";
-    header += "<div class=\"logo\">";
-    header += "    <a href=\"\/design\/\">";
-    header += "        <i class=\"icon compass\"><\/i>";
-    header += "        <h2 class=\"heading\">Design Standards<\/h2>";
-    header += "    <\/a>";
-    header += "    <span class=\"pull-right poweredby\">Powered by<a href=\"http:\/\/hoiio.com\"><img src=\"..\/source\/img\/hoiio-logo.png\"\/><\/a><\/span>";
-    header += "<\/div>";*/
+    /*--------------------
+        Sidebar
+    ----------------------*/
     
-    $("#detail header.header").append(header);
-    
-    //Add Sidebar
+    // Generate
     var hoiio="";
     hoiio += "<div>";
     hoiio += "<ul class=\"category\">";
     hoiio += "    <li class=\"title\">How to use<\/li>";
-    hoiio += "    <li class=\"item\"><a href=\"\/design\/usage\/principle\">Setup<\/a><\/li>";
-    hoiio += "    <li class=\"item\"><a href=\"\/design\/usage\/core\">Layout<\/a><\/li>";
-    hoiio += "    <li class=\"item\"><a href=\"\/design\/usage\/motion\">Custom<\/a><\/li>";
+    hoiio += "    <li class=\"item\"><a href=\"\/design\/usage\/introduction\">Introduction<\/a><\/li>";
+    hoiio += "    <li class=\"item\"><a href=\"\/design\/usage\/prototype\">Prototype<\/a><\/li>";
+    hoiio += "    <li class=\"item\"><a href=\"\/design\/usage\/layout\">Layout<\/a><\/li>";
+    hoiio += "    <li class=\"item\"><a href=\"\/design\/usage\/Custom\">Custom<\/a><\/li>";
     hoiio += "<\/ul>";
     hoiio += "<div>";
     hoiio += "<ul class=\"category\">";
@@ -113,23 +101,10 @@ $(document).ready(function() {
     hoiio += "<\/ul>";
     hoiio += "<\/div>";
 
-    $("#page .sidebar").append(hoiio);
-    
-    //Add Footer
-    $("footer").text("© Copyright 2016. Hoiio Pte Ltd.");
-    
-    //Change height between sidebar and content
-    
-    /*var height_sidebar = Math.max($("#left-side").height(), $("#right-side").height());*/
-    var height_sidebar = $("#right-side").height();
-    var height_content = $("#left-side").height();
-    if (height_content < height_sidebar) { 
-        $("#left-side").height(height_sidebar);
-        $(".body-content").height(height_sidebar);
-                                          
-    }
+    $("#sidebar nav").append(hoiio);
     
     
+    // Set Active
     function capitalise(string) {
         return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
     }
@@ -138,21 +113,28 @@ $(document).ready(function() {
     
     if(x){
         $('a[href$='+x+']').addClass("active");
-        $("title").text(capitalise(x) + " - Hoiio Design Standards"); 
     }
     
-    
-    
+    /*--------------------
+        Footer
+    ----------------------*/
+    $("footer").text("© Copyright 2016. Hoiio Pte Ltd.");
     
    
-    
 });
+
+/*--------------------
+    Loading
+----------------------*/    
 
 $(window).load(function() {
     // Animate loader off screen
-    $(".se-pre-con").fadeOut("slow");;
+    $(".hoiio.loading").fadeOut("slow");;
 });
 
+/*--------------------
+    Component
+----------------------*/    
  $(".menu-collapsed").click(function() {
     $(this).toggleClass("menu-expanded");
 });
@@ -162,24 +144,6 @@ $(':radio').radiocheck();
 $('[data-toggle="switch"]').bootstrapSwitch();
 $('.onoffswitch .icons').remove();
 
-
-function show_code(id) {
-   var e = document.getElementById(id);
-   if(e.style.display == 'block')
-      e.style.display = 'none';
-   else
-      e.style.display = 'block';
-}
-
-function sticky_relocate() {
-    var window_top = $(window).scrollTop();
-    var div_top = $('#sticky-anchor').offset().top;
-    if (window_top > div_top) {
-        $('#sticky').addClass('stick');
-    } else {
-        $('#sticky').removeClass('stick');
-    }
-}
 
 
 
