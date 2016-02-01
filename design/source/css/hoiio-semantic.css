@@ -9,12 +9,11 @@
     Container
 ---------------------*/
 
-.container{
-    min-width: 1000px;
-    margin: 0 auto;
+.ui.grid.container{
+    min-width:  1127px  !important;
+    margin: 0 auto !important;
     height: auto;
 }
-
 
 /*------------------
     Elements
@@ -39,24 +38,6 @@ a {
 i.icon {
     line-height: 1em;
     
-}
-
-/*------------------
-    Typography
----------------------*/
-h1:not(.h1-reset){
-    letter-spacing: 1px;
-    font-size: 34px;
-    font-weight: 300;
-    color: #008bd9; 
-   
-}
-
-h2:not(.h2-reset){
-    margin: 40px 0 20px 0;
-    letter-spacing: 1px;
-    font-size: 28px;
-    font-weight: 300;
 }
 
 
@@ -126,12 +107,16 @@ code {
 #header {
     z-index: 99;
     width: 100%;
-    margin: 40px 0 20px 0;
+    margin: 40px 0 10px 0;
 }
 
 /*------------------
     Logo
 ---------------------*/
+#header > .one.wide{
+    padding-right: 0.5em;
+    text-align: right;
+}
 
 #header .logo{
     display: inline-block;
@@ -143,7 +128,6 @@ code {
 
 #header .logo:hover,
 #header .logo:focus {
-    color: #008bd9; 
     text-decoration: none;
 }
 
@@ -156,6 +140,7 @@ code {
 ---------------------*/
 
 #header .heading {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
 	font-size: 18px;
     font-weight: 600;
     margin: 0 !important;
@@ -166,11 +151,24 @@ code {
     width: 780px;
 }
 
+
+#header .heading a{
+    color: #414141;
+}
+
+#header .heading a:hover,
+#header .heading a:focus {
+    color: #008bd9; 
+    text-decoration: none;
+}
+
+
 /*------------------
     Links
 ---------------------*/
 
 #header .poweredby{
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     font-size: 11px;
     line-height: 1.5;
     text-transform: uppercase;
@@ -183,6 +181,34 @@ code {
     width: 25px;   
     margin-left: 5px;   
 }
+
+/*****************************************
+    
+    Footer
+
+******************************************/
+
+.footer{
+    font-size: 11px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 100px;
+   
+}
+
+.footer .inner{
+    min-width: 1000px !important;
+    margin: 0 auto;
+}
+
+.footer .inner p{
+    width:100% !important;
+    padding-left: 6.25%px !important; 
+}
+
 
 
 /*****************************************
@@ -203,27 +229,32 @@ code {
 }
 
 #sidebar .category >li {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     margin-bottom: 4px;
 }
 
 #sidebar .category >li.title {
+    
     font-size: 11px;
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
     
-    color: rgba(90,97,102,.4);
+    color: rgba(0,0,0,.3);
     margin: 0 0 10px 0;
     padding: 4px 0 4px 0px;
 }
 
 #sidebar .category>li>a {
-    color: #777;
+    color: rgba(0,0,0,.7);
     border-left: 2px solid transparent;
     padding: 4px 0 4px 0px;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: normal;
     transition: .2s color ease,.2s border-color ease;
+}
+#sidebar .category>li.line.through>a{
+    color: rgba(0,0,0,.1);
 }
 
 #sidebar .category>li>a:hover,
@@ -249,24 +280,57 @@ code {
    width:77.75%;
 }
 
+
+#content > .category{
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(0,0,0,.6);
+    padding-top: 4px;
+    padding-left: 1.071rem;
+}
+
+
 /*------------------
     Base 
 ---------------------*/
 
+#content > .name{
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin-top: 0;
+    padding-left: 1.071rem;
+}
+
+
+#content > .name{
+    letter-spacing: 1px;
+    font-size: 48px;
+    font-weight: 300;
+    color: #008bd9; 
+   
+}
+
 p.description{
-    font-size: 16px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 15px;
     font-weight: 300;
     line-height: 1.8em;
     margin: 20px 0 20px 0;
-    color: rgba(0,0,0,.8);
+    
+}
+
+.block + p.description{
+    margin: 50px 0 10px 0;
 }
 
 p.description:first-child{
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 300;
     line-height: 1.8em;
     margin-top: 0;
-    color: rgba(0,0,0,.8);
+ 
 }
 
 
@@ -274,7 +338,11 @@ p.description:first-child{
     Menu 
 ---------------------*/
 
-.present .menu .item{
+.present > .menu{
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.present > .menu > .item{
     font-weight: 700 !important;
     color: #999;
     font-size: 12px;
@@ -284,11 +352,11 @@ p.description:first-child{
     padding-right: 1.43em !important;
 }
 
-.present .menu .item.active{
+.present > .menu > .item.active{
     color: #414141 !important;
 }
 
-.present .segment{
+.present > .segment{
     border: none !important;
 }
 
@@ -323,7 +391,8 @@ p.description:first-child{
     opacity: 1;
 }
 
-.block h3{
+.block h3.title,
+.block h3.counter{
     letter-spacing: 2px;
     text-transform: uppercase;
     font-size: 1.2rem;
@@ -331,7 +400,8 @@ p.description:first-child{
     padding-top: 30px;
 }
 
-.block:first-child h3{
+.block:first-child h3.title,
+.block:first-child h3.counter{
     margin-top: -20px;
 }
 
@@ -344,6 +414,7 @@ p.description:first-child{
     position: absolute;
     margin-left: -20px;  
 }
+
 
 
 /* Display */
@@ -416,18 +487,19 @@ p.description:first-child{
 
 /* Usage */
 .block > p.usage{
-    font-size: 16px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 15px;
     font-weight: 300;
     line-height: 1.8em;
     margin: 10px 0 10px 0;
-    color: rgba(0,0,0,.8);  
+   
 }
 
 .block > p.usage span{
-    font-weight: 800;
+    font-weight: 700;
     font-size: 12px;
     text-transform: uppercase;
-    color: rgba(0,0,0,.6);   
+ 
 }
 
 /* Source */
@@ -487,9 +559,6 @@ p.description:first-child{
 }
 
 
-
-
-
 /*****************************************
     
     Component 
@@ -528,31 +597,14 @@ p.description:first-child{
 
 
 
+/*------------------
+    Header
+---------------------*/
 
 
 
 
 
-
-
-/*
-    --  
-    Footer 
-    --
-*/
-
-.footer{
-    font-size: 11px;
-    line-height: 1.5;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: bold;
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    position: relative;
-    bottom: 0;
-}
 
 
 

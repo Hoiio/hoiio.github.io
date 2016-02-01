@@ -15,65 +15,53 @@
     <script src="source/js/modernizr-custom.js"></script>
 
     <!-- Bootstrap -->
-	<link rel="stylesheet" type="text/css" href="hoiio-ui/semantic.min.css" />
+	<link rel="stylesheet" type="text/css" href="dist/semantic.min.css" />
 	<!-- Main styles -->
 	<link rel="stylesheet" type="text/css" href="source/css/hoiio-semantic.css" />
 	<!-- Highlight -->
 	<link rel="stylesheet" type="text/css" href="source/css/tomorrow.css" />
 	
 </head>
-<body id="main">
-    <div class="se-pre-con"></div>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <nav>
-                <a href="/design/" class='logo'>
-                    <i class="icon compass"></i>
-                </a>
-                <ul>
-                    <li>
-                        <div class="heading">Design Standards</div>
-                    </li>
-                    <li>
-                        <span class="pull-right poweredby">Powered by<a href="http://hoiio.com"><img src="source/img/hoiio-logo.png"/></a></span>
-                    </li>
-                </ul>
-	       </nav>
-        </div>
-    </header>
-    
-    <!-- Main container -->
-	<div class="container" id="page">
-		
-        <div id="left-side">
-            <!-- Content -->
-            <div class="body-content">
-                <h1 class="head">Hoiio Design Standards</h1>
-                <p class="description">At Hoiio, we want to create harmonious experiences for our users. We solve challenging interactions once, and then apply the solutions consistently across our product suite - making sure users only have to learn them once.
-Our guidelines have space for flexibility, and are continuously revised and expanded to suit changing product needs.</p>
-                
+<body>
+    <div class="hoiio loading"></div>
+    <div class="ui grid container component-breadcrumb" id="page">
+        <div class="row" id="header">
+            <div class="one wide column">
+                <a href="/design/" class='logo'><i class="icon compass"></i></a>
             </div>
-            
-            <!-- Footer -->
-            <footer class="footer"></footer>
+            <div class="twelve wide column">
+                <div class="heading"><a href="/design/">Design Standards</a></div>
+            </div>
+            <div class="three wide column">
+                <div class="right aligned poweredby">Powered by<a href="http://hoiio.com"><img class="middle aligned" src="source/img/hoiio-logo.png"/></a></div>
+            </div>
         </div>
         
-        <!-- Sidebar -->
-        <div id="right-side">
-            <nav class="sidebar"></nav>
+        <div class="row" id="content">
+            <div class="column">
+            </div>
+            <div class="column" id="sidebar">
+                <nav></nav>
+            </div>
+            <div class="column" id="content">
+                <!-- Content -->
+                <h1 class="name">Introduction</h1>
+                <div class="present">
+                    
+                </div>
+            
+            </div>  
+        </div>
+        <div class="row" id="footer">
+            <footer class="footer"></footer>    
         </div>
     </div>
-    
-	
+  
     <!-- Latest compiled and minified JavaScript -->
-    <script src="hoiio-ui/semantic.min.js"></script>
+    <script src="dist/semantic.min.js"></script>
 	<script src="source/js/highlight.pack.js"></script>
     <script src="source/js/main.js"></script>
-    <script src="source/js/component.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    
-    
-    
+
 </body>
 </html>
