@@ -22,9 +22,9 @@
 	<link rel="stylesheet" type="text/css" href="../source/css/tomorrow.css" />
 	
 </head>
-<body>
+<body id="detail">
     <div class="hoiio loading"></div>
-    <div class="ui grid container component-button" id="page">
+    <div class="ui grid container component-button">
         <div class="row" id="header">
             <div class="one wide column">
                 <a href="/design/" class='logo'><i class="icon compass"></i></a>
@@ -45,6 +45,7 @@
             </div>
             <div class="column" id="content">
                 <!-- Content -->
+                <div class="category">component</div>
                 <h1 class="name">Button</h1>
                 <div class="present">
                     <div class="ui secondary pointing menu">
@@ -53,7 +54,6 @@
                         <a class="item types" data-tab="third"> Types </a>
                         <a class="item group" data-tab="fourth">Variations</a>
                         <a class="item variation" data-tab="fifth">Group</a>
-                        <a class="item size" data-tab="sixth">Sizes</a>
                     </div>
                     <!-- Standard -->
                     <div class="ui tab segment first" data-tab="first">
@@ -63,6 +63,8 @@
                             <div class="display">
                                 <button class="ui button">Submit</button>
                             </div>
+                            <p class="usage"><span>Usage</span> : add classes <code>ui, buttons</code> to the <code>&lt;button&gt;</code> element.
+                            </p>
                             <div class="source">
 <pre>
 <code class="html hljs xml">
@@ -85,7 +87,7 @@
 <button class="ui button disabled"> Disabled </button>
 
                             </div>
-                            <p class="usage"><span>Usage</span> : prefix <code>disabled</code> to <code>button</code>.</p>
+                            <p class="usage"><span>Usage</span> : insert a class <code>disabled</code> before the class <code>button</code>.</p>
                             <div class="source">
 <pre>
 <code class="html hljs xml">
@@ -96,6 +98,7 @@
 </pre>
                             </div>
                         </div>
+                        
                         <!-- Active -->
                         <div class="block">
                             <h3 id="active" class="title">Active <a href="#active"><i class="link icon"></i></a></h3>
@@ -106,7 +109,7 @@
   Follow
 </button>
                             </div>
-                            <p class="usage"><span>Usage</span> : prefix <code>active</code> to <code>button</code>.</p>
+                            <p class="usage"><span>Usage</span> : insert a class <code>active</code> before the class <code>button</code>.</p>
                             <div class="source">
 <pre>
 <code class="html hljs xml">
@@ -117,6 +120,7 @@
 </pre>
                             </div>
                         </div>
+                        
                         <!-- Loading -->
                         <div class="block">
                             <h3 id="loading" class="title">Loading <a href="#loading"><i class="link icon"></i></a></h3>
@@ -124,7 +128,7 @@
                             <div class="display">
     <button class="ui button loading">Loading</button>
                             </div>
-                            <p class="usage"><span>Usage</span> : prefix <code>loading</code> to <code>button</code>.</p>
+                            <p class="usage"><span>Usage</span> : insert a class <code>loading</code> before the class <code>button</code>.</p>
                             <div class="source">
 <pre>
 <code class="html hljs xml">
@@ -161,6 +165,7 @@
 </pre>
                             </div>
                         </div>
+                        
                         <!-- Labeled Icon -->
                         <div class="block">
                              <h3 id="labeled" class="title">Labeled Icon<a href="#labeled"><i class="link icon"></i></a></h3>
@@ -199,6 +204,7 @@
 </pre>
                         </div>
                      </div>
+                        
                         <!-- Animated -->
                         <div class="block">
                             <h3 id="animated" class="title">Animated <a href="#animated"><i class="link icon"></i></a></h3>
@@ -267,17 +273,12 @@
                             <p class="description">A basic button is less pronounced.</p>
                             <div class="display">
     <button class="ui basic button">Basic</button>
-    <button class="ui primary basic button">Primary</button>
-    <button class="ui info basic button">Primary</button>                            
-    <button class="ui error basic button">Error</button>  
-    <button class="ui warning basic button">Warning</button>  
                             </div>
-                            <p class="usage"><span>Usage</span> : prefix <code>basic</code> to <code>button</code>. For showing background colors, prefix classes of colors to <code>basic</code>.</p>
+                            <p class="usage"><span>Usage</span> : insert a class <code>basic</code> before the class <code>button</code>.</p>
                             <div class="source">
 <pre>
 <code class="html hljs xml">
 &lt;button class="ui basic button"&gt;Basic&lt;/button&gt;
-&lt;button class="ui primary basic button"&gt;Primary&lt;/button&gt;
 </code>
 </pre>
                             </div>
@@ -305,33 +306,6 @@
                     
                     <!-- Variations -->
                     <div class="ui tab segment" data-tab="fourth">
-                        <!-- Colors -->
-                        <div class="block">
-                            <h3 id="colors" class="title">Colors <a href="#colors"><i class="link icon"></i></a></h3>
-                            <p class="description">A button has different colors.</p>
-                            <div class="display">
-    <button class="ui button primary">Primary</button>
-    <button class="ui button secondary">Secondary</button>
-    <button class="ui button info">Info</button>                            
-    <button class="ui button success">Success</button>
-    <button class="ui button error">Error</button>                            
-    <button class="ui button warning">Warning</button>      
-                            </div>
-                            <p class="usage"><span>Usage</span> : add classes of colors to the class <code>button</code>.</p>
-                            <div class="source">
-<pre>
-<code class="html hljs xml">
-&lt;button class="ui primary button"&gt;Primary&lt;/button&gt;
-&lt;button class="ui secondary button"&gt;Secondary&lt;/button&gt;
-&lt;button class="ui info button"&gt;Info&lt;/button&gt;                            
-&lt;button class="ui success button"&gt;Success&lt;/button&gt;
-&lt;button class="ui error button"&gt;Error&lt;/button&gt;                            
-&lt;button class="ui warning button"&gt;Warning&lt;/button&gt; 
-</code>
-</pre>
-                            </div>
-                     </div> 
-                        
                         <!-- Round -->
                         <div class="block">
                             <h3 id="round" class="title">Rounded <a href="#round"><i class="link icon"></i></a></h3>
@@ -421,6 +395,64 @@ Pause
 </pre>
                             </div>
                         </div>
+                        
+                        <!-- Size -->
+                        <div class="block">
+                            <h3 id="sizes" class="title">Sizes <a href="#sizes"><i class="link icon"></i></a></h3>
+                            <div class="display">
+    <button class="ui mini button"> Mini </button>
+    <button class="ui tiny button"> Tiny </button>
+    <button class="ui small button"> Small </button>
+    <button class="ui button"> Standard </button>
+    <button class="ui large button"> Large </button>
+    <button class="ui big button"> Big </button>
+    <button class="ui huge button"> Huge </button>
+    <button class="ui massive button"> Massive </button>
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert classes of sizes before the class <code>button</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;button class=&quot;ui mini button&quot;&gt; Mini &lt;/button&gt;
+&lt;button class=&quot;ui tiny button&quot;&gt; Tiny &lt;/button&gt;
+&lt;button class=&quot;ui small button&quot;&gt; Small &lt;/button&gt;
+&lt;button class=&quot;ui button&quot;&gt; Standard &lt;/button&gt;
+&lt;button class=&quot;ui large button&quot;&gt; Large &lt;/button&gt;
+&lt;button class=&quot;ui big button&quot;&gt; Big &lt;/button&gt;
+&lt;button class=&quot;ui huge button&quot;&gt; Huge &lt;/button&gt;
+&lt;button class=&quot;ui massive button&quot;&gt; Massive &lt;/button&gt;
+</code>
+</pre>
+                            </div>
+                        </div>  
+                        
+                        <!-- Colors -->
+                        <div class="block">
+                            <h3 id="colors" class="title">Colors <a href="#colors"><i class="link icon"></i></a></h3>
+                            <p class="description">A button has different colors.</p>
+                            <div class="display">
+    <button class="ui button primary">Primary</button>
+    <button class="ui button secondary">Secondary</button>
+    <button class="ui button info">Info</button>                            
+    <button class="ui button success">Success</button>
+    <button class="ui button error">Error</button>                            
+    <button class="ui button warning">Warning</button>      
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert classes of colors before the class <code>button</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;button class="ui primary button"&gt;Primary&lt;/button&gt;
+&lt;button class="ui secondary button"&gt;Secondary&lt;/button&gt;
+&lt;button class="ui info button"&gt;Info&lt;/button&gt;                            
+&lt;button class="ui success button"&gt;Success&lt;/button&gt;
+&lt;button class="ui error button"&gt;Error&lt;/button&gt;                            
+&lt;button class="ui warning button"&gt;Warning&lt;/button&gt; 
+</code>
+</pre>
+                            </div>
+                     </div> 
+                        
                     </div>
                     
                     <!-- Groups -->
@@ -521,48 +553,27 @@ Pause
                             </div>
                         </div>
                     </div>
-                        
-                    <!-- Sizes -->
-                    <div class="ui tab segment" data-tab="sixth">
-                        <!-- Size -->
-                        <div class="block">
-                            <h3 id="sizes" class="title">Sizes <a href="#sizes"><i class="link icon"></i></a></h3>
-                            <div class="display">
-    <button class="ui mini button"> Mini </button>
-    <button class="ui tiny button"> Tiny </button>
-    <button class="ui small button"> Small </button>
-    <button class="ui button"> Standard </button>
-    <button class="ui large button"> Large </button>
-    <button class="ui big button"> Big </button>
-    <button class="ui huge button"> Huge </button>
-    <button class="ui massive button"> Massive </button>
-                            </div>
-                            <p class="usage"><span>Usage</span> : prefix classes of sizes to <code>button</code>.</p>
-                            <div class="source">
-<pre>
-<code class="html hljs xml">
-&lt;button class=&quot;ui mini button&quot;&gt; Mini &lt;/button&gt;
-&lt;button class=&quot;ui tiny button&quot;&gt; Tiny &lt;/button&gt;
-&lt;button class=&quot;ui small button&quot;&gt; Small &lt;/button&gt;
-&lt;button class=&quot;ui button&quot;&gt; Standard &lt;/button&gt;
-&lt;button class=&quot;ui large button&quot;&gt; Large &lt;/button&gt;
-&lt;button class=&quot;ui big button&quot;&gt; Big &lt;/button&gt;
-&lt;button class=&quot;ui huge button&quot;&gt; Huge &lt;/button&gt;
-&lt;button class=&quot;ui massive button&quot;&gt; Massive &lt;/button&gt;
-</code>
-</pre>
-                            </div>
-                        </div>  
-                    </div>
+                    
                 </div>
             
             </div>  
         </div>
-        <div class="row" id="footer">
-            <footer class="footer"></footer>    
+        
+    </div>
+    <div class="ui grid container">
+        <div class="row">
+            <div class="one wide column">
+            </div>
+            <div class="six wide column">
+                     <footer class="footer">
+                    <div class="inner">
+                        <p>© Copyright 2016. Hoiio Pte Ltd.</p>
+                    </div>
+                </footer>
+            </div>
         </div>
     </div>
-  
+    
     <!-- Latest compiled and minified JavaScript -->
     <script src="../dist/semantic.min.js"></script>
 	<script src="../source/js/highlight.pack.js"></script>
