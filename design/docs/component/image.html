@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hoiio Design Standards 2016">
+    <meta name="keywords" content="design, ux, standard, hoiio, framework, html, css, interface, component, semantic">
+    <meta name="author" content="Marcus">
+    <link rel="icon" href="source/favicon.ico">
+
+    <title>Image - Hoiio Design Standards</title>
+    <!-- jQuery --->
+    <script src="../source/js/jquery-2.1.4.min.js"></script>
+    <script src="../source/js/modernizr-custom.js"></script>
+
+    <!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="../../dist/semantic.min.css" />
+	<!-- Main styles -->
+	<link rel="stylesheet" type="text/css" href="../source/css/hoiio-semantic.css" />
+	<!-- Highlight -->
+	<link rel="stylesheet" type="text/css" href="../source/css/tomorrow.css" />
+	
+</head>
+<body>
+    <div class="hoiio loading"></div>
+    <div class="ui grid container component-image">
+        <div class="row" id="header">
+            <div class="one wide column">
+                <a href="/design/" class='logo'><i class="icon compass"></i></a>
+            </div>
+            <div class="twelve wide column">
+                <div class="heading"><a href="/design/">Design Standards</a></div>
+            </div>
+            <div class="three wide column">
+                <div class="right aligned poweredby">Powered by<a href="http://hoiio.com"><img class="middle aligned" src="../source/img/hoiio-logo.png"/></a></div>
+            </div>
+        </div>
+        <div class="row" id="content">
+            <div class="column">
+            </div>
+            <div class="column" id="sidebar">
+                <nav></nav>
+            </div>
+            <div class="column" id="content">
+                <!-- Content -->
+                <div class="category">component</div>
+                <h1 class="name">Image</h1>
+                <div class="present">
+                    <div class="ui secondary pointing menu">
+                        <a class="item definition" data-tab="first">Definition</a>
+                        <a class="item state" data-tab="third"> States </a>
+                        <a class="item types" data-tab="fourth"> Types </a>
+                        <a class="item variation" data-tab="fifth">Variations</a>
+                        <a class="item group" data-tab="sixth">Group</a>
+                    </div>
+                    <!-- Standard -->
+                    <div class="ui tab segment first" data-tab="first">
+                        <!-- Definition --> 
+                        <div class="block">
+                            <p class="description">Image is used to provide a visual representation of context. It should be specified the width and height. If width and height are not specified, the page will flicker while the image loads.</p>
+                            <div class="display">
+<img class="ui small image" src="../source/img/image.jpg" alt="image">  
+                               
+                            </div>
+                            <p class="usage"><span>Usage</span> : An image is defined with the <code>img</code> tag which contains attributes only, and does not have a closing tag. Or it is used with <code>ui image</code> class. </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;img class=&quot;ui image&quot; src=&quot;image.jpg&quot; alt="image"&gt;  
+                    
+&lt;div class=&quot;ui image&quot;&gt;
+  &lt;img src=&quot;image.jpg&quot; alt="image"&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    
+                    
+                    <!-- States -->
+                    <div class="ui tab segment" data-tab="third">
+                        
+                        
+                        <!-- Disabled State -->
+                        <div class="block">
+                        <h3 id="disabled" class="non counter">
+                            Disabled 
+                            <a href="#disabled"><i class="link icon"></i></a>
+                        </h3>
+                        <div class="display">
+<img class="ui disabled small image" src="../source/img/image.jpg">
+                        </div>
+                        <p class="usage"><span>Usage</span> : insert a class <code>.disabled</code> before the class <code>.image</code>.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;img class=&quot;ui disabled image&quot; src=&quot;image.jpg&quot; alt="image"&gt;  
+</code>
+</pre>
+                        </div>
+                     </div>
+                    </div>
+                    
+                    <!-- Types -->
+                    <div class="ui tab segment" data-tab="fourth">
+                        <!-- Link -->
+                        <div class="block">
+                            <h3 id="link" class="non counter">
+                                Link
+                                <a href="#link"><i class="link icon"></i></a>
+                            </h3>
+                            <p class="description">An image can be formatted to link to other content.</p>
+                            <div class="display">
+    <img class="ui avatar image" src="../source/img/square-image.jpg">
+    <span>Username</span>
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert a class <code>.avatar</code> before the class <code>.image</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;img class=&quot;ui avatar image&quot; src=&quot;image.png&quot;&gt;
+&lt;span&gt;Username&lt;/span&gt;
+</code>
+</pre>
+                            </div>
+                         </div>
+                    </div>
+                    
+                    <!-- Variation -->
+                    <div class="ui tab segment" data-tab="fifth">    
+                        <!-- Avatar Variation -->
+                        <div class="block">
+                            <h3 id="avatar" class="title">
+                                Avatar
+                                <a href="#avatar"><i class="link icon"></i></a>
+                            </h3>
+                            <p class="description">An image is formatted to appear inline with text as an avatar.</p>
+                            <div class="display">
+    <img class="ui avatar image" src="../source/img/square-image.jpg">
+    <span>Username</span>
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert a class <code>.avatar</code> before the class <code>.image</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;img class=&quot;ui avatar image&quot; src=&quot;image.png&quot;&gt;
+&lt;span&gt;Username&lt;/span&gt;
+</code>
+</pre>
+                            </div>
+                         </div>
+                        
+                        <!-- Border Radius Variation -->
+                        <div class="block">
+                            <h3 id="radius" class="title">
+                                Border Radius 
+                                <a href="#radius"><i class="link icon"></i></a>
+                            </h3>
+                            <p class="description">Use rounded corners to an image with the border-radius property.</p>
+                            <div class="display">
+    <img class="ui radius small image" src="../source/img/image.jpg">                           
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert a class <code>.radius</code> before the class <code>.image</code> to show <code>border-radius: 0.5em</code></p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;img class=&quot;ui radius image&quot; src=&quot;image.jpg&quot; alt="image"&gt;  
+</code>
+</pre>
+                            </div>
+                        </div>
+
+                        <!-- Round Variation -->
+                        <div class="block">
+                            <h3 id="round" class="title">
+                                Round 
+                                <a href="#round"><i class="link icon"></i></a>
+                            </h3>
+                            <div class="display">
+    <img class="ui small round image" src="../source/img/square-image.jpg"> 
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert a class <code>.round</code> before the class <code>.image</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;img class=&quot;ui round image&quot; src=&quot;image.jpg&quot; alt="image"&gt;  
+</code>
+</pre>
+                            </div>
+                         </div>
+
+                        <!-- Fluid Variation -->
+                        <div class="block">
+                            <h3 id="fluid" class="title">
+                                Fluid 
+                                <a href="#fluid"><i class="link icon"></i></a>
+                            </h3>
+                            <p class="description">An image can take up the width of its container.</p>
+                            <div class="display">
+    <img class="ui fluid image" src="../source/img/image.jpg">
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert a class <code>.fluid</code> before the class <code>.image</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;img class=&quot;ui fluid image&quot; src=&quot;image.jpg&quot; alt="image"&gt;  
+</code>
+</pre>
+                            </div>
+                         </div>
+                        
+                        <!-- Centered Variation -->
+                        <div class="block">
+                            <h3 id="centered" class="title">
+                                Centered
+                                <a href="#centered"><i class="link icon"></i></a>
+                            </h3>
+                            <p class="description">An image can appear centered in a content block.</p>
+                            <div class="display">
+    <div class="ui segment">
+      <img class="ui centered small image" src="../source/img/image.jpg">
+      <p class="present">Te eum doming eirmod, nominati pertinacia argumentum ad his. Ex eam alia facete scriptorem, est autem aliquip detraxit at. Usu ocurreret referrentur at, cu epicurei appellantur vix. Cum ea laoreet recteque electram, eos choro alterum definiebas in. Vim dolorum definiebas an. Mei ex natum rebum iisque.</p>
+
+      <img class="ui centered tiny image" src="../source/img/image.jpg">
+      <p class="present">Eu quo homero blandit intellegebat. Incorrupte consequuntur mei id. Mei ut facer dolores adolescens, no illum aperiri quo, usu odio brute at. Qui te porro electram, ea dico facete utroque quo. Populo quodsi te eam, wisi everti eos ex, eum elitr altera utamur at. Quodsi convenire mnesarchum eu per, quas minimum postulant per id.</p>
+    </div>                         
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert a class <code>.centered</code> before the class <code>.image</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;img class=&quot;ui centered image&quot; src=&quot;image.jpg&quot; alt="image"&gt;  
+</code>
+</pre>
+                            </div>
+                        </div>
+
+                        <!-- Floated Variation -->
+                        <div class="block">
+                            <h3 class="title">
+                                Floated
+                                <a href="#sizes"><i class="link icon"></i></a>
+                            </h3>
+                            <p class="description">A image is used with the float property to wrap text around images.</p>
+                            <div class="display">
+    <div class="ui segment">
+      <img class="ui small left floated image" src="../source/img/image.jpg">
+      <p class="present">Te eum doming eirmod, nominati pertinacia argumentum ad his. Ex eam alia facete scriptorem, est autem aliquip detraxit at. Usu ocurreret referrentur at, cu epicurei appellantur vix. Cum ea laoreet recteque electram, eos choro alterum definiebas in. Vim dolorum definiebas an. Mei ex natum rebum iisque.</p>
+      <img class="ui small right floated image" src="../source/img/image.jpg">
+      <p class="present">Audiam quaerendum eu sea, pro omittam definiebas ex. Te est latine definitiones. Quot wisi nulla ex duo. Vis sint solet expetenda ne, his te phaedrum referrentur consectetuer. Id vix fabulas oporteat, ei quo vide phaedrum, vim vivendum maiestatis in.</p>
+       <p class="present">Eu quo homero blandit intellegebat. Incorrupte consequuntur mei id. Mei ut facer dolores adolescens, no illum aperiri quo, usu odio brute at. Qui te porro electram, ea dico facete utroque quo. Populo quodsi te eam, wisi everti eos ex, eum elitr altera utamur at. Quodsi convenire mnesarchum eu per, quas minimum postulant per id.</p>
+    </div>
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert classess <code>.left, .floated</code> or <code>.right, ifloated</code> before the class <code>.image</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;img class=&quot;ui left floated image&quot; src=&quot;image.jpg&quot; alt="image"&gt; 
+
+&lt;img class=&quot;ui right floated image&quot; src=&quot;image.jpg&quot; alt="image"&gt;
+</code>
+</pre>
+                            </div>
+                         </div>
+
+                        <!-- Sizes Variation -->
+                        <div class="block">
+                            <h3 id="sizes" class="title">
+                                Sizes
+                                <a href="#sizes"><i class="link icon"></i></a>
+                            </h3>
+                            <div class="display">
+    <img class="ui mini image" src="../source/img/image.jpg">
+    <img class="ui tiny image" src="../source/img/image.jpg">
+    <img class="ui small image" src="../source/img/image.jpg">
+    <img class="ui medium image" src="../source/img/image.jpg">
+
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert classes of sizes before the class <code>.image</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;img class=&quot;ui mini image&quot; src=&quot;image.jpg&quot;&gt;
+&lt;img class=&quot;ui tiny image&quot; src=&quot;image.jpg&quot;&gt;
+&lt;img class=&quot;ui small image&quot; src=&quot;image.jpg&quot;&gt;
+&lt;img class=&quot;ui medium image&quot; src=&quot;image.jpg&quot;&gt;
+&lt;img class=&quot;ui large image&quot; src=&quot;image.jpg&quot;&gt;
+&lt;img class=&quot;ui big image&quot; src=&quot;image.jpg&quot;&gt;
+&lt;img class=&quot;ui huge image&quot; src=&quot;image.jpg&quot;&gt;
+&lt;img class=&quot;ui massive image&quot; src=&quot;image.jpg&quot;&gt;
+</code>
+</pre>
+                            </div>
+                         </div>
+
+                        
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+                    
+                    <!-- Group -->
+                    <div class="ui tab segment" data-tab="sixth">
+                        <!-- Images -->
+                        <div class="block">
+                        <h3 id="images" class="non counter">
+                            Images
+                            <a href="#images"><i class="link icon"></i></a>
+                        </h3>
+                        <p class="description">A group of images can be formatted to have the same size.</p>
+                        <div class="display">
+<div class="ui tiny images">
+  <img class="ui image" src="../source/img/image.jpg">
+  <img class="ui image" src="../source/img/image.jpg">
+  <img class="ui image" src="../source/img/image.jpg">
+  <img class="ui image" src="../source/img/image.jpg">
+</div>
+                        </div>
+                        <p class="usage"><span>Usage</span> : wrap <code>images</code> around <code>image</code>.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui tiny images&quot;&gt;
+  &lt;img class=&quot;ui image&quot; src=&quot;image.jpg&quot;&gt;
+  &lt;img class=&quot;ui image&quot; src=&quot;image.jpg&quot;&gt;
+  &lt;img class=&quot;ui image&quot; src=&quot;image.jpg&quot;&gt;
+  &lt;img class=&quot;ui image&quot; src=&quot;image.jpg&quot;&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                     </div>
+                    </div>
+            
+                </div>  
+            </div>
+        </div>
+    </div>
+    <div class="ui grid container">
+        <div class="row">
+            <div class="one wide column">
+            </div>
+            <div class="six wide column">
+                     <footer class="footer">
+                    <div class="inner">
+                        <p>© Copyright 2016. Hoiio Pte Ltd.</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../../dist/semantic.min.js"></script>
+	<script src="../source/js/highlight.pack.js"></script>
+    <script src="../source/js/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>

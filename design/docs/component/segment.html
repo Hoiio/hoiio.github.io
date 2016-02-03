@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hoiio Design Standards 2016">
+    <meta name="keywords" content="design, ux, standard, hoiio, framework, html, css, interface, component, semantic">
+    <meta name="author" content="Marcus">
+    <link rel="icon" href="source/favicon.ico">
+
+    <title>Segment - Hoiio Design Standards</title>
+    <!-- jQuery --->
+    <script src="../source/js/jquery-2.1.4.min.js"></script>
+    <script src="../source/js/modernizr-custom.js"></script>
+
+    <!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="../../dist/semantic.min.css" />
+	<!-- Main styles -->
+	<link rel="stylesheet" type="text/css" href="../source/css/hoiio-semantic.css" />
+	<!-- Highlight -->
+	<link rel="stylesheet" type="text/css" href="../source/css/tomorrow.css" />
+	
+</head>
+<body id="detail">
+    <div class="hoiio loading"></div>
+    <div class="ui grid container component-segment">
+        <div class="row" id="header">
+            <div class="one wide column">
+                <a href="/design/" class='logo'><i class="icon compass"></i></a>
+            </div>
+            <div class="twelve wide column">
+                <div class="heading">Design Standards</div>
+            </div>
+            <div class="three wide column">
+                <div class="right aligned poweredby">Powered by<a href="http://hoiio.com"><img class="middle aligned" src="../source/img/hoiio-logo.png"/></a></div>
+            </div>
+        </div>
+        <div class="row" id="content">
+            <div class="column">
+            </div>
+            <div class="column" id="sidebar">
+                <nav></nav>
+            </div>
+            <div class="column" id="content">
+                <!-- Content -->
+                <div class="category">component</div>
+                <h1 class="name">Segment</h1>
+                <div class="present">
+                    <div class="ui secondary pointing menu">
+                        <a class="item definition" data-tab="first">Definition</a>
+                        <a class="item state" data-tab="second"> States </a>
+                        <a class="item types" data-tab="third"> Types </a>
+                        <a class="item group" data-tab="fourth">Variations</a>
+                        <a class="item variation" data-tab="fifth">Group</a>
+                    </div>
+                    <!-- Standard -->
+                    <div class="ui tab segment first" data-tab="first">
+                        <!-- Definition --> 
+                        <div class="block">
+                            <p class="description">A segment is used to create a grouping of related content. It covers content by a border.</p>
+                            
+                            <div class="display">
+<div class="ui segment">
+  <img class="ui wireframe image" src="http://semantic-ui.com/images/wireframe/short-paragraph.png">
+</div>               
+                </div>
+                            <p class="usage"><span>Usage</span> : add classes <code>.ui, .segment</code> to the <code>&lt;div&gt;</code> element.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui segment&quot;&gt;
+    &lt;p&gt;&lt;/p&gt;
+&lt;/div&gt; 
+</code>
+</pre>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="ui tab segment first" data-tab="second">
+                        <!-- Disabled State-->
+                        <div class="block">
+                        <h3 id="disabled" class="non counter">
+                            Disabled 
+                            <a href="#disabled"><i class="link icon"></i></a>
+                        </h3>
+                        <p class="description">Disable the whole segment.</p>
+                        <div class="display">
+<div class="ui disabled segment">
+  <img class="ui wireframe image" src="http://semantic-ui.com/images/wireframe/short-paragraph.png">
+</div>
+                        </div>
+                        <p class="usage"><span>Usage</span> : prefix <code>disabled</code> to <code>segment</code>.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class="ui disabled segment"&gt;
+  &lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                     </div>
+                    </div>
+                    
+                    
+                    <div class="ui tab segment first" data-tab="third">   
+                        
+                        <!-- Raised Type -->
+                        <div class="block">
+                        <h3 id="raised" class="title">
+                            Raised
+                            <a href="#raised"><i class="link icon"></i></a>
+                        </h3>
+                        <p class="description">A segment is formed to raise above the page.</p>
+                        <div class="display">
+<div class="ui raised segment">
+  <img class="ui wireframe image" src="http://semantic-ui.com/images/wireframe/short-paragraph.png">
+</div>
+
+                          
+                        </div>
+                        <p class="usage"><span>Usage</span> : insert a class <code>.raised</code> before the class <code>.segment</code>.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui raised segment&quot;&gt;
+    &lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                    </div>
+                        
+                        <!-- Vertical Segment Type -->
+                        <div class="block">
+                        <h3 id="vertical" class="title">
+                            Vertical Segment
+                            <a href="#vertical"><i class="link icon"></i></a>
+                        </h3>
+                        <p class="description">A vertical segment is formatted content to be aligned as part of a vertical group.</p>
+                        <div class="display">
+<div class="ui vertical segment">
+  <img class="ui wireframe image" src="http://semantic-ui.com/images/wireframe/short-paragraph.png">
+</div>
+<div class="ui vertical segment">
+  <img class="ui wireframe image" src="http://semantic-ui.com/images/wireframe/short-paragraph.png">
+</div>
+<div class="ui vertical segment">
+  <img class="ui wireframe image" src="http://semantic-ui.com/images/wireframe/short-paragraph.png">
+</div>
+
+                          
+                        </div>
+                        <p class="usage"><span>Usage</span> : insert a class <code>.vertical</code> before the class <code>.segment</code>.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui vertical segment&quot;&gt;
+    &lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui vertical segment&quot;&gt;
+    &lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui vertical segment&quot;&gt;
+    &lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                    </div>
+                        
+                    </div>
+                    
+                    
+                    <div class="ui tab segment first" data-tab="fourth">   
+                        
+                        <!-- Attached -->
+                        <div class="block">
+                        <h3 id="attached" class="title">
+                            Attached
+                            <a href="#attached"><i class="link icon"></i></a>
+                        </h3>
+                        <p class="description">A segment is attached to other content on a page and sometimes used with other attached variations like <a href="/design/component/header#attached">attached header</a> or <a href="/design/component/message#attached">attached messages</a>.</p>
+                        <div class="display">
+<div class="ui top attached segment">
+  <p>This segment is on top</p>
+</div>
+<div class="ui attached segment">
+  <p>This segment is attached on both sides</p>
+</div>
+<div class="ui bottom attached segment">
+  <p>This segment is on bottom</p>
+</div>
+
+                          
+                        </div>
+                        <p class="usage"><span>Usage</span> : insert classes <code>.top .attached</code>, <code>.attached</code> or <code>.bottom .attached</code> before the class <code>segment</code>.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui top attached segment&quot;&gt;
+  &lt;p&gt;This segment is on top&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui attached segment&quot;&gt;
+  &lt;p&gt;This segment is attached on both sides&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui bottom attached segment&quot;&gt;
+  &lt;p&gt;This segment is on bottom&lt;/p&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                    </div>
+                        
+                        <!-- Padded -->
+                        <div class="block">
+                        <h3 id="padded" class="title">
+                            Padded
+                            <a href="#padded"><i class="link icon"></i></a>
+                        </h3>
+                        <p class="description">A segment can increase its padding.</p>
+                        <div class="display">
+<div class="ui padded segment">
+  <img class="ui wireframe image" src="http://semantic-ui.com/images/wireframe/short-paragraph.png">
+</div>
+
+<div class="ui very padded segment">
+  <img class="ui wireframe image" src="http://semantic-ui.com/images/wireframe/short-paragraph.png">
+</div>                            
+                       </div>
+                        <p class="usage"><span>Usage</span> : insert classes <code>.padded</code> (padding: 2em) or <code>.very, ipadded</code> (padding: 3em) before the class <code>.segment</code>.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui padded segment&quot;&gt;
+    &lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;ui very padded segment&quot;&gt;
+    &lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                    </div>
+                    
+                        <!-- Compact -->
+                        <div class="block">
+                        <h3 id="compact" class="title">
+                            Compact
+                            <a href="#compact"><i class="link icon"></i></a>
+                        </h3>
+                        <p class="description">A segement is took width according to its content automatically.</p>
+                        <div class="display">
+<div class="ui compact segment">
+  <img class="ui wireframe image" src="http://semantic-ui.com/images/wireframe/short-paragraph.png">
+</div>
+
+                       </div>
+                        <p class="usage"><span>Usage</span> : insert a class <code>.compact</code> before the class <code>.segment</code>.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui compact segment&quot;&gt;
+    &lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                    </div>
+                    
+                        <!-- Floated -->
+                        <div class="block">
+                        <h3 id="floated" class="title">
+                            Floated 
+                            <a href="#floated"><i class="link icon"></i></a>
+                        </h3>
+                        <p class="description">A segment can appear to the left or right of other content.</p>
+                        <div class="display" style="height:100px">
+                           
+<div class="ui right floated segment">
+  <p>This segment will appear to the right
+</p></div>
+<div class="ui left floated segment">
+    <p>This segment will appear to the left</p>
+</div>
+                       
+                       </div>
+                        <p class="usage"><span>Usage</span> : insert classes <code>.left, .floated</code> or <code>.right, .floated</code> before the class <code>.segment</code>.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui right floated segment&quot;&gt;
+    &lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;ui left floated segment&quot;&gt;
+    &lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                    </div>
+                    
+                        <!-- Text Alignment -->
+                        <div class="block">
+                        <h3 id="text-alignment" class="title">
+                            Text Alignment
+                            <a href="#text-alignment"><i class="link icon"></i></a>
+                        </h3>
+                        <p class="description">A segment can have its text aligned to a side. If it is wrapped by a grid, please check alignment between blocks at <a href="design/component/grid.html#aligned">Grid Alignment</a>. </p>
+                        <div class="display">
+<div class="ui left aligned segment">
+  Left
+</div>
+<div class="ui center aligned segment">
+  Center
+</div>
+<div class="ui right aligned segment">
+  Right
+</div>
+
+                       </div>
+                        <p class="usage"><span>Usage</span> : insert classes <code>.left, .aligned</code> or <code>.center, .aligned</code> or <code>.right, .aligned</code> before the class <code>.segment</code>.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui left aligned segment&quot;&gt; Left &lt;/div&gt;
+&lt;div class=&quot;ui center aligned segment&quot;&gt; Center &lt;/div&gt;
+&lt;div class=&quot;ui right aligned segment&quot;&gt; Right &lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                    </div>
+                        
+                        <!-- Clearing --> 
+                        <div class="block">
+                            <h3 id="clearing" class="title">Clearing <a href="#clearing"><i class="link icon"></i></a></h3>
+                            <p class="description">A segment can clear floated content.</p>
+                            <div class="display">
+<div class="ui clearing segment">
+  <div class="ui right floated button">Floated</div>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert a class <code>.clearing</code> before the class <code>.segment</code>.
+                            </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui clearing segment&quot;&gt;
+  &lt;div class=&quot;ui right floated button&quot;&gt;Floated&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Basic  --> 
+                        <div class="block">
+                            <h3 id="basic" class="title">Basic <a href="#basic"><i class="link icon"></i></a></h3>
+                            <p class="description">A basic segment has no special formatting.</p>
+                            <div class="display">
+<div class="ui basic segment">
+  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert a class <code>.basic</code> before the class <code>.segment</code>.
+                            </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui basic segment&quot;&gt;
+  &lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                    
+                        <!-- Colored --> 
+                        <div class="block">
+                            <h3 id="colored" class="title">Colored <a href="#colored"><i class="link icon"></i></a></h3>
+                            <p class="description">A segment is formatted with its colorful border or background.</p>
+                            <div class="display">
+                                
+<div class="ui primary segment">Primary Border</div>
+<div class="ui info segment">Info Border</div>
+<div class="ui success segment">Success Border</div>
+<div class="ui warning segment">Warning Border</div>
+<div class="ui error segment">Error Border</div>
+<div class="ui secondary segment">Secondary Border</div>  
+                                
+<div class="ui primary inverted segment">Primary Inverted</div>
+<div class="ui info inverted segment">Info Inverted</div>
+<div class="ui success inverted segment">Success Inverted</div>
+<div class="ui warning inverted segment">Warning Inverted</div>
+<div class="ui error inverted segment">Error Inverted</div>
+<div class="ui secondary inverted segment">Secondary Inverted</div>   
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert classes of colors or with <code>.inverted</code> before the class <code>.segment</code> to highlight border or background.
+                            </p>
+                        
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui primary segment&quot;&gt;Primary Border&lt;/div&gt;
+&lt;div class=&quot;ui info segment&quot;&gt;Info Border&lt;/div&gt;
+&lt;div class=&quot;ui success segment&quot;&gt;Success Border&lt;/div&gt;
+&lt;div class=&quot;ui warning segment&quot;&gt;Warning Border&lt;/div&gt;
+&lt;div class=&quot;ui error segment&quot;&gt;Error Border&lt;/div&gt;
+&lt;div class=&quot;ui secondary segment&quot;&gt;Secondary Border&lt;/div&gt;  
+                                
+&lt;div class=&quot;ui primary inverted segment&quot;&gt;Primary Inverted&lt;/div&gt;
+&lt;div class=&quot;ui info inverted segment&quot;&gt;Info Inverted&lt;/div&gt;
+&lt;div class=&quot;ui success inverted segment&quot;&gt;Success Inverted&lt;/div&gt;
+&lt;div class=&quot;ui warning inverted segment&quot;&gt;Warning Inverted&lt;/div&gt;
+&lt;div class=&quot;ui error inverted segment&quot;&gt;Error Inverted&lt;/div&gt;
+&lt;div class=&quot;ui secondary inverted segment&quot;&gt;Secondary Inverted&lt;/div&gt;  
+</code>
+</pre>
+                            </div>
+                        </div>
+                   </div>
+                    
+                    
+                    <div class="ui tab segment first" data-tab="fifth">      
+                        <!-- Segments -->
+                        <div class="block">
+                        <h3 id="segments" class="title">
+                            Segments 
+                            <a href="#segments"><i class="link icon"></i></a>
+                        </h3>
+                        <p class="description">A group of segments can be formatted to appear together.</p>
+                        <div class="display">
+<div class="ui segments">
+  <div class="ui segment">
+    <p>Top</p>
+  </div>
+  <div class="ui segment">
+    <p>Middle</p>
+  </div>
+  <div class="ui segment">
+    <p>Bottom</p>
+  </div>
+</div>
+                            
+<div class="ui segments">
+  <div class="ui segment">
+    <p>Primary Content</p>
+  </div>
+  <div class="ui secondary segment">
+    <p>Secondary Content</p>
+  </div>
+</div>
+                            
+<div class="ui compact segments">
+  <div class="ui segment">
+    <p>Compact Content</p>
+  </div>
+  <div class="ui segment">
+    <p>Compact Content</p>
+  </div>
+</div>                            
+                        </div>
+                        <p class="usage"><span>Usage</span> : a <code>segments</code> div contains all segement divs.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui segments&quot;&gt;
+  &lt;div class=&quot;ui segment&quot;&gt;Top&lt;/div&gt;
+  &lt;div class=&quot;ui segment&quot;&gt;Middle&lt;/div&gt;
+  &lt;div class=&quot;ui segment&quot;&gt;Bottom&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Secondary --&gt;
+&lt;div class=&quot;ui segments&quot;&gt;
+  &lt;div class=&quot;ui segment&quot;&gt;Primary Content&lt;/div&gt;
+  &lt;div class=&quot;ui secondary segment&quot;&gt;Secondary Content&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Compact --&gt;
+&lt;div class=&quot;ui compact segments&quot;&gt;
+  &lt;div class=&quot;ui segment&quot;&gt;Compact Content&lt;/div&gt;
+  &lt;div class=&quot;ui segment&quot;&gt;Compact Content&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                     </div>
+                    
+                        <!-- Horizontal Segments -->
+                        <div class="block">
+                        <h3 id="horizontal" class="title">
+                            Horizontal Segments
+                            <a href="#horizontal"><i class="link icon"></i></a>
+                        </h3>
+                        <p class="description">A segment group can appear horizontally</p>
+                        <div class="display">
+<div class="ui horizontal segments">
+  <div class="ui segment">
+    <p>Left</p>
+  </div>
+  <div class="ui segment">
+    <p>Center</p>
+  </div>
+  <div class="ui segment">
+    <p>Right</p>
+  </div>
+</div>
+                        </div>
+                        <p class="usage"><span>Usage</span> : prefix <code>horizontal</code> to <code>segments</code>.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui horizontal segments&quot;&gt;
+  &lt;div class=&quot;ui segment&quot;&gt;
+    &lt;p&gt;Left&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;ui segment&quot;&gt;
+    &lt;p&gt;Center&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;ui segment&quot;&gt;
+    &lt;p&gt;Right&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+</code>
+</pre>
+                        </div>
+                     </div>
+                    
+                        <!-- Nested Segments -->
+                        <div class="block">
+                        <h3 id="nested" class="title">
+                            Nested Segments
+                            <a href="#nested"><i class="link icon"></i></a>
+                        </h3>
+                        <p class="description">A group of segments can be nested in another group of segments.</p>
+                        <div class="display">
+<div class="ui segments">
+  <div class="ui segment">
+    <p>Top</p>
+  </div>
+  <div class="ui segments">
+    <div class="ui segment">
+      <p>Nested Top</p>
+    </div>
+    <div class="ui segment">
+      <p>Nested Middle</p>
+    </div>
+    <div class="ui segment">
+      <p>Nested Bottom</p>
+    </div>
+  </div>
+  <div class="ui segment">
+    <p>Middle</p>
+  </div>
+  <div class="ui horizontal segments">
+    <div class="ui segment">
+      <p>Left</p>
+    </div>
+    <div class="ui segment">
+      <p>Center</p>
+    </div>
+    <div class="ui segment">
+      <p>Right</p>
+    </div>
+  </div>
+  <div class="ui segment">
+    <p>Bottom</p>
+  </div>
+</div>
+
+                        </div>
+                        <p class="usage"><span>Usage</span> : put <code>segments</code> into <code>segments</code>.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui segments&quot;&gt;
+    &lt;div class=&quot;ui segment&quot;&gt;Top&lt;/div&gt;
+    &lt;div class=&quot;ui segments&quot;&gt;
+        &lt;div class=&quot;ui segment&quot;&gt;Nested Top&lt;/div&gt;
+        &lt;div class=&quot;ui segment&quot;&gt;Nested Middle&lt;/div&gt;
+        &lt;div class=&quot;ui segment&quot;&gt;Nested Bottom&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ui segment&quot;&gt;Middle&lt;/div&gt;
+    &lt;div class=&quot;ui horizontal segments&quot;&gt;
+        &lt;div class=&quot;ui segment&quot;&gt;Left&lt;/div&gt;
+        &lt;div class=&quot;ui segment&quot;&gt;Center&lt;/div&gt;
+        &lt;div class=&quot;ui segment&quot;&gt;Right&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ui segment&quot;&gt;Bottom&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                     </div>
+                 </div>
+            </div>  
+        </div>
+        </div>
+    </div>
+    <div class="ui grid container">
+        <div class="row">
+            <div class="one wide column">
+            </div>
+            <div class="six wide column">
+                     <footer class="footer">
+                    <div class="inner">
+                        <p>© Copyright 2016. Hoiio Pte Ltd.</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../../dist/semantic.min.js"></script>
+	<script src="../source/js/highlight.pack.js"></script>
+    <script src="../source/js/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>

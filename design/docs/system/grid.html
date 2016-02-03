@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hoiio Design Standards 2016">
+    <meta name="keywords" content="design, ux, standard, hoiio, framework, html, css, interface, component, semantic">
+    <meta name="author" content="Marcus">
+    <link rel="icon" href="source/favicon.ico">
+
+    <title>Grid - Hoiio Design Standards</title>
+    <!-- jQuery --->
+    <script src="../source/js/jquery-2.1.4.min.js"></script>
+    <script src="../source/js/modernizr-custom.js"></script>
+
+    <!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="../../dist/semantic.min.css" />
+	<!-- Main styles -->
+	<link rel="stylesheet" type="text/css" href="../source/css/hoiio-semantic.css" />
+	<!-- Highlight -->
+	<link rel="stylesheet" type="text/css" href="../source/css/tomorrow.css" />
+	
+</head>
+<body>
+    <div class="hoiio loading"></div>
+    <div class="ui grid container component-grid">
+        <div class="row" id="header">
+            <div class="one wide column">
+                <a href="/design/" class='logo'><i class="icon compass"></i></a>
+            </div>
+            <div class="twelve wide column">
+                <div class="heading"><a href="/design/">Design Standards</a></div>
+            </div>
+            <div class="three wide column">
+                <div class="right aligned poweredby">Powered by<a href="http://hoiio.com"><img class="middle aligned" src="../source/img/hoiio-logo.png"/></a></div>
+            </div>
+        </div>
+        
+        <div class="row" id="content">
+            <div class="column">
+            </div>
+            <div class="column" id="sidebar">
+                <nav></nav>
+            </div>
+            <div class="column" id="content">
+                <!-- Content -->
+                <div class="category">design</div>
+                <h1 class="name">Grid Systems</h1>
+                <div class="present">
+                    <div class="ui secondary pointing menu">
+                        <a class="item definition" data-tab="first">Definition</a>
+                        
+                        <a class="item" data-tab="predefined">Predefined Classes</a>
+                        <a class="item" data-tab="alignment">Alignment</a>
+                        <a class="item" data-tab="responsive">Responsive</a>
+                        <a class="item" data-tab="variations">Variations</a>
+                        
+                    </div>
+                    <!-- Standard -->
+                    <div class="ui tab segment first" data-tab="first">
+                        <div class="block">
+                            <h3 id="grid" class="title">Working of Grid System <a href="#grid"><i class="link icon"></i></a></h3>
+                            <p class="description">Grid systems are used for creating page layouts through a series of rows and columns that allows for content to be stacked both vertically and horizontally in a consistent and easily manageable fashion.
+                            
+                            <p class="description">Below is how the grid system works. </p>
+<div class="ui bulleted list">
+    <div class="item"><strong>Container</strong> : container can be used alongside a grid to provide a responsive, fixed width container for wrapping the contents of a page.</div>
+   <div class="item"><strong>Grid</strong> : a grid is inititated with classes <code>.ui, .grid</code>. </div> 
+  <div class="item"><strong>Row</strong> : rows must be placed within a grid for proper alignment and padding. Use rows to create horizontal groups of columns.</div>
+  <div class="item"><strong>Column</strong> : content should be placed within the columns, and only columns may be the immediate children of rows. Columns create gutters (gaps between column content) via padding.</div>
+  <div class="item"><strong>Pre-defined Classes</strong> : grid classes like <code>.three, .column, .wide</code> are available for quickly making grid layouts. They are created by specifying the number of sixteen available columns you wish to span. For example, three equal columns would use three for a grid <code>three column equal width grid</code>.</div>
+  
+</div>
+                            <p class="description">Basic Grid Structure: </p>
+                            
+                            <div class="display">
+<div class="ui four column grid container">
+  <div class="row">
+    <div class="column"><div class="ui segment">A1</div></div>
+    <div class="column"><div class="ui segment">A2</div></div>
+    <div class="column"><div class="ui segment">A3</div></div>
+    <div class="column"><div class="ui segment">A4</div></div>
+  </div>
+</div>
+                            </div>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui four column grid container&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;column&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;...&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Grid Options -->
+                        <div class="block">
+                            <h3 id="grid-option" class="title">Grid Options <a href="#grid-option"><i class="link icon"></i></a></h3>
+                            <p class="description">The following table summarizes aspects of how grid system works across multiple devices.</p>
+                            <div class="display">
+                        <div class="holder">
+                        <table class="grid">
+  						<thead>
+  							<tr>
+  								<th></th>
+                                <th>Extra small devices Phones (&lt;768px)</th>
+  								<th>Small devices Tablets (≥768px and &lt;992px )</th>
+  								<th>Medium devices Desktops (≥992px and &lt;1200px)</th>
+                                <th>Large devices Desktops (≥1200px)</th>
+  							</tr>
+  						</thead>
+  						<tbody>
+  							<tr>
+  								<td>Grid behavior</td>
+                                <td>Horizontal at all times</td>
+                                <td>Collapsed to start, horizontal above breakpoints</td>
+                                <td>Collapsed to start, horizontal above breakpoints</td><td>	Collapsed to start, horizontal above breakpoints</td>
+  							</tr>
+  							<tr>
+  								<td>Max container width</td>
+                                <td>	100%</td><td>	723px</td><td>	933px</td><td>	1127px</td>
+  							</tr>
+  							<tr>
+  								
+                                <td># of columns</td><td>	16</td><td>	16</td><td>	16</td><td>	16</td>
+  							</tr>
+  							<tr>
+  								<td>Gutter Size</td><td>	1em	</td><td>Fluid	</td><td>Fluid	</td><td>Fluid</td>
+  							</tr>
+                           
+  						</tbody>
+  					</table>
+                    </div>
+                            </div>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+/* Extra small devices (phones, less than 768px) */
+@media only screen and (max-width: 767px) { ... }
+
+/* Small devices (tablets, 768px and 991px) */
+@media only screen and (max-width: 991px) and (min-width: 768px) { ... }
+
+/* Medium devices (desktops, 992px and 1199px) */
+@media only screen and (max-width: 1199px) and (min-width: 992px) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media only screen (min-width: 1200px) { ... }
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    <!-- Pre-defined Class -->
+                    <div class="ui tab segment" data-tab="predefined">
+                        <!-- Column Widths -->
+                        <div class="block">
+                            <h3 id="width-column" class="title">The width of column <a href="#width-column"><i class="link icon"></i></a></h3>
+                            <p class="description">The width of a column is created by using a class <code>.wide</code> and a class number from one to sixteen. If a column cannot fit in a row it will automatically flow to the next row.</p>
+                            <div class="display">
+<div class="ui grid container">
+  <div class="eight wide column"><div class="ui segment">A</div></div>
+  <div class="eight wide column"><div class="ui segment">B</div></div>
+  <div class="ten wide column"><div class="ui segment">C</div></div>
+  <div class="six wide column"><div class="ui segment">D</div></div>
+  <div class="four wide column"><div class="ui segment">E</div></div>
+  <div class="twelve wide column"><div class="ui segment">F</div></div>
+  <div class="two wide column"><div class="ui segment">G</div></div>
+  <div class="fourteen wide column"><div class="ui segment">H</div></div>
+  <div class="sixteen wide column"><div class="ui segment">I</div></div>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert classes <code>.number, .wide</code> before the class <code>.column</code>.                  </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui grid container&quot;&gt;
+  &lt;div class=&quot;eight wide column&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;eight wide column&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;ten wide column&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;six wide column&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;four wide column&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;twelve wide column&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;two wide column&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;fourteen wide column&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;sixteen wide column&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Row Grouping -->
+                        <div class="block">
+                            <h3 id="row-grouping" class="title">Row Grouping <a href="#row-grouping"><i class="link icon"></i></a></h3>
+                            <p class="description">Row wrappers allow you to apply variations to a group of columns.</p>
+                            <div class="display">
+<div class="ui four column grid container">
+  <div class="two column row">
+    <div class="column"><div class="ui segment">A1</div></div>
+  </div>
+  <div class="column"><div class="ui segment">B</div></div>
+  <div class="column"><div class="ui segment">C</div></div>
+  <div class="column"><div class="ui segment">D</div></div>
+  <div class="column"><div class="ui segment">E</div></div>
+</div>
+                            </div>
+                           <p class="usage"><span>Usage</span> : insert classes <code>.number, .column</code> before the class <code>.row</code>.                  </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui four column grid container&quot;&gt;
+  &lt;div class=&quot;two column row&quot;&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Container -->
+                    <div class="ui tab segment" data-tab="alignment">
+                        <!-- Aligned -->
+                        <div class="block align">
+                            <h3 id="aligned" class="title">Aligned <a href="#aligned"><i class="link icon"></i></a></h3>
+                            <p class="description">Grids include many variations for adjusting things like vertical or horizontal alignment, text alignment, or default gutter sizes.</p>
+                            <div class="display">
+<div class="ui left aligned two column grid container">
+    <div class="column">
+        <div class="ui segment">
+            <code>left aligned grid</code>
+        </div>
+    </div>
+    <div class="column">
+        <div class="ui segment">
+            <code>left aligned grid</code>
+        </div>
+    </div>
+</div>  
+                            </div>
+                            <p class="usage"><span>Usage</span> : add a class <code>.aligned</code> to the grid, rows or columns. </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;!-- Apply left-aligned to whole grid --&gt; 
+&lt;div class=&quot;ui left aligned two column grid container&quot;&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;p&gt;...&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;p&gt;...&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Apply left-aligned to a row --&gt; 
+&lt;div class=&quot;ui two column grid container&quot;&gt;
+    &lt;div class=&quot;left aligned row&quot;&gt;
+        &lt;div class=&quot;column&quot;&gt;&lt;p&gt;...&lt;/p&gt;&lt;/div&gt;
+        &lt;div class=&quot;column&quot;&gt;&lt;p&gt;...&lt;/p&gt;&lt;/div&gt;
+    &lt;/div&gt;    
+&lt;/div&gt;
+    
+&lt;!-- Apply left-aligned to a column --&gt;     
+&lt;div class=&quot;ui two column grid container&quot;&gt;
+    &lt;div class=&quot;left aligned column&quot;&gt;&lt;p&gt;...&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;left aligned column&quot;&gt;&lt;p&gt;...&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+                                
+
+</code>
+</pre>
+                            </div>
+                        </div>
+                        <!-- Muti aligned -->
+                        <div class="block align">
+                            <h3 id="multi-aligned" class="title">Multi Aligned <a href="#multi-aligned"><i class="link icon"></i></a></h3>
+                            <p class="description">The order of alignments of grid elements like grid, row, column use <code>.aligned</code> concurrently. </p>
+                            <h5 class="sub">Grid and column (without row): Align to column</h5>
+                            <div class="display">
+                                
+<div class="ui two column grid">
+    <div class="right aligned column">
+        <div class="ui segment">
+            <code>left aligned grid</code>, <code>right aligned column</code>
+        </div>
+    </div>
+    <div class="left aligned column">
+        <div class="ui segment">
+            <code>left aligned grid</code>
+        </div>
+    </div>
+</div>
+                                
+
+
+                            </div>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui left aligned two column grid container&quot;&gt;
+    &lt;div class=&quot;right aligned column&quot;&gt;
+       ...
+    &lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;
+       ...
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                            
+                            <h5 class="sub">Grid and row: Align to row</h5>
+                            <div class="display">
+                                
+<div class="ui two column grid container">
+    <div class="right aligned row">
+        <div class="column">
+            <div class="ui segment">
+                <code>left aligned grid</code>, <code>right aligned row</code>
+            </div>
+        </div>
+        <div class="column">
+            <div class="ui segment">
+                <code>left aligned grid</code>, <code>right aligned row</code>
+            </div>
+        </div>
+    </div>
+</div> 
+                                
+
+
+                            </div>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui left aligned two column grid container&quot;&gt;
+    &lt;div class=&quot;right aligned row&quot;&gt;
+        &lt;div class=&quot;column&quot;&gt;
+            ...
+        &lt;/div&gt;
+        &lt;div class=&quot;column&quot;&gt;
+           ...
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt; 
+</code>
+</pre>
+                            </div>
+                            
+                            <h5 class="sub">Grid, row and column: Align to row</h5>
+                            <div class="display">
+                                
+<div class="ui two column grid container">
+    <div class="right aligned row">
+        <div class="column">
+            <div class="ui segment">
+                <code>left aligned grid</code>, <code>right aligned row</code>, <code>center aligned column</code>
+            </div>
+        </div>
+        <div class="column">
+            <div class="ui segment">
+                <code>left aligned grid</code>, <code>right aligned row</code>, <code>left aligned column</code>
+            </div>
+        </div>
+    </div>
+</div> 
+
+                            </div>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui left aligned two column grid container&quot;&gt;
+    &lt;div class=&quot;right aligned row&quot;&gt;
+        &lt;div class=&quot;center aligned column&quot;&gt;
+            ...
+        &lt;/div&gt;
+        &lt;div class=&quot;left aligned column&quot;&gt;
+            ...
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>                               
+                            <h5 class="sub">Grid and column (with row): Align to column</h5>
+                            <div class="display">
+                                
+<div class="ui two column grid container">
+    <div class="row">
+        <div class="right aligned column">
+            <div class="ui segment">
+                <code>left aligned grid</code>, <code>right aligned column</code>
+            </div>
+        </div>
+        <div class="column">
+            <div class="ui segment">
+                <code>left aligned grid</code>
+            </div>
+        </div>
+    </div>
+</div> 
+
+                                </div>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui left aligned two column grid container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;right aligned column&quot;&gt;
+            ...
+        &lt;/div&gt;
+        &lt;div class=&quot;column&quot;&gt;
+            ...
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;    
+</code>
+</pre>
+                            </div>       
+                                
+
+                                
+
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    <!-- Responsive -->
+                    <div class="ui tab segment" data-tab="responsive">
+                        <!-- Stackable -->
+                        <div class="block">
+                            <h3 id="stackable" class="title">Stackable <a href="#stackable"><i class="link icon"></i></a></h3>
+                            <p class="description">A stackable grid will automatically stack rows to a single columns on small screen devices, like mobiles.</p>
+                            <div class="display">
+<div class="ui stackable four column grid container">
+  <div class="column"><div class="ui segment">A</div></div>
+  <div class="column"><div class="ui segment">B</div></div>
+  <div class="column"><div class="ui segment">C</div></div>
+  <div class="column"><div class="ui segment">D</div></div>
+</div>
+                            </div>
+                           <p class="usage"><span>Usage</span> : insert a class <code>.stackable</code> before the class <code>.grid</code>.                  </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui stackable four column grid&quot;&gt;
+  &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Doubling -->
+                        <div class="block">
+                            <h3 id="doubling" class="title">Doubling <a href="#doubling"><i class="link icon"></i></a></h3>
+                            <p class="description">A doubling grid can double column widths for each device jump.</p>
+                            <div class="display">
+<div class="ui grid container">
+  <div class="doubling eight column row">
+    <div class="column"><div class="ui segment">A1</div></div>
+    <div class="column"><div class="ui segment">A2</div></div>
+    <div class="column"><div class="ui segment">A3</div></div>
+    <div class="column"><div class="ui segment">A4</div></div>
+    <div class="column"><div class="ui segment">A5</div></div>
+    <div class="column"><div class="ui segment">A6</div></div>
+    <div class="column"><div class="ui segment">A7</div></div>
+    <div class="column"><div class="ui segment">A8</div></div>
+  </div>
+</div>
+
+                            </div>
+                           <p class="usage"><span>Usage</span> : insert a class <code>.doubling</code> before the class <code>.row</code>.                  </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui grid container&quot;&gt;
+  &lt;div class=&quot;doubling eight column row&quot;&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Variations -->
+                    <div class="ui tab segment" data-tab="variations">
+                        <!-- Nesting Grids -->
+                        <div class="block ">
+                            <h3 id="nesting-grids" class="title">Nesting Grids <a href="#nesting-grids"><i class="link icon"></i></a></h3>
+                            <p class="description">Grids can be placed inside of other grids</p>
+                            <div class="display">
+<div class="ui two column grid">
+  <div class="column non">
+    <div class="ui three column grid">
+      <div class="column"><div class="ui segment">A1</div></div>
+      <div class="column"><div class="ui segment">A2</div></div>
+      <div class="column"><div class="ui segment">A3</div></div>
+    </div>
+  </div>
+  <div class="column"><div class="ui segment">B</div></div>
+  <div class="column"><div class="ui segment">C</div></div>
+  <div class="column non">
+    <div class="ui grid">
+      <div class="ten wide column"><div class="ui segment">D1</div></div>
+      <div class="six wide column"><div class="ui segment">D2</div></div>
+    </div>
+  </div>
+</div>
+                            </div>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui two column grid&quot;&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;div class=&quot;ui three column grid&quot;&gt;
+      &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;div class=&quot;ui grid&quot;&gt;
+      &lt;div class=&quot;ten wide column&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;six wide column&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Colored -->
+                        <div class="block grids">
+                            <h3 id="colors" class="title">Colors <a href="#colors"><i class="link icon"></i></a></h3>
+                            <p class="description">Fill colors in backgrounds of columns in a grid.
+                            </p>
+                            <div class="display">
+<div class="ui equal width center aligned grid">
+  <div class="row">
+    <div class="primary non column">
+      Primary
+    </div>
+    <div class="info non column">
+      Info
+    </div>
+  </div>
+  <div class="row">
+    <div class="grey non column">Grey</div>
+  </div>
+  <div class="row">
+    <div class="warning non column">
+      Warning
+    </div>
+    <div class="error non column">
+      Error
+    </div>
+  </div>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert classes of color before the class <code>.column</code>.                  </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;primary column&quot;&gt;
+      Primary
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Automatic Column Count -->
+                        <div class="block rows">
+                            <h3 id="automatic-column-count" class="title">Automatic Column Count <a href="#automatic-column-count"><i class="link icon"></i></a></h3>
+                            <p class="description">The equal width variation will automatically divide column width evenly. This is useful with dynamic content where you do not know the column count in advance.
+
+</p>
+                            <div class="display">
+<div class="ui equal width grid">
+  <div class="column"><div class="ui segment">A</div></div>
+  <div class="column"><div class="ui segment">B</div></div>
+  <div class="column"><div class="ui segment">C</div></div>
+  <div class="equal width row">
+    <div class="column"><div class="ui segment">D1</div></div>
+    <div class="column"><div class="ui segment">D2</div></div>
+  </div>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert classes <code>.equal, .width</code> before the class <code>.grid</code> or <code>.row</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui equal width grid&quot;&gt;
+  &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;equal width row&quot;&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Centering Content -->
+                        <div class="block rows">
+                            <h3 id="centering-content" class="title">Centering Content <a href="#centering-content"><i class="link icon"></i></a></h3>
+                            <p class="description">If a row does not take up all sixteen grid columns, you can use a centered variation to center the column contents inside the grid.
+</p>
+                            <div class="display">
+<div class="ui two column centered grid">
+  <div class="column"><div class="ui segment">A1</div></div>
+  <div class="four column non centered row">
+    <div class="column"><div class="ui segment">B1</div></div>
+    <div class="column"><div class="ui segment">B2</div></div>
+  </div>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert a class <code>.center</code> before the class <code>.grid</code> or <code>.row</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui two column centered grid&quot;&gt;
+  &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;four column centered row&quot;&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        
+    </div>
+    <div class="ui grid container">
+        <div class="row">
+            <div class="one wide column">
+            </div>
+            <div class="six wide column">
+                     <footer class="footer">
+                    <div class="inner">
+                        <p>© Copyright 2016. Hoiio Pte Ltd.</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../../dist/semantic.min.js"></script>
+	<script src="../source/js/highlight.pack.js"></script>
+    <script src="../source/js/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>

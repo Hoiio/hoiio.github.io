@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hoiio Design Standards 2016">
+    <meta name="keywords" content="design, ux, standard, hoiio, framework, html, css, interface, component, semantic">
+    <meta name="author" content="Marcus">
+    <link rel="icon" href="source/favicon.ico">
+
+    <title>List - Hoiio Design Standards</title>
+    <!-- jQuery --->
+    <script src="../source/js/jquery-2.1.4.min.js"></script>
+    <script src="../source/js/modernizr-custom.js"></script>
+
+    <!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="../../dist/semantic.min.css" />
+	<!-- Main styles -->
+	<link rel="stylesheet" type="text/css" href="../source/css/hoiio-semantic.css" />
+	<!-- Highlight -->
+	<link rel="stylesheet" type="text/css" href="../source/css/tomorrow.css" />
+	
+</head>
+<body>
+    <div class="hoiio loading"></div>
+    <div class="ui grid container component-list">
+        <div class="row" id="header">
+            <div class="one wide column">
+                <a href="/design/" class='logo'><i class="icon compass"></i></a>
+            </div>
+            <div class="twelve wide column">
+                <div class="heading"><a href="/design/">Design Standards</a></div>
+            </div>
+            <div class="three wide column">
+                <div class="right aligned poweredby">Powered by<a href="http://hoiio.com"><img class="middle aligned" src="../source/img/hoiio-logo.png"/></a></div>
+            </div>
+        </div>
+        <div class="row" id="content">
+            <div class="column">
+            </div>
+            <div class="column" id="sidebar">
+                <nav></nav>
+            </div>
+            <div class="column" id="content">
+                <!-- Content -->
+                <div class="category">component</div>
+                <h1 class="name">List</h1>
+                <div class="present">
+                    <div class="ui secondary pointing menu">
+                        <a class="item definition" data-tab="first">Definition</a>
+                        <a class="item definition" data-tab="second">Content</a>
+                        <a class="item types" data-tab="third"> Types </a>
+                        <a class="item group" data-tab="fourth">Variations</a>
+                    </div>
+                    <!-- Standard -->
+                    <div class="ui tab segment first" data-tab="first">
+                        <!-- Definition --> 
+                        <div class="block">
+                            <p class="description">Lists are used to group <a href="/design/component/item">items</a> together in order to view and access easily. By default, a list is displayed without <code>list-style-type</code> property.</p>
+                            <div class="display">
+
+<div class="ui list">
+  <div class="item">Apples</div>
+  <div class="item">Pears</div>
+  <div class="item">Oranges</div>
+</div>
+                               
+                            </div>
+                            <p class="usage"><span>Usage</span> : add classes <code>.ui, .list</code> to the <code>&lt;div&gt;</code> element.
+                            </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class="ui list"&gt;
+  &lt;div class="item"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <!-- Content -->
+                    <div class="ui tab segment" data-tab="second">    
+                        <!-- Header Content --> 
+                        <div class="block">
+                            <h3 id="header-content" class="title">Header <a href="#header-content"><i class="link icon"></i></a></h3>
+                            <p class="description">A list item can contain a header.</p>
+                            <div class="display">
+<div class="ui list">
+  <div class="item">
+    <div class="header">New York City</div>
+    A lovely city
+  </div>
+  <div class="item">
+    <div class="header">Chicago</div>
+    Also quite a lovely city
+  </div>
+  <div class="item">
+    <div class="header">Los Angeles</div>
+    Sometimes can be a lovely city
+  </div>
+  <div class="item">
+    <div class="header">San Francisco</div>
+    What a lovely city
+  </div>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> : add a <code>&lt;div&gt;</code> element with a class <code>.header</code> into the item. 
+                            </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class="ui list"&gt;
+  &lt;div class="item"&gt;
+    &lt;div class="header"&gt;New York City&lt;/div&gt;
+    A lovely city
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Description Content -->
+                        <div class="block">
+                        <h3 id="descripiton" class="title">
+                            Description
+                            <a href="#descripiton"><i class="link icon"></i></a>
+                        </h3>
+                        <p class="description">A list item can contain a description.</p>
+                        <div class="display">
+<div class="ui list">
+  <div class="item">
+    <a class="header">New York City</a>
+    <div class="description">A lovely city</div>
+  </div>
+  <div class="item">
+    <a class="header">Chicago</a>
+    <div class="description">Also quite a lovely city</div>
+  </div>
+  <div class="item">
+    <a class="header">Los Angeles</a>
+    <div class="description">Sometimes can be a lovely city</div>
+  </div>
+  <div class="item">
+    <a class="header">San Francisco</a>
+    <div class="description">What a lovely city</div>
+  </div>
+</div>
+
+                        </div>
+                        <p class="usage"><span>Usage</span> : insert a <code>&lt;div&gt;</code> element with a class <code>.description</code> after the header.     
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui list&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;
+    &lt;a class=&quot;header&quot;&gt;New York City&lt;/a&gt;
+    &lt;!-- Description --&gt;
+    &lt;div class=&quot;description&quot;&gt;A lovely city&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                     </div>
+                        
+                        <!-- Icon Content -->
+                        <div class="block">
+                        <h3 id="icon" class="title">
+                            Icon 
+                            <a href="#icon"><i class="link icon"></i></a>
+                        </h3>
+                        <p class="description">A list item can contain an icon. It is splitted into left block and content block.</p>
+                        <div class="display">
+<div class="ui list">
+  <div class="item">
+    <i class="location icon"></i>
+    <div class="content">
+       <div class="header">New York City</div>
+       <div class="description">A lovely city</div>
+    </div>
+  </div>
+  <div class="item">
+    <i class="location icon"></i>  
+    <div class="content">
+       <div class="header">Chicago</div>
+       <div class="description">Also quite a lovely city</div>
+    </div>        
+  </div>
+  <div class="item">
+    <i class="help icon"></i>
+    What a lovely city
+  </div>
+</div>                            
+                 </div>
+                        <p class="usage"><span>Usage</span> : 
+                            <br>- Wrap the header and text in a content block.  
+                            <br>- Insert a <code>&lt;i&gt;</code> element with a class <code>.icon</code> before the content block.
+                            <br>- Text placed next to icon is the inline text.
+                        </p>
+                            
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui list&quot;&gt;
+    &lt;a class=&quot;item&quot;&gt;
+        &lt;i class=&quot;location icon&quot;&gt;&lt;/i&gt;
+        &lt;div class=&quot;content&quot;&gt;
+            &lt;div class="header"&gt;New York City&lt;/div&gt;
+            A lovely city
+        &lt;/div&gt;
+    &lt;/a&gt;
+    &lt;!-- Inline Text --&gt;
+    &lt;div class=&quot;item&quot;&gt;
+        &lt;i class=&quot;help icon&quot;&gt;&lt;/i&gt;
+        Inline Text
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                     </div>
+                    
+                        <!-- Image Content -->
+                        <div class="block">
+                        <h3 id="image" class="title">
+                            Image
+                            <a href="#image"><i class="link icon"></i></a>
+                        </h3>
+                        <p class="description">A list item can contain an image that is put into left block.</p>
+                        <div class="display">
+<div class="ui list">
+  <div class="item">
+    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar2/small/rachel.png">
+    <div class="content">
+      <a class="header">Rachel</a>
+      <div class="description">Last seen watching <a><b>Arrested Development</b></a> just now.</div>
+    </div>
+  </div>
+  <div class="item">
+    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar2/small/lindsay.png">
+    <div class="content">
+      <a class="header">Lindsay</a>
+      <div class="description">Last seen watching <a><b>Bob's Burgers</b></a> 10 hours ago.</div>
+    </div>
+  </div>
+  <div class="item">
+    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar2/small/matthew.png">
+    <div class="content">
+      <a class="header">Matthew</a>
+      <div class="description">Last seen watching <a><b>The Godfather Part 2</b></a> yesterday.</div>
+    </div>
+  </div>
+</div>
+                        </div>
+                        <p class="usage"><span>Usage</span> : replace the <code>icon</code> element with an <code>image</code> element. 
+                        </p>    
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui list&quot;&gt;
+    &lt;div class=&quot;item&quot;&gt;
+        &lt;img class=&quot;ui avatar image&quot; src=&quot;rachel.png&quot;&gt;
+        &lt;div class=&quot;content&quot;&gt;
+            &lt;a class=&quot;header&quot;&gt;Rachel&lt;/a&gt;
+            &lt;div class=&quot;description&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                     </div>
+                    
+                        
+                    </div>
+                    <!-- Types -->
+                    <div class="ui tab segment" data-tab="third">       
+                        <!-- unordered list type -->
+                        <div class="block">
+                        <h3 id="unordered" class="title">
+                            Unordered List
+                            <a href="#unordered"><i class="link icon"></i></a>
+                        </h3>
+                        <p class="description">A unordered list is used to group a set of related items, in no particular order.</p>
+                        <div class="display">
+<div class="ui bulleted list">
+  <div class="item">Orange</div>
+  <div class="item">Green</div>
+  <div class="item">Blue</div>
+</div>
+                            
+                        </div>
+                        <p class="usage"><span>Usage</span> : insert a class <code>.bulleted</code> before the class <code>.list</code>.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class="ui bulleted list"&gt;
+  &lt;div class="item"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                     </div>
+                    
+                        <!-- ordered list type -->
+                        <div class="block">
+                        <h3 id="ordered" class="title">
+                            Ordered List
+                            <a href="#ordered"><i class="link icon"></i></a>
+                        </h3>
+                        <p class="description">An ordered list is used to group a set of related items, in a specific order. It works with numbers instead of using a dot as the default list item marker.</p>
+                        <div class="display">
+<div class="ui bulleted list">
+  <div class="item">View items</div>
+  <div class="item">Select an item</div>
+  <div class="item">Export the item</div>
+</div>                            
+                        </div>
+                        <p class="usage"><span>Usage</span> : insert a class <code>.ordered</code> before the class <code>.list</code>.</p><div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class="ui ordered list"&gt;
+  &lt;div class="item"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                     </div>
+                        
+                        <!-- Link Type -->
+                        <div class="block">
+                        <h3 id="link" class="title">
+                            Link 
+                            <a href="#link"><i class="link icon"></i></a>
+                        </h3>
+                        <p class="description">A list item is formed as navigation links.</p>
+                        <div class="display">
+<div class="ui link list">
+  <div class="active item">Home</div>
+  <a class="item">About</a>
+  <a class="item">Jobs</a>
+  <a class="item">Team</a>
+</div>
+                        </div>
+                        <p class="usage"><span>Usage</span> : insert a class <code>.link</code> before the class <code>.list</code>.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui link list&quot;&gt;
+  &lt;div class=&quot;active item&quot;&gt;...&lt;/div&gt;
+  &lt;a class=&quot;item&quot;&gt;...&lt;/a&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                     </div>
+                   
+                    </div>
+                    <!-- Varitions -->
+                    <div class="ui tab segment" data-tab="fourth">       
+                        
+                        
+                    
+                        <!-- Divided -->
+                        <div class="block">
+                            <h3 id="divided" class="title">
+                                Divided
+                                <a href="#divided"><i class="link icon"></i></a>
+                            </h3>
+                            <p class="description">A list can show divisions between content.</p>
+                            <div class="display">
+    <div class="ui middle aligned divided list">
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/daniel.jpg">
+        <div class="content">
+          <a class="header">Daniel Louise</a>
+        </div>
+      </div>
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/stevie.jpg">
+        <div class="content">
+          <a class="header">Stevie Feliciano</a>
+        </div>
+      </div>
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/elliot.jpg">
+        <div class="content">
+          <a class="header">Elliot Fu</a>
+        </div>
+      </div>
+     </div>
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert a class <code>.divided</code> before the class <code>.list</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui divided list&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                         </div>
+                        <!-- Selection -->
+                        <div class="block">
+                            <h3 id="selection" class="title">
+                                Selection
+                                <a href="#selection"><i class="link icon"></i></a>
+                            </h3>
+                            <p class="description">A selection list formats list items as possible choices.</p>
+                            <div class="display">
+    <div class="ui middle aligned selection list">
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/helen.jpg">
+        <div class="content">
+          <div class="header">Helen</div>
+        </div>
+      </div>
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/christian.jpg">
+        <div class="content">
+          <div class="header">Christian</div>
+        </div>
+      </div>
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/daniel.jpg">
+        <div class="content">
+          <div class="header">Daniel</div>
+        </div>
+      </div>
+    </div>
+                            </div>
+                            <p class="usage"><span>Usage</span> : prefix <code>selection</code> to <code>list</code>.</p>
+                            <div class="source">
+    <pre>
+    <code class="html hljs xml">
+    &lt;div class=&quot;ui middle aligned selection list&quot;&gt;
+      &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+      &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+      &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+    </code>
+    </pre>
+                            </div>
+                         </div>
+
+                        <!-- Relaxed -->
+                        <div class="block">
+                            <h3 id="relaxed" class="title">
+                                Relaxed 
+                                <a href="#relaxed"><i class="link icon"></i></a>
+                            </h3>
+                            <p class="description">A list can relax its padding to provide more negative space.</p>
+                            <div class="display">
+    <div class="ui middle aligned relaxed list">
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/daniel.jpg">
+        <div class="content">
+          <div class="header">Daniel Louise</div>
+        </div>
+      </div>
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/stevie.jpg">
+        <div class="content">
+          <div class="header">Stevie Feliciano</div>
+
+        </div>
+      </div>
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/elliot.jpg">
+        <div class="content">
+          <div class="header">Elliot Fu</div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="ui middle aligned  very relaxed list">
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/daniel.jpg">
+        <div class="content">
+          <div class="header">Daniel Louise</div>
+        </div>
+      </div>
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/stevie.jpg">
+        <div class="content">
+          <div class="header">Stevie Feliciano</div>
+
+        </div>
+      </div>
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/elliot.jpg">
+        <div class="content">
+          <div class="header">Elliot Fu</div>
+
+        </div>
+      </div>
+    </div>                            
+
+    <div class="ui relaxed horizontal list">
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/daniel.jpg">
+        <div class="content">
+          <div class="header">Daniel Louise</div>
+        </div>
+      </div>
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/stevie.jpg">
+        <div class="content">
+          <div class="header">Stevie Feliciano</div>
+
+        </div>
+      </div>
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/elliot.jpg">
+        <div class="content">
+          <div class="header">Elliot Fu</div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="ui very relaxed horizontal list">
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/daniel.jpg">
+        <div class="content">
+          <div class="header">Daniel Louise</div>
+        </div>
+      </div>
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/stevie.jpg">
+        <div class="content">
+          <div class="header">Stevie Feliciano</div>
+
+        </div>
+      </div>
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/elliot.jpg">
+        <div class="content">
+          <div class="header">Elliot Fu</div>
+
+        </div>
+      </div>
+    </div>                              
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert a class <code>.relaxed</code> before the class <code>.list</code> or <code>.horizontal</code>. Use the classes <code>.very, .relaxed</code> for more spacing.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui relaxed list&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;ui very relaxed list&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                         </div>
+
+                        
+                        
+                        
+                        <!-- Floated Content --> 
+                        <div class="block">
+                            <h3 id="floated" class="title">Floated Content <a href="#floated"><i class="link icon"></i></a></h3>
+                            <p class="description"></p>
+                            <div class="display">
+
+<div class="ui middle aligned divided list">
+  <div class="item">
+    <div class="right floated content">
+      <div class="ui button">Add</div>
+    </div>
+    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar2/small/lena.png">
+    <div class="content">
+      Lena
+    </div>
+  </div>
+  <div class="item">
+    <div class="right floated content">
+      <div class="ui button">Add</div>
+    </div>
+    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar2/small/lindsay.png">
+    <div class="content">
+      Lindsay
+    </div>
+  </div>
+  <div class="item">
+    <div class="right floated content">
+      <div class="ui button">Add</div>
+    </div>
+    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar2/small/mark.png">
+    <div class="content">
+      Mark
+    </div>
+  </div>
+
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert a class <code>.floated</code> before the class <code>.content</code>.
+                            </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui divided list&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;
+    &lt;div class=&quot;right floated content&quot;&gt;
+      &lt;div class=&quot;ui button&quot;&gt;Add&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;img class=&quot;ui avatar image&quot; src=&quot;lena.png&quot;&gt;
+    &lt;div class=&quot;content&quot;&gt;
+      Lena
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;  
+</code>
+</pre>
+                            </div>
+                        </div>
+                       
+                        <!-- Horizontal -->
+                        <div class="block">
+                        <h3 id="horizontal" class="title">
+                            Horizontally Aligned Item
+                            <a href="#horizontal"><i class="link icon"></i></a>
+                        </h3>
+                        <p class="description">A list is formatted to have items appear horizontally.</p>
+                        <div class="display">
+<div class="ui horizontal list">
+  <div class="item">
+    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/tom.jpg">
+    <div class="content">
+      <div class="header">Tom</div>
+      Top Contributor
+    </div>
+  </div>
+  <div class="item">
+    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/christian.jpg">
+    <div class="content">
+      <div class="header">Christian Rocha</div>
+      Admin
+    </div>
+  </div>
+  <div class="item">
+    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/matt.jpg">
+    <div class="content">
+      <div class="header">Matt</div>
+      Top Rated User
+    </div>
+  </div>
+</div>
+                            
+<br> <br>
+<div class="ui horizontal bulleted link list">
+  <a class="item">
+    Terms and Conditions
+  </a>
+  <a class="item">
+    Privacy Policy
+  </a>
+  <a class="item">
+    Contact Us
+  </a>
+</div>                            
+                        </div>
+                        <p class="usage"><span>Usage</span> : insert a class <code>.horizontal</code> before the class <code>.list</code>, use <code>bulleted</code> or <code>ordered</code> if necessary.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui horizontal list&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;ui bulleted horizontal list&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                     </div>
+                    
+                        <!-- Vertically Aligned 1 -->
+                        <div class="block">
+                        <h3 id="vertical" class="title">
+                            Vertically Aligned Content of item (Horizontal list)
+                            <a href="#vertical"><i class="link icon"></i></a>
+                        </h3>
+                        <p class="description">A content inside a horizontal list can be vertically aligned.</p>
+                        <div class="display">
+
+<div class="ui horizontal list">
+  <div class="item">
+    <img class="ui avatar image" src="../source/img/square-image.jpg">
+    <div class="top aligned content">
+      Top Aligned
+    </div>
+  </div>
+  <div class="item">
+    <img class="ui avatar image" src="../source/img/square-image.jpg">
+    <div class="center aligned content">
+      Middle
+    </div>
+  </div>
+  <div class="item">
+    <img class="ui avatar image" src="../source/img/square-image.jpg">
+    <div class="bottom aligned content">
+      Bottom
+    </div>
+  </div>
+    
+                            </div>    
+                        </div>
+                        <p class="usage"><span>Usage</span> : add <code>top aligned</code> or <code>middle aligned </code> or <code>bottom aligned</code> to <code>content</code> of a horizontal list.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui horizontal list&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;
+    &lt;img class=&quot;ui avatar image&quot; src=&quot;square-image.jpg&quot;&gt;
+    &lt;div class=&quot;top aligned content&quot;&gt;
+      Top Aligned
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;
+    &lt;img class=&quot;ui avatar image&quot; src=&quot;square-image.jpg&quot;&gt;
+    &lt;div class=&quot;middle aligned content&quot;&gt;
+      Middle
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;
+    &lt;img class=&quot;ui avatar image&quot; src=&quot;square-image.jpg&quot;&gt;
+    &lt;div class=&quot;bottom aligned content&quot;&gt;
+      Bottom
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt; 
+</code>
+</pre>
+                        </div>
+                     </div>
+                    
+                        <!-- Vertically Aligned 2 -->
+                        <div class="block">
+                        <h3 id="vertical" class="title">
+                            Vertically Aligned Content of item
+                            <a href="#vertical"><i class="link icon"></i></a>
+                        </h3>
+                        <p class="description">All contents inside a list can be vertically aligned.</p>
+                        <div class="display">
+<div class="ui four column grid">
+  <div class="column">    
+    <div class="ui top aligned list">
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/helen.jpg">
+        <div class="content">
+          <div class="header">Helen</div>
+        </div>
+      </div>
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/christian.jpg">
+        <div class="content">
+          <div class="header">Christian</div>
+        </div>
+      </div>
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/daniel.jpg">
+        <div class="content">
+          <div class="header">Daniel</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">    
+    <div class="ui middle aligned list">
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/helen.jpg">
+        <div class="content">
+          <div class="header">Helen</div>
+        </div>
+      </div>
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/christian.jpg">
+        <div class="content">
+          <div class="header">Christian</div>
+        </div>
+      </div>
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/daniel.jpg">
+        <div class="content">
+          <div class="header">Daniel</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">    
+    <div class="ui bottom aligned list">
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/helen.jpg">
+        <div class="content">
+          <div class="header">Helen</div>
+        </div>
+      </div>
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/christian.jpg">
+        <div class="content">
+          <div class="header">Christian</div>
+        </div>
+      </div>
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/daniel.jpg">
+        <div class="content">
+          <div class="header">Daniel</div>
+        </div>
+      </div>
+    </div>
+  </div>        
+</div>    
+                        </div>
+                        <p class="usage"><span>Usage</span> : insert classes <code>.top, .aligned</code> or <code>.middle, .aligned </code> or <code>.bottom, .aligned</code> before the class <code>.list</code>.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui top aligned list&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;ui middle aligned list&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt; 
+
+&lt;div class=&quot;ui bottom aligned list&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt; 
+</code>
+</pre>
+                        </div>
+                     </div>
+                        
+                         <!-- Sizes-->
+                        <div class="block">
+                            <h3 id="sizes" class="title">
+                                Sizes
+                                <a href="#sizes"><i class="link icon"></i></a>
+                            </h3>
+                        <div class="display">
+<div class="ui tiny horizontal list">
+  <div class="item">
+    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/helen.jpg">
+    <div class="content">
+      <div class="header">Helen</div>
+    </div>
+  </div>
+  <div class="item">
+    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/christian.jpg">
+    <div class="content">
+      <div class="header">Christian</div>
+    </div>
+  </div>
+  <div class="item">
+    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/daniel.jpg" data-pin-nopin="true">
+    <div class="content">
+      <div class="header">Daniel</div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="ui small horizontal list">
+  <div class="item">
+    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/helen.jpg">
+    <div class="content">
+      <div class="header">Helen</div>
+    </div>
+  </div>
+  <div class="item">
+    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/christian.jpg">
+    <div class="content">
+      <div class="header">Christian</div>
+    </div>
+  </div>
+  <div class="item">
+    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/daniel.jpg" data-pin-nopin="true">
+    <div class="content">
+      <div class="header">Daniel</div>
+    </div>
+  </div>
+</div> 
+<br>                            
+<div class="ui horizontal list">
+  <div class="item">
+    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/helen.jpg">
+    <div class="content">
+      <div class="header">Helen</div>
+    </div>
+  </div>
+  <div class="item">
+    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/christian.jpg">
+    <div class="content">
+      <div class="header">Christian</div>
+    </div>
+  </div>
+  <div class="item">
+    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/daniel.jpg" data-pin-nopin="true">
+    <div class="content">
+      <div class="header">Daniel</div>
+    </div>
+  </div>
+</div>
+<br>                            
+<div class="ui large horizontal list">
+  <div class="item">
+    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/helen.jpg">
+    <div class="content">
+      <div class="header">Helen</div>
+    </div>
+  </div>
+  <div class="item">
+    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/christian.jpg">
+    <div class="content">
+      <div class="header">Christian</div>
+    </div>
+  </div>
+  <div class="item">
+    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/daniel.jpg" data-pin-nopin="true">
+    <div class="content">
+      <div class="header">Daniel</div>
+    </div>
+  </div>
+</div> 
+<br> 
+<div class="ui big horizontal list">
+  <div class="item">
+    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/helen.jpg">
+    <div class="content">
+      <div class="header">Helen</div>
+    </div>
+  </div>
+  <div class="item">
+    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/christian.jpg">
+    <div class="content">
+      <div class="header">Christian</div>
+    </div>
+  </div>
+  <div class="item">
+    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/daniel.jpg" data-pin-nopin="true">
+    <div class="content">
+      <div class="header">Daniel</div>
+    </div>
+  </div>
+</div> 
+<br>
+<div class="ui huge horizontal list">
+  <div class="item">
+    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/helen.jpg">
+    <div class="content">
+      <div class="header">Helen</div>
+    </div>
+  </div>
+  <div class="item">
+    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/christian.jpg">
+    <div class="content">
+      <div class="header">Christian</div>
+    </div>
+  </div>
+  <div class="item">
+    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/daniel.jpg" data-pin-nopin="true">
+    <div class="content">
+      <div class="header">Daniel</div>
+    </div>
+  </div>
+</div> 
+<br>                            
+<div class="ui massive horizontal list">
+  <div class="item">
+    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/helen.jpg">
+    <div class="content">
+      <div class="header">Helen</div>
+    </div>
+  </div>
+  <div class="item">
+    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/christian.jpg">
+    <div class="content">
+      <div class="header">Christian</div>
+    </div>
+  </div>
+  <div class="item">
+    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/daniel.jpg" data-pin-nopin="true">
+    <div class="content">
+      <div class="header">Daniel</div>
+    </div>
+  </div>
+</div>                             
+                            
+                        </div>
+                         <p class="usage"><span>Usage</span> : insert classes of sizes before the class <code>.list</code>.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui tiny list&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;ui small list&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;ui large list&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;ui big list&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;ui huge list&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;ui massive list&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                     </div>   
+                    </div>
+                </div>  
+           </div>
+        
+        </div>
+    </div>
+    <div class="ui grid container">
+        <div class="row">
+            <div class="one wide column">
+            </div>
+            <div class="six wide column">
+                     <footer class="footer">
+                    <div class="inner">
+                        <p>© Copyright 2016. Hoiio Pte Ltd.</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../../dist/semantic.min.js"></script>
+	<script src="../source/js/highlight.pack.js"></script>
+    <script src="../source/js/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>

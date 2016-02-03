@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hoiio Design Standards 2016">
+    <meta name="keywords" content="design, ux, standard, hoiio, framework, html, css, interface, component, semantic">
+    <meta name="author" content="Marcus">
+    <link rel="icon" href="source/favicon.ico">
+
+    <title>Dropdown - Hoiio Design Standards</title>
+    <!-- jQuery --->
+    <script src="../source/js/jquery-2.1.4.min.js"></script>
+    <script src="../source/js/modernizr-custom.js"></script>
+
+    <!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="../../dist/semantic.min.css" />
+	<!-- Main styles -->
+	<link rel="stylesheet" type="text/css" href="../source/css/hoiio-semantic.css" />
+	<!-- Highlight -->
+	<link rel="stylesheet" type="text/css" href="../source/css/tomorrow.css" />
+	
+</head>
+<body>
+    <div class="hoiio loading"></div>
+    <div class="ui grid container component-dropdown">
+        <div class="row" id="header">
+            <div class="one wide column">
+                <a href="/design/" class='logo'><i class="icon compass"></i></a>
+            </div>
+            <div class="twelve wide column">
+                <div class="heading">Design Standards</div>
+            </div>
+            <div class="three wide column">
+                <div class="right aligned poweredby">Powered by<a href="http://hoiio.com"><img class="middle aligned" src="../source/img/hoiio-logo.png"/></a></div>
+            </div>
+        </div>
+        <div class="row" id="content">
+            <div class="column">
+            </div>
+            <div class="column" id="sidebar">
+                <nav></nav>
+            </div>
+            <div class="column" id="content">
+                <!-- Content -->
+                <div class="category">component</div>
+                <h1 class="name">Dropdown</h1>
+                <div class="present">
+                    <div class="ui secondary pointing menu">
+                        <a class="item definition" data-tab="first">Definition</a>
+                        <a class="item content" data-tab="second">Content</a>
+                        <a class="item state" data-tab="third"> States </a>
+                        <a class="item types" data-tab="fourth"> Types </a>
+                        <a class="item variation" data-tab="fifth">Variations</a>
+                    </div>
+                    <!-- Standard -->
+                    <div class="ui tab segment first" data-tab="first">
+                        <!-- Definition --> 
+                        <div class="block">
+                            <p class="description">A dropdown is a toggleable menu that allows the user to choose one value from a predefined list.</p>
+                        
+                            <div class="display">
+<div class="ui dropdown">
+  Dropdown <i class="dropdown icon"></i>
+  <div class="menu">
+    <a href="#" class="item">Choice 1</a>
+    <a href="#" class="item">Choice 2</a>
+    <a href="#" class="item">Choice 3</a>
+  </div>
+</div>
+                               
+                            </div>
+                            <p class="usage"><span>Usage</span> : 
+                                <br> - Add classes <code>.ui, .dropdown</code> to the <code>&lt;div&gt;</code> element.
+                                <br> - Wrap menu in a <code>.dropdown</code>. Use <code>&lt;i class=&quot;dropdown icon&quot;&gt;&lt;/i&gt;</code> to act as an indicator.
+                            </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui dropdown&quot;&gt;
+  Dropdown &lt;i class=&quot;dropdown icon&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;menu&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;item&quot;&gt;...&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Dropdown Button --> 
+                        <div class="block">
+                            <div class="display">
+<div class="ui dropdown button">
+  Dropdown <i class="dropdown icon"></i>
+  <div class="menu">
+    <a href="#" class="item">Choice 1</a>
+    <a href="#" class="item">Choice 2</a>
+    <a href="#" class="item">Choice 3</a>
+  </div>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> : add a class <code>.button</code> to the class <code>.dropdown</code>.
+                            </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui dropdown button&quot;&gt;
+  Dropdown &lt;i class=&quot;dropdown icon&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;menu&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;item&quot;&gt;...&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Content-->
+                    <div class="ui tab segment" data-tab="second">    
+                        <p class="description">A dropdown menu can contain a header, a description, a divider, an icon.</p>
+                        
+                        <!-- Header Content --> 
+                        <div class="block">
+                            <h3 id="header-content" class="title">Header <a href="#header-content"><i class="link icon"></i></a></h3>
+                            <p class="description">A dropdown menu can contain a header.</p>
+                            <div class="display">
+<div class="ui dropdown button">
+  Select an app<i class="dropdown icon"></i>
+  <div class="menu">
+    <div class="header">
+        <i class="block layout icon"></i>
+        Human Resource
+    </div>
+    <a href="#" class="item">Time Log</a>
+    <a href="#" class="item">Payroll</a>
+    <div class="header">
+        <i class="block layout icon"></i>
+        Marketing
+    </div>
+    <a href="#" class="item">Contact Manager</a>
+    <a href="#" class="item">Email Marketing</a>
+  </div>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert a <code>&lt;div&gt;</code> element with a class <code>.header</code> into the menu.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui dropdown button&quot;&gt;
+  Select an app &lt;i class=&quot;dropdown icon&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;menu&quot;&gt;
+    &lt;!-- Header --&gt;
+    &lt;div class=&quot;header&quot;&gt;
+        &lt;i class=&quot;block layout icon&quot;&gt;&lt;/i&gt;
+        Human Resource
+    &lt;/div&gt;
+    &lt;a href=&quot;#&quot; class=&quot;item&quot;&gt;&lt;/a&gt;
+  &lt;/div&gt;    
+&lt;/div&gt;       
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Divider Content --> 
+                        <div class="block">
+                            <h3 id="divider-content" class="title">Divider <a href="#divider-content"><i class="link icon"></i></a></h3>
+                            <p class="description">A dropdown menu can contain dividers to separate related content.</p>
+                            <div class="display">
+<div class="ui dropdown button">
+  Select an app<i class="dropdown icon"></i>
+  <div class="menu">
+    <div class="header">
+        <i class="block layout icon"></i>
+        Human Resource
+    </div>
+    <div class="divider"></div>
+    <a href="#" class="item">Time Log</a>
+    <a href="#" class="item">Payroll</a>
+    <div class="divider"></div>  
+    <div class="header">
+        <i class="block layout icon"></i>
+        Marketing
+    </div>
+    <div class="divider"></div>  
+    <a href="#" class="item">Contact Manager</a>
+    <a href="#" class="item">Email Marketing</a>
+  </div>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> : add a class <code>.divider</code> to the <code>&lt;div&gt;</code> element. Insert this divider into wherever you want to show.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui dropdown button&quot;&gt;
+  Select an app&lt;i class=&quot;dropdown icon&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;menu&quot;&gt;
+    &lt;div class=&quot;header&quot;&gt;...&lt;/div&gt;
+    &lt;!-- Divider --&gt;
+    &lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
+    &lt;a href=&quot;#&quot; class=&quot;item&quot;&gt;...&lt;/a&gt;
+    &lt;!-- Divider --&gt;
+    &lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;  
+    &lt;div class=&quot;header&quot;&gt;...&lt;/div&gt;
+    &lt;!-- Divider --&gt;
+    &lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;  
+    &lt;a href=&quot;#&quot; class=&quot;item&quot;&gt;...&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Description Content --> 
+                        <div class="block">
+                            <h3 id="description-content" class="title">Description <a href="#description-content"><i class="link icon"></i></a></h3>
+                            <div class="display">
+<div class="ui dropdown button">
+  Select a company <i class="dropdown icon"></i>
+  <div class="menu">
+    <a href="#" class="item">
+      <span class="text">Hoiio Company</span>
+      <span class="description">30 employees</span>
+    </a>
+    <a href="#" class="item">
+      <span class="text">ANZ Bank</span>
+      <span class="description">106 employees</span>
+    </a>
+    <a href="#" class="item">
+      Samsung Electronic
+      <span class="description">4728 employees</span>
+    </a>
+  </div>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert a <code>&lt;span&gt;</code> element with a class <code>.description</code> into the item.
+                            </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui dropdown button&quot;&gt;
+  Select a company &lt;i class=&quot;dropdown icon&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;menu&quot;&gt;
+    &lt;a href="#" class=&quot;item&quot;&gt;
+      &lt;span class=&quot;text&quot;&gt;Hoiio Company&lt;/span&gt;
+      &lt;!-- Description --&gt;
+      &lt;span class=&quot;description&quot;&gt;30 employees&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Image Content --> 
+                        <div class="block">
+                            <h3 id="image-content" class="title">Image <a href="#image-content"><i class="link icon"></i></a></h3>
+                            <p class="description">A dropdown menu can contain an <a href="/design/component/image">image</a>.</p>
+                            <div class="display">
+<div class="ui dropdown button">
+  Add users <i class="dropdown icon"></i>
+  <div class="menu">
+    <div class="header">
+      People You Might Know
+    </div>
+    <div class="item">
+      <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/jenny.jpg">
+      Jenny Hess
+    </div>
+    <div class="item">
+      <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/elliot.jpg">
+      Elliot Fu
+    </div>
+    <div class="item">
+      <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/stevie.jpg">
+      Stevie Feliciano
+    </div>
+    <div class="header">
+      Your Friends' Friends
+    </div>
+    <div class="item">
+      <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/christian.jpg">
+      Christian
+    </div>
+    <div class="item">
+      <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/matt.jpg">
+      Matt
+    </div>
+    <div class="item">
+      <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/justen.jpg">
+      Justen Kitsune
+    </div>
+  </div>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert an <code>&lt;image&gt;</code> element into the item.
+                            </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui dropdown button&quot;&gt;
+  Add users &lt;i class=&quot;dropdown icon&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;menu&quot;&gt;
+    &lt;div class=&quot;header&quot;&gt;
+      People You Might Know
+    &lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;
+      &lt;!-- Image --&gt;
+      &lt;img class=&quot;ui avatar image&quot; src=&quot;jenny.jpg&quot;&gt;
+      Jenny Hess
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Icon Content --> 
+                        <div class="block">
+                            <h3 id="icon-content" class="title">Icon <a href="#icon-content"><i class="link icon"></i></a></h3>
+                            <p class="description">A dropdown menu can contain an <a href="/design/system/icon">icon</a>.</p>
+                            <div class="display">
+<div class="ui dropdown button">
+  Bulk action <i class="dropdown icon"></i>
+  <div class="menu">
+      <a href="#" class="item">
+          <i class="files icon"></i>
+          Duplicate
+      </a>
+      <a href="#" class="item">
+          <i class="download cloud icon"></i>
+          Download
+      </a>
+      <a href="#" class="item">
+          <i class="trash icon"></i>
+          Delete
+      </a>
+  </div>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert a <code>&lt;i&gt;</code> element with a class <code>.icon</code> to the item.
+                            </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui dropdown button&quot;&gt;
+  Bulk action &lt;i class=&quot;dropdown icon&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;menu&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;item&quot;&gt;
+          &lt;!-- Icon --&gt;
+          &lt;i class=&quot;files icon&quot;&gt;&lt;/i&gt;
+          Duplicate
+      &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Label --> 
+                        <div class="block">
+                            <h3 id="label-content" class="title">Label <a href="#label-content"><i class="link icon"></i></a></h3>
+                            <p class="description">A dropdown menu can contain a simple <a href="/design/component/label">label</a>.</p>
+                            <div class="display">
+<div class="ui dropdown button">
+  Select an item<i class="dropdown icon"></i>
+  <div class="menu">
+    <div class="item">
+      <div class="ui primary round empty label"></div>Item 1
+    </div>
+    <div class="item">
+      <div class="ui info round empty label"></div>Item 2
+    </div>
+    <div class="item">
+      <div class="ui success round empty label"></div>Item 3
+    </div>
+  </div>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert a <code>&lt;i&gt;</code> element with a class <code>.label</code> to the item.
+                            </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui dropdown button&quot;&gt;
+  Select an item&lt;i class=&quot;dropdown icon&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;menu&quot;&gt;
+    &lt;div class=&quot;item&quot;&gt;
+      &lt;!-- Label --&gt;
+      &lt;div class=&quot;ui primary round empty label&quot;&gt;&lt;/div&gt;Item
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Message --> 
+                        <div class="block">
+                            <h3 id="message-content" class="title">Message <a href="#message-content"><i class="link icon"></i></a></h3>
+                            <p class="description">A dropdown menu can contain a <a href="/design/component/message">message</a>.</p>
+                            <div class="display">
+<div class="ui dropdown button">
+  Message <i class="dropdown icon"></i>
+  <div class="menu">
+    <div class="ui info message">
+      <div class="header">Error</div>
+      <p>You must log-in to see all categories</p>
+    </div>
+  </div>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert a <code>message</code> block into to the menu.
+                            </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui dropdown button&quot;&gt;
+  Message &lt;i class=&quot;dropdown icon&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;menu&quot;&gt;
+    &lt;!-- Message --&gt;
+    &lt;div class=&quot;ui info message&quot;&gt;
+      &lt;div class=&quot;header&quot;&gt;Error&lt;/div&gt;
+      &lt;p&gt;You must log-in to see all categories&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- States -->
+                    <div class="ui tab segment" data-tab="third">
+                        <!-- Loading State --> 
+                        <div class="block">
+                            <h3 id="loading" class="title">Loading <a href="#loading"><i class="link icon"></i></a></h3>
+                            <p class="description">A dropdown can show that it is currently loading data.</p>
+                            <div class="display">
+<div class="ui loading dropdown">
+  Dropdown <i class="dropdown icon"></i>
+  <div class="menu">
+    <div class="item">Choice 1</div>
+    <div class="item">Choice 2</div>
+    <div class="item">Choice 3</div>
+  </div>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert a class <code>.loading</code> before the class <code>.dropdown</code>.
+                            </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui loading dropdown&quot;&gt;
+  Dropdown &lt;i class=&quot;dropdown icon&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;menu&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;item&quot;&gt;...&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                       
+                        
+                        <!-- Disabled State --> 
+                        <div class="block">
+                            <h3 id="disabled" class="title">Disabled <a href="#disabled"><i class="link icon"></i></a></h3>
+                            <p class="description">A disabled dropdown menu or item does not allow user interaction.</p>
+                            <div class="display">
+<div class="ui disabled dropdown button">
+  Dropdown <i class="dropdown icon"></i>
+  <div class="menu">
+    <div class="item">Choice 1</div>
+    <div class="item">Choice 2</div>
+    <div class="item">Choice 3</div>
+  </div>
+</div>
+<br><br>                             
+<div class="ui dropdown button">
+  Disabled Item <i class="dropdown icon"></i>
+  <div class="menu">
+    <div class="item">Choice 1</div>
+    <div class="disabled item">Disabled</div>
+    <div class="item">Choice 3</div>
+  </div>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> : 
+                                <br> - Add a class <code>.disabled</code> before the class <code>.dropdown</code> or <code>.item</code> to disabled dropdown or the item.
+                            </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui disabled dropdown button&quot;&gt;
+  Dropdown &lt;i class=&quot;dropdown icon&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;menu&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;item&quot;&gt;...&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Disabled Item --&gt;
+&lt;div class=&quot;ui dropdown button&quot;&gt;
+  Dropdown &lt;i class=&quot;dropdown icon&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;menu&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;disabled item&quot;&gt;...&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Types -->
+                    <div class="ui tab segment" data-tab="fourth">
+                        
+                        <!-- Search Dropdown --> 
+                        <div class="block">
+                            <h3 id="search-dropdown" class="title">Search Dropdown <a href="#search-dropdown"><i class="link icon"></i></a></h3>
+                            <p class="description">A dropdown is formed as a search.</p>
+                            <div class="display">
+<div class="ui search dropdown button">
+  <span class="text">Select Language</span>
+  <div class="menu">
+    <a href="#" class="item">Arabic</a>
+    <a href="#" class="item">Chinese</a>
+    <a href="#" class="item">Danish</a>
+    <a href="#" class="item">Dutch</a>
+    <a href="#" class="item">English</a>
+    <a href="#" class="item">French</a>
+    <a href="#" class="item">German</a>
+    <a href="#" class="item">Greek</a>
+    <a href="#" class="item">Hungarian</a>
+    <a href="#" class="item">Italian</a>
+    <a href="#" class="item">Japanese</a>
+    <a href="#" class="item">Korean</a>
+    <a href="#" class="item">Lithuanian</a>
+    <a href="#" class="item">Persian</a>
+    <a href="#" class="item">Polish</a>
+    <a href="#" class="item">Portuguese</a>
+    <a href="#" class="item">Russian</a>
+    <a href="#" class="item">Spanish</a>
+    <a href="#" class="item">Swedish</a>
+    <a href="#" class="item">Turkish</a>
+    <a href="#" class="item">Vietnamese</a>
+  </div>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> : 
+                                <br> - Insert a class <code>.search</code> before the class <code>.dropdown</code>.
+                                <br> - Include <code>&lt;span class="text"&gt;&lt;span&gt;</code> as a default text.
+                            </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui search dropdown button&quot;&gt;
+  &lt;!-- Default Text --&gt;
+  &lt;span class=&quot;text&quot;&gt;Select Language&lt;/span&gt;
+  &lt;div class=&quot;menu&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;item&quot;&gt;...&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Search In-Menu --> 
+                        <div class="block">
+                            <h3 id="search-in-menu" class="title">Search In-menu <a href="#search-in-menu"><i class="link icon"></i></a></h3>
+                            <p class="description">A dropdown includes a search prompt inside its menu.</p>
+                            <div class="display">
+<div class="ui dropdown button">
+  Select Language <i class="dropdown icon"></i>
+  <div class="menu">
+    <div class="ui icon search input">
+      <i class="search icon"></i>
+      <input type="text" placeholder="Search tags...">
+    </div>
+    <div class="divider"></div>
+    <a href="#" class="item">Arabic</a>
+    <a href="#" class="item">Chinese</a>
+    <a href="#" class="item">Danish</a>
+    <a href="#" class="item">Dutch</a>
+    <a href="#" class="item">English</a>
+    <a href="#" class="item">French</a>
+    <a href="#" class="item">German</a>
+    <a href="#" class="item">Greek</a>
+    <a href="#" class="item">Hungarian</a>
+    <a href="#" class="item">Italian</a>
+    <a href="#" class="item">Japanese</a>
+    <a href="#" class="item">Korean</a>
+    <a href="#" class="item">Lithuanian</a>
+    <a href="#" class="item">Persian</a>
+    <a href="#" class="item">Polish</a>
+    <a href="#" class="item">Portuguese</a>
+    <a href="#" class="item">Russian</a>
+    <a href="#" class="item">Spanish</a>
+    <a href="#" class="item">Swedish</a>
+    <a href="#" class="item">Turkish</a>
+    <a href="#" class="item">Vietnamese</a>
+  </div>
+</div>
+
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert an <code>&lt;input&gt;</code> element into the menu.
+                            </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui dropdown button&quot;&gt;
+  Select Language &lt;i class=&quot;dropdown icon&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;menu&quot;&gt;
+    &lt;!-- Input --&gt;
+    &lt;div class=&quot;ui icon search input&quot;&gt;
+      &lt;i class=&quot;search icon&quot;&gt;&lt;/i&gt;
+      &lt;input type=&quot;text&quot; placeholder=&quot;Search tags...&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
+    &lt;a href=&quot;#&quot; class=&quot;item&quot;&gt;...&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                         <!-- Inline Type --> 
+                         <div class="block">
+                            <h3 id="inline" class="title">Inline <a href="#inline"><i class="link icon"></i></a></h3>
+                            <p class="description">A dropdown is formed to appear inline in other content.</p>
+                            <div class="display">
+
+<span>
+  Show me posts by
+  <div class="ui inline dropdown">
+    <div class="text">
+      <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/jenny.jpg">
+      Jenny Hess
+    </div>
+    <i class="dropdown icon"></i>
+    <div class="menu">
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/jenny.jpg">
+        Jenny Hess
+      </div>
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/elliot.jpg">
+        Elliot Fu
+      </div>
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/stevie.jpg">
+        Stevie Feliciano
+      </div>
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/christian.jpg">
+        Christian
+      </div>
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/matt.jpg">
+        Matt
+      </div>
+      <div class="item">
+        <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/justen.jpg">
+        Justen Kitsune
+      </div>
+    </div>
+  </div>
+</span>
+                            </div>
+                            <p class="usage"><span>Usage</span> : 
+                                <br> - Insert a class <code>.inline</code> before the class <code>.dropdown</code>.
+                                <br> - Include <code>&lt;div class="text"&gt;&lt;div&gt;</code> as a default text.
+                            </p><div class="source">
+<pre>
+<code class="html hljs xml">
+Show me posts by
+&lt;div class=&quot;ui inline dropdown&quot;&gt;
+  &lt;div class=&quot;text&quot;&gt;
+    &lt;img class=&quot;ui avatar image&quot; src=&quot;jenny.jpg&quot;&gt;Jenny Hess
+  &lt;/div&gt;
+  &lt;i class=&quot;dropdown icon&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;menu&quot;&gt;
+    &lt;div class=&quot;item&quot;&gt;
+      &lt;img class=&quot;ui avatar image&quot; src=&quot;jenny.jpg&quot;&gt;Jenny Hess
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        <!-- Pointing type --> 
+                        <div class="block">
+                            <h3 id="pointing" class="title">Pointing <a href="#pointing"><i class="link icon"></i></a></h3>
+                            <p class="description">A dropdown forms its menu as a pointing.</p>
+                            <div class="display">
+<div class="ui menu">
+  <a class="item">
+    Home
+  </a>
+  <div class="ui pointing dropdown link item">
+    <span class="text">Shopping</span>
+    <i class="dropdown icon"></i>
+    <div class="menu">
+      <div class="header">Categories</div>
+      <div class="divider"></div>    
+        <a class="item">Clothing</a>
+      <a class="item">Home Goods</a>
+      <a class="item">Bedroom</a>
+      <div class="divider"></div>
+      <div class="header">Order</div>
+      <div class="divider"></div>
+      <a class="item">Status</a>
+      <a class="item">Cancellations</a>
+    </div>
+  </div>
+  <a class="item">
+    Forums
+  </a>
+  <a class="item">
+    Contact Us
+  </a>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert a class <code>.pointing</code> before the class <code>.dropdown</code>.
+                            </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui pointing dropdown&quot;&gt;
+  Dropdown &lt;i class=&quot;dropdown icon&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;menu&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;item&quot;&gt;...&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        <!-- Floating --> 
+                        <div class="block">
+                            <h3 id="" class="title"><a href="#"><i class="link icon"></i></a></h3>
+                            <p class="description"></p>
+                            <div class="display">
+<div class="ui teal buttons">
+  <div class="ui button">Save</div>
+  <div class="ui floating dropdown icon button">
+    <i class="dropdown icon"></i>
+    <div class="menu">
+      <div class="item"><i class="edit icon"></i> Edit Post</div>
+      <div class="item"><i class="delete icon"></i> Remove Post</div>
+      <div class="item"><i class="hide icon"></i> Hide Post</div>
+    </div>
+  </div>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> : add classes <code>ui, buttons</code> to the <code>&lt;button&gt;</code> element.
+                            </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+</code>
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Variations -->
+                    <div class="ui tab segment" data-tab="fifth">
+                        
+                        <!-- Scrolling--> 
+                        <div class="block">
+                            <h3 id="scrolling" class="title">Scrolling Menu <a href="#scrolling"><i class="link icon"></i></a></h3>
+                            <p class="description">A dropdown can have its menu scroll.</p>
+                            <div class="display">
+<div class="ui scrolling dropdown button">
+  Select choice <i class="dropdown icon"></i>
+  <div class="menu">
+      <a href="#" class="item">Choice 1</a>
+      <a href="#"  class="item">Choice 2</a>
+      <a href="#"  class="item">Choice 3</a>
+      <a href="#"  class="item">Choice 4</a>
+      <a href="#"  class="item">Choice 5</a>
+      <a href="#"  class="item">Choice 6</a>
+      <a href="#"  class="item">Choice 7</a>
+      <a href="#"  class="item">Choice 8</a>
+      <a href="#"  class="item">Choice 9</a>
+      <a href="#"  class="item">Choice 10</a>
+      <a href="#"  class="item">Choice 11</a>
+      <a href="#"  class="item">Choice 12</a>
+      <a  href="#" class="item">Choice 13</a>
+      <a href="#"  class="item">Choice 14</a>
+      <a  href="#" class="item">Choice 15</a>
+ </div>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert a class <code>.scrolling</code> before the class <code>.dropdown</code>.
+                            </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui scrolling dropdown button&quot;&gt;
+  Select choice &lt;i class=&quot;dropdown icon&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;menu&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;item&quot;&gt;...&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Fluid --> 
+                        <div class="block">
+                            <h3 id="fluid" class="title">Fluid <a href="#fluid"><i class="link icon"></i></a></h3>
+                            <p class="description">A dropdown can take the full width of its parent.</p>
+                            <div class="display">   
+<div class="ui fluid dropdown button">
+  Select choice <i class="dropdown icon"></i>
+  <div class="menu">
+    <a href="#" class="item">Choice 1</a>
+    <a href="#" class="item">Choice 2</a>
+    <a href="#" class="item">Choice 3</a>
+  </div>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert a class <code>.fluid</code> before the class <code>.dropdown</code>.
+                            </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui fluid dropdown button&quot;&gt;
+  Select choice &lt;i class=&quot;dropdown icon&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;menu&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;item&quot;&gt;...&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                    </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                       
+                    
+                    
+                    
+                    
+                    
+                </div>
+            
+            </div>  
+        </div>
+        </div>
+    </div>
+    <div class="ui grid container">
+        <div class="row">
+            <div class="one wide column">
+            </div>
+            <div class="six wide column">
+                     <footer class="footer">
+                    <div class="inner">
+                        <p>© Copyright 2016. Hoiio Pte Ltd.</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../../dist/semantic.min.js"></script>
+	<script src="../source/js/highlight.pack.js"></script>
+    <script src="../source/js/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
