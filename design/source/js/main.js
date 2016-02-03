@@ -75,12 +75,17 @@ $(document).ready(function() {
     hoiio += "<\/ul>";
     hoiio += "<ul class=\"category\">";
     hoiio += "    <li class=\"title\">Components<\/li>";
+    hoiio += "    <li class=\"item line through\"><a href=\"\/design\/component\/accordion\">Accordion<\/a><\/li>";
     hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/breadcrumb\">Breadcrumb<\/a><\/li>";
     
     hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/button\">Button<\/a><\/li>";
+    hoiio += "    <li class=\"item line through\"><a href=\"\/design\/component\/card\">Card<\/a><\/li>";
     hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/checkbox\">Checkbox<\/a><\/li>";
     hoiio += "    <li class=\"item line through\"><a href=\"\/design\/component\/dialog\">Dialog<\/a><\/li>";
+    hoiio += "    <li class=\"item line through\"><a href=\"\/design\/component\/dimmer\">Dimmer<\/a><\/li>";
+    hoiio += "    <li class=\"item line through\"><a href=\"\/design\/component\/divider\">Divider<\/a><\/li>";
     hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/dropdown\">Dropdown<\/a><\/li>";
+    hoiio += "    <li class=\"item line through\"><a href=\"\/design\/component\/feed\">Feed<\/a><\/li>";
     hoiio += "    <li class=\"item line through\"><a href=\"\/design\/component\/form\">Form<\/a><\/li>";
     
     hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/header\">Header<\/a><\/li>";
@@ -90,10 +95,14 @@ $(document).ready(function() {
     hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/label\">Label<\/a><\/li>";
     hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/label\">List<\/a><\/li>";
     hoiio += "    <li class=\"item line through\"><a href=\"\/design\/component\/menu\">Menu<\/a><\/li>";
+    
     hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/message\">Message<\/a><\/li>";
+    hoiio += "    <li class=\"item line through\"><a href=\"\/design\/component\/modal\">Modal<\/a><\/li>";
     hoiio += "    <li class=\"item line through\"><a href=\"\/design\/component\/progress\">Progress<\/a><\/li>";
     hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/segment\">Segement<\/a><\/li>";
     hoiio += "    <li class=\"item line through\"><a href=\"\/design\/component\/selection\">Selection<\/a><\/li>";
+    hoiio += "    <li class=\"item line through\"><a href=\"\/design\/component\/sidebar\">Sidebar<\/a><\/li>";
+    hoiio += "    <li class=\"item line through\"><a href=\"\/design\/component\/step\">Step<\/a><\/li>";
     hoiio += "    <li class=\"item line through\"><a href=\"\/design\/component\/switch\">Switch<\/a><\/li>";
     hoiio += "    <li class=\"item line through\"><a href=\"\/design\/component\/tab\">Tab<\/a><\/li>";
     hoiio += "    <li class=\"item line through\"><a href=\"\/design\/component\/table\">Table<\/a><\/li>";
