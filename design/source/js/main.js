@@ -66,9 +66,9 @@ $(document).ready(function() {
     hoiio += "    <li class=\"item\"><a href=\"\/design\/system\/grid\">Grid Systems<\/a><\/li>";
     hoiio += "    <li class=\"item line through\"><a href=\"\/design\/system\/color\">Color<\/a><\/li>";
     hoiio += "    <li class=\"item line through\"><a href=\"\/design\/system\/typography\">Typography<\/a><\/li>";
-    hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/icon\">Icon<\/a><\/li>";
+    hoiio += "    <li class=\"item\"><a href=\"\/design\/system\/icon\">Icon<\/a><\/li>";
     hoiio += "    <li class=\"item line through\"><a href=\"\/design\/system\/layout\">Layout<\/a><\/li>";
-    hoiio += "    <li class=\"item line through\"><a href=\"\/design\/pattern\/data\">Data<\/a><\/li>";
+    hoiio += "    <li class=\"item line through\"><a href=\"\/design\/system\/data\">Data<\/a><\/li>";
     hoiio += "    <li class=\"item line through\"><a href=\"\/design\/system\/navigation\">Navigation<\/a><\/li>";
     hoiio += "    <li class=\"item line through\"><a href=\"\/design\/system\/notification\">Notification<\/a><\/li>";
     hoiio += "    <li class=\"item line through\"><a href=\"\/design\/system\/motion\">Motion<\/a><\/li>";
