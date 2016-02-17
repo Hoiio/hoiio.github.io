@@ -20,7 +20,7 @@
     hoiio += "      <nav id='left-content-sidebar'>";
     hoiio += "<ul class=\"category\">";
     hoiio += "    <li class=\"title\">Getting Started<\/li>";
-    hoiio += "    <li class=\"item\"><a href=\"\/design\introduction\">Introduction<\/a><\/li>";
+    hoiio += "    <li class=\"item\"><a href=\"\/design\/introduction\">Introduction<\/a><\/li>";
     hoiio += "    <li class=\"item line through\"><a href=\"\/design\/usage\/prototype\">Prototype<\/a><\/li>";
     hoiio += "    <li class=\"item line through\"><a href=\"\/design\/usage\/samples\">Samples<\/a><\/li>";
     hoiio += "<\/ul>";
