@@ -17,7 +17,7 @@
     hoiio += "<div class=\"ui middle aligned grid\">";
     hoiio += "  <div class=\"hoiio-blank column\"><\/div>";
     hoiio += "  <div class=\"hoiio-sidebar column\">";
-    hoiio += "      <nav id='left-content-sidebar'>";
+    hoiio += "      <nav>";
     hoiio += "<ul class=\"category\">";
     hoiio += "    <li class=\"title\">Getting Started<\/li>";
     hoiio += "    <li class=\"item\"><a href=\"\/design\introduction">Introduction<\/a><\/li>";
