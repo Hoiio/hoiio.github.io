@@ -55,7 +55,7 @@ hoiio += "    <li class=\"item line through\"><a href=\"\/design\/component\/con
     
     hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/image\">Image<\/a><\/li>";
     hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/input\">Input<\/a><\/li>";
-    hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/input\">Item<\/a><\/li>";
+    hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/item\">Item<\/a><\/li>";
     hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/label\">Label<\/a><\/li>";
     hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/list\">List<\/a><\/li>";
     hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/menu\">Menu<\/a><\/li>";
