@@ -170,7 +170,7 @@ $(document).ready(function() {
         $('#left-content-sidebar a[href$='+x+']').addClass("active");
     }
     else{
-        $('#left-content-sidebar a[href$=introduction').addClass("active");
+        $('a[href$=introduction').addClass("active");
     }
     
     $("#sticky").on("click", "a", function (event) { 
