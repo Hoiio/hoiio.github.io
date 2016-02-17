@@ -17,44 +17,27 @@
     <!-- Bootstrap -->
 	<link rel="stylesheet" type="text/css" href="../dist/semantic.min.css" />
 	<!-- Main styles -->
-	<link rel="stylesheet" type="text/css" href="../source/css/hoiio-semantic.css" />
+	<link rel="stylesheet" type="text/css" href="../source/css/hoiio.css" />
 	<!-- Highlight -->
 	<link rel="stylesheet" type="text/css" href="../source/css/tomorrow.css" />
 	
 </head>
-<body>
+<body id="component-list">
     <div class="hoiio loading"></div>
-    <div class="ui grid container component-list">
-        <div class="row" id="header">
-            <div class="one wide column">
-                <a href="/design/" class='logo'><i class="icon compass"></i></a>
-            </div>
-            <div class="twelve wide column">
-                <div class="heading"><a href="/design/">Design Standards</a></div>
-            </div>
-            <div class="three wide column">
-                <div class="right aligned poweredby">Powered by<a href="http://hoiio.com"><img class="middle aligned" src="../source/img/hoiio-logo.png"/></a></div>
-            </div>
-        </div>
-        <div class="row" id="content">
-            <div class="column">
-            </div>
-            <div class="column" id="sidebar">
-                <nav></nav>
-            </div>
-            <div class="column" id="content">
-                <!-- Content -->
-                <div class="category">component</div>
-                <h1 class="name">List</h1>
-                <div class="present">
-                    <div class="ui secondary pointing menu">
-                        <a class="item definition" data-tab="first">Definition</a>
-                        <a class="item definition" data-tab="second">Content</a>
-                        <a class="item types" data-tab="third"> Types </a>
-                        <a class="item group" data-tab="fourth">Variations</a>
+    <div class="ui fluid container">
+        <div class="ui grid">
+            <div class="first column"></div>
+            <div class="second column">
+                <div class="ui grid">
+                    <div class="column" id="page-name">
+                        <div class="category">Component</div>
+                        <h1 class="name">List</h1>
                     </div>
-                    <!-- Standard -->
-                    <div class="ui tab segment first" data-tab="first">
+                </div>
+                <div class="ui grid">
+                    <div class="column" id="content">
+                        <!-- Standard -->
+                    <div id="definition">
                         <!-- Definition --> 
                         <div class="block">
                             <p class="description">Lists are used to group <a href="/design/component/item">items</a> together in order to view and access easily. By default, a list is displayed without <code>list-style-type</code> property.</p>
@@ -82,10 +65,11 @@
                     
                     </div>
                     <!-- Content -->
-                    <div class="ui tab segment" data-tab="second">    
+                    <div id="contents">    
+                        <h2>Contents</h2>
                         <!-- Header Content --> 
                         <div class="block">
-                            <h3 id="header-content" class="title">Header <a href="#header-content"><i class="link icon"></i></a></h3>
+                            <h3 id="header-content" class="title">Header </h3>
                             <p class="description">A list item can contain a header.</p>
                             <div class="display">
 <div class="ui list">
@@ -125,9 +109,9 @@
                         
                         <!-- Description Content -->
                         <div class="block">
-                        <h3 id="descripiton" class="title">
+                        <h3 id="descripiton-content" class="title">
                             Description
-                            <a href="#descripiton"><i class="link icon"></i></a>
+                            
                         </h3>
                         <p class="description">A list item can contain a description.</p>
                         <div class="display">
@@ -169,9 +153,9 @@
                         
                         <!-- Icon Content -->
                         <div class="block">
-                        <h3 id="icon" class="title">
+                        <h3 id="icon-content" class="title">
                             Icon 
-                            <a href="#icon"><i class="link icon"></i></a>
+                            
                         </h3>
                         <p class="description">A list item can contain an icon. It is splitted into left block and content block.</p>
                         <div class="display">
@@ -226,9 +210,9 @@
                     
                         <!-- Image Content -->
                         <div class="block">
-                        <h3 id="image" class="title">
+                        <h3 id="image-content" class="title">
                             Image
-                            <a href="#image"><i class="link icon"></i></a>
+                            
                         </h3>
                         <p class="description">A list item can contain an image that is put into left block.</p>
                         <div class="display">
@@ -278,12 +262,13 @@
                         
                     </div>
                     <!-- Types -->
-                    <div class="ui tab segment" data-tab="third">       
+                    <div id="types">       
+                        <h2>Types</h2>
                         <!-- unordered list type -->
                         <div class="block">
                         <h3 id="unordered" class="title">
                             Unordered List
-                            <a href="#unordered"><i class="link icon"></i></a>
+                            
                         </h3>
                         <p class="description">A unordered list is used to group a set of related items, in no particular order.</p>
                         <div class="display">
@@ -310,7 +295,7 @@
                         <div class="block">
                         <h3 id="ordered" class="title">
                             Ordered List
-                            <a href="#ordered"><i class="link icon"></i></a>
+                            
                         </h3>
                         <p class="description">An ordered list is used to group a set of related items, in a specific order. It works with numbers instead of using a dot as the default list item marker.</p>
                         <div class="display">
@@ -335,7 +320,7 @@
                         <div class="block">
                         <h3 id="link" class="title">
                             Link 
-                            <a href="#link"><i class="link icon"></i></a>
+                            
                         </h3>
                         <p class="description">A list item is formed as navigation links.</p>
                         <div class="display">
@@ -361,15 +346,15 @@
                    
                     </div>
                     <!-- Varitions -->
-                    <div class="ui tab segment" data-tab="fourth">       
-                        
+                    <div id="variations">       
+                        <h2>Variations</h2>
                         
                     
                         <!-- Divided -->
                         <div class="block">
                             <h3 id="divided" class="title">
                                 Divided
-                                <a href="#divided"><i class="link icon"></i></a>
+                                
                             </h3>
                             <p class="description">A list can show divisions between content.</p>
                             <div class="display">
@@ -411,7 +396,7 @@
                         <div class="block">
                             <h3 id="selection" class="title">
                                 Selection
-                                <a href="#selection"><i class="link icon"></i></a>
+                                
                             </h3>
                             <p class="description">A selection list formats list items as possible choices.</p>
                             <div class="display">
@@ -436,17 +421,17 @@
       </div>
     </div>
                             </div>
-                            <p class="usage"><span>Usage</span> : prefix <code>selection</code> to <code>list</code>.</p>
+                            <p class="usage"><span>Usage</span> : insert a class <code>.selection</code> before the class <code>.list</code>.</p>
                             <div class="source">
-    <pre>
-    <code class="html hljs xml">
-    &lt;div class=&quot;ui middle aligned selection list&quot;&gt;
-      &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
-      &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
-      &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
-    &lt;/div&gt;
-    </code>
-    </pre>
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui middle aligned selection list&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
                             </div>
                          </div>
 
@@ -454,7 +439,7 @@
                         <div class="block">
                             <h3 id="relaxed" class="title">
                                 Relaxed 
-                                <a href="#relaxed"><i class="link icon"></i></a>
+                                
                             </h3>
                             <p class="description">A list can relax its padding to provide more negative space.</p>
                             <div class="display">
@@ -575,7 +560,7 @@
                         
                         <!-- Floated Content --> 
                         <div class="block">
-                            <h3 id="floated" class="title">Floated Content <a href="#floated"><i class="link icon"></i></a></h3>
+                            <h3 id="floated" class="title">Floated Content </h3>
                             <p class="description"></p>
                             <div class="display">
 
@@ -635,7 +620,7 @@
                         <div class="block">
                         <h3 id="horizontal" class="title">
                             Horizontally Aligned Item
-                            <a href="#horizontal"><i class="link icon"></i></a>
+                            
                         </h3>
                         <p class="description">A list is formatted to have items appear horizontally.</p>
                         <div class="display">
@@ -698,9 +683,9 @@
                     
                         <!-- Vertically Aligned 1 -->
                         <div class="block">
-                        <h3 id="vertical" class="title">
+                        <h3 id="vertical-horizontal-list" class="title">
                             Vertically Aligned Content of item (Horizontal list)
-                            <a href="#vertical"><i class="link icon"></i></a>
+                            
                         </h3>
                         <p class="description">A content inside a horizontal list can be vertically aligned.</p>
                         <div class="display">
@@ -758,9 +743,9 @@
                     
                         <!-- Vertically Aligned 2 -->
                         <div class="block">
-                        <h3 id="vertical" class="title">
+                        <h3 id="vertical-content-item" class="title">
                             Vertically Aligned Content of item
-                            <a href="#vertical"><i class="link icon"></i></a>
+                            
                         </h3>
                         <p class="description">All contents inside a list can be vertically aligned.</p>
                         <div class="display">
@@ -860,7 +845,7 @@
                         <div class="block">
                             <h3 id="sizes" class="title">
                                 Sizes
-                                <a href="#sizes"><i class="link icon"></i></a>
+                                
                             </h3>
                         <div class="display">
 <div class="ui tiny horizontal list">
@@ -1043,30 +1028,53 @@
                         </div>
                      </div>   
                     </div>
-                </div>  
-           </div>
-        
-        </div>
-    </div>
-    <div class="ui grid container">
-        <div class="row">
-            <div class="one wide column">
-            </div>
-            <div class="six wide column">
-                     <footer class="footer">
-                    <div class="inner">
-                        <p>© Copyright 2016. Hoiio Pte Ltd.</p>
                     </div>
-                </footer>
+                    <div class="column" id="table-content">
+                        <div id="sticky-anchor"></div>
+                        <div id="sticky">
+                        <ul class="category">
+                            <li class="title">List</li>    
+                            <li class="item"><a href="#definition">Definition</a></li>
+                            <li class="item"><a href="#contents">Contents</a></li>
+                            <li class="title">Types</li>    
+                            <li class="item"><a href="#unordered">Unordered</a></li>
+                            <li class="item"><a href="#ordered">Ordered</a></li>
+                            <li class="item"><a href="#link">Link</a></li>
+                            <li class="title">Variations</li>    
+                            <li class="item"><a href="#divided">Divided</a></li> 
+                            <li class="item"><a href="#selection">Selection</a></li> 
+                            <li class="item"><a href="#relaxed">Relaxed</a></li> 
+                            <li class="item"><a href="#floated">Floated</a></li> 
+                            <li class="item"><a href="#horizontal">Horizontal</a></li> 
+                            <li class="item"><a href="#vertical-horizontal-list">Vertically Aligned Inline</a></li> 
+                            <li class="item"><a href="#vertical-content-item">Vertically Aligned Content</a></li> 
+                            <li class="item"><a href="#sizes">Sizes</a></li> 
+                        </ul>
+                    </div>
+                
+                </div>
+            
+                </div>
+                <div class="ui grid">
+                    <div class="column" id="footer">
+                        <div class="inner">
+                            <p>© Copyright 2016. Hoiio Pte Ltd.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        
+     
         </div>
     </div>
-    
     <!-- Latest compiled and minified JavaScript -->
     <script src="../dist/semantic.min.js"></script>
 	<script src="../source/js/highlight.pack.js"></script>
-    <script src="../source/js/main.js"></script>
+    <script src="../source/js/content.js"></script>
+    <script src="../source/js/hoiio.js"></script>
+    <script src="../source/js/tablesort.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+    
 
 </body>
 </html>

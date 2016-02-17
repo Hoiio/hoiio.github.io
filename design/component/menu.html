@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hoiio Design Standards 2016">
+    <meta name="keywords" content="design, ux, standard, hoiio, framework, html, css, interface, component, semantic">
+    <meta name="author" content="Marcus">
+    <link rel="icon" href="source/favicon.ico">
+
+    <title>Menu - Hoiio Design Standards</title>
+    <!-- jQuery --->
+    <script src="../source/js/jquery-2.1.4.min.js"></script>
+    <script src="../source/js/modernizr-custom.js"></script>
+
+    <!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="../dist/semantic.min.css" />
+	<!-- Main styles -->
+	<link rel="stylesheet" type="text/css" href="../source/css/hoiio.css" />
+	<!-- Highlight -->
+	<link rel="stylesheet" type="text/css" href="../source/css/tomorrow.css" />
+	
+</head>
+<body id="component-menu">
+    <div class="hoiio loading"></div>
+    <div class="ui fluid container">
+        <div class="ui grid">
+            <div class="first column"></div>
+            <div class="second column">
+                <div class="ui grid">
+                    <div class="column" id="page-name">
+                        <div class="category">Component</div>
+                        <h1 class="name">Menu</h1>
+                    </div>
+                </div>
+                <div class="ui grid">
+                    <div class="column" id="content">
+                        <!-- Standard -->
+                        <div id="definition">
+                            <!-- Definition -->
+                            <div class="block">
+                                <p class="description">A menu represents a group of commands that a user can perform or activate. This includes both list menus, which might appear across the top of a screen, as well as context menus, such as those that might appear underneath a button after it has been clicked.</p>
+                                <h3 id="horizontal" class="title">Horizontal Menu</h3>
+                                <div class="display">
+<div class="ui menu">
+  <div class="item active">Editorials</div>
+  <div class="item">Reviews</div>
+  <div class="item">Upcoming Events</div>
+</div>                                 
+                                </div>
+                                <p class="usage"><span>Usage</span> :
+                                <br>- Add classes <code>.ui, .menu</code> to the <code>&lt;div&gt;</code> element.
+                            <br>- Include <code>&lt;div&gt;</code> element with a class<code>.item</code>.
+                                <br>- Insert a class <code>.active</code> or <code>.disabled</code> before the class <code>.item</code> to set item active or disabled.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class="ui menu"&gt;
+    &lt;div class="item"&gt;...&lt;/div&gt;
+    &lt;div class="active item"&gt;...&lt;/div&gt;
+    &lt;div class="disabled item"&gt;...&lt;/div&gt;    
+&lt;/div&gt;
+</code>
+</pre>
+                                
+                            </div>
+                                <h3 id="vertical" class="title">Vertical Menu</h3>
+                                <div class="display">
+<div class="ui vertical menu">
+  <div class="item active">Editorials</div>
+  <div class="item">Reviews</div>
+  <div class="item">Upcoming Events</div>
+</div>                                 
+                                </div>
+                                <p class="usage"><span>Usage</span> : insert a class <code>.vertical</code> before the class <code>.menu</code>.
+                            </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class="ui vertical menu"&gt;
+    &lt;div class="item"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                                
+                            </div>
+                            
+                            
+                            <h3 id="contents" class="title">Contents of item</h3>
+                            <p class="description">A menu varies according to the content of item.
+                            </p>
+                                
+                            <!-- Link Item -->     
+                            <h5 class="sub">Link Item</h5>
+                            <p class="description">A menu can contain a link item, or an item formatted as if it is a link.</p>    
+                            <div class="display">
+<div class="ui menu">
+  <a href="http://www.hoiio.com" class="item">
+    Visit Us
+  </a>
+  <div class="link item">
+    Contact Us
+  </div>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> :
+                                replace the <code>&lt;div&gt;</code> with an <code>&lt;a&gt;</code> element or insert a class <code>.link</code> before the class <code>.item</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui menu&quot;&gt;
+  &lt;a href=&quot;http://www.hoiio.com&quot; class=&quot;item&quot;&gt;
+    Visit Hoiio
+  &lt;/a&gt;
+  &lt;div class=&quot;link item&quot;&gt;
+    Contact Us
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>    
+                                
+                            <!-- Menu -->     
+                            <h5 class="sub">Menu as an item</h5>
+                            <p class="description">A menu can contain another menu group in the same level as menu items.</p>    
+                            <div class="display">
+<div class="ui menu">
+  <a class="item">Browse</a>
+  <a class="item">Submit</a>
+  <div class="right menu">
+    <a class="item">Sign Up</a>
+    <a class="item">Help</a>
+  </div>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> :
+                                Add a <code>&lt;div&gt;</code> element with a class <code>.menu</code> as an item into the menu block.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui menu&quot;&gt;
+  &lt;a class=&quot;item&quot;&gt;...&lt;/a&gt;
+  &lt;div class=&quot;menu&quot;&gt;
+     &lt;a class=&quot;item&quot;&gt;...&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                            
+                            <!-- Nested Menu -->     
+                            <h5 class="sub">Nested Menu in an item</h5>
+                            <p class="description">A menu item can contain another menu nested inside that acts as a grouped sub-menu.</p>    
+                            <div class="display">
+<div class="ui vertical menu">
+  <div class="item">
+    Main item
+    <div class="menu">
+      <a class="active item">Search</a>
+      <a class="item">Add</a>
+      <a class="item">Remove</a>
+    </div>
+  </div>
+  <a class="item">
+    <i class="grid layout icon"></i> Browse
+  </a>
+  <a class="item">
+    Messages
+  </a>
+  <div class="ui dropdown item">
+    More
+    <i class="dropdown icon"></i>
+    <div class="menu">
+      <a class="item"><i class="edit icon"></i> Edit Profile</a>
+      <a class="item"><i class="globe icon"></i> Choose Language</a>
+      <a class="item"><i class="setting icon"></i> Account Settings</a>
+    </div>
+  </div>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> :
+                                Add a <code>&lt;div&gt;</code> element with a class <code>.menu</code> as an item into the item block.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui menu&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;
+      &lt;div class=&quot;menu&quot;&gt;
+         &lt;a class=&quot;item&quot;&gt;...&lt;/a&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>        
+                            
+                            <!-- Header -->    
+                            <h5 class="sub">Header</h5>
+                                <p class="description">A menu item can include a header in vertical menu or can itself be a header in horizontal menu.</p>    
+                            <div class="display">
+<div class="ui vertical menu">
+  <div class="item">
+    <div class="header">Products</div>
+    <div class="menu">
+      <a class="item">Enterprise</a>
+      <a class="item">Consumer</a>
+    </div>
+  </div>
+  <div class="item">
+    <div class="header">CMS Solutions</div>
+    <div class="menu">
+      <a class="item">Rails</a>
+      <a class="item">Python</a>
+      <a class="item">PHP</a>
+    </div>
+  </div>
+</div>
+                                
+<div class="ui menu">
+  <div class="header item">
+    Our Company
+  </div>
+  <a class="item">
+    About Us
+  </a>
+  <a class="item">
+    Jobs
+  </a>
+  <a class="item">
+    Locations
+  </a>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> :
+                                Add a <code>&lt;div&gt;</code> element with classes <code>.header, .item</code> into the vertical menu or insert a class <code>.header</code> before the first class <code>.item</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui vertical menu&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;
+    &lt;div class=&quot;header&quot;&gt;Products&lt;/div&gt;
+    &lt;div class=&quot;menu&quot;&gt;
+      &lt;a class=&quot;item&quot;&gt;...&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                                
+&lt;div class=&quot;ui menu&quot;&gt;
+  &lt;div class=&quot;header item&quot;&gt;Our Company&lt;/div&gt;
+  &lt;a class=&quot;item&quot;&gt;...&lt;/a&gt;
+&lt;/div
+</code>
+</pre>
+                            </div>
+                                
+                                
+                            
+                            <!-- Paragraph -->    
+                            <h5 class="sub">Paragraph</h5>
+                            <p class="description">A vertical menu item can include any type of paragraph content.</p>    
+                            <div class="display">
+<div class="ui vertical menu">
+  <div class="item">
+    <div class="header">Promotions</div>
+    <p>Check out our new promotions</p>
+  </div>
+  <div class="item">
+    <div class="header">Coupons</div>
+    <p>Check out our collection of coupons</p>
+  </div>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> :
+                                add a <code>&lt;p&gt;</code> element into the item block.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui vertical menu&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;
+    &lt;div class=&quot;header&quot;&gt;Promotions&lt;/div&gt;
+    &lt;p&gt;...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>  
+                            
+                            <!-- Component -->     
+                            <h5 class="sub">Component</h5>
+                                <p class="description">A menu item can contain a <a href="/design/component/button">button</a>, an <a href="/design/component/input">input</a>, a <a href="/design/component/dropdown">dropdown</a> or a <a href="/design/component/popup">popup</a> inside of it.</p>    
+                            <div class="display">
+<div class="ui menu">
+  <div class="item">
+    <div class="ui icon input">
+      <input type="text" placeholder="Search...">
+      <i class="search icon"></i>
+    </div>
+  </div>
+<div class="item">
+    <div class="ui primary button">Sign up</div>
+  </div>
+    <div class="ui dropdown item">
+    Categories
+    <i class="dropdown icon"></i>
+    <div class="menu">
+      <a class="item">Electronics</a>
+      <a class="item">Automotive</a>
+      <a class="item">Home</a>
+    </div>
+  </div>  
+</div>
+                                
+                                <div class="ui vertical menu">
+  <div class="item">
+    <div class="ui icon input">
+      <input type="text" placeholder="Search...">
+      <i class="search icon"></i>
+    </div>
+  </div>
+<div class="item">
+    <div class="ui primary fluid button">Sign up</div>
+  </div>
+    <div class="ui dropdown item">
+    Categories
+    <i class="dropdown icon"></i>
+    <div class="menu">
+      <a class="item">Electronics</a>
+      <a class="item">Automotive</a>
+      <a class="item">Home</a>
+    </div>
+  </div>  
+</div>
+                                
+<div class="ui menu">
+  <a class="browse item">
+    Browse
+    <i class="dropdown icon"></i>
+  </a>
+</div>
+<div class="ui fluid popup bottom left transition hidden">
+  <div class="ui four column relaxed equal height divided grid">
+    <div class="column">
+      <h4 class="ui header">Fabrics</h4>
+      <div class="ui link list">
+        <a class="item">Cashmere</a>
+        <a class="item">Linen</a>
+        <a class="item">Cotton</a>
+        <a class="item">Viscose</a>
+      </div>
+    </div>
+    <div class="column">
+      <h4 class="ui header">Size</h4>
+      <div class="ui link list">
+        <a class="item">Small</a>
+        <a class="item">Medium</a>
+        <a class="item">Large</a>
+        <a class="item">Plus Sizes</a>
+      </div>
+    </div>
+    <div class="column">
+      <h4 class="ui header">Colored</h4>
+      <div class="ui link list">
+        <a class="item">Neutrals</a>
+        <a class="item">Brights</a>
+        <a class="item">Pastels</a>
+      </div>
+    </div>
+    <div class="column">
+      <h4 class="ui header">Types</h4>
+      <div class="ui link list">
+        <a class="item">Knitwear</a>
+        <a class="item">Outerwear</a>
+        <a class="item">Pants</a>
+        <a class="item">Shoes</a>
+      </div>
+    </div>
+  </div>
+</div>                                
+                               
+                            </div>
+                            <p class="usage"><span>Usage</span> :
+                                add <code>button</code>, <code>input</code>, <code>dropdown</code> or <code>popup</code> component to the item block.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui menu&quot;&gt;
+  &lt;div class="item"&gt;
+    &lt;div class="ui icon input"&gt;
+      &lt;input type="text" placeholder="Search..."&gt;
+      &lt;i class="search icon"&gt;&lt;/i&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>  
+                            
+                            
+                            
+                                </div>
+                        </div>
+
+                        <!-- Types -->
+                        <div id="types">
+                            <h2>Types</h2>
+                            <!-- Text -->
+                            <div class="block">
+                            <h3 id="text" class="title">Text</h3>
+                                <p class="description">A menu can be formatted for text content.</p>    
+                            <div class="display">
+<div class="ui text menu">
+  <div class="header item">Sort By</div>
+  <a class="active item">
+    Closest
+  </a>
+  <a class="item">
+    Most Comments
+  </a>
+  <a class="item">
+    Most Popular
+  </a>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> :
+                                insert a class <code>.text</code> before the class <code>.menu</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui text menu&quot;&gt;
+  ...
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>  
+                            </div>    
+                            
+                            <!-- Secondary -->
+                            <div class="block">
+                            <h3 id="secondary" class="title">Secondary Menu</h3>
+                                <p class="description">A menu can be formed to make its apperance more simple.</p>    
+                            <div class="display">
+<div class="ui secondary menu">
+  <a class="active item">
+    Home
+  </a>
+  <a class="item">
+    Messages
+  </a>
+  <a class="item">
+    Friends
+  </a>
+  <div class="right menu">
+    <div class="item">
+      <div class="ui icon transparent input">
+  <input type="text" placeholder="Search...">
+  <i class="search icon"></i>
+</div>
+    </div>
+    <a class="ui item">
+      Logout
+    </a>
+  </div>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> :
+                                insert a class <code>.secondary</code> before the class <code>.menu</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui secondary menu&quot;&gt;
+  ...
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>  
+                            </div>
+                            
+                            <!-- Tabular -->
+                            <div class="block">
+                            <h3 id="tabular" class="title">Tabular</h3>
+                                <p class="description">A message can be formed to show <a href="/design/plugin/tab">tabs of information</a>.</p>    
+                            <div class="display">
+<div class="ui tabular menu">
+  <div class="active item" data-tab="tab-name">Tab 1</div>
+  <div class="item" data-tab="tab-name2">Tab 2</div>
+</div>
+<div class="ui tab" data-tab="tab-name">
+  <!-- Tab Content !-->
+</div>
+<div class="ui tab" data-tab="tab-name2">
+  <!-- Tab Content !-->
+</div>
+
+                            </div>
+                            <p class="usage"><span>Usage</span> :
+                                insert a class <code>.tabular</code> before the class <code>.menu</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui tabular menu&quot;&gt;
+  &lt;div class=&quot;active item&quot; data-tab=&quot;tab-name&quot;&gt;Tab 1&lt;/div&gt;
+  &lt;div class=&quot;item&quot; data-tab=&quot;tab-name2&quot;&gt;Tab 2&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>  
+                            </div> 
+                            
+                            <!-- Pointing -->
+                            <div class="block">
+                            <h3 id="pointing" class="title">Pointing</h3>
+                                <p class="description">A menu can point to show its relationship to nearby content.</p>    
+                            <div class="display">
+<div class="ui pointing menu">
+  <a class="active item">
+    Home
+  </a>
+  <a class="item">
+    Messages
+  </a>
+  <a class="item">
+    Friends
+  </a>
+  <div class="right  menu">
+    <div class="borderless item">
+      <div class="ui left icon transparent input">
+  <input type="text" placeholder="Search...">
+  <i class="search icon"></i>
+</div>
+    </div>
+  </div>
+</div>
+<div class="ui segment">
+  <p><img class="ui wireframe image" src="../source/img/paragraph.png"></p>
+</div>
+
+                            </div>
+                            <p class="usage"><span>Usage</span> :
+                                insert a class <code>.pointing</code> before the class <code>.menu</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui tabular menu&quot;&gt;
+  &lt;div class=&quot;active item&quot; data-tab=&quot;tab-name&quot;&gt;Tab 1&lt;/div&gt;
+  &lt;div class=&quot;item&quot; data-tab=&quot;tab-name2&quot;&gt;Tab 2&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>  
+                            </div> 
+                            
+                            <!-- Pagination -->
+                            <div class="block">
+                            <h3 id="pagination" class="title">Pagination</h3>
+                                <p class="description">A pagination menu is specially formatted to present links to pages of content.</p>    
+                            <div class="display">
+<div class="ui small pagination menu">
+  <a class="active item">
+    1
+  </a>
+  <div class="disabled item">
+    ...
+  </div>
+  <a class="item">
+    10
+  </a>
+  <a class="item">
+    11
+  </a>
+  <a class="item">
+    12
+  </a>
+</div>
+
+                            </div>
+                            <p class="usage"><span>Usage</span> :
+                                insert a class <code>.tabular</code> before the class <code>.menu</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui tabular menu&quot;&gt;
+  &lt;div class=&quot;active item&quot; data-tab=&quot;tab-name&quot;&gt;Tab 1&lt;/div&gt;
+  &lt;div class=&quot;item&quot; data-tab=&quot;tab-name2&quot;&gt;Tab 2&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>  
+                            </div> 
+                        </div>
+
+                        <!-- Variation -->
+                        <div id="variations">
+                            <h2>Variations</h2>
+                            
+                            
+                            <!-- Icons -->
+                            <div class="block">
+                            <h3 id="icons" class="title">Icons</h3>
+                                <h5 class="sub">Icon Only</h5>    
+                            <div class="display">
+<div class="ui icon menu">
+  <a class="item">
+    <i class="play icon"></i>
+  </a>
+  <a class="item">
+    <i class="pause icon"></i>
+  </a>
+  <a class="item">
+    <i class="stop icon"></i>
+  </a>
+</div>
+<div class="ui vertical icon menu">
+  <a class="item">
+    <i class="facebook icon"></i>
+  </a>
+  <a class="item">
+    <i class="twitter icon"></i>
+  </a>
+  <a class="item">
+    <i class="linkedin icon"></i>
+  </a>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> :
+                                <br>- Insert a class <code>.icon</code> before the class <code>.menu</code>.
+                                <br>- Add a <code>&lt;i&gt;</code> element with an icon into the item block.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui icon menu&quot;&gt;
+  &lt;a class=&quot;item&quot;&gt;
+    &lt;i class=&quot;play icon&quot;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>  
+                            </div> 
+                            
+                            <!-- Labeled Icons -->
+                            <h5 class="sub">with labeled</h3>
+                            <div class="block">
+                            
+                                <p class="description"></p>    
+                            <div class="display">
+<div class="ui labeled icon menu">
+  <a class="item">
+    <i class="play icon"></i>
+      Play
+  </a>
+  <a class="item">
+    <i class="pause icon"></i>
+      Pause
+  </a>
+  <a class="item">
+    <i class="stop icon"></i>
+      Stop
+  </a>
+</div>
+<div class="ui labeled vertical icon menu">
+  <a class="item">
+    <i class="facebook icon"></i>
+      Facebook
+  </a>
+  <a class="item">
+    <i class="twitter icon"></i>
+      Twitter
+  </a>
+  <a class="item">
+    <i class="linkedin icon"></i>
+      Linkedin
+  </a>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> :
+                                 insert a class <code>.labeled</code> before the class <code>.icon</code>.
+                               </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui labeled icon menu&quot;&gt;
+  &lt;a class=&quot;item&quot;&gt;
+    &lt;i class=&quot;play icon&quot;&gt;&lt;/i&gt;
+    Play
+  &lt;/a&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>  
+                            </div> 
+                            
+                            <!-- Label -->
+                            <div class="block">
+                            <h3 id="label" class="title">Label</h3>
+                                <p class="description">A menu item can show label vertically.</p>    
+                            <div class="display">
+<div class="ui vertical menu">
+    <div class="item">
+    <div class="ui icon input">
+      <input type="text" placeholder="Search mail...">
+      <i class="search icon"></i>
+    </div>
+  </div>
+  <a class="active item">
+    <div class="ui info label">1</div>
+    Inbox
+  </a>
+  <a class="item">
+    <div class="ui primary label">51</div>
+    Spam
+  </a>
+  <a class="item">
+    <div class="ui error label">1</div>
+    Updates
+  </a>
+  
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> :
+                                add a label into the item block.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui vertical menu&quot;&gt;
+  &lt;a class=&quot;item&quot;&gt;
+    &lt;div class=&quot;ui lablel&quot;&gt;1&lt;/div&gt;
+    Inbox
+  &lt;/a&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>  
+                            </div> 
+                            
+                            <!-- Compact -->
+                            <div class="block">
+                            <h3 id="compact" class="title">Compact</h3>
+                                <p class="description">A menu can take up only the space necessary to fit its content.</p>    
+                            <div class="display">
+<div class="ui compact menu">
+  <a class="item">
+    <i class="play icon"></i>
+      Play
+  </a>
+  <a class="item">
+    <i class="pause icon"></i>
+      Pause
+  </a>
+  <a class="item">
+    <i class="stop icon"></i>
+      Stop
+  </a>
+</div>
+
+                            </div>
+                            <p class="usage"><span>Usage</span> :
+                                insert a class <code>.compact</code> before the class <code>.menu</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui compact menu&quot;&gt;
+  ...
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>  
+                            </div> 
+                            
+                            <!-- Fluid  -->
+                            <div class="block">
+                            <h3 id="fluid" class="title">Fluid</h3>
+                                <p class="description">A vertical menu may take the size of its container. A horizontal menu does this by default.  </p>    
+                            <div class="display">
+<div class="ui fluid vertical  menu">
+  <a class="item">Buy</a>
+  <a class="item">Sell</a>
+  <a class="item">Rent</a>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> :
+                                insert a class <code>.fluid</code> before the class <code>.menu</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui fluid menu&quot;&gt;
+  ...
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>  
+                            </div> 
+                            
+                            <!-- Equal Width -->
+                            <div class="block">
+                            <h3 id="equal-width" class="title">Equal Width</h3>
+                                <p class="description"></p>    
+                            <div class="display">
+<div class="ui three item menu">
+  <a class="item">Buy</a>
+  <a class="item">Sell</a>
+  <a class="item">Rent</a>
+</div>
+                               
+                            </div>
+                            <p class="usage"><span>Usage</span> :
+                                insert a class <code>.item</code> with a number before the class <code>.menu</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui three item menu&quot;&gt;
+  ...
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>  
+                            </div> 
+                            
+                            
+                            
+                            <!-- Fitted  -->
+                            <div class="block">
+                            <h3 id="fitted" class="title">Fitted</h3>
+                                <p class="description">A menu item or menu can remove element padding, vertically or horizontally.</p>    
+                            <div class="display">
+<div class="ui menu">
+  <div class="fitted item">
+    No padding whatsoever
+  </div>
+  <div class="horizontally fitted item">
+    No horizontal padding
+  </div>
+  <div class="vertically fitted item">
+    No vertical padding
+  </div>
+                                </div>
+                            </div>
+                            <p class="usage"><span>Usage</span> :
+                                insert classes <code>.fitted</code> or <code>.horizontally, .fitted</code> or <code>.vertically, .fitted</code> before the class <code>.item</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui menu&quot;&gt;
+  &lt;div class=&quot;fitted item&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;horizontally fitted item&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;vertically fitted item&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>  
+                            </div> 
+                            
+                            <!-- Borderless -->
+                            <div class="block">
+                            <h3 id="borderless" class="title">Borderless</h3>
+                                <p class="description">A menu item or menu can have no borders.</p>    
+                            <div class="display">
+<div class="ui menu">
+  <a class="item">1</a>
+  <a class="item">2</a>
+  <a class="item">3</a>
+  <a class="item">4</a>
+  <a class="item">5</a>
+  <a class="item">6</a>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> :
+                                insert a class <code>.borderless</code> before the class <code>.menu</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui borderless menu&quot;&gt;
+  ...
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>  
+                            </div> 
+                            
+                            <!-- Colors -->
+                            <div class="block">
+                            <h3 id="color" class="title">Colors</h3>
+                                <p class="description"></p>    
+                            <div class="display">
+<div class="ui three item menu">
+  <a class="active item">
+    Home
+  </a>
+  <a class="item">
+    Messages
+  </a>
+  <a class="item">
+    Friends
+  </a>
+</div>
+                                
+<div class="ui primary three item menu">
+  <a class="item active">
+    Home
+  </a>
+  <a class="item">
+    Messages
+  </a>
+  <a class="item">
+    Friends
+  </a>
+</div>
+                                
+<div class="ui info three item menu">
+  <a class="active item">
+    Home
+  </a>
+  <a class="item">
+    Messages
+  </a>
+  <a class="item">
+    Friends
+  </a>
+</div>                                 
+                                
+<div class="ui success three item menu">
+  <a class="active item">
+    Home
+  </a>
+  <a class="item">
+    Messages
+  </a>
+  <a class="item">
+    Friends
+  </a>
+</div> 
+                                
+<div class="ui error three item menu">
+  <a class="active item">
+    Home
+  </a>
+  <a class="item">
+    Messages
+  </a>
+  <a class="item">
+    Friends
+  </a>
+</div>  
+
+<div class="ui warning three item menu">
+  <a class="active item">
+    Home
+  </a>
+  <a class="item">
+    Messages
+  </a>
+  <a class="item">
+    Friends
+  </a>
+</div>                                 
+                            </div>
+                            <p class="usage"><span>Usage</span> :
+                                insert classes of colors before the class <code>.menu</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui primary menu&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;ui info menu&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;ui success menu&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;ui error menu&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;ui warning menu&quot;&gt;...&lt;/div&gt;
+</code>
+</pre>
+                            </div>  
+                            </div>
+                            
+                            <!-- Inverted Colors -->
+                            <div class="block">
+                            <h3 id="inverted-color" class="title">Inverted Colors</h3>
+                                <p class="description"></p>    
+                            <div class="display">
+<div class="ui three item inverted menu">
+  <a class="active item">
+    Home
+  </a>
+  <a class="item">
+    Messages
+  </a>
+  <a class="item">
+    Friends
+  </a>
+</div>
+                                
+<div class="ui primary three item inverted menu">
+  <a class="item active">
+    Home
+  </a>
+  <a class="item">
+    Messages
+  </a>
+  <a class="item">
+    Friends
+  </a>
+</div>
+                                
+<div class="ui info three item inverted menu">
+  <a class="active item">
+    Home
+  </a>
+  <a class="item">
+    Messages
+  </a>
+  <a class="item">
+    Friends
+  </a>
+</div>                                 
+                                
+<div class="ui success three item inverted menu">
+  <a class="active item">
+    Home
+  </a>
+  <a class="item">
+    Messages
+  </a>
+  <a class="item">
+    Friends
+  </a>
+</div> 
+                                
+<div class="ui error three item inverted menu">
+  <a class="active item">
+    Home
+  </a>
+  <a class="item">
+    Messages
+  </a>
+  <a class="item">
+    Friends
+  </a>
+</div>  
+
+<div class="ui warning three item inverted menu">
+  <a class="active item">
+    Home
+  </a>
+  <a class="item">
+    Messages
+  </a>
+  <a class="item">
+    Friends
+  </a>
+</div>                                 
+                            </div>
+                            <p class="usage"><span>Usage</span> :
+                                insert a class <code>.inverted</code> and classes of colors before the class <code>.menu</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui primary inverted menu&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;ui info inverted menu&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;ui success inverted menu&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;ui error inverted menu&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;ui warning inverted menu&quot;&gt;...&lt;/div&gt;
+</code>
+</pre>
+                            </div>  
+                            </div>
+                            
+                            <!-- Sizes -->
+                            <div class="block">
+                            <h3 id="sizes" class="title">Sizes</h3>
+                                <p class="description">A menu can vary in small and large size.</p>    
+                            <div class="display">
+<div class="ui small menu">
+  <div class="item active">Editorials</div>
+  <div class="item">Reviews</div>
+  <div class="item">Upcoming Events</div>
+</div>
+
+<div class="ui large menu">
+  <div class="item active">Editorials</div>
+  <div class="item">Reviews</div>
+  <div class="item">Upcoming Events</div>
+</div>                                  
+                            </div>
+                            <p class="usage"><span>Usage</span> :
+                                insert classes of sizes before the class <code>.menu</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui small menu&quot;&gt;
+  ...
+&lt;/div&gt;
+
+&lt;div class=&quot;ui large menu&quot;&gt;
+  ...
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>  
+                            </div> 
+                      
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="column" id="table-content">
+                        <div id="sticky-anchor"></div>
+                        <div id="sticky">
+                        <ul class="category">    
+                            <li class="title">Menu</li>    
+                            <li class="item"><a href="#horizontal">Horizontal</a></li>
+                            <li class="item"><a href="#vertical">Vertical</a></li> 
+                            <li class="item"><a href="#contents">Contents</a></li> 
+                            <li class="title">Types</li>    
+                            
+                            <li class="item"><a href="#text">Text</a></li> 
+                            <li class="item"><a href="#secondary">Secondary Menu</a></li>
+                            <li class="item"><a href="#tabular">Tabular</a></li> 
+                            <li class="item"><a href="#pointing">Pointing</a></li> 
+                            <li class="item"><a href="#pagination">Pagination</a></li>
+                            <li class="title">Variations</li>    
+                            <li class="item"><a href="#icons">Icons</a></li> 
+                            <li class="item"><a href="#label">Label</a></li> 
+                            <li class="item"><a href="#compact">Compact</a></li>
+                            <li class="item"><a href="#fluid">Fluid</a></li>
+                            <li class="item"><a href="#equal-width">Equal Width</a></li> 
+                            <li class="item"><a href="#fitted">Fitted</a></li> 
+                            <li class="item"><a href="#borderless">Borderless</a></li> 
+                            <li class="item"><a href="#color">Colors</a></li> 
+                            <li class="item"><a href="#inverted-color">Inverted Colors</a></li> 
+                            <li class="item"><a href="#sizes">Sizes</a></li> 
+                            
+                        </ul>
+                    </div>
+                
+                </div>
+            
+                </div>
+                <div class="ui grid">
+                    <div class="column" id="footer">
+                        <div class="inner">
+                            <p>© Copyright 2016. Hoiio Pte Ltd.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+     
+        </div>
+    </div>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../dist/semantic.min.js"></script>
+	<script src="../source/js/highlight.pack.js"></script>
+    <script src="../source/js/content.js"></script>
+    <script src="../source/js/hoiio.js"></script>
+    <script src="../source/js/tablesort.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+</body>
+</html>

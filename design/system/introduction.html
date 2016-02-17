@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hoiio Design Standards 2016">
+    <meta name="keywords" content="design, ux, standard, hoiio, framework, html, css, interface, component, semantic">
+    <meta name="author" content="Marcus">
+    <link rel="icon" href="../source/img/favicon.ico">
+
+    <title>Introduction - Hoiio Design Standards</title>
+    <!-- jQuery --->
+    <script src="../source/js/jquery-2.1.4.min.js"></script>
+    <script src="../source/js/modernizr-custom.js"></script>
+
+    <!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="../dist/semantic.min.css" />
+	<!-- Main styles -->
+	<link rel="stylesheet" type="text/css" href="../source/css/hoiio-semantic.css" />
+	<!-- Highlight -->
+	<link rel="stylesheet" type="text/css" href="../source/css/tomorrow.css" />
+	
+</head>
+<body>
+    <div class="hoiio loading"></div>
+    <div class="ui grid container component-breadcrumb" id="page">
+        <!-- Header -->
+        <div class="row" id="header">
+            <div class="one wide column">
+                <a href="/design/" class='logo'><i class="icon compass"></i></a>
+            </div>
+            <div class="twelve wide column">
+                <div class="heading">Design Standards</div>
+            </div>
+            <div class="three wide column">
+                <div class="right aligned poweredby">Powered by<a href="http://hoiio.com"><img class="middle aligned" src="../source/img/hoiio-logo.png"/></a></div>
+            </div>
+        </div>
+        
+        <!-- Content -->
+        <div class="row" id="content">
+            <div class="column"></div>
+            <div class="column" id="sidebar"><nav></nav></div>
+            <div class="column" id="content">
+                <!-- Content -->
+                <h1 class="name">Introduction</h1>
+                <div class="present">
+                    <div class="block">
+                        <p class="description">The goal of Semantic UI is to narrow the divide between how we create meaning personally, through language, and how we construct meaning for computers.</p>
+                        <p class="description">
+                        Semantic UI is built around a very different premise, that the real bottleneck in computer programming are humans, and that the best way to advance the web isn't solely providing better institutions for learning programming, or even making more refined tools for existing programmers, but more importantly removing the technical barriers that separate programmatic meaning from human meaning.</p>
+                        <p class="description">
+                        Semantic provides several ways to modify UI elements. For big projects that rely on building a personalized brand-aware visual language, site themes allow you to modify the underlying variables powering Semantic UI, as well as specify alternative overriding css. Site themes are portable between projects, and affect the compiled framework code.</p>
+<p class="description">
+For smaller projects, projects with quick deadlines, or for those who prefer not to get into front end coding, packaged themes are great for borrowing from other open source designs in the field.</p>
+<p class="description">
+For either project type, an important place to start customizing Semantic is the site.variables file, the variables file which all other variable files inherit from.</p>
+                    </div>
+                    <div class="block">
+                        <h3 id="small" class="non counter">Advantages<a href="#small"><i class="link icon"></i></a></h3>
+                        <div class="ui ordered list">
+                            <div class="item">
+                                <p class="description">Easy to learn : Writing front end code shouldn't require learning the naming or programming conventions of a particular developer.</p>
+                                
+                            </div>
+                            <div class="item">
+                                <p class="description">Easy to learn : Writing front end code shouldn't require learning the naming or programming conventions of a particular developer.</p>
+                                
+                            </div>
+                        
+                        </div>
+                       
+                    </div>
+                    <div class="block">
+                        <h3 id="types" class="non counter">Types of definitions<a href="#types"><i class="link icon"></i></a></h3>
+                        <p class="description">There are five types of component definitions in Semantic UI, each with their own unique qualities.</p>
+                        <div class="holder">
+                        <table class="grid">
+                            <thead>
+                                <tr>
+                                    <th>Term</th>
+                                    <th>Definition</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Elements</td>
+                                    <td>UI elements are the smallest atomic unit for describing page content. They can exist alone or in groups with shared qualities.</td>
+                                </tr>
+                                <tr>
+                                    <td>Collections</td>
+                                    <td>Collections are heterogeneous group of several ui elements which are usually found together. They may describe ui elements which do not necessarily have to be present.</td>                       
+                                </tr>
+                                <tr>
+                                    <td>Views</td>
+                                    <td>A view is a common design trope for presenting specific types of website content like comments, or user activity. These are common views like, comments, activity feeds, content cards, that are presented in a similar fashion across most websites.</td>                       
+                                </tr>
+                                <tr>
+                                    <td>Modules</td>
+                                    <td>Modules are UI components that have behaviors as an essential part of their definition. These include things like, accordions, dropdowns, and popups, which require not only a description of how they appear, but also a set of instructions for how to implement their behaviors.</td>                       
+                                </tr>
+                                <tr>
+                                    <td>Behaviors</td>
+                                    <td>Behaviors are instructions for UI behavior that are not attached to a particular physical form. They may describe things like, form validation, state management, or server request routing.</td>                       
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="block">
+                        <h3 id="forms" class="non counter">Varying Forms<a href="#forms"><i class="link icon"></i></a></h3>
+                        <p class="description">User interface components most often exist with differences from a standard form. Semantic uses special names for describing these modifications to a component's standard form.</p>
+                        <div class="holder">
+                        <table class="grid">
+                            <thead>
+                                <tr>
+                                    <th>Definition</th>
+                                    <th>Meaning</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>States</td>
+                                    <td>States are modifications to a UI element which show a change in its condition.States can be used to indicate changes like: "is hidden", "should appear unmodifiable", "should indicate a user must wait".
+                                    </td>                       
+                                </tr>
+                                <tr>
+                                    <td>Variations</td>
+                                    <td>
+                                        <p>Variations are modifications to an element that are not mutually exclusive. These are similar in concept to grammatical modifiers and can be strung together with other modifiers.</p>
+                                        <p>
+                                        So for example a button may be "large or small", "colored", "show primacy on a page", "have an icon", "be animated".</p>
+                                    </td>                       
+                                </tr>
+                                <tr>
+                                    <td>Types</td>
+                                    <td>Types are mutually exclusive forms of a ui component. Just like a pet cannot be both a "cat" and a "dog", ui types like a vertical menu or a tiered menu are mutually exclusive and cannot be used together.</td>
+                                </tr>
+                                <tr>
+                                    <td>Groups</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Sizes</td>
+                                    <td></td>
+                                </tr>
+                                
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                    </div>
+                    
+                </div>
+            
+            </div>  
+        </div>
+        
+        <!-- Footer -->
+        <div class="row" id="footer">
+            <footer class="footer"></footer>    
+        </div>
+    </div>
+  
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../dist/semantic.min.js"></script>
+	<script src="../source/js/highlight.pack.js"></script>
+    <script src="../source/js/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>

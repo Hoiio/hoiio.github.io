@@ -17,45 +17,27 @@
     <!-- Bootstrap -->
 	<link rel="stylesheet" type="text/css" href="../dist/semantic.min.css" />
 	<!-- Main styles -->
-	<link rel="stylesheet" type="text/css" href="../source/css/hoiio-semantic.css" />
+	<link rel="stylesheet" type="text/css" href="../source/css/hoiio.css" />
 	<!-- Highlight -->
 	<link rel="stylesheet" type="text/css" href="../source/css/tomorrow.css" />
 	
 </head>
-<body>
+<body id="component-image">
     <div class="hoiio loading"></div>
-    <div class="ui grid container component-image">
-        <div class="row" id="header">
-            <div class="one wide column">
-                <a href="/design/" class='logo'><i class="icon compass"></i></a>
-            </div>
-            <div class="twelve wide column">
-                <div class="heading"><a href="/design/">Design Standards</a></div>
-            </div>
-            <div class="three wide column">
-                <div class="right aligned poweredby">Powered by<a href="http://hoiio.com"><img class="middle aligned" src="../source/img/hoiio-logo.png"/></a></div>
-            </div>
-        </div>
-        <div class="row" id="content">
-            <div class="column">
-            </div>
-            <div class="column" id="sidebar">
-                <nav></nav>
-            </div>
-            <div class="column" id="content">
-                <!-- Content -->
-                <div class="category">component</div>
-                <h1 class="name">Image</h1>
-                <div class="present">
-                    <div class="ui secondary pointing menu">
-                        <a class="item definition" data-tab="first">Definition</a>
-                        <a class="item state" data-tab="third"> States </a>
-                        <a class="item types" data-tab="fourth"> Types </a>
-                        <a class="item variation" data-tab="fifth">Variations</a>
-                        <a class="item group" data-tab="sixth">Group</a>
+    <div class="ui fluid container">
+        <div class="ui grid">
+            <div class="first column"></div>
+            <div class="second column">
+                <div class="ui grid">
+                    <div class="column" id="page-name">
+                        <div class="category">component</div>
+                        <h1 class="name">Image</h1>
                     </div>
-                    <!-- Standard -->
-                    <div class="ui tab segment first" data-tab="first">
+                </div>
+                <div class="ui grid">
+                    <div class="column" id="content">
+                        <!-- Standard -->
+                    <div id="definition">
                         <!-- Definition --> 
                         <div class="block">
                             <p class="description">Image is used to provide a visual representation of context. It should be specified the width and height. If width and height are not specified, the page will flicker while the image loads.</p>
@@ -63,7 +45,7 @@
 <img class="ui small image" src="../source/img/image.jpg" alt="image">  
                                
                             </div>
-                            <p class="usage"><span>Usage</span> : An image is defined with the <code>img</code> tag which contains attributes only, and does not have a closing tag. Or it is used with <code>ui image</code> class. </p>
+                            <p class="usage"><span>Usage</span> : An image is defined with the <code>img</code> tag which contains attributes only, and does not have a closing tag. Or it is created with a &lt;div&gt; element and classes <code>.ui, .image</code>. </p>
                             <div class="source">
 <pre>
 <code class="html hljs xml">
@@ -83,14 +65,14 @@
                     
                     
                     <!-- States -->
-                    <div class="ui tab segment" data-tab="third">
-                        
+                    <div id="states">
+                        <h2>State</h2>
                         
                         <!-- Disabled State -->
                         <div class="block">
                         <h3 id="disabled" class="non counter">
                             Disabled 
-                            <a href="#disabled"><i class="link icon"></i></a>
+                            
                         </h3>
                         <div class="display">
 <img class="ui disabled small image" src="../source/img/image.jpg">
@@ -107,12 +89,13 @@
                     </div>
                     
                     <!-- Types -->
-                    <div class="ui tab segment" data-tab="fourth">
+                    <div id="types">
+                        <h2>Type</h2>
                         <!-- Link -->
                         <div class="block">
                             <h3 id="link" class="non counter">
                                 Link
-                                <a href="#link"><i class="link icon"></i></a>
+                                
                             </h3>
                             <p class="description">An image can be formatted to link to other content.</p>
                             <div class="display">
@@ -132,12 +115,13 @@
                     </div>
                     
                     <!-- Variation -->
-                    <div class="ui tab segment" data-tab="fifth">    
+                    <div id="variations">
+                        <h2>Variations</h2>
                         <!-- Avatar Variation -->
                         <div class="block">
                             <h3 id="avatar" class="title">
                                 Avatar
-                                <a href="#avatar"><i class="link icon"></i></a>
+                                
                             </h3>
                             <p class="description">An image is formatted to appear inline with text as an avatar.</p>
                             <div class="display">
@@ -159,7 +143,7 @@
                         <div class="block">
                             <h3 id="radius" class="title">
                                 Border Radius 
-                                <a href="#radius"><i class="link icon"></i></a>
+                                
                             </h3>
                             <p class="description">Use rounded corners to an image with the border-radius property.</p>
                             <div class="display">
@@ -179,7 +163,7 @@
                         <div class="block">
                             <h3 id="round" class="title">
                                 Round 
-                                <a href="#round"><i class="link icon"></i></a>
+                                
                             </h3>
                             <div class="display">
     <img class="ui small round image" src="../source/img/square-image.jpg"> 
@@ -198,7 +182,7 @@
                         <div class="block">
                             <h3 id="fluid" class="title">
                                 Fluid 
-                                <a href="#fluid"><i class="link icon"></i></a>
+                                
                             </h3>
                             <p class="description">An image can take up the width of its container.</p>
                             <div class="display">
@@ -218,7 +202,7 @@
                         <div class="block">
                             <h3 id="centered" class="title">
                                 Centered
-                                <a href="#centered"><i class="link icon"></i></a>
+                                
                             </h3>
                             <p class="description">An image can appear centered in a content block.</p>
                             <div class="display">
@@ -242,9 +226,9 @@
 
                         <!-- Floated Variation -->
                         <div class="block">
-                            <h3 class="title">
+                            <h3 id="floated" class="title">
                                 Floated
-                                <a href="#sizes"><i class="link icon"></i></a>
+                                
                             </h3>
                             <p class="description">A image is used with the float property to wrap text around images.</p>
                             <div class="display">
@@ -272,7 +256,7 @@
                         <div class="block">
                             <h3 id="sizes" class="title">
                                 Sizes
-                                <a href="#sizes"><i class="link icon"></i></a>
+                                
                             </h3>
                             <div class="display">
     <img class="ui mini image" src="../source/img/image.jpg">
@@ -297,29 +281,17 @@
 </pre>
                             </div>
                          </div>
-
                         
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                </div>
+                    </div>
                     
                     <!-- Group -->
-                    <div class="ui tab segment" data-tab="sixth">
+                    <div id="group">
+                        <h2>Group</h2>
                         <!-- Images -->
                         <div class="block">
                         <h3 id="images" class="non counter">
                             Images
-                            <a href="#images"><i class="link icon"></i></a>
+                            
                         </h3>
                         <p class="description">A group of images can be formatted to have the same size.</p>
                         <div class="display">
@@ -346,29 +318,54 @@
                      </div>
                     </div>
             
-                </div>  
-            </div>
-        </div>
-    </div>
-    <div class="ui grid container">
-        <div class="row">
-            <div class="one wide column">
-            </div>
-            <div class="six wide column">
-                     <footer class="footer">
-                    <div class="inner">
-                        <p>© Copyright 2016. Hoiio Pte Ltd.</p>
+                        
                     </div>
-                </footer>
+                    <div class="column" id="table-content">
+                        <div id="sticky-anchor"></div>
+                        <div id="sticky">
+                        <ul class="category">    
+                            <li class="title">Image</li>    
+                            <li class="item"><a href="#definition">Definition</a></li>
+                            <li class="title">State</li>    
+                            <li class="item"><a href="#disabled">Disabled</a></li>
+                            <li class="title">Type</li>    
+                            <li class="item"><a href="#link">Link</a></li>
+                            <li class="title">Variations</li>    
+                            <li class="item"><a href="#avatar">Avatar</a></li>
+                            <li class="item"><a href="#radius">Border Radius</a></li>
+                            <li class="item"><a href="#round">Round</a></li>
+                            <li class="item"><a href="#fluid">Fluid</a></li>
+                            <li class="item"><a href="#centered">Centered</a></li>
+                            <li class="item"><a href="#floated">Floated</a></li>
+                            <li class="item"><a href="#sizes">Sizes</a></li>
+                            <li class="title">Group</li>    
+                            <li class="item"><a href="#images">Images</a></li>
+                        </ul>
+                    </div>
+                
+                </div>
+            
+                </div>
+                <div class="ui grid">
+                    <div class="column" id="footer">
+                        <div class="inner">
+                            <p>© Copyright 2016. Hoiio Pte Ltd.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        
+     
         </div>
     </div>
-    
     <!-- Latest compiled and minified JavaScript -->
     <script src="../dist/semantic.min.js"></script>
 	<script src="../source/js/highlight.pack.js"></script>
-    <script src="../source/js/main.js"></script>
+    <script src="../source/js/content.js"></script>
+    <script src="../source/js/hoiio.js"></script>
+    <script src="../source/js/tablesort.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+    
 
 </body>
 </html>

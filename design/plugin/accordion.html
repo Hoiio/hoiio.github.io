@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hoiio Design Standards 2016">
+    <meta name="keywords" content="design, ux, standard, hoiio, framework, html, css, interface, component, semantic">
+    <meta name="author" content="Marcus">
+    <link rel="icon" href="source/favicon.ico">
+
+    <title>Accordion Plugin - Hoiio Design Standards</title>
+    <!-- jQuery --->
+    <script src="../source/js/jquery-2.1.4.min.js"></script>
+    <script src="../source/js/modernizr-custom.js"></script>
+
+    <!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="../dist/semantic.min.css" />
+	<!-- Main styles -->
+	<link rel="stylesheet" type="text/css" href="../source/css/hoiio.css" />
+	<!-- Highlight -->
+	<link rel="stylesheet" type="text/css" href="../source/css/tomorrow.css" />
+	
+</head>
+<body id="plugin-accordion">
+    <div class="hoiio loading"></div>
+    <div class="ui fluid container">
+        <div class="ui grid">
+            <div class="first column"></div>
+            <div class="second column">
+                <div class="ui grid">
+                    <div class="column" id="page-name">
+                        <div class="category">Plugin</div>
+                        <h1 class="name">Accordion</h1>
+                    </div>
+                </div>
+                <div class="ui grid">
+                    <div class="column" id="content">
+                        <!-- Standard -->
+                        <div id="definition">
+                            <div class="block">
+                                <p class="description">The accordion plugin makes it easy to make collapsing divisions of the page.
+                                </p>
+                                <!--
+                                <blockquote>If you want to include this plugin functionality individually, then you will need <b>modal.js</b>. Else, as mentioned in the chapter <a href="/bootstrap/bootstrap_plugins_overview.htm">Bootstrap Plugins Overview</a>, you can include <i>bootstrap.js</i> or the minified <i>bootstrap.min.js</i>.</blockquote>-->
+
+                                <h3 id="initializing-an-accordion" class="non counter">Initializing an accordion</h3>
+                                <p class="description">The accordion method can be activated with a single line of JavaScript.
+                                </p>
+                                <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;script&gt;
+$('.ui.accordion').accordion();
+&lt;/script&gt;
+</code>
+</pre>
+
+                                </div>
+                                
+                            
+                                <h3 id="an-accordion" class="non counter">An Accordion</h3>
+                                <p class="description">An accordion contains a title, content and an icon.
+                                </p>
+                                <div class="display">
+                                    
+                                    
+                                    
+<div class="ui accordion">
+  <div class="active title">
+    <i class="plus icon"></i>
+    The standard Lorem Ipsum
+  </div>
+  <div class="active content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+  <div class="title">
+    <i class="dropdown icon"></i>
+    Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+  </div>
+  <div class="content">
+    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+  </div>
+  <div class="title">
+    <i class="dropdown icon"></i>
+   1914 translation by H. Rackham
+  </div>
+  <div class="content">
+    <p> Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+  </div>
+</div>
+                     </div>
+                                <p class="usage"><span>Usage</span> :
+                                    <br>- Add classes <code>.ui, .accordion</code> to the <code>&lt;div&gt;</code> element.
+                                <br>- Include <code>title</code> and <code>content</code> .</p>
+                                <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui accordion&quot;&gt;
+    &lt;div class=&quot;title&quot;&gt;
+        This is the accordion title
+    &lt;/div&gt;
+    &lt;div class=&quot;content&quot;&gt;
+        &lt;p&gt;Add some text here.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                        
+                        <!-- Types -->
+                        <div id="types">
+                            <h2>Types</h2>
+                            <!-- Styled -->
+                            <div class="block">
+                                <h3 id="styled" class="non counter">Styled</h3>
+                                <p class="description">An accordion can add basic formatting.</p>
+                                <div class="display">
+<div class="ui styled accordion">
+  <div class="active title">
+    The standard Lorem Ipsum
+  </div>
+  <div class="active content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+  <div class="title">
+    Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+  </div>
+  <div class="content">
+    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+  </div>
+  <div class="title">
+    1914 translation by H. Rackham
+  </div>
+  <div class="content">
+    <p> Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+  </div>
+</div>
+                     </div>
+                                <p class="usage"><span>Usage</span> : insert a class <code>.styled</code> before the class <code>.modal</code>.</p>
+                                <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui styled accordion&quot;&gt;
+    ...
+&lt;/div&gt;
+</code>
+</pre>
+                                </div>
+                            </div>       
+                        </div>
+
+                        <!-- Variation -->
+                        <div id="variations">
+                            <h2>Variations</h2>
+                        <!-- Fluid -->
+                        <div class="block">
+                            <h3 id="fluid" class="title">Fluid</h3>
+                            <p class="description">An accordion can take up the width of its container.</p>
+                            <div class="display">
+<div class="ui fluid styled accordion">
+  <div class="active title">
+    The standard Lorem Ipsum
+  </div>
+  <div class="active content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+  <div class="title">
+    Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+  </div>
+  <div class="content">
+    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+  </div>
+  <div class="title">
+    1914 translation by H. Rackham
+  </div>
+  <div class="content">
+    <p> Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+  </div>
+</div>
+                     </div>
+                            <p class="usage"><span>Usage</span> : insert a class <code>.fluid</code> before the class <code>.modal</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui fluid modal&quot;&gt;
+    ...
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        <!-- Inverted -->
+                        <div class="block">
+                            <h3 id="inverted" class="title">Inverted</h3>
+                            <p class="description">An accordion can be formatted to appear on dark backgrounds.</p>
+                            <div class="display">
+<div class="ui inverted segment">
+<div class="ui inverted accordion">
+  <div class="active title">
+      <i class="dropdown icon"></i>
+    The standard Lorem Ipsum
+  </div>
+  <div class="active content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+  <div class="title">
+      <i class="dropdown icon"></i>
+    Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+  </div>
+  <div class="content">
+    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+  </div>
+  <div class="title">
+      <i class="dropdown icon"></i>
+    1914 translation by H. Rackham
+  </div>
+  <div class="content">
+    <p> Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+  </div>
+</div>
+                                </div>
+                     </div>
+                                
+                            <p class="usage"><span>Usage</span> : insert a class <code>.inverted</code> before the class <code>.modal</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui inverted accordion&quot;&gt;
+    ...
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                            
+                        <!-- Nested Accordion -->
+                        <div class="block">
+                            <h3 id="nested" class="title">Nested Accordion</h3>
+                            <p class="description">An accordion can have multiple levels of nested content. This content can either be in a nested accordion or simply another level of title and content.</p>
+                            <div class="display">
+<div class="ui styled accordion">
+  <div class="active title">
+    <i class="dropdown icon"></i>
+    Level 1
+  </div>
+  <div class="active content">
+    Welcome to level 1
+    <div class="accordion">
+      <div class="active title">
+          <i class="dropdown icon"></i>
+          Level 1A
+      </div>
+      <div class="active content">
+        <p>Level 1A Contents</p>
+        <div class="accordion">
+          <div class="title">
+              <i class="dropdown icon"></i>
+              Level 1A-A
+          </div>
+          <div class="content">
+              Level 1A-A Contents
+          </div>
+          <div class="title">
+              <i class="dropdown icon"></i>
+              Level 1A-B
+          </div>
+          <div class="content">
+              Level 1A-B Contents
+          </div>
+        </div>
+      </div>
+      <div class="title">
+          <i class="dropdown icon"></i>
+          Level 1B
+      </div>
+      <div class="content">
+          Level 1B Contents
+      </div>
+      <div class="title">
+          <i class="dropdown icon"></i>
+          Level 1C
+      </div>
+      <div class="content">
+          Level 1C Contents
+      </div>
+    </div>
+  </div>
+  <div class="title">
+    <i class="dropdown icon"></i>
+    Level 2
+  </div>
+  <div class="content">
+    <p>Welcome to level 2</p>
+    <div class="accordion">
+      <div class="active title">
+        <i class="dropdown icon"></i>
+        Level 2A
+      </div>
+      <div class="active content">
+        <p>Level 2A Contents</p>
+        <div class="accordion">
+          <div class="title">
+              <i class="dropdown icon"></i>
+              Level 2A-A
+          </div>
+          <div class="content">
+              Level 2A-A Contents
+          </div>
+          <div class="title">
+              <i class="dropdown icon"></i>
+              Level 2A-B
+          </div>
+          <div class="content">
+              Level 2A-B Contents
+          </div>
+        </div>
+      </div>
+      <div class="title">
+          <i class="dropdown icon"></i>
+          Level 2B
+      </div>
+      <div class="content">
+          Level 2B Contents
+      </div>
+      <div class="title">
+          <i class="dropdown icon"></i>
+          Level 2C
+      </div>
+      <div class="content">
+          Level 2C Contents
+      </div>
+    </div>
+  </div>
+</div> 
+                                </div>
+                    
+                                
+                            <p class="usage"><span>Usage</span> : add an <code>accordion</code> block into any <code>content</code> block to add a new accordion.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui accordion&quot;&gt;
+    &lt;div class=&quot;title&quot;&gt;
+        This is the accordion title
+    &lt;/div&gt;
+    &lt;div class=&quot;content&quot;&gt;
+        &lt;p&gt;Add some text here.&lt;/p&gt;
+        &lt;div class=&quot;ui accordion&quot;&gt;
+            ...
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>  
+                            
+                        <!-- Accordion Menu -->
+                        <div class="block">
+                            <h3 id="accordion-menu" class="title">Accordion Menu</h3>
+                            <p class="description">An accordion can be used to create content drawers inside a <a href="/design/component/menu">vertical menu</a>.</p>
+                            <div class="display">
+
+<div class="ui accordion vertical menu">
+  <div class="item">
+    <a class="active title">
+      <i class="dropdown icon"></i>
+      Size
+    </a>
+    <div class="active content">
+      <div class="ui form">
+        <div class="grouped fields">
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="size" value="small">
+              <label>Small</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="size" value="medium">
+              <label>Medium</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="size" value="large">
+              <label>Large</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="size" value="x-large">
+              <label>X-Large</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="item">
+    <a class="title">
+      <i class="dropdown icon"></i>
+      Colors
+    </a>
+    <div class="content">
+      <div class="ui form">
+        <div class="grouped fields">
+          <div class="field">
+            <div class="ui checkbox">
+              <input type="checkbox" name="small">
+              <label>Red</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui checkbox">
+              <input type="checkbox" name="medium">
+              <label>Orange</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui checkbox">
+              <input type="checkbox" name="large">
+              <label>Green</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui checkbox">
+              <input type="checkbox" name="x-large">
+              <label>Blue</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+                                </div>
+                    
+                                
+                            <p class="usage"><span>Usage</span> : 
+                                <br>- Insert a class <code>.accordion</code> before the classes <code>.vertical, .menu</code>.
+                                <br>- An item contains <code>title</code> and <code>content</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui accordion vertical accordion&quot;&gt;
+    &lt;div class=&quot;item&quot;&gt;
+        &lt;div class=&quot;title&quot;&gt;...&lt;/div&gt;
+        &lt;div class=&quot;content&quot;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>      
+
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="column" id="table-content">
+                        <div id="sticky-anchor"></div>
+                        <div id="sticky">
+                        <ul class="category">    
+                            <li class="title">Definition</li>    
+                            <li class="item"><a href="#initializing-an-accordion">Initializing An Accordion</a></li>  
+                            <li class="item"><a href="#an-accordion">An Accordion</a></li>
+                            
+                            <li class="title">Type</li> 
+                            <li class="item"><a href="#styled">Styled</a></li>
+                            
+                            <li class="title">Variations</li>
+                            <li class="item"><a href="#fluid">Fluid</a></li>
+                            <li class="item"><a href="#inverted">Inverted</a></li>
+                            <li class="item"><a href="#nested">Nested Accordion</a></li>
+                            <li class="item"><a href="#accordion-menu">Accordion Menu</a></li>
+                        </ul>
+                    </div>
+                
+                </div>
+            
+                </div>
+                <div class="ui grid">
+                    <div class="column" id="footer">
+                        <div class="inner">
+                            <p>© Copyright 2016. Hoiio Pte Ltd.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+     
+        </div>
+    </div>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../dist/semantic.min.js"></script>
+	<script src="../source/js/highlight.pack.js"></script>
+    <script src="../source/js/content.js"></script>
+    <script src="../source/js/hoiio.js"></script>
+    <script src="../source/js/tablesort.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+</body>
+</html>

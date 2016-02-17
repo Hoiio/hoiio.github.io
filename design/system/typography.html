@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hoiio Design Standards 2016">
+    <meta name="keywords" content="design, ux, standard, hoiio, framework, html, css, interface, component, semantic">
+    <meta name="author" content="Marcus">
+    <link rel="icon" href="source/favicon.ico">
+
+    <title>Typography - Hoiio Design Standards</title>
+    <!-- jQuery --->
+    <script src="../source/js/jquery-2.1.4.min.js"></script>
+    <script src="../source/js/modernizr-custom.js"></script>
+
+    <!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="../dist/semantic.min.css" />
+	<!-- Main styles -->
+	<link rel="stylesheet" type="text/css" href="../source/css/hoiio.css" />
+	<!-- Highlight -->
+	<link rel="stylesheet" type="text/css" href="../source/css/tomorrow.css" />
+	
+</head>
+<body id="system-typography">
+    <div class="hoiio loading"></div>
+    <div class="ui fluid container">
+        <div class="ui grid">
+            <div class="first column"></div>
+            <div class="second column">
+                <div class="ui grid">
+                    <div class="column" id="page-name">
+                        <div class="category">System</div>
+                        <h1 class="name">Typography</h1>
+                    </div>
+                </div>
+                <div class="ui grid">
+                    <div class="column" id="content">
+                        <!-- Standard -->
+                        <div id="definition">
+                            <!-- Arial -->
+                            <div class="block">
+                                <h3 id="arial" class="non counter">Arial font</h3>
+                                <p class="description">We choose <b>Arial</b> as a main font because of its friendly, professional, and classical typeface. It is also used in graphic design and web design all over the place.</p>
+                                <div class="display">
+                        <div class="ui grid">
+                            <div class="seven column row">
+                                <div class="column">
+                                    <h1 class="h1-reset font-box-arial">Aa</h1>
+                                </div>
+                                <div class="column">
+                                    <h1 class="h1-reset font-box-arial">Bb</h1>
+                                </div>
+                                <div class="column">
+                                    <h1 class="h1-reset font-box-arial">Cc</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                
+                            </div>
+                            
+                            <!-- Paragraph -->
+                            <div class="block">
+                                <h3 id="paragraph" class="non counter">Paragraph</h3>
+                        <p class="description">With 14px font size and 25px line height.</p>
+                        <div class="display">
+    <div class="ui grid">
+        <div class="two column row">
+            <div class="column">
+                <h5>1ST COLUMN</h5>
+                <p class="paragraph">Like its master, it was entirely devoid of hair, but was of a dark slate color and exceeding smooth and glossy. Its belly was white, and its legs shaded from the slate of its shoulders and hips to a vivid yellow at the feet. The feet themselves were heavily padded and nailless, which fact had also contributed to the noiselessness of their approach, and, in common with a multiplicity of legs, is a characteristic feature of the fauna of Mars.</p>
+            </div>
+            <div class="column">
+                <h5>2ND COLUMN</h5>
+                <p class="paragraph">Dispatching one of my men to Tars Tarkas for a detail of fifty Tharks, with word of my intentions, I ordered ten warriors to capture and open one of the great gates while with the nine remaining I took the other. We were to do our work quietly, no shots were to be fired and no general advance made until I had reached the palace with my fifty Tharks.</p>
+        </div>
+    </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                            
+                            <!-- Headers -->
+                    <div class="block">
+                        <h3 id="headers" class="non counter">Headers</h3>
+                        <div class="display">
+                            <h3 class="non counter">Heading 1</h3>
+                            <h1 class="ui header h1-reset">The quick brown fox jumps over the lazy dog.</h1>
+                            <h3 class="non counter">Heading 2</h3>
+                            <h2 class="ui header h2-reset">The quick brown fox jumps over the lazy dog.</h2>
+                            <h3 class="non counter">Heading 3</h3>
+                            <h3 class="ui header h3-reset">The quick brown fox jumps over the lazy dog.</h3>  
+                            <h3 class="non counter">Heading 4</h3>
+                            <h4 class="ui header">The quick brown fox jumps over the lazy dog.</h4>
+
+                            <h3 class="non counter">Heading 5</h3>
+                            <h5 class="ui header">The quick brown fox jumps over the lazy dog.</h5>
+                            <h3 class="non counter">Sub header</h3>
+                            <div class="ui sub header">Have you heard about our mailing list?</div>
+
+                        </div>
+                       <p class="usage"><span>Usage</span> : add classes <code>.ui, .header</code> to the heading element.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;h1 class=&quot;ui header&quot;&gt;First header&lt;/h1&gt;
+&lt;h2 class=&quot;ui header&quot;&gt;Second header&lt;/h2&gt;
+&lt;h3 class=&quot;ui header&quot;&gt;Third header&lt;/h3&gt;
+&lt;h4 class=&quot;ui header&quot;&gt;Fourth header&lt;/h4&gt;
+&lt;h5 class=&quot;ui header&quot;&gt;Fifth header&lt;/h5&gt;
+&lt;div class=&quot;ui sub header&quot;&gt;Sub header&lt;/div&gt;
+</code>
+</pre>
+                        </div>             
+                    </div>
+                        </div>
+
+                        <!-- Types -->
+                        <div id="types">
+                            <h2>Types</h2>
+                            <!-- Image -->
+                    <div class="block">
+                        <h3 id="image" class="title">
+                            Image  
+                            
+                        </h3>
+                        <p class="description">A header may contain an image.</p>
+                        <div class="display">
+<h2 class="ui header h2-reset">
+  <img class="ui image" src="http://semantic-ui.com/images/icons/school.png">
+  <div class="content">
+    Learn More
+  </div>
+</h2>
+<img class="ui wireframe image" src="../source/img/short-paragraph.png">                            
+                            
+<h2 class="ui header h2-reset">
+  <img src="http://semantic-ui.com/images/avatar2/large/patrick.png" class="ui round image">
+  Patrick
+</h2>  
+<img class="ui wireframe image" src="../source/img/short-paragraph.png">                             
+                        </div>
+                        <p class="usage"><span>Usage</span> : add an <code>&lt;img&gt;</code> element with classes <code>.ui, .image</code> into the heading.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;h2 class=&quot;ui header&quot;&gt;
+  &lt;img class=&quot;ui image&quot; src=&quot;image.png&quot;&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    Learn More
+  &lt;/div&gt;
+&lt;/h2&gt;
+</code>
+</pre>
+                        </div>
+                    </div>
+                    
+                    <!-- Subheader -->
+                    <div class="block">
+                        <h3 id="subheader" class="title">
+                            Subheader  
+                            
+                        </h3>
+                        <p class="description">Headers may contain subheaders.</p>
+                        <div class="display">
+<h2 class="ui header h2-reset">
+  Account Settings
+  <div class="sub header">Manage your account settings and set e-mail preferences.</div>
+</h2>                       
+<img class="ui wireframe image" src="../source/img/short-paragraph.png" data-pin-nopin="true">          
+                            
+<h1 class="ui header h1-reset">
+  H1
+  <div class="sub header">Sub Header</div>
+</h1>
+<h2 class="ui header h2-reset">
+  H2
+  <div class="sub header">Sub Header</div>
+</h2>
+<h3 class="ui header h3-reset">
+  H3
+  <div class="sub header">Sub Header</div>
+</h3>
+<h4 class="ui header">
+  H4
+  <div class="sub header">Sub Header</div>
+</h4>
+<h5 class="ui header">
+  H5
+  <div class="sub header">Sub Header</div>
+</h5>                            
+                        </div>
+                        <p class="usage"><span>Usage</span> : add a <code>&lt;div&gt;</code> element with classes <code>.sub, .header</code> into the heading.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;h1 class=&quot;ui header&quot;&gt;
+    H1
+    &lt;div class=&quot;sub header&quot;&gt;Sub Header&lt;/div&gt;
+&lt;/h1&gt;
+</code>
+</pre>
+                        </div>
+                    </div>      
+                        </div>
+
+                        <!-- Variation -->
+                        <div id="variations">
+                            <h2>Variations</h2>
+                            <!-- Color -->
+                    <div class="block">
+                        <h3 id="color" class="title">
+                            Color
+                            
+                        </h3>
+                        <p class="description">A header is formatted with different colors.</p>
+                        <div class="display">
+<h4 class="ui primary header">Primary</h4>
+<h4 class="ui info header">Info</h4>
+<h4 class="ui success header">Success</h4>
+<h4 class="ui error header">Error</h4>
+<h4 class="ui warning header">Warning</h4>
+                   
+                        </div>
+                        <p class="usage"><span>Usage</span> : insert classes of colors before the class <code>.header</code>.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;h4 class=&quot;ui primary header&quot;&gt;Primary&lt;/h4&gt;
+&lt;h4 class=&quot;ui info header&quot;&gt;Info&lt;/h4&gt;
+&lt;h4 class=&quot;ui success header&quot;&gt;Success&lt;/h4&gt;
+&lt;h4 class=&quot;ui error header&quot;&gt;Error&lt;/h4&gt;
+&lt;h4 class=&quot;ui warning header&quot;&gt;Warning&lt;/h4&gt;
+</code>
+</pre>
+                        </div>
+                    </div>
+                    
+                    <!-- Text Alignment -->
+                    <div class="block">
+                        <h3 id="text-alignment" class="title">
+                            Text Alignment 
+                            
+                        </h3>
+                        <p class="description">A header can have its text aligned to a side. Left or right aligned text is sticked with the margin. When a block of text is justified, each line fills the entire space from left to right.</p>
+                        <div class="display">
+<div class="ui segment">
+  <h4 class="ui left aligned header">
+    Left
+  </h4>
+  <h4 class="ui right aligned header ">
+    Right
+  </h4>
+  <h4 class="ui center aligned header">
+    Center
+  </h4>
+  <h4 class="ui justified header">
+    This should take up the full width even if only one line
+  </h4>
+</div>
+                   
+                        </div>
+                        <p class="usage"><span>Usage</span> : insert a class <code>.aligned</code> before the class <code>.header</code>.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;h4 class=&quot;ui left aligned header&quot;&gt;
+    Left
+&lt;/h4&gt;
+&lt;h4 class=&quot;ui right aligned header &quot;&gt;
+    Right
+&lt;/h4&gt;
+&lt;h4 class=&quot;ui center aligned header&quot;&gt;
+    Center
+&lt;/h4&gt;
+&lt;h4 class=&quot;ui justified header&quot;&gt;
+    This should take up the full width even if only one line
+&lt;/h4&gt;
+</code>
+</pre>
+                        </div>
+                    </div>
+                    
+                    <!-- Dividing -->
+                    <div class="block">
+                        <h3 id="dividing" class="title">
+                            Dividing  
+                            
+                        </h3>
+                        <p class="description">A header is formatted to divide itself from the content below it.</p>
+                        <div class="display">
+<h2 class="ui dividing header h2-reset">
+  Dividing Header
+</h2>
+<img class="ui wireframe image" src="../source/img/short-paragraph.png"> 
+                            
+<h2 class="ui dividing primary header h2-reset">
+  Dividing Primary Header
+</h2>
+<img class="ui wireframe image" src="../source/img/short-paragraph.png">                             
+                        </div>
+                        <p class="usage"><span>Usage</span> : insert a class <code>.dividing</code> before the class <code>.header</code>.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;h2 class=&quot;ui dividing header&quot;&gt;
+  Dividing Header
+&lt;/h2&gt;
+
+&lt;h2 class=&quot;ui dividing primary header&quot;&gt;
+  Dividing Header
+&lt;/h2&gt;
+</code>
+</pre>
+                        </div>
+                    </div>
+                    
+                    <!-- Block -->
+                    <div class="block">
+                        <h3 id="block" class="title">
+                            Block  
+                            
+                        </h3>
+                        <p class="description">A header is formatted to appear inside a content block.</p>
+                        <div class="display">
+
+<h5 class="ui block header">
+  Block Header
+</h5>
+<img class="ui wireframe image" src="../source/img/short-paragraph.png">                               
+                        </div>
+                        <p class="usage"><span>Usage</span> : insert a class <code>.block</code> before the class <code>.header</code>.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;h5 class=&quot;ui block header&quot;&gt;
+  Dividing Header
+&lt;/h5&gt;
+</code>
+</pre>
+                        </div>
+                    </div>
+                    
+                    <!-- Attached -->
+                    <div class="block">
+                        <h3 id="attached" class="title">
+                            Attached 
+                            
+                        </h3>
+                        <p class="description">A header is used with segment to attach to other content.</p>
+                        <div class="display">
+<h5 class="ui top attached header">
+  Top Attached
+</h5>
+<div class="ui attached segment">
+  <img class="ui wireframe image" src="../source/img/short-paragraph.png">   
+</div>
+<h5 class="ui attached header">
+  Attached
+</h5>
+<div class="ui attached segment">
+  <img class="ui wireframe image" src="../source/img/short-paragraph.png">   
+</div>
+<h5 class="ui bottom attached header">
+  Bottom Attached
+</h5>
+                   
+                        </div>
+                        <p class="usage"><span>Usage</span> : insert a class <code>.attached</code> before the class <code>.header</code>.</p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;h5 class=&quot;ui top attached header&quot;&gt;
+  Top Attached
+&lt;/h5&gt;
+&lt;div class=&quot;ui attached segment&quot;&gt;
+  &lt;img class=&quot;ui image&quot; src=&quot;image.png&quot;&gt;   
+&lt;/div&gt;
+&lt;h5 class=&quot;ui attached header&quot;&gt;
+  Attached
+&lt;/h5&gt;
+&lt;div class=&quot;ui attached segment&quot;&gt;
+  &lt;img class=&quot;ui image&quot; src=&quot;image.png&quot;&gt;      
+&lt;/div&gt;
+&lt;h5 class=&quot;ui bottom attached header&quot;&gt;
+  Bottom Attached
+&lt;/h5&gt;
+</code>
+</pre>
+                        </div>
+                    </div>
+                      
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="column" id="table-content">
+                        <div id="sticky-anchor"></div>
+                        <div id="sticky">
+                        <ul class="category">    
+                            <li class="title">Definition</li>    
+                            <li class="item"><a href="#arial">Arial Font</a></li>
+                            <li class="item"><a href="#paragraph">Paragraph</a></li>
+                            <li class="item"><a href="#headers">Hearders</a></li>
+                            <li class="title">Types</li>    
+                            <li class="item"><a href="#image">Image</a></li>
+                            <li class="item"><a href="#subheader">Subheader</a></li>
+                            <li class="title">Variations</li>    
+                            <li class="item"><a href="#color">Color</a></li>
+                            <li class="item"><a href="#text-alignment">Text Alignment</a></li>
+                            <li class="item"><a href="#dividing">Dividing</a></li>
+                            <li class="item"><a href="#block">Block</a></li>
+                            <li class="item"><a href="#attached">Attached</a></li>
+                        </ul>
+                    </div>
+                
+                </div>
+            
+                </div>
+                <div class="ui grid">
+                    <div class="column" id="footer">
+                        <div class="inner">
+                            <p>© Copyright 2016. Hoiio Pte Ltd.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+     
+        </div>
+    </div>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../dist/semantic.min.js"></script>
+	<script src="../source/js/highlight.pack.js"></script>
+    <script src="../source/js/content.js"></script>
+    <script src="../source/js/hoiio.js"></script>
+    <script src="../source/js/tablesort.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+</body>
+</html>

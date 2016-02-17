@@ -17,51 +17,67 @@
     <!-- Bootstrap -->
 	<link rel="stylesheet" type="text/css" href="dist/semantic.min.css" />
 	<!-- Main styles -->
-	<link rel="stylesheet" type="text/css" href="source/css/hoiio-semantic.css" />
+	<link rel="stylesheet" type="text/css" href="source/css/hoiio.css" />
 	<!-- Highlight -->
 	<link rel="stylesheet" type="text/css" href="source/css/tomorrow.css" />
 	
 </head>
-<body>
+<body id="component-breadcrumb">
     <div class="hoiio loading"></div>
-    <div class="ui grid container" id="page">
-        <div class="row" id="header">
-            <div class="one wide column">
-                <a href="/design/" class='logo'><i class="icon compass"></i></a>
-            </div>
-            <div class="twelve wide column">
-                <div class="heading"><a href="/design/">Design Standards</a></div>
-            </div>
-            <div class="three wide column">
-                <div class="right aligned poweredby">Powered by<a href="http://hoiio.com"><img class="middle aligned" src="source/img/hoiio-logo.png"/></a></div>
-            </div>
-        </div>
-        
-        <div class="row" id="content">
-            <div class="column">
-            </div>
-            <div class="column" id="sidebar">
-                <nav></nav>
-            </div>
-            <div class="column" id="content">
-                <!-- Content -->
-                <h1 class="name">Introduction</h1>
-                <div class="present">
-                    
+    <div class="ui fluid container">
+        <div class="ui grid">
+            <div class="first column"></div>
+            <div class="second column">
+                <div class="ui grid">
+                    <div class="column" id="page-name">
+                        <div class="category">Getting Started</div>
+                        <h1 class="name">Introduction</h1>
+                    </div>
                 </div>
+                <div class="ui grid">
+                    <div class="column" id="content">
+                        
+                    
+                        
+                    </div>
+                    <!--<div class="column" id="table-content">
+                        <div id="sticky-anchor"></div>
+                        <div id="sticky">
+                        <ul class="category">    
+                            <li class="title">Contents</li>    
+                            <li class="item"><a href="#section">Section</a></li>
+                            <li class="item"><a href="#divider">Divider</a></li> 
+                            <li class="item"><a href="#link">Link</a></li> 
+                            <li class="title">States</li>    
+                            <li class="item"><a href="#active">Active</a></li>
+                            <li class="title">Variations</li>    
+                            <li class="item"><a href="#sizes">Sizes</a></li>
+                        </ul>
+                    </div>
+                
+                </div>-->
             
-            </div>  
-        </div>
-        <div class="row" id="footer">
-            <footer class="footer"></footer>    
+                </div>
+               <!-- <div class="ui grid">
+                    <div class="column" id="footer">
+                        <div class="inner">
+                            <p>© Copyright 2016. Hoiio Pte Ltd.</p>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        
+     
         </div>
     </div>
-  
     <!-- Latest compiled and minified JavaScript -->
     <script src="dist/semantic.min.js"></script>
 	<script src="source/js/highlight.pack.js"></script>
-    <script src="source/js/main.js"></script>
+    <script src="source/js/content.js"></script>
+    <script src="source/js/hoiio.js"></script>
+    <script src="source/js/tablesort.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+    
 
 </body>
 </html>

@@ -17,52 +17,39 @@
     <!-- Bootstrap -->
 	<link rel="stylesheet" type="text/css" href="../dist/semantic.min.css" />
 	<!-- Main styles -->
-	<link rel="stylesheet" type="text/css" href="../source/css/hoiio-semantic.css" />
+	<link rel="stylesheet" type="text/css" href="../source/css/hoiio.css" />
 	<!-- Highlight -->
 	<link rel="stylesheet" type="text/css" href="../source/css/tomorrow.css" />
 	
 </head>
-<body id="detail">
+<body id="component-checkbox">
     <div class="hoiio loading"></div>
-    <div class="ui grid container component-checkbox">
-        <div class="row" id="header">
-            <div class="one wide column">
-                <a href="/design/" class='logo'><i class="icon compass"></i></a>
-            </div>
-            <div class="twelve wide column">
-                <div class="heading">Design Standards</div>
-            </div>
-            <div class="three wide column">
-                <div class="right aligned poweredby">Powered by<a href="http://hoiio.com"><img class="middle aligned" src="../source/img/hoiio-logo.png"/></a></div>
-            </div>
-        </div>
-        
-        <div class="row" id="content">
-            <div class="column">
-            </div>
-            <div class="column" id="sidebar">
-                <nav></nav>
-            </div>
-            <div class="column" id="content">
-                <!-- Content -->
-                <div class="category">component</div>
-                <h1 class="name">Checkbox</h1>
-                <div class="present">
-                    <div class="ui secondary pointing menu">
-                        <a class="item definition" data-tab="first">Definition</a>
-                        <a class="item state" data-tab="second"> States </a>
-                        <a class="item types" data-tab="third"> Types </a>
+    <div class="ui fluid container">
+        <div class="ui grid">
+            <div class="first column"></div>
+            <div class="second column">
+                <div class="ui grid">
+                    <div class="column" id="page-name">
+                        <div class="category">Component</div>
+                        <h1 class="name">Checkbox</h1>
                     </div>
-                    <!-- Standard -->
-                    <div class="ui tab segment first" data-tab="first">
-                        <div class="block">
-                            <p class="description">
-Check boxes are used when we want to let user select one or more options from a set of alternatives. If only one option is to be selected, we use radio buttons instead. A checkbox does not require Javascript to function; it works with an input with a label.</p>
-                            <div class="display">
+                </div>
+                <div class="ui grid">
+                    <div class="column" id="content">
+                        <!-- Standard -->
+                        <div id="definition">
+                            <div class="block">
+                                <p class="description">A checkbox are used when we want to let user select one or more options from a set of alternatives. If only one option is to be selected, we use radio buttons instead. A checkbox does not require Javascript to function; it works with an input with a label.</p>
+                                
+
+                                <h3 id="a-checkbox" class="non counter">A checkbox</h3>
+                                
+                                <div class="display">
 <div class="ui checkbox">
     <input type="checkbox" name="example">
     <label>Make my profile visible</label>
-</div>             
+</div>     
+                                  
                             </div>
                             <p class="usage"><span>Usage</span> : <br>
                                 - Add classes <code>.ui, .checkbox</code> to the <code>&lt;div&gt;</code> element.
@@ -77,15 +64,52 @@ Check boxes are used when we want to let user select one or more options from a 
 &lt;/div&gt;   
 </code>
 </pre>
-                    </div>
+                            </div>
+                                <!-- Click-on-label -->
+                        <div class="block">
+                            <h3 id="clicking-on-label" class="non counter">Clicking on label </h3>
+                            <p class="description">Clicking on a label next to box can check this box. It only works with checkbox and <a href="#radio">radio</a>.</p>
+                            <div class="display">
+<div class="ui checkbox">
+  <input type="checkbox" id="group" name="example" class="hidden">
+  <label for="group">Remember me</label>
+</div>                            
                         </div>
-                    </div>
-                    
-                    <!-- States --> 
-                    <div class="ui tab segment" data-tab="second">
+                        <p class="usage"><span>Usage</span> : 
+                            <br> - Add an <code>id</code> attribute with its name to <code>&lt;input&gt;</code> element. 
+                            <br> - Add a <code>for</code> attribute which name is same as <code>id</code> attribute's into <code>label</code>.
+                            <br> - Add a class <code>.hidden</code> to the <code>&lt;input&gt;</code> element for showing label hover if necessary.
+                            
+                            </p>
+                        <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui checkbox&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;group&quot; name=&quot;example&quot; class=&quot;hidden&quot;&gt;
+  &lt;label for=&quot;group&quot;&gt;Remember me&lt;/label&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                        </div>
+                        </div>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+
+                        
+
+                        <!-- States --> 
+                    <div id="states">
+                        <h2>States</h2>
                         <!-- Disabled -->
                         <div class="block">
-                            <h3 id="disabled" class="title">Disabled <a href="#disabled"><i class="link icon"></i></a></h3>
+                            <h3 id="disabled" class="title">Disabled </h3>
                             <p class="description">A checkbox is unable to change states.</p>
                             <div class="display">
 <div class="ui disabled checkbox">
@@ -110,23 +134,46 @@ Check boxes are used when we want to let user select one or more options from a 
                         
                         <!-- Checked -->
                         <div class="block">
-                            <h3 id="active" class="title">Checked <a href="#active"><i class="link icon"></i></a></h3>
+                            <h3 id="active" class="title">Checked </h3>
                             <div class="display">
-<div class="ui checked checkbox">
-  <input type="checkbox" checked="">
+<div class="ui checkbox">
+  <input type="checkbox" checked>
   <label>Active</label>
 </div>
                             </div>
                             <p class="usage"><span>Usage</span> :
-                                <br>- Insert a class <code>.checked</code> before the class <code>.checkbox</code>.
-                                <br>- Add <code>checked = ""</code> to the input element, to help with accessibility.
+                                add a <code>checked</code> attribute to the input element.
                             </p>
                             <div class="source">
 <pre>
 <code class="html hljs xml">
-&lt;div class=&quot;ui checked checkbox&quot;&gt;
-  &lt;input type=&quot;checkbox&quot; checked=&quot;&quot;&gt;
+&lt;div class=&quot;ui checkbox&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; checked&gt;
   &lt;label&gt;Active&lt;/label&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Read-only -->
+                        <div class="block">
+                            <h3 id="read-only" class="title">Read-only</h3>
+                            <div class="display">
+<div class="ui checkbox">
+  <input type="checkbox" class="hidden">
+  <label>Read-only</label>
+</div>
+                            </div>
+                            <p class="usage"><span>Usage</span> :
+                                add a class <code>.hidden</code>to the input element.
+                            </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;div class=&quot;ui checkbox&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; class=&quot;hidden&quot;&gt;
+  &lt;label&gt;Read-only&lt;/label&gt;
 &lt;/div&gt;
 </code>
 </pre>
@@ -136,44 +183,50 @@ Check boxes are used when we want to let user select one or more options from a 
                     </div>
                     
                     <!-- Types -->
-                    <div class="ui tab segment" data-tab="third">
-                        <!-- Click-on-label -->
-                        <div class="block">
-                            <h3 id="click-label" class="title">Click on label <a href="#click-label"><i class="link icon"></i></a></h3>
-                            <p class="description">Clicking on a label next to box can check this box. It only works with checkbox and radio.</p>
-                            <div class="display">
-<div class="ui checkbox">
-  <input type="checkbox" id="group" name="example" class="hidden">
-  <label for="group">Remember me</label>
-</div>                            
-                        </div>
-                        <p class="usage"><span>Usage</span> : 
-                            <br> - Add a <code>.hidden</code> class and <code>id</code> attribute with its name to <code>&lt;input&gt;</code> element. 
-                            <br> - Add into <code>label</code> a <code>for</code> attribute which name is same as <code>id</code> attribute's.
-                            
-                            </p>
-                        <div class="source">
-<pre>
-<code class="html hljs xml">
-&lt;div class=&quot;ui checkbox&quot;&gt;
-  &lt;input type=&quot;checkbox&quot; id=&quot;group&quot; name=&quot;example&quot; class=&quot;hidden&quot;&gt;
-  &lt;label for=&quot;group&quot;&gt;Remember me&lt;/label&gt;
-&lt;/div&gt;
-</code>
-</pre>
-                        </div>
-                        </div>
+                    <div id="types">
+                        <h2>Types</h2>
+                        
                         
                         
                         <!-- Radio -->
                         <div class="block">
-                            <h3 id="radio" class="title">Radio <a href="#radio"><i class="link icon"></i></a></h3>
+                            <h3 id="radio" class="title">Radio </h3>
                             <p class="description">A checkbox is formed as a radio element. This means it is an exclusive option.</p>
                             <div class="display">
 <div class="ui radio checkbox">
   <input type="radio" name="radio" checked="checked">
   <label>Radio choice</label>
 </div> 
+ <br><br>                               
+<div class="ui form">
+  <div class="inline fields">
+    <label>How often do you use checkboxes?</label>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="frequency" checked="checked">
+        <label>Once a week</label>
+      </div>
+    </div>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="frequency">
+        <label>2-3 times a week</label>
+      </div>
+    </div>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="frequency">
+        <label>Once a day</label>
+      </div>
+    </div>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="frequency">
+        <label>Twice a day</label>
+      </div>
+    </div>
+  </div>
+</div>                                
                             </div>
                             <p class="usage"><span>Usage</span> : 
                                 <br>- Insert a class <code>.radio</code> to the class <code>.checkbox</code>.
@@ -192,7 +245,7 @@ Check boxes are used when we want to let user select one or more options from a 
                         </div>
                         <!-- Slider -->
                         <div class="block">
-                            <h3 id="slider" class="title">Slider <a href="#slider"><i class="link icon"></i></a></h3>
+                            <h3 id="slider" class="title">Slider </h3>
                             <p class="description">A checkbox is formatted to emphasize the current selection state.</p>
                             <div class="display">
 <div class="ui slider checkbox">
@@ -215,7 +268,7 @@ Check boxes are used when we want to let user select one or more options from a 
                         
                         <!-- Toggle -->
                         <div class="block">
-                            <h3 id="toggle" class="title">Toggle <a href="#toggle"><i class="link icon"></i></a></h3>
+                            <h3 id="toggle" class="title">Toggle </h3>
                             <p class="description">A checkbox is formatted to emphasize the current selection state.</p>
                             <div class="display">
 <div class="ui toggle checkbox">
@@ -237,32 +290,55 @@ Check boxes are used when we want to let user select one or more options from a 
                             </div>
                         </div>
                     </div>
-                    
+                        
+
+                        
+                        
+                    </div>
+                    <div class="column" id="table-content">
+                        <div id="sticky-anchor"></div>
+                        <div id="sticky">
+                        <ul class="category">    
+                            <li class="title">Definition</li>    
+                            <li class="item"><a href="#a-checkbox">A Checkbox</a></li>  
+                            <li class="item"><a href="#clicking-on-label">Clicking on label</a></li>
+                            
+                            <li class="title">States</li>
+                            <li class="item"><a href="#disabled">Disabled</a></li>
+                            <li class="item"><a href="#active">Active</a></li>
+                            <li class="item"><a href="#read-only">Read-Only</a></li>
+                            <li class="title">Type</li> 
+                            <li class="item"><a href="#radio">Radio</a></li>
+                            <li class="item"><a href="#slider">Slider</a></li>
+                            <li class="item"><a href="#toggle">Toggle</a></li>
+                            
+                            
+                        </ul>
+                    </div>
+                
                 </div>
             
-            </div>  
-        </div>
-        
-    </div>
-    <div class="ui grid container">
-        <div class="row">
-            <div class="one wide column">
-            </div>
-            <div class="six wide column">
-                     <footer class="footer">
-                    <div class="inner">
-                        <p>© Copyright 2016. Hoiio Pte Ltd.</p>
+                </div>
+                <div class="ui grid">
+                    <div class="column" id="footer">
+                        <div class="inner">
+                            <p>© Copyright 2016. Hoiio Pte Ltd.</p>
+                        </div>
                     </div>
-                </footer>
+                </div>
             </div>
+        
+     
         </div>
     </div>
-    
     <!-- Latest compiled and minified JavaScript -->
     <script src="../dist/semantic.min.js"></script>
 	<script src="../source/js/highlight.pack.js"></script>
-    <script src="../source/js/main.js"></script>
+    <script src="../source/js/content.js"></script>
+    <script src="../source/js/hoiio.js"></script>
+    <script src="../source/js/tablesort.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+    
 
 </body>
 </html>

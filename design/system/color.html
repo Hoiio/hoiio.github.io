@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hoiio Design Standards 2016">
+    <meta name="keywords" content="design, ux, standard, hoiio, framework, html, css, interface, component, semantic">
+    <meta name="author" content="Marcus">
+    <link rel="icon" href="source/favicon.ico">
+
+    <title>Color System - Hoiio Design Standards</title>
+    <!-- jQuery --->
+    <script src="../source/js/jquery-2.1.4.min.js"></script>
+    <script src="../source/js/modernizr-custom.js"></script>
+
+    <!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="../dist/semantic.min.css" />
+	<!-- Main styles -->
+	<link rel="stylesheet" type="text/css" href="../source/css/hoiio.css" />
+	<!-- Highlight -->
+	<link rel="stylesheet" type="text/css" href="../source/css/tomorrow.css" />
+	
+</head>
+<body id="system-color">
+    <div class="hoiio loading"></div>
+    <div class="ui fluid container">
+        <div class="ui grid">
+            <div class="first column"></div>
+            <div class="second column">
+                <div class="ui grid">
+                    <div class="column" id="page-name">
+                        <div class="category">System</div>
+                        <h1 class="name">Color Palette</h1>
+                    </div>
+                </div>
+                <div class="ui grid">
+                    <div class="column" id="content">
+                        <!-- Main Colors -->
+                        <div id="main-color">
+                            <h2>Main Colors</h2>
+                            <p class="description">The Hoiio palette includes 5 main colors that applied to mostly web applications.</p>
+                            
+                            <!-- Neutrals -->
+                            <div class="block">
+                                <h3 id="neutral" class="non counter">Neutral Colors</h3>
+                                <p class="description">Includes colors from gray to full dark. In general, these colors are used for default content and help not to distract users, e.g. border, defaul text color or hovering action, etc.</p>
+                                <div class="display neutral">
+
+<div class="color-item">
+    <div class="color-box color-midwhite"></div>
+    <span class="color-code">Mid White</span>#e8e8e8
+</div> 
+<div class="color-item">
+    <div class="color-box color-lightgray"></div>
+    <span class="color-code">Light Gray</span>#eeeeee
+</div>
+<div class="color-item">
+    <div class="color-box color-borderline"></div>
+    <span class="color-code">Mid Gray</span>#cccccc
+</div>                        
+<div class="color-item">
+    <div class="color-box color-gray"></div>
+    <span class="color-code">Gray</span>#767676
+</div>
+<div class="color-item">
+    <div class="color-box color-lightblack"></div>
+    <span class="color-code">Light Black</span>#555555
+</div>
+<div class="color-item">
+    <div class="color-box color-black"></div>
+    <span class="color-code">Black</span>#1b1c1d
+</div> 
+                    </div>
+                            </div>
+                            
+                            <!-- Primary -->
+                            <div class="block">
+                                <h3 id="primary" class="non counter">Primary Colors</h3>
+                                <p class="description">Primary is a bright, warm blue that often used along with neutral colors.</p>
+                    <div class="display primarys">
+<div class="color-item">
+    <div class="color-box color-primary"></div>
+    <span class="color-code">Primary</span>#008bd9
+</div> 
+<div class="color-item">
+    <div class="color-box color-primaryhover"></div>
+    <span class="color-code">in Hover</span>#009bf2
+</div>
+<div class="color-item">
+    <div class="color-box color-primaryfocus"></div>
+    <span class="color-code">in Active</span>#007bbf
+</div>                        
+                     
+                    </div>
+                            </div>
+                            
+                            <!-- Secondary -->
+                            <div class="block">
+                                <h3 id="secondary" class="non counter">Secondary colors</h3>
+                                <p class="description">Secondary color is extracted from neutral colors.</p>
+                                <div class="display primarys">
+<div class="color-item">
+    <div class="color-box color-secondary"></div>
+    <span class="color-code">Secondary</span>#e8e8e8
+</div> 
+<div class="color-item">
+    <div class="color-box color-secondaryhover"></div>
+    <span class="color-code">in Hover</span>#eeeeee
+</div>
+<div class="color-item">
+    <div class="color-box color-secondaryfocus"></div>
+    <span class="color-code">in Active</span>#cccccc
+</div>                        
+                     
+                                </div>
+                            </div> 
+                            
+                            <!-- Action -->
+                            <div class="block">
+                                <h3 id="action" class="non counter">Action colors</h3>
+                                <p class="description">Action colors, which have inherent meaning, is defined to make users take certain action. For example, we use red color to communicate an error. </p>
+                                <div class="display actions">
+<div class="color-item">
+    <div class="color-box color-info"></div>
+    <span class="color-code">Info</span>#
+</div> 
+<div class="color-item">
+    <div class="color-box color-infohover"></div>
+    <span class="color-code">in Hover</span>#
+</div>
+<div class="color-item">
+    <div class="color-box color-infofocus"></div>
+    <span class="color-code">in Active</span>#
+</div>                        
+                     
+                                </div>
+                                <div class="display actions">
+<div class="color-item">
+    <div class="color-box color-success"></div>
+    <span class="color-code">Success</span>#19b37b
+</div> 
+<div class="color-item">
+    <div class="color-box color-successhover"></div>
+    <span class="color-code">in Hover</span>#
+</div>
+<div class="color-item">
+    <div class="color-box color-successfocus"></div>
+    <span class="color-code">in Active</span>#
+</div>                        
+                     
+                                </div>
+                                <div class="display actions">
+<div class="color-item">
+    <div class="color-box color-error"></div>
+    <span class="color-code">Error</span>#e64333
+</div>
+<div class="color-item">
+    <div class="color-box color-errorhover"></div>
+    <span class="color-code">in Hover</span>#
+</div>
+<div class="color-item">
+    <div class="color-box color-errorfocus"></div>
+    <span class="color-code">in Active</span>#
+</div>                        
+                     
+                                </div>
+                                <div class="display actions">
+<div class="color-item">
+    <div class="color-box color-warning"></div>
+    <span class="color-code">Warning</span>#e5791a
+</div> 
+<div class="color-item">
+    <div class="color-box color-warninghover"></div>
+    <span class="color-code">in Hover</span>#
+</div>
+<div class="color-item">
+    <div class="color-box color-warningfocus"></div>
+    <span class="color-code">in Active</span>#
+</div>                        
+                     
+                                </div>
+                                
+                            </div> 
+                        </div>
+                        
+                        <div id="">
+                            <h2>Component Colors</h2>
+                        
+                        </div>
+
+                        <!-- Usage -->
+                        <div id="types">
+                            <h2>Usage</h2>
+                            <!--  -->
+                            <div class="block">
+                                <h3 id="basic" class="non counter"></h3>
+                                <p class="description"></p>
+                                <div class="display">
+                 
+                                </div>
+                            </div>       
+                        </div>
+
+                        
+                        
+                    </div>
+                    <div class="column" id="table-content">
+                        <div id="sticky-anchor"></div>
+                        <div id="sticky">
+                        <ul class="category">    
+                            <li class="title">Main Colors</li>    
+                            <li class="item"><a href="#neutral">Neutral Colors</a></li>
+                            <li class="item"><a href="#primary">Primary Colors</a></li>
+                            <li class="item"><a href="#secondary">Secondary Colors</a></li>
+                            <li class="item"><a href="#action">Action Colors</a></li>
+                            <li class="title">Component Colors</li>    
+                            <li class="item"><a href="#message">Message Colors</a>
+                            </li>
+                            <li class="item"><a href="contextual">Contextual Colors</a></li>  
+                            
+                            <li class="title">Usage</li>    
+                            <li class="item"><a href="#">Accessibility</a></li>  
+                            <li class="item"><a href="#"></a></li>  
+                        </ul>
+                    </div>
+                
+                </div>
+            
+                </div>
+                <div class="ui grid">
+                    <div class="column" id="footer">
+                        <div class="inner">
+                            <p>© Copyright 2016. Hoiio Pte Ltd.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+     
+        </div>
+    </div>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../dist/semantic.min.js"></script>
+	<script src="../source/js/highlight.pack.js"></script>
+    <script src="../source/js/content.js"></script>
+    <script src="../source/js/hoiio.js"></script>
+    <script src="../source/js/tablesort.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+</body>
+</html>

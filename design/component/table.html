@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hoiio Design Standards 2016">
+    <meta name="keywords" content="design, ux, standard, hoiio, framework, html, css, interface, component, semantic">
+    <meta name="author" content="Marcus">
+    <link rel="icon" href="source/favicon.ico">
+
+    <title>Table - Hoiio Design Standards</title>
+    <!-- jQuery --->
+    <script src="../source/js/jquery-2.1.4.min.js"></script>
+    <script src="../source/js/modernizr-custom.js"></script>
+
+    <!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="../dist/semantic.min.css" />
+	<!-- Main styles -->
+	<link rel="stylesheet" type="text/css" href="../source/css/hoiio.css" />
+	<!-- Highlight -->
+	<link rel="stylesheet" type="text/css" href="../source/css/tomorrow.css" />
+	
+</head>
+<body id="component-table">
+    <div class="hoiio loading"></div>
+    <div class="ui fluid container">
+        <div class="ui grid">
+            <div class="first column"></div>
+            <div class="second column">
+                <div class="ui grid">
+                    <div class="column" id="page-name">
+                        <div class="category">Component</div>
+                        <h1 class="name">Table</h1>
+                    </div>
+                </div>
+                <div class="ui grid">
+                    <div class="column" id="content">
+                        <!-- Standard -->
+                    <div id="definition">
+                        <div class="block">
+                            <p class="description">A table allows users to arrange data (text, preformatted text, images, links, forms, form fields, other tables, etc.) into rows and columns of cells. Below is some of the table elements.
+                            </p>
+                            <div class="holder demo-table">
+                                <table class="grid">
+                                    <thead>
+                                        <tr>
+                                            <th>Tag</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>&lt;table&gt;</code></td>
+                                            <td>Wrapping element for displaying data in a tabular format.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>&lt;thead&gt;</code></td>
+                                            <td>Container element for table header rows (&lt;tr&gt;) to label table columns.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>&lt;tfoot&gt;</code></td>
+                                            <td>Container element for footer rows (&lt;tr&gt;) to label table columns.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>&lt;tbody&gt;</code></td>
+                                            <td>Container element for table rows (&lt;tr&gt;) in the body of the table.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>&lt;tr&gt;</code></td>
+                                            <td>	Container element for a set of table cells (&lt;td&gt; or &lt;th&gt;) that appears on a single row.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>&lt;td&gt;</code></td>
+                                            <td>Default table cell.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>&lt;th&gt;</code></td>
+                                            <td>Special table cell for column (or row, depending on scope and placement) labels. Must be used within a &lt;thead&gt;</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="display">
+<table class="ui celled table">
+   <thead>
+      <tr>
+          <th>#</th>
+         <th>First Name</th>
+         <th>Last Name</th>
+         <th>Team</th>
+         <th>Status</th>  
+      </tr>
+   </thead>
+   
+   <tbody>
+      <tr>
+    <td>1</td>
+    <td>Jill</td>
+    <td>Smith</td>		
+    <td rowspan="2">Engineer</td>
+    <td>Active</td>      
+  </tr>
+  <tr>
+      <td>2</td>
+    <td>Eve</td>
+    <td>Jackson</td>		
+    
+      <td>Active</td>
+  </tr>
+  <tr>
+      <td>3</td>
+    <td>John</td>
+    <td>Doe</td>		
+    <td>Customer Service</td>
+      <td>Active</td>
+  </tr>
+   </tbody>
+    <tfoot>
+      <tr><th colspan="5">
+      <div class="ui right floated small pagination menu">
+        <a class="icon item">
+          <i class="angle left icon"></i>
+        </a>
+        <a class="item">1</a>
+        <a class="item">2</a>
+        <a class="item">3</a>
+        <a class="item">4</a>
+        <a class="icon item">
+          <i class="angle right icon"></i>
+        </a>
+      </div>
+    </th>
+  </tr>
+   </tfoot>
+</table>                                
+                            </div>
+                            <p class="usage"><span>Usage</span> :
+                                <br>- Add classes <code>.ui, .table</code> to the <code>&lt;table&gt;</code> element.
+                                <br>- In <code>td</code>, use <code>rowspan</code> or <code>colspan</code> attribute to merge rows or columns
+                            </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;table class=&quot;ui table&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;...&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+   
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td rowspan="2"&gt;...&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  
+    &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;th&gt;...&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- States --> 
+                    <div id="states">
+                        <h2>States</h2>
+                        <!-- Disabled -->
+                        <div class="block">
+                            <h3 id="disabled" class="title">Disabled </h3>
+                            <p class="description">A table row or an individual cell can be disabled.</p>
+                            <div class="display">
+<table class="ui table">
+   <thead>
+      <tr>
+          <th>#</th>
+         <th>First Name</th>
+         <th>Last Name</th>
+         <th>Team</th>
+         <th>Status</th>  
+      </tr>
+   </thead>
+   
+   <tbody>
+      <tr class="disabled">
+    <td>1</td>
+    <td>Jill</td>
+    <td>Smith</td>		
+    <td>Engineer</td>
+    <td>Active</td>      
+  </tr>
+  <tr>
+      <td>2</td>
+    <td>Eve</td>
+    <td>Jackson</td>		
+    <td>Design</td>
+      <td>Active</td>
+  </tr>
+  <tr>
+      <td>3</td>
+    <td>John</td>
+    <td>Doe</td>		
+    <td>Customer Service</td>
+      <td class="disabled">Active</td>
+  </tr>
+   </tbody>
+</table>
+
+                            </div>
+                            <p class="usage"><span>Usage</span> : Add a class <code>.disabled</code> to the <code>tr</code> (row) or <code>td</code> (cell) element.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;table class=&quot;ui table&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;...&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+   
+  &lt;tbody&gt;
+    &lt;tr class="disabled"&gt;
+      &lt;td&gt;...&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class="disabled"&gt;...&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;    
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Active -->
+                        <div class="block">
+                            <h3 id="active" class="title">Active </h3>
+                            <p class="description">A table row or an individual cell can be active or selected by a user.</p>
+                            <div class="display">
+<table class="ui table">
+   <thead>
+      <tr>
+          <th>#</th>
+         <th>First Name</th>
+         <th>Last Name</th>
+         <th>Team</th>
+         <th>Status</th>  
+      </tr>
+   </thead>
+   
+   <tbody>
+      <tr class="active">
+    <td>1</td>
+    <td>Jill</td>
+    <td>Smith</td>		
+    <td>Engineer</td>
+    <td>Active</td>      
+  </tr>
+  <tr>
+      <td>2</td>
+    <td>Eve</td>
+    <td>Jackson</td>		
+    <td>Design</td>
+      <td>Active</td>
+  </tr>
+  <tr>
+      <td>3</td>
+    <td>John</td>
+    <td>Doe</td>		
+    <td>Customer Service</td>
+      <td class="active">Active</td>
+  </tr>
+   </tbody>
+</table>
+
+                            </div>
+                            <p class="usage"><span>Usage</span> : Add a class <code>.active</code> to the <code>tr</code> (row) or <code>td</code> (cell) element.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;table class=&quot;ui table&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;...&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+   
+  &lt;tbody&gt;
+    &lt;tr class="active"&gt;
+      &lt;td&gt;...&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class="active"&gt;...&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;  
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Colored -->
+                        <div class="block">
+                            <h3 id="colored" class="title">Info/ Success/ Error/ Warning </h3>
+                            <p class="description">A table row or an individual cell can be changed the background color to let a user know what its status is .</p>
+                            <div class="ui message state-color">
+<pre><code class="hljs nginx"><span class="hljs-attribute info">.info</span>     : Indicates highlighted information
+<span class="hljs-attribute success">.success</span>  : Indicates a successful or positive action
+<span class="hljs-attribute error">.error</span>    : Indicates a dangerous or potentially negative action
+<span class="hljs-attribute warning">.warning</span>  : Indicates a warning that might need attention
+</code></pre>
+                            </div>
+                            <div class="display">
+<table class="ui table">
+   <thead>
+      <tr>
+          <th>#</th>
+         <th>First Name</th>
+         <th>Last Name</th>
+         <th>Team</th>
+         <th>Status</th>  
+      </tr>
+   </thead>
+   
+   <tbody>
+       <tr>
+    <td>1</td>
+    <td>Adam</td>
+    <td>Johnson</td>		
+    <td>Managment</td>
+    <td>Active</td>      
+  </tr>
+       <tr class="info">
+    <td>2</td>
+    <td>Bill</td>
+    <td>Gates</td>		
+    <td>Engineer</td>
+    <td>Unknown</td>      
+  </tr>
+      <tr class="success">
+    <td>3</td>
+    <td>Jill</td>
+    <td>Smith</td>		
+    <td>Engineer</td>
+    <td><i class="icon checkmark"></i> Approved</td>      
+  </tr>
+  <tr class="error">
+      <td>4</td>
+    <td>Eve</td>
+    <td>Jackson</td>		
+    <td>Design</td>
+      <td><i class="icon remove"></i> Rejected</td>
+  </tr>
+  <tr class="warning">
+      <td>5</td>
+    <td>John</td>
+    <td>Doe</td>		
+    <td>Customer Service</td>
+      <td><i class="warning circle icon"></i> Requires Action</td>
+  </tr>
+   </tbody>
+</table>
+
+                            </div>
+                            <p class="usage"><span>Usage</span> : Add a class <code>info</code>, <code>.success</code>, <code>.error</code> or <code>.warning</code> to the <code>tr</code> (row) or <code>td</code> (cell) element.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;table class=&quot;ui table&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;...&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+   
+  &lt;tbody&gt;
+    &lt;tr class="info"&gt;
+      &lt;td&gt;...&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class="sucess"&gt;
+      &lt;td&gt;...&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class="error"&gt;
+      &lt;td&gt;...&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class="warning"&gt;
+      &lt;td&gt;...&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;  
+</code>
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Types --> 
+                    <div id="types">
+                        <h2>Types</h2>
+                        <!-- Definition -->
+                        <div class="block">
+                            <h3 id="definition-type" class="title">Definition Type </h3>
+                            <p class="description">A table is formatted to emphasize a first column that defines a rows content.</p>
+                            <div class="display">
+<table class="ui definition table">
+  <thead>
+    <tr><th></th>
+    <th>Arguments</th>
+    <th>Description</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td>reset rating</td>
+      <td>None</td>
+      <td>Resets rating to default value</td>
+    </tr>
+    <tr>
+      <td>set rating</td>
+      <td>rating (integer)</td>
+      <td>Sets the current star rating to specified value</td>
+    </tr>
+  </tbody>
+</table>
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert a class <code>.definition</code> before the class <code>.table</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;table class=&quot;ui definition table&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;...&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- Forms -->
+                    <div id="forms">
+                        <h2>Form Varations</h2>
+                        <!-- Fixed -->
+                        <div class="block">
+                            <h3 id="fixed" class="title">Fixed </h3>
+                            <p class="description">A table can use a special faster form of table rendering that does not resize table cells based on content.</p>
+                            <div class="display">
+<table class="ui fixed table">
+  <thead>
+    <tr><th>Name</th>
+    <th>Status</th>
+    <th>Description</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td>John is an interesting boy but sometimes you don't really have enough room to describe everything you'd like</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Jamie is a kind girl but sometimes you don't really have enough room to describe everything you'd like</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Denied</td>
+      <td>Jill is an alright girl but sometimes you don't really have enough room to describe everything you'd like</td>
+    </tr>
+  </tbody>
+</table>
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert a class <code>.fixed</code> before the class <code>.table</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;table class=&quot;ui fixed table&quot;&gt;
+    ...
+&lt;/table&gt;  
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Single line -->
+                        <div class="block">
+                            <h3 id="single-line" class="title">Single Line </h3>
+                            <p class="description">A table can specify that its cell contents should remain on a single line, and not wrap.</p>
+                            <div class="display">
+<table class="ui single line table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Registration Date</th>
+      <th>E-mail address</th>
+      <th>Premium Plan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John Lilki</td>
+      <td>September 14, 2013</td>
+      <td>jhlilk22@yahoo.com</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Jamie Harington</td>
+      <td>January 11, 2014</td>
+      <td>jamieharingonton@yahoo.com</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Jill Lewis</td>
+      <td>May 11, 2014</td>
+      <td>jilsewris22@yahoo.com</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert classes <code>.single, .line</code> before the class <code>.table</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;table class=&quot;ui single line table&quot;&gt;
+    ...
+&lt;/table&gt;  
+</code>
+</pre>
+                            </div>
+                            <p class="description">Fixed single line tables will automatically ensure content that does not fit in a single line will receive "..." ellipsis.</p>
+                            <div class="display">
+<table class="ui fixed single line celled table">
+  <thead>
+    <tr><th>Name</th>
+    <th>Status</th>
+    <th>Description</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td>This is much too long to fit I'm sorry about that</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Shorter description</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Denied</td>
+      <td>Shorter description</td>
+    </tr>
+  </tbody>
+</table>
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert classes <code>.fixed, .single, .line</code> before the class <code>.table</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;table class=&quot;ui fixed single line table&quot;&gt;
+    ...
+&lt;/table&gt;  
+</code>
+</pre>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <!-- Styles -->
+                    <div id="styles">
+                        <h2>Style Variations</h2>
+                        <!-- Celled -->
+                        <div class="block">
+                            <h3 id="celled" class="title">Celled </h3>
+                            <p class="description">A table can be divided each row into separate cells</p>
+                            <div class="display">
+<table class="ui celled table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Requires call</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Denied</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr><th>3 People</th>
+    <th>2 Approved</th>
+    <th></th>
+  </tr></tfoot>
+</table>
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert a class <code>.celled</code> before the class <code>.table</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;table class=&quot;ui celled table&quot;&gt;
+    ...
+&lt;/table&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Basic -->
+                        <div class="block">
+                            <h3 id="basic" class="title">Basic </h3>
+                            <p class="description">A table can be reduced its complexity to increase readability.</p>
+                            <div class="display">
+<table class="ui basic table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Requires call</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Denied</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>                             
+<table class="ui very basic table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Requires call</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Denied</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>                                
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert a class <code>.basic</code> or classes <code>.very, .basic</code> before the class <code>.table</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;table class=&quot;ui basic table&quot;&gt;
+    ...
+&lt;/table&gt;
+
+&lt;table class=&quot;ui very basic table&quot;&gt;
+    ...
+&lt;/table&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Striped -->
+                        <div class="block">
+                            <h3 id="striped" class="title">Striped rows </h3>
+                            <p class="description">A table can add zebra-striping to any table row within the body.</p>
+                            <div class="display">
+<table class="ui striped table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Requires call</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Denied</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert a class <code>.striped</code> before the class <code>.table</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;table class=&quot;ui striped table&quot;&gt;
+    ...
+&lt;/table&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Colored -->
+                        <div class="block">
+                            <h3 id="colored" class="title">Colored </h3>
+                            <p class="description">A table can be given a color to distinguish it from other tables.</p>
+                            <div class="display">
+<table class="ui primary table">
+  <thead>
+    <tr><th>Food</th>
+    <th>Calories</th>
+    <th>Protein</th>
+  </tr></thead><tbody>
+    <tr>
+      <td>Apples</td>
+      <td>200</td>
+      <td>0g</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>310</td>
+      <td>0g</td>
+    </tr>
+  </tbody>
+</table>
+                            
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert classes of colors before the class <code>.table</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;table class=&quot;ui primary table&quot;&gt;...&lt;/table&gt;
+&lt;table class=&quot;ui info table&quot;&gt;...&lt;/table&gt;
+&lt;table class=&quot;ui success table&quot;&gt;...&lt;/table&gt;
+&lt;table class=&quot;ui error table&quot;&gt;...&lt;/table&gt;
+&lt;table class=&quot;ui warning table&quot;&gt;...&lt;/table&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Inverted -->
+                        <div class="block">
+                            <h3 id="inverted" class="title">Inverted </h3>
+                            <p class="description"></p>
+                            <div class="display">
+<table class="ui inverted table">
+  <thead>
+    <tr><th>Food</th>
+    <th>Calories</th>
+    <th>Protein</th>
+  </tr></thead><tbody>
+    <tr>
+      <td>Apples</td>
+      <td>200</td>
+      <td>0g</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>310</td>
+      <td>0g</td>
+    </tr>
+  </tbody>
+</table>                                
+<table class="ui inverted primary table">
+  <thead>
+    <tr><th>Food</th>
+    <th>Calories</th>
+    <th>Protein</th>
+  </tr></thead><tbody>
+    <tr>
+      <td>Apples</td>
+      <td>200</td>
+      <td>0g</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>310</td>
+      <td>0g</td>
+    </tr>
+  </tbody>
+</table>
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert a class <code>.inverted</code> and classes of clors before the class <code>.table</code>.A </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;table class=&quot;ui inverted table&quot;&gt;
+    ...
+&lt;/table&gt;
+&lt;table class=&quot;ui inverted primary table&quot;&gt;
+    ...
+&lt;/table&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- Sizes -->
+                    <div id="sizes">
+                        <h2>Size Variations</h2>
+                        <!-- Column Width -->
+                        <div class="block">
+                            <h3 id="column-width" class="title">Column Width </h3>
+                            <p class="description">A table can specify the width of individual columns independently. Tables use a 16 column grid similar to <a href="/design/system/grid">grid</a>.</p>
+                            <div class="display">
+<table class="ui table">
+  <thead>
+    <tr><th class="ten wide">Name</th>
+    <th class="six wide">Status</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Denied</td>
+    </tr>
+  </tbody>
+  
+</table>
+                            </div>
+                            <p class="usage"><span>Usage</span> : add the number of sixteen available column and a class <code>.wide</code> to the <code>&lt;th&gt;</code> element.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;table class=&quot;ui table&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th class="ten wide"&gt;Name&lt;/th&gt;
+      &lt;th class="six wide"&gt;Status&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+   
+  &lt;tbody&gt;
+    ...
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Collapsing Columns -->
+                        <div class="block">
+                            <h3 id="collapsing" class="title">Collapsing Columns </h3>
+                            <p class="description">A table can be collapsing, taking up only as much space as its rows.</p>
+                            <div class="display">
+<table class="ui collapsing table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Requires call</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Denied</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+  
+</table>
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert a class <code>.collapsing</code> before the class <code>.table</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;table class=&quot;ui collapsing table&quot;&gt;
+    ...
+&lt;/table&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Collapsing Cell -->
+                        <div class="block">
+                            <h3 id="collapsing-cell" class="title">Collapsing Cell </h3>
+                            <p class="description">A cell can be collapsing so that it only uses as much space as required.</p>
+                            <div class="display">
+<table class="ui table">
+  <tbody>
+    <tr>
+      <td>
+        <i class="folder icon"></i> node_modules
+      </td>
+      <td class="collapsing">Initial commit</td>
+      <td class="collapsing">10 hours ago</td>
+    </tr>
+    <tr>
+      <td>
+        <i class="folder icon"></i> test
+      </td>
+      <td>Initial commit</td>
+      <td>10 hours ago</td>
+    </tr>
+    <tr>
+      <td>
+        <i class="folder icon"></i> build
+      </td>
+      <td>Initial commit</td>
+      <td>10 hours ago</td>
+    </tr>
+  </tbody>
+</table>
+                            </div>
+                            <p class="usage"><span>Usage</span> : add a class <code>.collapsing</code> to the <code>&lt;td&gt;</code> element.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;table class=&quot;ui table&quot;&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;i class=&quot;folder icon&quot;&gt;&lt;/i&gt; node_modules&lt;/td&gt;
+      &lt;td class=&quot;collapsing&quot;&gt;Initial commit&lt;/td&gt;
+      &lt;td class=&quot;collapsing&quot;&gt;10 hours ago&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Padded Rows -->
+                        <div class="block">
+                            <h3 id="padded" class="title">Padded Rows </h3>
+                            <p class="description">A table rows can be more padded for legibility.</p>
+                            <div class="display">
+<table class="ui padded table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td>He is a very nice guy. I really enjoyed talking to him on the telephone. I hope we get to talk again.</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Jamie was not interested in purchasing our product.</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<table class="ui very padded table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td>He is a very nice guy. I really enjoyed talking to him on the telephone. I hope we get to talk again.</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Jamie was not interested in purchasing our product.</td>
+    </tr>
+  </tbody>
+</table>                                
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert a class <code>.padded</code> or classes <code>.very, .padded</code> before the class <code>.table</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;table class=&quot;ui padded table&quot;&gt; ... &lt;/table&gt;
+
+&lt;table class=&quot;ui very padded table&quot;&gt; ... &lt;/table&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Compact Rows -->
+                        <div class="block">
+                            <h3 id="" class="title">Compact Rows </h3>
+                            <p class="description">A table rows can be more compact to make more rows visible at a time.</p>
+                            <div class="display">
+<table class="ui compact table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Requires call</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Denied</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<table class="ui very compact table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Requires call</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Denied</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>                                
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert a class <code>.compact</code> or classes <code>.very, .compact</code> before the class <code>.table</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;table class=&quot;ui compact table&quot;&gt; ... &lt;/table&gt;
+
+&lt;table class=&quot;ui very compact table&quot;&gt; ... &lt;/table&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Size -->
+                        <div class="block">
+                            <h3 id="size" class="title">Size </h3>
+                            <p class="description">A table can also be small or large.</p>
+                            <div class="display">
+<table class="ui small table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Requires call</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Denied</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<table class="ui large table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Approved</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Requires call</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Denied</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>                                
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert a class <code>.small</code> or <code>.large</code> before the class <code>.table</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;table class=&quot;ui small table&quot;&gt; ... &lt;/table&gt;
+
+&lt;table class=&quot;ui large table&quot;&gt; ... &lt;/table&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- Specials -->
+                    <div id="specials">
+                        <h2>Special Variations</h2>
+                        <!-- Sortable -->
+                        <div class="block">
+                            <h3 id="sortable" class="title">Sortable </h3>
+                            <p class="description">A table will be sorted when the column headers are clicked.</p>
+                            <div class="display">
+<table class="ui sortable celled table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>No Action</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td class="success">Approved</td>
+      <td class="warning">Requires call</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td class="error">Denied</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
+                            </div>
+                            <p class="usage"><span>Usage</span> : 
+                                <br>- Download Javascript file of Table Sort at here
+                                <br>- Just add jQuery & the tablesort plugin to your page.
+                                </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;script src="tablesort.min.js"&gt;&lt;script&gt;
+</code>
+</pre>
+                            </div>
+                            <p class="usage"> 
+                                - Call the appropriate method on the table you want to make sortable.
+                                </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;script&gt;
+    $('table').tablesort();
+&lt;script&gt;
+</code>
+</pre>
+                            </div>
+                            <p class="usage"> 
+                                - Insert a class <code>.sortable</code> before the class <code>.table</code>.
+                                <br>- To prevent a column from being sortable, just add the class <code>.no-sort</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;table class=&quot;ui sortable table&quot;&gt;
+    ...
+&lt;/table&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Selectable Row -->
+                        <div class="block">
+                            <h3 id="selectable-row" class="title">Selectable Row </h3>
+                            <p class="description">A table can have its rows appear selectable.</p>
+                            <div class="display">
+<table class="ui selectable celled table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>No Action</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td>Requires call</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Denied</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
+                            </div>
+                            <p class="usage"><span>Usage</span> : insert a class <code>.selectable</code> before the class <code>.table</code>.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;table class=&quot;ui selectable table&quot;&gt;
+    ...
+&lt;/table&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Selectable Cell -->
+                        <div class="block">
+                            <h3 id="selectable-cell" class="title">Selectable Cell </h3>
+                            <p class="description">A table cell can be selectable.</p>
+                            <div class="display">
+<table class="ui celled table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Edit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>No Action</td>
+      <td class="selectable"><a href="#">Edit</a></td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>No Action</td>
+        <td class="selectable warning"><a href="#">Requires call</a></td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>No Action</td>
+      <td class="selectable"><a href="#">Edit</a></td>
+    </tr>
+  </tbody>
+</table>
+                            </div>
+                            <p class="usage"><span>Usage</span> : 
+                                <br>- Add a class <code>.selectable</code> to the <code>&lt;td&gt;</code> element.
+                                <br>- Inclue an <code>&lt;a&gt;</code> element
+                            </p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;table class=&quot;ui table&quot;&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td class="selectable"&gt;&lt;a href="#"&gt;Edit&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Vertical Alignment -->
+                        <div class="block">
+                            <h3 id="vertical-alignment" class="title">Vertical Alignment </h3>
+                            <p class="description">A table header, row, or cell can adjust its vertical alignment.</p>
+                            <div class="display">
+<table class="ui striped table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="top aligned">
+      <td>John</td>
+      <td class="middle aligned">Approved</td>
+      <td>
+        Notes<br>
+        1<br>
+        2<br>
+      </td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td class="bottom aligned">Approved</td>
+      <td>
+        Notes<br>
+        1<br>
+        2<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+                            </div>
+                            <p class="usage"><span>Usage</span> : Add classes <code>.top, .aligned</code> or <code>.middle, .aligned</code> or <code>.bottom, .aligned</code> to the <code>&lt;th&gt;</code>, <code>&lt;tr&gt;</code> or <code>&lt;td&gt;</code> element.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;table class=&quot;ui table&quot;&gt;
+  &lt;tbody&gt;
+    &lt;tr class="top aligned"&gt;
+      &lt;td class="top aligned"&gt;&lt;/td&gt;
+      &lt;td class="middle aligned"&gt;&lt;/td&gt;
+      &lt;td class="bottom aligned"&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Horizontal Alignment -->
+                        <div class="block">
+                            <h3 id="horizontal-alignment" class="title">Horizontal Alignment </h3>
+                            <p class="description">A table header, row, or cell can adjust its horizontal alignment</p>
+                            <div class="display">
+<table class="ui striped table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th class="right aligned">Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="center aligned">
+      <td>John</td>
+      <td>Approved</td>
+      <td class="right aligned">None</td>
+    </tr>
+    <tr>
+      <td>Jamie</td>
+      <td>Approved</td>
+      <td class="right aligned">Requires call</td>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Denied</td>
+      <td class="right aligned">None</td>
+    </tr>
+  </tbody>
+</table>
+                            </div>
+                            <p class="usage"><span>Usage</span> : Add classes <code>.center, .aligned</code> or <code>.right, .aligned</code> to the <code>&lt;th&gt;</code>, <code>&lt;tr&gt;</code> or <code>&lt;td&gt;</code> element.</p>
+                            <div class="source">
+<pre>
+<code class="html hljs xml">
+&lt;table class=&quot;ui table&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th class="right aligned"&gt;...&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr class="center aligned"&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td class="right aligned"&gt;...&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                        
+                   
+                        
+                        
+                    </div>
+                    <div class="column" id="table-content">
+                        <div id="sticky-anchor"></div>
+                        <div id="sticky">
+                        <ul class="category">    
+                            <li class="title">Table</li>    
+                            <li class="item"><a href="#definition">Definition</a></li>  
+                            <li class="title">States</li>    
+                            <li class="item"><a href="#disabled">Disabled</a></li> 
+                            <li class="item"><a href="#active">Active</a></li> 
+                            <li class="item"><a href="#colored">Colored</a></li> 
+                            <li class="title">Types</li>    
+                            <li class="item"><a href="#definition-type">Definition Type</a></li>  
+                            <li class="title">Variations</li>    
+                            <li class="item"><a href="#forms">Forms</a></li> 
+                            <li class="item"><a href="#styles">Styles</a></li> 
+                            <li class="item"><a href="#sizes">Sizes</a></li> 
+                            <li class="item"><a href="#specials">Specials</a></li> 
+                            
+                        </ul>
+                    </div>
+                
+                </div>
+            
+                </div>
+                <div class="ui grid">
+                    <div class="column" id="footer">
+                        <div class="inner">
+                            <p>© Copyright 2016. Hoiio Pte Ltd.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+     
+        </div>
+    </div>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../dist/semantic.min.js"></script>
+	<script src="../source/js/highlight.pack.js"></script>
+    <script src="../source/js/content.js"></script>
+    <script src="../source/js/hoiio.js"></script>
+    <script src="../source/js/tablesort.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+</body>
+</html>
