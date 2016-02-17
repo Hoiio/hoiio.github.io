@@ -46,7 +46,7 @@
     
     hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/button\">Button<\/a><\/li>";
     hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/checkbox\">Checkbox<\/a><\/li>";
-hoiio += "    <li class=\"item\"><a href=\"\/design\/component\/container\">Container<\/a><\/li>";
+hoiio += "    <li class=\"item line through\"><a href=\"\/design\/component\/container\">Container<\/a><\/li>";
     hoiio += "    <li class=\"item line through\"><a href=\"\/design\/component\/divider\">Divider<\/a><\/li>";
     
    
