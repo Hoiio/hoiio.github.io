@@ -159,7 +159,11 @@ $(document).ready(function() {
     */
    
     
-
+    // Set Active
+    function capitalise(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+    }
+    
     var x = window.location.href.match(/.*\/(.*)$/)[1];
     
     if(x){
@@ -169,6 +173,10 @@ $(document).ready(function() {
         $('#left-content-sidebar a[href$=introduction').addClass("active");
     }
     
+    $("#sticky").on("click", "a", function (event) { 
+        $("#sticky .active").removeClass("active"); 
+        $(this).addClass("active"); 
+    }); 
     
    
 
@@ -176,10 +184,7 @@ $(document).ready(function() {
    
 });
 
-// Set Active
-function capitalise(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
-}
+
 
 function sticky_relocate() {
     var window_top = $(window).scrollTop();
@@ -191,10 +196,6 @@ function sticky_relocate() {
     }
 }
 
-$(function () {
-    
-});
-
 
 /*--------------------
     Loading
@@ -203,12 +204,7 @@ $(function () {
 $(window).load(function() {
     // Animate loader off screen
     $(".hoiio.loading").fadeOut("slow");
-    
-    var y = window.location.href.match(/.*\/(.*)$/)[1];
-    
-    if(y){
-        $('#sticky a[href$='+y+']').addClass("active");
-    }
+
 });
 
 
