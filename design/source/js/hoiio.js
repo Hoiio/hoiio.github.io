@@ -167,7 +167,7 @@ $(document).ready(function() {
     var x = window.location.href.match(/.*\/(.*)$/)[1];
     
     if(x){
-        $('a[href$='+x+']').addClass("active");
+        $('#left-content-sidebar a[href$='+x+']').addClass("active");
     }
     else{
         $('a[href$=introduction').addClass("active");
