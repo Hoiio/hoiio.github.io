@@ -158,18 +158,15 @@ $(document).ready(function() {
     
     */
    
-    // Set Active
-    function capitalise(string) {
-        return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
-    }
+    
 
     var x = window.location.href.match(/.*\/(.*)$/)[1];
     
     if(x){
-        $('a[href$='+x+']').addClass("active");
+        $('#left-content-sidebar a[href$='+x+']').addClass("active");
     }
     else{
-        $('a[href$=introduction').addClass("active");
+        $('#left-content-sidebar a[href$=introduction').addClass("active");
     }
     
     
@@ -179,6 +176,10 @@ $(document).ready(function() {
    
 });
 
+// Set Active
+function capitalise(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+}
 
 function sticky_relocate() {
     var window_top = $(window).scrollTop();
@@ -203,6 +204,11 @@ $(window).load(function() {
     // Animate loader off screen
     $(".hoiio.loading").fadeOut("slow");
     
+    var y = window.location.href.match(/.*\/(.*)$/)[1];
+    
+    if(y){
+        $('#sticky a[href$='+y+']').addClass("active");
+    }
 });
 
 
