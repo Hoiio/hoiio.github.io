@@ -5,8 +5,8 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>UX Training Sessions</title>
-  <meta name="description" content="Hoiio UX Training Days">
+  <title>UX Training / Research</title>
+  <meta name="description" content="Hoiio UX Training Sessions">
   <meta name="author" content="Marcus">
 
   <!-- Mobile Specific Metas
@@ -16,12 +16,13 @@
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
+  
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
   
 
   <!-- Scripts
@@ -39,31 +40,51 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
-    <section class="header">
-      <h2 class="title">UX Training Sessions</h2>
-    </section>
+    <div class="row">
+        <div class="eleven columns">
+            <section class="header">
+                <h2 class="title">UX Training / Research</h2>
+            </section>
+        </div>
+        <div class="one column">
+            <div class="dropdown">
+                <input class="dropdown-toggle" type="text">
+                <div class="dropdown-text"><i class="fa fa-bars"></i></div>
+                <ul class="dropdown-content">
+                    <li><a href="/design/training/">Home</a></li>
+                    <li><a href="/design/training/design">UI Design</a></li>
+                    <li><a href="/design/training/interaction">Interaction</a></li>
+                    <li><a href="/design/training/information">Information</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    
 
     <div class="navbar-spacer"></div>
     <nav class="navbar">
       <div class="container">
-        <ul class="navbar-list">
-          <li class="navbar-item"><a class="navbar-link" href="#intro">Intro</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="/design/training/research">Research</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="/design/training/design">UI Design</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="/design/training/interaction">Interaction</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="/design/training/information">Information</a></li>
+        <!--<ul class="navbar-list">
+          <li class="navbar-item">
+            <a class="navbar-link" href="#" data-popover="#twoNavPopover">I don</a>
+            <div id="twoNavPopover" class="popover">
+              <ul class="popover-list">
+                <li class="popover-item">
+                  <a class="popover-link" href="#signup">Signup Page</a> 
+                </li>
+                  
+                
+              </ul>
+            </div>
+          </li>
+          
+           
           
           
-        </ul>
+        </ul>-->
       </div>
     </nav>
-
-    <!-- Why use Skeleton -->
-    <div class="docs-section" id="intro">
-      <h6 class="docs-header">Can anyone learn UX?</h6>
-     
-      
-    </div>
 
 
   </div>
